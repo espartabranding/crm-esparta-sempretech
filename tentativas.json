@@ -34,5 +34,11 @@
     "quando": "2026-10-05T18:50:56+00:00",
     "qualificacao": "Recepção passou informação",
     "nota": "A informática é terceirizada. Não houve contato com quem decide. Próxima tentativa: pedir compras ou o administrativo e o nome da empresa de suporte."
+  },
+  {
+    "conta": "c8",
+    "quando": "2026-10-05T18:52:00+00:00",
+    "qualificacao": "Retornar em data combinada",
+    "nota": "Pediram para ligar novamente “em horário comercial”. Retornar no próximo dia útil, pela manhã."
   }
 ]
