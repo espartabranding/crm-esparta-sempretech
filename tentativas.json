@@ -59,5 +59,11 @@
     "quando": "2026-10-05T18:59:01+00:00",
     "qualificacao": "Não atendeu / caixa postal",
     "nota": "Não atendeu. Nova tentativa em outro horário."
+  },
+  {
+    "conta": "c10",
+    "quando": "2026-10-05T19:03:51+00:00",
+    "qualificacao": "Enviar material",
+    "nota": "Fazer o contato por WhatsApp, no (71) 98818-3740. Enviar a mensagem de apresentação e aguardar resposta."
   }
 ]
