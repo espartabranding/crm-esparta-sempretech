@@ -29,7 +29,7 @@ A transcrição usa a instalação do Esparta Transcribe em `C:\Scripts\esparta-
 | `conversa.py` | Transcrição, métricas e avaliação das conversas |
 | `transcritor.py` | Transcrição com vocabulário da conta (roda no Python do Esparta Transcribe) |
 | `painel.py`, `painel_modelo.html` | Geração do painel |
-| `contas.json` | As 26 contas do plano, com fit e aderência |
+| `contas.json` | As contas do plano, com fit e aderência |
 | `analises/` | Pesquisa de cada empresa |
 | `catalogo.json` | Catálogo da SempreTech (site, consultado em 05/10/2026) |
 | `playbook.json` | Soluções, roteiros por segmento, objeções e qualificações |
