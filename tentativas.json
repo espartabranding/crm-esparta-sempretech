@@ -40,5 +40,12 @@
     "quando": "2026-10-05T18:52:00+00:00",
     "qualificacao": "Retornar em data combinada",
     "nota": "Pediram para ligar novamente “em horário comercial”. Retornar no próximo dia útil, pela manhã."
+  },
+  {
+    "conta": "c7",
+    "quando": "2026-10-05T18:54:54+00:00",
+    "conversou": true,
+    "qualificacao": "Sem interesse",
+    "nota": "Informaram que não têm interesse. Motivo não registrado. Pausar a conta por pelo menos um mês."
   }
 ]

@@ -141,7 +141,7 @@ def montar(db: sqlite3.Connection, plano: dict, catalogo: dict, playbook: dict) 
             0,
             {
                 "id": f"manual-{t['quando']}",
-                "completada": False,
+                "completada": t.get("conversou", False),
                 "inicio": t["quando"],
                 "falado": 0,
                 "telefone": None,
