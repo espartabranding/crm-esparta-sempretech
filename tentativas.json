@@ -53,5 +53,11 @@
     "quando": "2026-10-05T18:56:42+00:00",
     "qualificacao": "Não atendeu / caixa postal",
     "nota": "Telefone desligado ou fora da área de cobertura. O (71) 3379-6209 é o único número no cadastro da Receita. Tentar em outro horário e enviar e-mail para lustoza@lustoza.com."
+  },
+  {
+    "conta": "c12",
+    "quando": "2026-10-05T18:59:01+00:00",
+    "qualificacao": "Não atendeu / caixa postal",
+    "nota": "Não atendeu. Nova tentativa em outro horário."
   }
 ]
