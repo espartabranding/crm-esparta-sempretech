@@ -133,6 +133,30 @@ def montar(db: sqlite3.Connection, plano: dict, catalogo: dict, playbook: dict) 
         chamada = _chamada(linha)
         conta = _conta_da_chamada(contas, json.loads(linha["atributos"]), chamada["contato"])
         (conta["chamadas"] if conta else avulsas).append(chamada)
+    # Tentativas anotadas à mão (ligação feita fora do Callix ou ainda não sincronizada).
+    manuais = RAIZ / "tentativas.json"
+    por_id = {c["id"]: c for c in contas}
+    for t in json.loads(manuais.read_text(encoding="utf-8")) if manuais.exists() else []:
+        por_id[t["conta"]]["chamadas"].insert(
+            0,
+            {
+                "id": f"manual-{t['quando']}",
+                "completada": False,
+                "inicio": t["quando"],
+                "falado": 0,
+                "telefone": None,
+                "rotulo": "Registro manual",
+                "qualificacao": t.get("qualificacao"),
+                "sucesso": False,
+                "agente": t.get("agente"),
+                "nota": t["nota"],
+                "desligamento": None,
+                "audio": None,
+                "resumo": None,
+                "conversa": None,
+                "contato": {},
+            },
+        )
     return {
         "eixos": plano["eixos"],
         "catalogo": catalogo,
