@@ -143,32 +143,6 @@ def montar(db: sqlite3.Connection, plano: dict, catalogo: dict, playbook: dict) 
     }
 
 
-def _publico(dados: dict) -> dict:
-    """Cópia dos dados sem o que não deve ir para uma página aberta.
-
-    Saem os nomes de pessoas, as ressalvas internas de cada conta e todo o conteúdo
-    das ligações (agente, contato, anotações, transcrição e avaliação). Ficam os números.
-    """
-
-    def chamada(c: dict) -> dict:
-        campos = ("id", "completada", "inicio", "falado", "qualificacao", "sucesso")
-        return {**{k: c[k] for k in campos}, "contato": {}}
-
-    contas = []
-    for conta in dados["contas"]:
-        analise = conta["analise"]
-        if analise:
-            # Um nome de decisor pode estar citado também num fato ou numa orientação: troca em todo o texto.
-            texto = json.dumps(analise, ensure_ascii=False)
-            for decisor in analise["decisores"]:
-                partes = decisor["nome"].split()
-                for nome in {" ".join(partes), " ".join(partes[:2]), f"{partes[0]} {partes[-1]}"}:
-                    texto = texto.replace(nome, "(nome omitido)")
-            analise = {**json.loads(texto), "decisores": [], "ressalvas": [], "identidade_confirmada": True}
-        contas.append({**conta, "analise": analise, "chamadas": [chamada(c) for c in conta["chamadas"]]})
-    return {**dados, "contas": contas, "avulsas": [chamada(c) for c in dados["avulsas"]]}
-
-
 def gerar(db_arquivo: Path, saida: Path) -> None:
     plano = json.loads((RAIZ / "contas.json").read_text(encoding="utf-8"))
     catalogo = json.loads((RAIZ / "catalogo.json").read_text(encoding="utf-8"))
@@ -182,16 +156,9 @@ def gerar(db_arquivo: Path, saida: Path) -> None:
 
     pagina = pagina_de(completo)
     saida.write_text(pagina, encoding="utf-8")
-    # Cópia servida pelo GitHub Pages: sem nomes de pessoas, ressalvas internas e conteúdo das ligações.
-    # A página é aberta para quem tem o link, então também pede aos buscadores que não a indexem.
+    # Cópia completa versionada no repositório privado, para a equipe abrir sem rodar nada.
     if saida.parent == DADOS:
-        (RAIZ / "docs").mkdir(exist_ok=True)
-        (RAIZ / "docs" / "index.html").write_text(
-            pagina_de(_publico(completo)).replace(
-                "<head>", '<head>\n<meta name="robots" content="noindex, nofollow">', 1
-            ),
-            encoding="utf-8",
-        )
+        (RAIZ / "painel.html").write_text(pagina, encoding="utf-8")
     # Versão para publicar como link: a hospedagem acrescenta o esqueleto da página por conta própria.
     miolo = re.sub(r"<!DOCTYPE html>|</?html[^>]*>|</?head>|</?body>|<meta[^>]*>", "", pagina)
     saida.with_name(saida.stem + "_link.html").write_text(miolo.strip(), encoding="utf-8")
