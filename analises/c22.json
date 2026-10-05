@@ -6,12 +6,17 @@
   "porte": "LinkedIn informa faixa de 501 a 1.000 funcionários (297 perfis associados); a imprensa citava cerca de mil empregos diretos em Salvador em nov/2023. Lojas identificadas: Vila Laura (matriz), Engenho Velho de Brotas, Águas Claras, Lauro de Freitas (Parque Shopping Bahia, 12 mil m², 430 postos de trabalho) e São Rafael.",
   "onde_opera": "Salvador (Vila Laura, Engenho Velho de Brotas, Águas Claras, São Rafael/São Marcos) e Lauro de Freitas (Parque Shopping Bahia). Matriz: Rua Jorge Novis, 135, Vila Laura, Salvador/BA, CEP 40270-370.",
   "contato_publico": {
-    "telefone": "(71) 3183-1100",
+    "telefone": "(71) 3183-1115, WhatsApp do Igor. Geral: (71) 3183-1100",
     "email": "faleconosco@totalatacado.com.br",
     "site": "https://www.totalatacado.com.br",
     "linkedin": "https://br.linkedin.com/company/total-atacado-ba"
   },
   "decisores": [
+    {
+      "nome": "Igor",
+      "cargo": "Contato que pediu a proposta (informado pela Esparta em 05/10/2026; cargo não informado)",
+      "fonte": ""
+    },
     {
       "nome": "José Gilvando Andrade Sousa",
       "cargo": "Fundador do Grupo Total Atacado (referência de quem manda; não é o comprador de informática)",
@@ -52,7 +57,7 @@
     "Na loja de São Rafael, as posições de recebimento, depósito e administrativo já estão todas equipadas ou resta algum item pendente?",
     "Há outra loja ou reforma prevista? Com que antecedência vocês adquirem os equipamentos da retaguarda?"
   ],
-  "quem_procurar": "TI ou CPD da matriz na Vila Laura; se não houver, o setor de compras de uso e consumo (não o comprador de mercadorias).",
+  "quem_procurar": "Igor, pelo WhatsApp (71) 3183-1115.",
   "ressalvas": [
     "Não é empresa de logística: é rede de atacarejo. O roteiro do segmento precisa ser adaptado para 'recebimento e retaguarda de loja' em vez de 'expedição'.",
     "Ano da inauguração de São Rafael não ficou inequívoco: as publicações do LinkedIn citam '28/08' e tinham cerca de um mês em 05/10/2026, o que aponta para agosto de 2026, mas uma leitura da mesma página trouxe 'agosto de 2024', e nenhuma notícia de imprensa confirmou a data. Na ligação, falar 'a loja de São Rafael' sem citar a data.",
