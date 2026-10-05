@@ -28,5 +28,11 @@
     "quando": "2026-10-05T18:40:27+00:00",
     "qualificacao": "Enviar material",
     "nota": "A OCC pediu o envio da proposta por e-mail para gesa.conceicao@occ.eng.br. Enviar hoje e retornar a ligação em 2 dias úteis."
+  },
+  {
+    "conta": "c6",
+    "quando": "2026-10-05T18:50:56+00:00",
+    "qualificacao": "Recepção passou informação",
+    "nota": "A informática é terceirizada. Não houve contato com quem decide. Próxima tentativa: pedir compras ou o administrativo e o nome da empresa de suporte."
   }
 ]
