@@ -454,7 +454,6 @@ function ligacao(c){
         <details><summary>Objeções gerais (${P.geral.objecoes.length})</summary><div>${P.geral.objecoes.map(objHtml).join("")}</div></details>
         <details><summary>Situações fora do roteiro (${P.geral.ramos.length})</summary><div>${P.geral.ramos.map(ramoHtml).join("")}</div></details></div>
       <div class="etapa" data-n="7"><h2>Pedido</h2>${fala(r.pedido)}<p class="obs" style="margin:12px 0 6px">Se não der:</p>${fala(r.plano_b)}</div>
-      <div class="etapa" data-n="8"><h2>Ao desligar, marque no Callix</h2><div class="chips">${P.geral.tabulacoes.map(t=>`<span class="chip ${t.sucesso?"ok":""}" title="${esc(t.quando+" Depois: "+(t.proxima_acao||""))}">${esc(t.nome)}</span>`).join("")}</div></div>
     </div></div>
     <aside class="folha fixa"><h3>Antes de discar</h3><dl class="ficha">
       <div><dt>Telefone</dt><dd>${tel?telLink(tel):`<span class="vazio">não encontrado</span>`}</dd></div>
