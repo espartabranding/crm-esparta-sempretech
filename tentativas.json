@@ -90,5 +90,11 @@
     "quando": "2026-10-05T19:13:20+00:00",
     "qualificacao": "Não atendeu / caixa postal",
     "nota": "Não atende. Nova tentativa em outro horário."
+  },
+  {
+    "conta": "c18",
+    "quando": "2026-10-05T19:14:41+00:00",
+    "qualificacao": "Enviar material",
+    "nota": "Fazer o contato por WhatsApp, no (71) 99913-2108. Enviar a mensagem de apresentação e aguardar resposta."
   }
 ]
