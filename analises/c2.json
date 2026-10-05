@@ -1,0 +1,66 @@
+{
+  "id": "c2",
+  "empresa": "EPMAN Soluções para a Indústria",
+  "identidade_confirmada": true,
+  "resumo": "Empresa de Salvador especializada em manutenção e serviços industriais, em atividade desde 2005: consultoria de planejamento, gestão de projetos, engenharia e manutenção industrial. Atende plantas de papel e celulose, fertilizantes, offshore, petroquímica, plantas de gás, refinarias e termelétricas. Não é uma construtora de edificações; presta serviço dentro das unidades industriais dos clientes.",
+  "porte": "LinkedIn da empresa declara a faixa de 501 a 1.000 funcionários (81 perfis vinculados). Razão social EPMAN Comércio de Ferragens, Manutenção e Serviços Ltda, CNPJ 07.502.178/0001-80, aberta em 18/07/2005. Não foram encontrados, em fonte pública, a lista de contratos em andamento nem o número de bases.",
+  "onde_opera": "Escritório em Salvador, na Av. Luís Viana Filho (Paralela). Há dois endereços publicados: Hangar Business Park, nº 13223, São Cristóvão (cadastro de CNPJ) e Edf. Wall Street, Torre East, sala 527, nº 6462 (LinkedIn). As equipes atuam nas plantas industriais dos clientes; os locais específicos não foram confirmados.",
+  "contato_publico": {
+    "telefone": "(71) 3111-9491",
+    "email": null,
+    "site": "http://www.epmanservicos.com.br (não abriu na consulta de 05/10/2026)",
+    "linkedin": "https://br.linkedin.com/company/epman"
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: com centenas de funcionários alocados em plantas de clientes, a empresa deve manter um escritório central em Salvador (planejamento, RH, financeiro) e pequenas bases administrativas dentro dos contratos, que precisam de computador de mesa e proteção de energia; a compra tende a acompanhar o início de cada contrato ou parada de manutenção. Nada disso está confirmado em fonte pública.",
+  "produto_de_entrada": "Computador montado",
+  "complementares": [
+    "Nobreak",
+    "Assistência técnica"
+  ],
+  "motivo_da_ligacao": "A EPMAN presta manutenção industrial desde 2005, com equipes dentro de plantas de celulose, petroquímica e refinaria. A SempreTech propõe posto de trabalho completo para o planejamento e o administrativo de cada base, com assistência técnica própria em Salvador. Ao assumir um contrato ou uma parada, como fica definido quem fornece os computadores da base?",
+  "perguntas_especificas": [
+    "O escritório de vocês hoje fica no Hangar Business Park ou no Wall Street, e é de lá que parte a aquisição de equipamentos para as bases dos contratos?",
+    "Nas bases dentro das plantas dos clientes, o computador do planejamento é fornecido por vocês ou pelo contratante?",
+    "Há contrato novo ou parada de manutenção programada para os próximos meses que demande novas posições de trabalho?"
+  ],
+  "quem_procurar": "Compras/suprimentos no escritório de Salvador; se não houver setor, o administrativo-financeiro. O responsável por planejamento sente a falta do equipamento e pode indicar quem compra.",
+  "ressalvas": [
+    "O segmento real é manutenção industrial, não construção civil. O roteiro de 'Engenharia e construção' precisa ser adaptado: trocar 'obra' e 'canteiro' por 'contrato', 'base' e 'parada'.",
+    "O site conhecido (epmanservicos.com.br) não resolveu DNS na consulta de 05/10/2026; pode estar fora do ar ou ter mudado de domínio. Não significa que a empresa encerrou: há cadastro de CNPJ atualizado em julho de 2026 e LinkedIn ativo.",
+    "Dois endereços diferentes publicados (Hangar Business Park e Wall Street); confirmar qual é o atual logo no início da ligação.",
+    "O telefone (71) 3111-9491 vem de bases de consulta de CNPJ, não de fonte da própria empresa; pode estar desatualizado.",
+    "Nenhum fato recente com data foi encontrado (contrato novo, vaga ou notícia). O motivo da ligação usa o perfil da empresa e a situação típica do segmento, não um evento específico.",
+    "Nenhum nome de decisor publicado com cargo foi encontrado.",
+    "A maior parte do quadro é de campo (mecânicos, caldeireiros e afins), que não usa computador; o número de posições administrativas pode ser bem menor do que o porte sugere.",
+    "O número de funcionários é a faixa autodeclarada no LinkedIn."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "LinkedIn da empresa",
+      "u": "https://br.linkedin.com/company/epman"
+    },
+    {
+      "t": "Econodata, CNPJ 07.502.178/0001-80",
+      "u": "https://www.econodata.com.br/consulta-empresa/07502178000180-EPMAN-COMERCIO-DE-FERRAGENS-MANUTENCAO-E-SERVICOS-LTDA"
+    },
+    {
+      "t": "Casa dos Dados, CNPJ 07.502.178/0001-80",
+      "u": "https://casadosdados.com.br/solucao/cnpj/epman-manutencao-e-servicos-ltda-07502178000180"
+    },
+    {
+      "t": "CNPJ.biz, Epman Soluções para a Indústria",
+      "u": "https://cnpj.biz/07502178000180"
+    },
+    {
+      "t": "Site oficial (fora do ar na consulta)",
+      "u": "http://www.epmanservicos.com.br"
+    },
+    {
+      "t": "Notícia no site da EPMAN: contenção de vazamentos (indexada, sem data)",
+      "u": "https://www.epmanservicos.com.br/noticia/contencao-de-vazamentos/"
+    }
+  ]
+}

@@ -1,0 +1,726 @@
+{
+  "cliente": "SempreTech",
+  "tipo_de_venda": "mista",
+  "objetivo": {
+    "recepcao": "Com a recepção: sair com o nome e o cargo de quem decide, o melhor horário para falar com essa pessoa e se a informática é cuidada por equipe interna ou por terceiro.",
+    "principal": "Com quem decide: confirmar que o problema existe e combinar o levantamento (quantas posições, estações ou máquinas, o que para hoje e para quando). É com o levantamento que a SempreTech monta a proposta da solução.",
+    "plano_b": "Se não houver levantamento: sair com o contato direto, a data provável da próxima necessidade e permissão para mandar a proposta de referência."
+  },
+  "a_confirmar": [
+    "As soluções deste playbook são combinações que montamos com os itens do site, e o preço de referência é a soma dos itens. A SempreTech fecha pacote com preço único, instala no local e oferece contrato de manutenção?",
+    "Notebooks, impressoras, smartphones, roteadores, webcams e kit completo de CFTV (com DVR) são fornecidos sob encomenda? No site estão ausentes ou incompletos.",
+    "Há tabela ou condição para empresas (faturamento para CNPJ, boleto a prazo, desconto por quantidade)?",
+    "Prazo de entrega em Salvador e região metropolitana, e se a entrega é própria.",
+    "A assistência técnica atende no local da empresa ou só na loja? Há contrato de manutenção?",
+    "Endereço da loja e tempo de mercado, para o agente citar.",
+    "Clientes empresariais que podem ser citados como referência, por segmento.",
+    "Garantia dos computadores montados X-Linne e dos itens revisados.",
+    "A SempreTech faz levantamento no local (visita técnica, inventário das máquinas, teste dos nobreaks)? Hoje o roteiro pede o levantamento por telefone ou e-mail.",
+    "De onde vieram os telefones da lista? O agente precisa responder a verdade quando perguntarem."
+  ],
+  "geral": {
+    "regras": [
+      "As falas são um guia. Mantenha o tom profissional e propositivo: cumprimente, diga o que propõe e por quê, e faça um pedido claro. Sem gíria, sem diminutivo e sem pedir desculpa por ligar.",
+      "Venda o resultado, não a peça. Fale do posto funcionando, da operação que não cai, do laboratório que volta a render. O produto entra como o meio e como referência de preço.",
+      "A primeira ligação vende o próximo passo. Com a recepção, o objetivo é o nome e o horário de quem decide. Com quem decide, é o levantamento.",
+      "Antes de falar da solução, faça o cliente dizer o problema com as palavras dele. Depois ligue a solução ao que ele disse.",
+      "Componha a solução só com o que está na lista. Se pedirem outro item, anote e diga que vai confirmar a disponibilidade; não prometa.",
+      "Uma pergunta por vez. Escute a resposta inteira, não fale por cima e faça uma pergunta sobre o que a pessoa acabou de dizer.",
+      "Se a pessoa hesitar, diga que percebeu e ofereça parar. Um “não” claro vale mais que um “talvez”.",
+      "Depois de um “não” claro, agradeça, registre o motivo e encerre. Se pedirem para não ligar mais, confirme que vai retirar o número.",
+      "Combine sempre uma data para o próximo passo e cumpra no horário."
+    ],
+    "objecoes": [
+      {
+        "objecao": "Já temos fornecedor.",
+        "por_tras": "Está atendido e não quer trabalho de trocar.",
+        "resposta": "É natural que a empresa já tenha. A proposta não é de substituição: na próxima compra, envio uma segunda proposta para comparação, sem compromisso.",
+        "proximo_passo": "Perguntar quando é a próxima compra e o que costuma entrar nela.",
+        "tipo": "bloqueio",
+        "nao_fazer": "Não critique o fornecedor atual."
+      },
+      {
+        "objecao": "Manda por e-mail.",
+        "por_tras": "Quer encerrar a ligação, ou prefere mesmo ler.",
+        "resposta": "Envio, sim. Para que a proposta seja específica: qual é hoje o principal ponto de atenção, máquinas lentas, quedas de energia ou equipamento para novas contratações?",
+        "proximo_passo": "Pegar o e-mail direto, enviar no mesmo dia e marcar o retorno com dia e hora.",
+        "tipo": "adiamento",
+        "nao_fazer": "Não desligue sem saber o que mandar e quando retornar."
+      },
+      {
+        "objecao": "Agora não estamos comprando nada.",
+        "por_tras": "Sem demanda no momento. É questão de tempo, não recusa.",
+        "resposta": "Entendido, a proposta não exige compra imediata. Quando costuma ocorrer a próxima reposição ou a entrada de novos colaboradores?",
+        "proximo_passo": "Registrar a data e agendar a ligação para duas semanas antes.",
+        "tipo": "adiamento",
+        "nao_fazer": "Não insista em vender agora."
+      },
+      {
+        "objecao": "Não tenho tempo agora.",
+        "por_tras": "Momento ruim.",
+        "resposta": "Compreendo. Qual o melhor horário para retornar amanhã, pela manhã ou após o almoço?",
+        "proximo_passo": "Agendar e ligar no horário exato.",
+        "tipo": "adiamento",
+        "nao_fazer": "Não tente “só um minutinho”."
+      },
+      {
+        "objecao": "Não sou eu que cuido disso.",
+        "por_tras": "Pessoa errada, mas sabe quem é a certa.",
+        "resposta": "Agradeço a informação. Quem responde por essa área? Peço o nome e o melhor canal para apresentar a proposta.",
+        "proximo_passo": "Registrar nome, cargo e contato; citar quem indicou na próxima ligação.",
+        "tipo": "redirecionamento",
+        "nao_fazer": "Não apresente a solução para essa pessoa."
+      },
+      {
+        "objecao": "Compramos pela internet, é mais barato.",
+        "por_tras": "Compara só o preço da etiqueta.",
+        "resposta": "O preço de aquisição pesa, de fato. Quando um equipamento comprado dessa forma apresenta defeito, como a empresa aciona a garantia? Nossa assistência técnica é própria, em Salvador. Proponho preparar a proposta da próxima compra para comparação do custo total.",
+        "proximo_passo": "Pedir a configuração da última compra para cotar igual.",
+        "tipo": "bloqueio",
+        "nao_fazer": "Não diga que a compra pela internet é ruim."
+      },
+      {
+        "objecao": "A compra é feita pela matriz.",
+        "por_tras": "Decisão fora de Salvador, ou só uma forma de encerrar.",
+        "resposta": "Entendido. As reposições de urgência, como nobreak, teclado ou uma máquina que queimou, também passam pela matriz ou são resolvidas localmente?",
+        "proximo_passo": "Se houver compra local, seguir. Se não, pedir o contato de compras da matriz.",
+        "tipo": "bloqueio",
+        "nao_fazer": "Não discuta a política da empresa."
+      },
+      {
+        "objecao": "Está caro.",
+        "por_tras": "Está comparando com outra oferta ou outra configuração.",
+        "resposta": "Qual é a referência de comparação? Com a configuração e a garantia da outra proposta, preparo a nossa na mesma base.",
+        "proximo_passo": "Refazer a cotação equivalente.",
+        "tipo": "preço",
+        "nao_fazer": "Não ofereça desconto: não há desconto confirmado."
+      }
+    ],
+    "nao_atendeu": {
+      "caixa_postal": "Bom dia, [Nome]. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para manter os computadores da empresa em operação sem paradas. Retorno amanhã pela manhã.",
+      "whatsapp": "Bom dia, [Nome]. Aqui é [Seu nome], da SempreTech. Conforme combinado por telefone, segue a proposta de referência. Qual é hoje o ponto mais urgente, para que eu ajuste a proposta à necessidade da empresa?",
+      "email": "Assunto: Proposta de postos de trabalho e proteção de energia para [Empresa]\n\n[Nome], a SempreTech é uma empresa de informática de Salvador, com assistência técnica própria.\n\nNossa proposta para [Empresa] tem três frentes: fornecer o posto de trabalho completo, proteger as estações críticas contra quedas de energia e renovar máquinas lentas sem substituir o parque inteiro.\n\nQual dessas frentes é prioridade hoje? Com essa informação, envio a proposta detalhada no mesmo dia."
+    },
+    "cadencia": [
+      "Até 8 contatos por conta em três semanas, somando telefone, e-mail e WhatsApp.",
+      "Varie o horário entre as tentativas. Os dados brasileiros não mostram um horário melhor dentro do expediente; o atendimento só cai depois das 18h.",
+      "No máximo três chamadas não atendidas por dia para o mesmo número.",
+      "Se a recepção passou um nome, a ligação seguinte já pede essa pessoa pelo nome e cita quem indicou.",
+      "E-mail depois da segunda tentativa sem conversa. WhatsApp só com permissão dada por telefone ou em número que a empresa divulga para contato comercial.",
+      "Depois de uma recusa clara, pausar a conta por pelo menos um mês. Depois de oito contatos sem conversa, pausar por 30 dias."
+    ],
+    "tabulacoes": [
+      {
+        "nome": "Pediu proposta",
+        "quando": "Passou o levantamento (quantidade, problema, prazo).",
+        "proxima_acao": "Enviar a proposta no mesmo dia e ligar em 2 dias úteis.",
+        "sucesso": true
+      },
+      {
+        "nome": "Levantamento combinado",
+        "quando": "Aceitou passar os dados ou receber o levantamento em data marcada.",
+        "proxima_acao": "Cumprir na data e hora combinadas.",
+        "sucesso": true
+      },
+      {
+        "nome": "Compra prevista com data",
+        "quando": "Informou quando será a próxima necessidade.",
+        "proxima_acao": "Agendar ligação para duas semanas antes.",
+        "sucesso": true
+      },
+      {
+        "nome": "Recepção passou informação",
+        "quando": "Saiu com nome, cargo ou horário de quem decide.",
+        "proxima_acao": "Ligar no horário indicado, pedindo a pessoa pelo nome.",
+        "sucesso": false
+      },
+      {
+        "nome": "Recepção bloqueou",
+        "quando": "Não transferiu nem passou informação.",
+        "proxima_acao": "Tentar em outro horário; na segunda vez, pedir o e-mail do setor.",
+        "sucesso": false
+      },
+      {
+        "nome": "Indicou outro contato",
+        "quando": "Mandou falar com outra pessoa ou empresa.",
+        "proxima_acao": "Ligar para o indicado citando quem indicou.",
+        "sucesso": false
+      },
+      {
+        "nome": "Retornar em data combinada",
+        "quando": "Pediu para ligar em outro dia ou horário.",
+        "proxima_acao": "Ligar no horário exato.",
+        "sucesso": false
+      },
+      {
+        "nome": "Enviar material",
+        "quando": "Pediu e-mail sem dizer o problema.",
+        "proxima_acao": "Enviar no mesmo dia e ligar em 2 dias úteis.",
+        "sucesso": false
+      },
+      {
+        "nome": "Só orçamento",
+        "quando": "Sabe o que quer e pediu preço de itens específicos.",
+        "proxima_acao": "Enviar o orçamento no mesmo dia.",
+        "sucesso": true
+      },
+      {
+        "nome": "Sem interesse: fornecedor atual",
+        "quando": "Recusou por estar atendido.",
+        "proxima_acao": "Pausar; retomar em 90 dias ou no vencimento do contrato.",
+        "sucesso": false
+      },
+      {
+        "nome": "Sem interesse: compra pela matriz",
+        "quando": "Nenhuma compra é decidida localmente.",
+        "proxima_acao": "Pedir o contato de compras da matriz; senão, encerrar.",
+        "sucesso": false
+      },
+      {
+        "nome": "Sem interesse: sem demanda",
+        "quando": "Não tem previsão nem problema.",
+        "proxima_acao": "Pausar por 90 dias.",
+        "sucesso": false
+      },
+      {
+        "nome": "Produto fora do catálogo",
+        "quando": "Queria um item que não está na lista. Anotar qual.",
+        "proxima_acao": "Passar à SempreTech para confirmar a disponibilidade.",
+        "sucesso": false
+      },
+      {
+        "nome": "Pessoa saiu da empresa",
+        "quando": "O contato não trabalha mais lá.",
+        "proxima_acao": "Perguntar quem assumiu e atualizar o contato.",
+        "sucesso": false
+      },
+      {
+        "nome": "Não atendeu / caixa postal",
+        "quando": "Sem conversa.",
+        "proxima_acao": "Nova tentativa em outro horário.",
+        "sucesso": false
+      },
+      {
+        "nome": "Número errado",
+        "quando": "Telefone não é da empresa.",
+        "proxima_acao": "Corrigir o telefone na lista.",
+        "sucesso": false
+      },
+      {
+        "nome": "Não ligar mais",
+        "quando": "Pediu para retirar o número.",
+        "proxima_acao": "Retirar da campanha. Não ligar de novo.",
+        "sucesso": false
+      }
+    ],
+    "criterio_de_oportunidade": [
+      "Nome e cargo de quem decide",
+      "Contato direto (e-mail ou telefone)",
+      "Problema declarado pelo cliente",
+      "Quantidade aproximada e prazo",
+      "Fornecedor atual, se informado"
+    ],
+    "registrar": [
+      "Com quem falou (nome e cargo)",
+      "Problema que o cliente descreveu, nas palavras dele",
+      "Solução apresentada",
+      "Quantidade (posições, estações, máquinas) e prazo",
+      "Itens pedidos que não estão no catálogo",
+      "Fornecedor atual",
+      "Objeção principal",
+      "Próximo passo e data"
+    ],
+    "recepcao": {
+      "com_nome": "Bom dia. Gostaria de falar com [Nome], por favor. Aqui é [Seu nome], da SempreTech.",
+      "colher": [
+        "Nome e cargo de quem decide a compra de equipamentos",
+        "Melhor horário para falar com essa pessoa",
+        "Se a informática é cuidada por equipe interna ou por um terceiro",
+        "Ramal ou e-mail direto, se oferecerem"
+      ],
+      "nao_fazer": "Não apresente a solução, não esconda o motivo e não finja que a pessoa está esperando a ligação."
+    },
+    "triagem": {
+      "perguntas": [
+        "Há alguma necessidade de equipamento neste momento, ou a prioridade é manter em funcionamento o parque atual?",
+        "Hoje a manutenção dos equipamentos é feita por equipe interna ou por um fornecedor externo?"
+      ],
+      "orcamento": "Se já sabe o que quer e só precisa de preço: pegue a lista e a quantidade, dê a referência e combine o envio do orçamento no mesmo dia.",
+      "levantamento": "Se descreve um problema (máquina lenta, queda de energia, falta de equipamento para gente nova): siga o roteiro e combine o levantamento."
+    },
+    "ramos": [
+      {
+        "situacao": "O cliente retorna a ligação",
+        "fala": "Agradeço o retorno. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Liguei para apresentar uma proposta ao responsável pelos computadores da empresa. É com você?",
+        "depois": "Seguir do passo 3 do roteiro."
+      },
+      {
+        "situacao": "Número errado ou a pessoa saiu da empresa",
+        "fala": "Peço desculpas pelo engano. Quem responde por essa área atualmente?",
+        "depois": "Registrar o novo nome, ou marcar número errado."
+      },
+      {
+        "situacao": "“Fale com fulano”",
+        "fala": "Agradeço a indicação. Qual a área dele e o melhor horário para contato? Posso mencionar que a indicação partiu de você?",
+        "depois": "Na próxima ligação, pedir a pessoa pelo nome e citar quem indicou."
+      },
+      {
+        "situacao": "“Como conseguiu meu número?”",
+        "fala": "É o telefone comercial divulgado pela empresa. Se preferir não receber novas ligações, retiro o número agora.",
+        "depois": "Se pedir para retirar, marcar “Não ligar mais”."
+      },
+      {
+        "situacao": "“Me liga depois”, sem data",
+        "fala": "Combinado. Amanhã pela manhã ou quinta-feira à tarde: qual horário é melhor?",
+        "depois": "Agendar e ligar no horário exato."
+      },
+      {
+        "situacao": "“Temos contrato com um fornecedor”",
+        "fala": "Entendido. Qual a vigência do contrato? E o que fica fora dele: reposição de urgência, nobreak, equipamento para novas contratações?",
+        "depois": "Registrar o vencimento e o que fica fora."
+      },
+      {
+        "situacao": "Pedem um produto específico",
+        "fala": "Verifico a disponibilidade. Para dimensionar corretamente: qual necessidade esse equipamento vai atender? Há outro ponto que hoje interrompe o trabalho?",
+        "depois": "Se o item não estiver no catálogo, anotar e não prometer."
+      },
+      {
+        "situacao": "A pessoa hesita ou fica em silêncio",
+        "fala": "Percebo que este pode não ser o melhor momento. Prefere que eu retorne em outro horário, ou o assunto não é prioridade agora?",
+        "depois": "Respeitar a resposta."
+      }
+    ]
+  },
+  "segmentos": {
+    "Engenharia e construção": {
+      "procurar": "Responsável por compras ou suprimentos; em construtora menor, o gerente administrativo ou o sócio.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores do escritório e das obras. Com quem posso tratar do assunto?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Em canteiro de obra, a energia instável costuma queimar computador e interromper o trabalho da equipe técnica. A SempreTech propõe equipar cada obra com pontos de trabalho já protegidos, com computador, nobreak e filtro de linha, e assistência técnica própria em Salvador. Como os canteiros de vocês estão equipados hoje?",
+      "perguntas": [
+        "Quando uma obra nova começa, vocês compram máquinas novas ou levam as de outra obra?",
+        "Hoje os computadores do canteiro ficam ligados em nobreak ou direto na tomada?",
+        "Quando é a próxima mobilização de obra, e quantas posições de trabalho ela pede?",
+        "Quem aprova essa compra, é você mesmo ou passa por mais alguém?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "canteiro",
+          "fala": "Cada frente de obra recebe o ponto de trabalho já protegido: computador, nobreak dimensionado para as quedas de energia e filtro de linha. O equipamento deixa de queimar e a equipe técnica não perde trabalho."
+        },
+        {
+          "solucao": "posto",
+          "fala": "Para o escritório, fornecemos o posto de trabalho completo, com computador, monitor, teclado, mouse e nobreak, em um único fornecimento."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "Ao fim de cada obra, nossa assistência técnica revisa as máquinas e indica se compensa fazer upgrade ou substituir, antes da próxima mobilização."
+        }
+      ],
+      "sondar": [
+        "Notebooks para engenheiros e equipe de campo",
+        "Kit completo de CFTV com gravador",
+        "Smartphones para equipe de campo"
+      ],
+      "objecoes": [
+        {
+          "objecao": "Reaproveitamos as máquinas de uma obra para outra.",
+          "resposta": "É a prática mais comum no setor. Proponho complementar: ao retornar de cada obra, as máquinas passam por revisão e, quando compensa, por upgrade, antes de seguirem para a próxima."
+        },
+        {
+          "objecao": "Quem compra é o engenheiro de cada obra.",
+          "resposta": "Entendido. Qual obra está em início ou prestes a começar? Peço a indicação do responsável para apresentar a proposta diretamente."
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de pontos de trabalho da próxima obra e a data de início, envio ainda hoje a proposta por obra. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Para quando está prevista a próxima obra? Retorno duas semanas antes, com a proposta preparada. Qual o melhor contato direto para falar com você?"
+    },
+    "Indústria": {
+      "procurar": "Responsável por TI ou manutenção; se não houver, compras ou o gerente administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores do administrativo e da fábrica. Com quem posso tratar do assunto?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Quando o computador do PCP ou do faturamento para, a produção e a expedição param junto. A SempreTech propõe renovar as máquinas lentas sem substituir o parque inteiro e proteger com nobreak as estações que não podem cair, com assistência técnica própria em Salvador. Como a empresa trata hoje a manutenção desses equipamentos?",
+      "perguntas": [
+        "Quando uma máquina do administrativo ou do PCP para, quanto tempo leva para voltar?",
+        "Vocês têm máquina mais antiga que está lenta mas ainda funciona?",
+        "Quem dá manutenção hoje, é equipe interna ou um terceiro?",
+        "Tem alguma troca ou compra prevista para os próximos meses?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "renovacao",
+          "fala": "Em vez de substituir as máquinas lentas do administrativo e do PCP, renovamos os componentes internos e elas recuperam o desempenho. Onde não compensa, entra equipamento novo."
+        },
+        {
+          "solucao": "energia",
+          "fala": "As estações que não podem parar, como PCP e faturamento, recebem nobreak individual. A energia oscila e o sistema permanece no ar."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "Quando um equipamento para, a assistência técnica própria entrega o diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Computadores com placa de vídeo para projeto",
+        "Impressoras",
+        "Equipamentos de rede"
+      ],
+      "objecoes": [
+        {
+          "objecao": "Temos TI interna.",
+          "resposta": "Ótimo, isso facilita a especificação. A proposta não substitui a equipe: a SempreTech atua como fornecedora de componentes, upgrade e nobreak. Quem fornece esses itens hoje?"
+        },
+        {
+          "objecao": "As máquinas são alugadas.",
+          "resposta": "Entendido. Nobreak, monitor e periféricos fazem parte da locação ou são adquiridos à parte?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com a quantidade de máquinas lentas e a indicação das que não podem parar, envio ainda hoje a proposta de renovação, com o comparativo em relação a equipamento novo. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Quando a empresa fecha o planejamento de compras? Retorno antes dessa data e, nesse intervalo, envio a proposta de referência. Qual o seu e-mail direto?"
+    },
+    "Logística e distribuição": {
+      "procurar": "Gerente administrativo ou de operações; em empresa maior, compras ou TI.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores da expedição e do escritório. Com quem posso tratar do assunto?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Em operação de armazém, uma queda de energia na expedição interrompe a emissão de notas e atrasa a saída das cargas. A SempreTech propõe proteger cada posição crítica com nobreak e padronizar os postos de trabalho, com assistência técnica própria em Salvador. As posições da expedição contam com proteção de energia hoje?",
+      "perguntas": [
+        "Quantas posições de computador vocês têm na expedição e no recebimento?",
+        "Essas máquinas ficam em nobreak?",
+        "Quando abre uma posição nova ou uma filial, como vocês compram os equipamentos?",
+        "Tem alguma ampliação prevista para os próximos meses?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "energia",
+          "fala": "Cada posição que emite nota recebe um nobreak. Se a energia oscila, há tempo para concluir a emissão e a carga sai no horário."
+        },
+        {
+          "solucao": "posto",
+          "fala": "Para posições novas ou filiais, fornecemos o posto de trabalho completo, na mesma configuração das demais."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "Se um equipamento da expedição parar, a assistência técnica própria entrega o diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Kit completo de CFTV para galpão",
+        "Impressoras e etiquetadoras",
+        "Coletores e smartphones",
+        "Roteadores e rede"
+      ],
+      "objecoes": [
+        {
+          "objecao": "O fornecedor do sistema indica o equipamento.",
+          "resposta": "Entendido. Ele indica apenas a configuração ou também fornece a máquina? Se for a configuração, montamos na mesma especificação para comparação."
+        },
+        {
+          "objecao": "A compra é feita pela matriz.",
+          "resposta": "Entendido. As reposições de urgência, como nobreak, teclado ou uma máquina que queimou, também passam pela matriz ou são resolvidas localmente?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de posições que emitem nota na expedição, envio ainda hoje a proposta de proteção de energia. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Quando costuma haver reposição ou ampliação? Retorno antes dessa data. Qual o melhor contato direto para falar com você?"
+    },
+    "Educação": {
+      "procurar": "Coordenação de TI ou de laboratórios; em escola menor, a direção administrativa.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos laboratórios de informática e pelos computadores do administrativo. Com quem posso tratar do assunto?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Laboratórios de informática envelhecem mais rápido do que o orçamento de renovação. A SempreTech propõe recuperar o desempenho das máquinas com upgrade, aproveitando gabinete, fonte e monitor, e substituir apenas as que não compensam. Como a instituição planeja a renovação dos laboratórios?",
+      "perguntas": [
+        "Quantas máquinas tem o laboratório, e de que ano são, mais ou menos?",
+        "Algum curso ou disciplina está reclamando de máquina lenta?",
+        "Vocês renovam por semestre, por ano ou quando quebra?",
+        "Quando fecha o orçamento do próximo semestre?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "renovacao",
+          "fala": "Renovamos o laboratório aproveitando gabinete, fonte e monitor, e substituímos apenas os componentes que limitam o desempenho. O laboratório volta a rodar os programas atuais por um custo menor que o da reposição total."
+        },
+        {
+          "solucao": "posto",
+          "fala": "Para as máquinas que não compensa aproveitar, e para o administrativo, fornecemos o posto de trabalho completo."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "Durante o semestre, o equipamento que apresentar defeito segue para a assistência técnica própria, com diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Computadores com placa de vídeo para cursos técnicos",
+        "Webcams e caixas de som para sala de aula",
+        "Notebooks para professores"
+      ],
+      "objecoes": [
+        {
+          "objecao": "Só compramos por licitação ou por três orçamentos.",
+          "resposta": "Perfeito. Peço para incluir a SempreTech entre os orçamentos. Para qual e-mail de compras devo enviar a proposta?"
+        },
+        {
+          "objecao": "A verba só sai no próximo semestre.",
+          "resposta": "Entendido. Envio a proposta agora para que o valor entre na previsão orçamentária. Quantas máquinas compõem o laboratório?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com a quantidade de máquinas do laboratório e o ano de aquisição, envio ainda hoje a proposta de renovação ao lado do custo de reposição, pronta para apresentação à direção. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Quando fecha a previsão orçamentária do próximo semestre? Retorno duas semanas antes. Qual o seu e-mail direto?"
+    },
+    "Terceirização e facilities": {
+      "procurar": "Compras ou suprimentos; o gerente de contratos também decide equipamento de equipe alocada.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores do escritório e das equipes dos contratos. Com quem posso tratar do assunto?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Contrato novo tem data para começar, e a equipe precisa de posto de trabalho pronto no primeiro dia. A SempreTech propõe fornecer os postos completos, em configuração única, com assistência técnica própria em Salvador. Como a empresa equipa hoje as equipes de um contrato novo?",
+      "perguntas": [
+        "Quando vocês assumem um contrato novo, quem providencia os computadores da equipe?",
+        "Com quanto tempo de antecedência vocês ficam sabendo?",
+        "Tem contrato para começar nos próximos meses?",
+        "De quem vocês compram hoje?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "posto",
+          "fala": "A cada contrato novo, fornecemos o lote de postos de trabalho completos, em configuração única: computador, monitor, teclado, mouse e nobreak. A equipe inicia o contrato com o equipamento completo."
+        },
+        {
+          "solucao": "atendimento",
+          "fala": "Para equipes de atendimento ou centrais de monitoramento, fornecemos a posição com headset, teclado e mouse."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "O equipamento que apresentar defeito durante o contrato segue para a assistência técnica própria, em Salvador."
+        }
+      ],
+      "sondar": [
+        "Notebooks para supervisores",
+        "Smartphones para supervisores",
+        "Câmeras e CFTV para postos"
+      ],
+      "objecoes": [
+        {
+          "objecao": "O cliente do contrato fornece o equipamento.",
+          "resposta": "Entendido. E o escritório e a supervisão da própria empresa, quem equipa?"
+        },
+        {
+          "objecao": "Só compramos quando ganhamos um contrato.",
+          "resposta": "Faz sentido. Por isso proponho deixar a proposta pronta com antecedência: com a configuração padrão que a empresa utiliza, o valor fica definido para quando o contrato for assinado."
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de posições do próximo contrato e a data de início, envio ainda hoje a proposta do lote de postos completos. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Envio a proposta da configuração padrão para que o valor fique à disposição. Qual o seu e-mail direto?"
+    },
+    "Grupos e serviços corporativos": {
+      "procurar": "TI corporativa ou compras do grupo; em grupo menor, o diretor administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pela área de tecnologia das empresas do grupo. Com quem posso tratar do assunto?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Em grupos empresariais, cada unidade costuma comprar equipamento por conta própria, o que dificulta e encarece a manutenção. A SempreTech propõe padronizar o posto de trabalho das empresas do grupo e concentrar a assistência técnica em um único fornecedor, em Salvador. A compra de equipamentos é centralizada ou cada empresa decide a sua?",
+      "perguntas": [
+        "A compra de computadores é centralizada ou cada empresa do grupo resolve a sua?",
+        "Vocês têm uma configuração padrão?",
+        "Quem cuida da manutenção quando uma máquina para?",
+        "Tem troca ou contratação prevista para os próximos meses?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "posto",
+          "fala": "Padronizamos o posto de trabalho das empresas do grupo: mesmo computador, mesmo monitor, mesmo nobreak. A manutenção e a reposição ficam mais simples."
+        },
+        {
+          "solucao": "renovacao",
+          "fala": "Para as máquinas mais antigas, a renovação dos componentes internos custa menos que a substituição e preserva o orçamento."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "A manutenção fica concentrada em um único fornecedor, com diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Notebooks para diretoria e equipe comercial",
+        "Webcams e equipamentos para sala de reunião",
+        "Impressoras"
+      ],
+      "objecoes": [
+        {
+          "objecao": "Cada empresa do grupo compra a sua.",
+          "resposta": "Entendido. Qual delas tem compra em andamento ou prevista? Peço a indicação do responsável para apresentar a proposta."
+        },
+        {
+          "objecao": "Temos contrato com um fornecedor.",
+          "resposta": "Entendido. O contrato cobre também periféricos e reposição avulsa, ou esses itens são adquiridos fora dele?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com a configuração utilizada hoje e a quantidade de postos da próxima compra, envio ainda hoje a proposta do posto padronizado. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Para quando está prevista a próxima compra? Retorno antes dessa data. Qual o seu e-mail direto para o envio da proposta de referência?"
+    },
+    "Saúde": {
+      "procurar": "TI ou compras; em rede de unidades, o responsável por infraestrutura.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores das recepções e das unidades. Com quem posso tratar do assunto?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Em unidades de atendimento, uma queda de energia na recepção interrompe o sistema e forma fila. A SempreTech propõe proteger cada estação de atendimento com nobreak e padronizar os equipamentos das unidades, com assistência técnica própria em Salvador. As recepções contam com proteção de energia hoje?",
+      "perguntas": [
+        "Quantas unidades e quantas estações de atendimento vocês têm?",
+        "As recepções ficam em nobreak?",
+        "Quando uma estação para, como vocês repõem ou consertam, e em quanto tempo?",
+        "Tem unidade nova ou reforma prevista?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "energia",
+          "fala": "Cada estação de atendimento recebe um nobreak. A energia oscila e o sistema permanece no ar, sem interromper a recepção."
+        },
+        {
+          "solucao": "posto",
+          "fala": "Para unidades novas ou reposição, fornecemos a estação de atendimento completa, na mesma configuração em todas as unidades."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "Quando uma estação para, a assistência técnica própria entrega o diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Impressoras de etiqueta e de laudo",
+        "Equipamentos de rede para unidades novas"
+      ],
+      "objecoes": [
+        {
+          "objecao": "O sistema exige equipamento homologado.",
+          "resposta": "Entendido. Peço a especificação homologada: montamos dentro dela para comparação."
+        },
+        {
+          "objecao": "Já temos contrato de manutenção.",
+          "resposta": "Ótimo. Nobreak e equipamento para unidades novas fazem parte desse contrato ou são adquiridos à parte?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de estações de atendimento ainda sem proteção de energia, envio a proposta ainda hoje. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Há unidade nova prevista? Retorno antes da montagem. Qual o melhor contato direto para falar com você?"
+    },
+    "Contact center": {
+      "procurar": "Compras, suprimentos ou infraestrutura de TI; o gerente de operações sente a falta do equipamento.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos headsets e equipamentos das posições de atendimento. Com quem posso tratar do assunto?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Em operações de atendimento, headset com defeito significa posição parada, e cada turma nova exige posições completas no primeiro dia. A SempreTech propõe fornecer a posição pronta, com headset, teclado e mouse, e manter a reposição recorrente. Como a operação organiza hoje a reposição desses equipamentos?",
+      "perguntas": [
+        "Quantas posições vocês têm hoje, e quantas abrem com as novas turmas?",
+        "Qual headset vocês usam, USB ou RJ9?",
+        "Mais ou menos quantos vocês repõem por mês?",
+        "De quem compram hoje, e em quanto tempo chega?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "atendimento",
+          "fala": "Fornecemos a posição de atendimento pronta para cada turma nova, com headset de operação, teclado e mouse, e mantemos a reposição recorrente para que nenhuma posição fique parada."
+        },
+        {
+          "solucao": "energia",
+          "fala": "Para as posições e para o rack, fornecemos nobreak que sustenta a operação quando a energia oscila."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "O equipamento da posição que apresentar defeito segue para a assistência técnica própria, com diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Computadores para posições novas em volume",
+        "Webcams",
+        "Equipamentos de rede"
+      ],
+      "objecoes": [
+        {
+          "objecao": "Compramos direto do fabricante ou do distribuidor nacional.",
+          "resposta": "Faz sentido para os lotes maiores. A proposta é complementar: a reposição semanal, quando a posição fica parada à espera do equipamento, também vem de fora?"
+        },
+        {
+          "objecao": "Usamos outra marca de headset.",
+          "resposta": "Qual marca a operação utiliza? Registro e confirmo a disponibilidade. Teclado, mouse e nobreak são fornecidos por quem?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de posições da próxima turma e o volume mensal de reposição de headsets, envio ainda hoje a proposta da posição pronta e da reposição. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Quando entra a próxima turma? Retorno uma semana antes. Qual o melhor contato direto para falar com você?"
+    }
+  },
+  "solucoes": {
+    "posto": {
+      "nome": "Posto de trabalho pronto",
+      "resolve": "A pessoa nova senta e trabalha no primeiro dia, com tudo vindo de um fornecedor só e assistência no mesmo lugar.",
+      "composicao": [
+        "Computador montado com SSD",
+        "Monitor de 18,5\"",
+        "Teclado e mouse",
+        "Nobreak de 600 VA"
+      ],
+      "referencia": "A partir de cerca de R$ 2.550 por posição (R$ 1.449,99 + R$ 499,99 + R$ 44,70 + R$ 555,96)",
+      "chaves": [
+        "computador",
+        "monitor",
+        "desktop"
+      ]
+    },
+    "canteiro": {
+      "nome": "Ponto de trabalho de obra protegido",
+      "resolve": "O computador do canteiro aguenta a energia instável da obra e não perde o trabalho quando a luz oscila.",
+      "composicao": [
+        "Computador montado com SSD",
+        "Nobreak de 1500 VA com 8 tomadas",
+        "Filtro de linha com protetor"
+      ],
+      "referencia": "A partir de cerca de R$ 2.570 por ponto (R$ 1.449,99 + R$ 1.057,85 + R$ 63,96)",
+      "chaves": []
+    },
+    "energia": {
+      "nome": "Operação que não cai",
+      "resolve": "Quando a energia oscila, o sistema continua no ar o tempo de salvar, emitir e desligar direito. Sem fila parada nem nota perdida.",
+      "composicao": [
+        "Nobreak de 600 VA por estação crítica",
+        "Nobreak de 1500 VA para balcão ou conjunto de equipamentos",
+        "Estabilizador e filtro de linha onde não cabe nobreak"
+      ],
+      "referencia": "A partir de R$ 555,96 por estação; R$ 1.057,85 para um balcão inteiro",
+      "chaves": [
+        "nobreak",
+        "estabilizador",
+        "filtro"
+      ]
+    },
+    "renovacao": {
+      "nome": "Parque renovado sem trocar tudo",
+      "resolve": "As máquinas lentas voltam a render aproveitando gabinete, fonte e monitor. Troca-se por máquina nova só onde não compensa.",
+      "composicao": [
+        "Diagnóstico da máquina na assistência",
+        "Kit de upgrade (placa-mãe, processador, memória)",
+        "Computador novo para as que não compensam"
+      ],
+      "referencia": "A partir de R$ 999,99 por máquina renovada, contra R$ 1.449,99 da máquina nova",
+      "chaves": [
+        "kit",
+        "upgrade"
+      ]
+    },
+    "atendimento": {
+      "nome": "Posição de atendimento pronta",
+      "resolve": "Turma nova entra com a posição completa, e quando um headset quebra a reposição não deixa a posição parada.",
+      "composicao": [
+        "Headset Intelbras CHS 40 (USB novo ou RJ9 revisado)",
+        "Teclado e mouse",
+        "Nobreak para a posição ou para o rack"
+      ],
+      "referencia": "De cerca de R$ 105 (headset RJ9 revisado) a R$ 393 (headset USB novo) por posição, com teclado e mouse",
+      "chaves": [
+        "headset",
+        "teclado",
+        "mouse"
+      ]
+    },
+    "manutencao": {
+      "nome": "Máquina parada volta a rodar",
+      "resolve": "A empresa tem para onde mandar a máquina que parou, com diagnóstico em prazo conhecido, em vez de improvisar.",
+      "composicao": [
+        "Limpeza",
+        "Diagnóstico completo",
+        "Teste de cada componente"
+      ],
+      "referencia": "Diagnóstico em até 3 dias úteis; preço conforme a máquina",
+      "chaves": [
+        "assist"
+      ]
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "c6",
+  "empresa": "Iplasa Embalagens (Iplasa Indústria de Plásticos Salvador Ltda.)",
+  "identidade_confirmada": true,
+  "resumo": "Indústria baiana de embalagens plásticas flexíveis fundada em 1977, em Salvador. Fabrica sacos industriais valvulados e convencionais, bobinas técnicas e filmes laminados em polietileno, polipropileno, BOPP e PET para indústrias de alimentos, farmacêutica, higiene e construção.",
+  "porte": "Faixa de 51 a 200 funcionários segundo a página da empresa no LinkedIn (66 perfis associados). Uma planta industrial identificada, em Salvador. Certificada ISO 9001 desde 2010. CNPJ 14.399.448/0001-34.",
+  "onde_opera": "Fábrica na Rua Luxemburgo, s/n, Quadra O, Lote 72, Granjas Rurais Presidente Vargas, Salvador (CEP 41230-130). Atende clientes no interior da Bahia (o LinkedIn cita visita a cliente em Capim Grosso).",
+  "contato_publico": {
+    "telefone": "(71) 3392-1699",
+    "email": "comercial@iplasa-ba.com.br",
+    "site": "http://www.iplasa-ba.com.br",
+    "linkedin": "https://br.linkedin.com/company/iplasa-embalagensplasticas"
+  },
+  "decisores": [
+    {
+      "nome": "Otávio Justa Filho",
+      "cargo": "Gerente Industrial (conforme perfil associado à empresa no LinkedIn; não confirmado como comprador de informática)",
+      "fonte": "https://br.linkedin.com/company/iplasa-embalagensplasticas"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "A empresa divulgou no LinkedIn a recertificação ISO 9001:2015.",
+      "data": "09/2026 (post de cerca de duas semanas antes da consulta)",
+      "fonte": "https://br.linkedin.com/company/iplasa-embalagensplasticas"
+    },
+    {
+      "fato": "Vaga aberta de Inspetor de Qualidade em Salvador, com inscrições até 25 de setembro.",
+      "data": "09/2026 (ano inferido pela posição do post)",
+      "fonte": "https://br.linkedin.com/company/iplasa-embalagensplasticas"
+    },
+    {
+      "fato": "Recebeu visita de avaliação da Marinha (Diretoria de Portos e Costas) para homologação de embalagens para produtos perigosos; a empresa consta na lista de fabricantes de embalagens da DPC.",
+      "data": "2026 (data exata do post não visível)",
+      "fonte": "https://br.linkedin.com/company/iplasa-embalagensplasticas"
+    },
+    {
+      "fato": "Visita técnica à ADERE Produtos Autoadesivos para projeto de desenvolvimento em impressão.",
+      "data": "2026 (data exata do post não visível)",
+      "fonte": "https://br.linkedin.com/company/iplasa-embalagensplasticas"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: uma fábrica de quase 50 anos com sistema de qualidade ISO 9001 deve manter máquinas de escritório no PCP, qualidade, faturamento e expedição, parte delas antigas; faria sentido upgrade em vez de troca e nobreak nas máquinas que registram produção e emitem nota. Não foi confirmado o parque atual nem se há TI interna.",
+  "produto_de_entrada": "kit de upgrade",
+  "complementares": [
+    "nobreak",
+    "assistência técnica"
+  ],
+  "motivo_da_ligacao": "A Iplasa concluiu há pouco a recertificação da ISO 9001 e está contratando para a área de qualidade. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak e renovação de máquinas por upgrade, com assistência técnica própria em Salvador. Como estão hoje os computadores da qualidade, do PCP e do faturamento?",
+  "perguntas_especificas": [
+    "Os computadores que registram os controles da ISO, no laboratório de qualidade e no PCP, ficam em nobreak?",
+    "Para a nova vaga de inspetor de qualidade, já existe uma posição de trabalho preparada?",
+    "Quem faz a manutenção dos computadores da fábrica nas Granjas Rurais: uma equipe interna ou um técnico terceirizado?"
+  ],
+  "quem_procurar": "Responsável por TI ou manutenção; se não houver, Compras ou a gerência administrativa. O gerente industrial identificado no LinkedIn é um caminho alternativo para as máquinas do chão de fábrica.",
+  "ressalvas": [
+    "O site oficial apresentou erro de certificado e não pôde ser lido; os dados vêm do LinkedIn, do guia da ABRE e de registros de CNPJ.",
+    "O nome do gerente industrial apareceu apenas em resultado de busca do LinkedIn, sem acesso ao perfil; confirmar na ligação antes de citar.",
+    "As datas dos posts do LinkedIn são relativas; mês e ano foram estimados pela data da consulta (10/2026).",
+    "O e-mail público é do setor comercial (vendas), não de compras.",
+    "Existe um segundo perfil no LinkedIn, 'Iplasa Industria e Comercio Ltda', que pode ser outra empresa ou perfil antigo; não foi usado.",
+    "Não há informação pública sobre o parque de informática nem sobre fornecedor atual."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "LinkedIn Iplasa Embalagens",
+      "u": "https://br.linkedin.com/company/iplasa-embalagensplasticas"
+    },
+    {
+      "t": "ABRE - Guia de Fornecedores: Iplasa",
+      "u": "https://www.abre.org.br/fornecedores/iplasa/"
+    },
+    {
+      "t": "Marinha/DPC - Fabricantes de embalagens",
+      "u": "https://assets.marinha.mil.br/dpc/sites/www.marinha.mil.br.dpc/files/Fabricante%20de%20Embalagens_0.pdf"
+    },
+    {
+      "t": "CNPJ 14.399.448/0001-34 (cnpj.biz)",
+      "u": "https://cnpj.biz/14399448000134"
+    },
+    {
+      "t": "Certificado ISO no site da Iplasa",
+      "u": "http://www.iplasa-ba.com.br/CertificadoISO.pdf"
+    },
+    {
+      "t": "Sindiplasba - Associados",
+      "u": "http://sindiplasba.org.br/site/index.php/associados-2/"
+    }
+  ]
+}

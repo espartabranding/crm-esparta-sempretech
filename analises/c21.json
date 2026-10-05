@@ -1,0 +1,109 @@
+{
+  "id": "c21",
+  "empresa": "Tidelli Outdoor Living",
+  "identidade_confirmada": true,
+  "resumo": "Fabricante baiana de móveis de alto padrão para área externa, fundada em 1989 por Tatiana Mandelli, com fábrica própria em Salvador desde 1999. Produz de forma verticalizada (corda náutica, tecelagem, marcenaria, vidraçaria, serralheria, estofaria, pintura e ombrelones) e vende por lojas exclusivas no Brasil e no exterior.",
+  "porte": "Planta industrial de 12 mil m² com 25 subfábricas, segundo a própria empresa. Número de colaboradores diverge por fonte e data: 400 a 402 em 2020, faixa de 501 a 1.000 no LinkedIn e 'mais de 700' em matérias recentes. Mais de 20 lojas exclusivas no Brasil, além de lojas nos EUA, Portugal, Argentina, Dubai e Panamá. Faturamento de R$ 52 milhões em 2019, segundo a imprensa.",
+  "onde_opera": "Fábrica e sede na Rua Moradas da Lagoa, 452, Nova Brasília de Valéria (Moradas da Lagoa), Salvador. Loja em Salvador na Alameda dos Sombreiros, 1181, Caminho das Árvores. Rede de lojas em outras capitais e no exterior.",
+  "contato_publico": {
+    "telefone": "(71) 3311-3350",
+    "email": "falecom@tidelli.com.br",
+    "site": "https://www.tidelli.com",
+    "linkedin": "https://br.linkedin.com/company/tidelli-brasil"
+  },
+  "decisores": [
+    {
+      "nome": "Luciano Mandelli",
+      "cargo": "Presidente (não é o contato para compra de informática; serve como referência de quem dirige a empresa)",
+      "fonte": "https://www.tidelli.com/blogs/journal/uma-industria-100-brasileira"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Tidelli inaugurou loja em Buenos Aires (Palermo Soho).",
+      "data": "12/2025",
+      "fonte": "https://bahiasocialvip.com.br/2025/12/tidelli-inaugura-nova-loja-em-buenos-aires/"
+    },
+    {
+      "fato": "Eleita pela 12ª vez no Top of Mind Casa e Mercado 2025, no segmento de mobiliário outdoor.",
+      "data": "12/2025",
+      "fonte": "https://bahiasocialvip.com.br/2025/12/tidelli-conquista-top-of-mind-2025-no-segmento-de-mobiliario-outdoor/"
+    },
+    {
+      "fato": "Entrada em Portugal, com loja nas Amoreiras (Lisboa) e ponto em Cascais; a página de contato já lista as duas lojas.",
+      "data": "2026 (matéria portuguesa de 05/2026)",
+      "fonte": "https://www.idealista.pt/news/imobiliario/habitacao/2026/05/25/75581-mobiliario-de-luxo-outdoor-o-exterior-e-vivido-como-parte-da-casa"
+    },
+    {
+      "fato": "Ampliação da fábrica de Salvador de 10 mil para 12 mil m², com aumento de 30% na capacidade e 60 novos postos de trabalho (fato antigo, útil como contexto).",
+      "data": "10/2020",
+      "fonte": "https://badevalor.com.br/tidelli-inicia-obras-de-ampliacao-de-fabrica-nem-salvador/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: uma fábrica com 25 subfábricas e centenas de colaboradores deve ter muitos pontos de computador espalhados pela planta (PCP, almoxarifado, expedição, apontamento de produção), onde energia instável e poeira de marcenaria e pintura encurtam a vida das máquinas; isso sugere reposição recorrente de nobreak, monitor e computador, além de limpeza e manutenção. A empresa provavelmente tem TI interna e fornecedores estabelecidos; nada disso foi confirmado.",
+  "produto_de_entrada": "nobreak",
+  "complementares": [
+    "computador montado",
+    "monitor"
+  ],
+  "motivo_da_ligacao": "A fábrica da Tidelli em Moradas da Lagoa tem 12 mil metros quadrados e 25 subfábricas, e a empresa segue abrindo lojas fora do Brasil. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para os pontos de computador da produção, com assistência técnica própria em Salvador. Como estão protegidos hoje os pontos de computador distribuídos pela fábrica?",
+  "perguntas_especificas": [
+    "Quantos pontos de computador vocês têm dentro das subfábricas, além do escritório, e quantos estão em nobreak?",
+    "Considerando a poeira da marcenaria e da pintura, com que frequência as máquinas da produção precisam ser limpas ou trocadas?",
+    "A reposição do dia a dia, como nobreak, monitor e teclado, é feita pela TI da fábrica em Salvador ou passa por um setor de compras?"
+  ],
+  "quem_procurar": "Setor de TI ou infraestrutura da fábrica em Moradas da Lagoa; como segunda opção, Compras/Suprimentos. Não ligar para a loja do Caminho das Árvores, que é ponto de venda.",
+  "ressalvas": [
+    "Nenhum nome de responsável por TI ou compras foi encontrado em fonte pública; só o presidente é citado.",
+    "O telefone da fábrica, (71) 3311-3350, vem de um guia comercial e não do site oficial; confirmar. O telefone publicado no site, (71) 3341-6626, é da loja de Salvador.",
+    "O e-mail público é o canal geral de atendimento ao consumidor, não de compras.",
+    "O número de colaboradores varia de 400 a mais de 700 conforme a fonte e o ano.",
+    "As matérias sobre Portugal e sobre os 'mais de 700 colaboradores' não puderam ser abertas na íntegra; os dados vêm dos resumos de busca.",
+    "Não há notícia recente (2025-2026) de investimento na fábrica de Salvador; os fatos recentes são de expansão comercial no exterior.",
+    "Empresa de porte médio a grande, provavelmente com TI interna e fornecedores homologados: a entrada mais realista é reposição avulsa e segunda cotação, não o parque inteiro.",
+    "Parte da equipe (design, marketing) pode usar equipamento fora do catálogo; não ofertar notebook nem estação gráfica."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "Tidelli - Uma indústria 100% brasileira",
+      "u": "https://www.tidelli.com/blogs/journal/uma-industria-100-brasileira"
+    },
+    {
+      "t": "Tidelli Salvador (loja)",
+      "u": "https://www.tidelli.com/pt-br/pages/tidelli-salvador"
+    },
+    {
+      "t": "Tidelli - Contact Us",
+      "u": "https://www.tidelli.com/pages/contact-us"
+    },
+    {
+      "t": "LinkedIn Tidelli Outdoor Living",
+      "u": "https://br.linkedin.com/company/tidelli-brasil"
+    },
+    {
+      "t": "BA de Valor - ampliação da fábrica (2020)",
+      "u": "https://badevalor.com.br/tidelli-inicia-obras-de-ampliacao-de-fabrica-nem-salvador/"
+    },
+    {
+      "t": "Bendito Guia - Tidelli Coutos (endereço e telefone da fábrica)",
+      "u": "https://www.benditoguia.com.br/empresa/tidelli-coutos-salvador-ba"
+    },
+    {
+      "t": "Bahia Social Vip - loja em Buenos Aires",
+      "u": "https://bahiasocialvip.com.br/2025/12/tidelli-inaugura-nova-loja-em-buenos-aires/"
+    },
+    {
+      "t": "Bahia Social Vip - Top of Mind 2025",
+      "u": "https://bahiasocialvip.com.br/2025/12/tidelli-conquista-top-of-mind-2025-no-segmento-de-mobiliario-outdoor/"
+    },
+    {
+      "t": "Idealista (Portugal) - entrevista sobre mobiliário outdoor",
+      "u": "https://www.idealista.pt/news/imobiliario/habitacao/2026/05/25/75581-mobiliario-de-luxo-outdoor-o-exterior-e-vivido-como-parte-da-casa"
+    },
+    {
+      "t": "Folha Vitória - arquitetos visitam a Tidelli",
+      "u": "https://www.folhavitoria.com.br/social/arquitetos-em-viagem-de-experiencia-a-salvador-para-conhecer-a-tidelli-2"
+    }
+  ]
+}

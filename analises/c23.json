@@ -1,0 +1,71 @@
+{
+  "id": "c23",
+  "empresa": "Grupo LAS",
+  "identidade_confirmada": true,
+  "resumo": "Grupo empresarial com sede em Salvador que presta serviços de gestão administrativa, tecnológica, jurídica e financeira para organizações públicas, privadas e filantrópicas, com foco forte em gestão de serviços de saúde. Atua por meio de empresas próprias: GEPES (gestão de projetos em saúde), LS MAIS (software de gestão hospitalar), Syspro Solution (terceirização e locação de equipamentos de TI), Lumio Contabilidade, um escritório de advocacia e o Hospital MED+.",
+  "porte": "LinkedIn: faixa de 501 a 1.000 funcionários. O site do grupo declara mais de 2.500 funcionários geridos, mais de 100 serviços de saúde assistidos, 9 estados e mais de 60 municípios. Seis empresas listadas no portfólio.",
+  "onde_opera": "Sede no LinkedIn: Alameda dos Eucaliptos, 56, térreo, Caminho das Árvores, Salvador (BA). A GEPES publica endereço na Alameda dos Umbuzeiros, 486, Caminho das Árvores; a Syspro Solution tem registro na Av. Antônio Carlos Magalhães, 3213, Brotas. Operação declarada em 9 estados e mais de 60 municípios.",
+  "contato_publico": {
+    "telefone": "(61) 4042-0275 (número publicado no site do grupo; DDD de Brasília)",
+    "email": "atendimento@grupolas.com.br",
+    "site": "https://grupolas.com.br",
+    "linkedin": "https://br.linkedin.com/company/grupo-las"
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "LinkedIn do grupo com vagas publicadas para Analista Administrativo e para profissionais de saúde (enfermeiros, fonoaudiólogos).",
+      "data": "2026",
+      "fonte": "https://br.linkedin.com/company/grupo-las"
+    },
+    {
+      "fato": "O portfólio do grupo inclui a Syspro Solution, empresa própria de terceirização e locação de equipamentos de TI (servidores, estações de trabalho, redes), aberta em Salvador em 01/2021.",
+      "data": "2021",
+      "fonte": "https://www.econodata.com.br/consulta-empresa/40508714000120-syspro-solution-ltda"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: como o grupo tem uma empresa própria que aluga estações de trabalho e servidores para os clientes de saúde, ele pode comprar computadores, monitores e periféricos em volume para equipar contratos novos, e precisar de assistência para as máquinas que voltam. Não há confirmação de onde a Syspro compra hoje nem de que compre em Salvador.",
+  "produto_de_entrada": "computador montado",
+  "complementares": [
+    "monitor",
+    "assistência técnica"
+  ],
+  "motivo_da_ligacao": "O Grupo LAS conta com a Syspro Solution, que faz locação de estações de trabalho para as unidades de saúde sob sua gestão. A SempreTech propõe posto de trabalho completo, renovação de máquinas por upgrade e assistência técnica própria em Salvador para essas estações. De quem são adquiridas hoje as máquinas que a Syspro disponibiliza nos contratos?",
+  "perguntas_especificas": [
+    "Quem adquire os equipamentos que a Syspro Solution aluga para os contratos: a própria Syspro ou uma área de compras do grupo?",
+    "Há contrato de gestão de unidade de saúde com início previsto para os próximos meses que demande estações novas, e a entrega seria em Salvador ou em outro estado?",
+    "As máquinas que retornam de contratos encerrados passam por manutenção interna ou são encaminhadas a terceiros?"
+  ],
+  "quem_procurar": "Responsável pela Syspro Solution (infraestrutura e locação de TI do grupo) ou Compras/Suprimentos do Grupo LAS.",
+  "ressalvas": [
+    "Nenhum nome de diretor ou responsável por compras foi encontrado em fonte pública; a lista de decisores ficou vazia.",
+    "O grupo tem empresa própria de TI: pode comprar direto de distribuidor nacional ou ver a SempreTech como concorrente em locação. A abordagem deve ser de fornecedor, não de prestador de serviço de TI.",
+    "Os telefones do site têm DDD 61 (Brasília) e um WhatsApp com DDD 31; o da GEPES tem DDD 11. Não foi encontrado telefone fixo de Salvador, o que pode indicar atendimento por central virtual.",
+    "Boa parte da operação fica em outros estados e municípios; a demanda de equipamento pode estar fora de Salvador.",
+    "Fontes divergem sobre a fundação (2011 no site, 2015 no LinkedIn) e sobre o endereço da sede.",
+    "Os números de porte são autodeclarados no site e não foram verificados; 'funcionários geridos' pode incluir equipes de clientes."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "Grupo LAS – site oficial (portfólio)",
+      "u": "https://grupolas.com.br/"
+    },
+    {
+      "t": "Grupo LAS – LinkedIn",
+      "u": "https://br.linkedin.com/company/grupo-las"
+    },
+    {
+      "t": "GEPES – Fale conosco",
+      "u": "https://gepessaude.com.br/fale_conosco.html"
+    },
+    {
+      "t": "Econodata – Syspro Solution LTDA",
+      "u": "https://www.econodata.com.br/consulta-empresa/40508714000120-syspro-solution-ltda"
+    },
+    {
+      "t": "Econodata – GEPES",
+      "u": "https://www.econodata.com.br/consulta-empresa/44178100000188-gepes-gestao-de-projetos-e-educacao-em-saude-ltda"
+    }
+  ]
+}

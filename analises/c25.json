@@ -1,0 +1,86 @@
+{
+  "id": "c25",
+  "empresa": "Universidade Católica do Salvador — UCSal",
+  "identidade_confirmada": true,
+  "resumo": "Universidade privada sem fins lucrativos, confessional, comunitária e filantrópica, fundada em 1961 e mantida pela Associação Universitária e Cultural da Bahia (AUCBA). Oferece graduação presencial e EAD, especializações, mestrado e doutorado em dois campi de Salvador.",
+  "porte": "Dois campi em Salvador. O site informa 32 cursos de graduação presenciais, 11 EAD, 34 especializações e 4 programas de mestrado/doutorado, e mais de 60 mil formados. A Wikipédia cita 17.000 alunos, 980 professores e 770 técnico-administrativos, sem data clara (dado possivelmente antigo).",
+  "onde_opera": "Campus de Pituaçu (sede): Av. Prof. Pinto de Aguiar, 2589, Pituaçu. Campus da Federação: Av. Cardeal da Silva, 205, Federação. Ambos em Salvador (BA).",
+  "contato_publico": {
+    "telefone": "(71) 3206-7800",
+    "email": null,
+    "site": "https://www.ucsal.br",
+    "linkedin": null
+  },
+  "decisores": [
+    {
+      "nome": "Deivid Carvalho Lorenzo",
+      "cargo": "Reitor (autoridade máxima; não é o comprador do dia a dia)",
+      "fonte": "https://www.correio24horas.com.br/asteriscao/padrao-de-excelencia-com-a-menor-mensalidade-possivel-diz-reitor-da-ucsal-sobre-novo-curso-de-medicina-0225"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "O MEC aprovou em 31/01/2025 o curso de Medicina da Faculdade Católica de Medicina da Bahia, em Camaçari, com 60 vagas anuais, da mesma mantenedora da UCSal; o reitor falava em início provável em 2026, pendente de ato do MEC.",
+      "data": "02/2025",
+      "fonte": "https://www.correio24horas.com.br/asteriscao/padrao-de-excelencia-com-a-menor-mensalidade-possivel-diz-reitor-da-ucsal-sobre-novo-curso-de-medicina-0225"
+    },
+    {
+      "fato": "Prefeitura de Camaçari divulgou a autorização dos cursos de Medicina na cidade, incluindo o ligado à UCSal.",
+      "data": "02/2025",
+      "fonte": "https://destaque1.com/camacari-tera-novos-cursos-de-medicina-em-parceria-com-ucsal-e-unifamec/"
+    },
+    {
+      "fato": "A UCSal oferece Engenharia de Software presencial e cursos digitais de Análise e Desenvolvimento de Sistemas e Gestão da TI, que dependem de laboratório de informática.",
+      "data": "2026",
+      "fonte": "https://inscricao.ucsal.br/graduacao-presencial/engenharia-de-software/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: com dois campi, 32 cursos presenciais e cursos de computação, a UCSal provavelmente mantém vários laboratórios de informática e um parque administrativo grande, com máquinas de idades diferentes; como instituição filantrópica, renovar por upgrade em vez de trocar tudo tende a caber melhor no orçamento. A idade e a quantidade das máquinas não foram confirmadas.",
+  "produto_de_entrada": "kit de upgrade",
+  "complementares": [
+    "computador montado",
+    "monitor"
+  ],
+  "motivo_da_ligacao": "A UCSal mantém os campi de Pituaçu e da Federação e cursos como Engenharia de Software, que exigem bastante dos laboratórios. A SempreTech propõe renovação de máquinas por upgrade e posto de trabalho completo para os laboratórios, com assistência técnica própria em Salvador. Quais laboratórios hoje apresentam desempenho abaixo do necessário para os programas utilizados nos cursos?",
+  "perguntas_especificas": [
+    "Os laboratórios de Pituaçu e da Federação são atendidos pela mesma equipe de TI, e a compra é única para os dois campi?",
+    "A aquisição de equipamentos passa pela mantenedora (AUCBA) com três orçamentos? Qual e-mail de compras poderia ser utilizado para incluir a SempreTech na lista de fornecedores?",
+    "Para a unidade de Camaçari, há previsão de montagem de laboratório e administrativo por vocês? Para quando?"
+  ],
+  "quem_procurar": "Setor de Tecnologia da Informação (infraestrutura e laboratórios de informática) ou o setor de Compras/Suprimentos da mantenedora AUCBA, no Campus de Pituaçu.",
+  "ressalvas": [
+    "Nenhum nome de responsável por TI, compras ou administração foi encontrado em fonte pública; o único nome confirmado é o do reitor, que não deve ser pedido na ligação.",
+    "Um resultado de busca indicou que a Prof.ª Germana Pinheiro de Almeida Félix teria respondido interinamente pela Reitoria em 07/2025; não foi verificado se houve mudança definitiva de reitor.",
+    "O início do curso de Medicina em Camaçari não foi confirmado: há indicação na imprensa de que pode ter ficado para depois, com outros cursos antes. Não afirmar na ligação que a unidade já funciona.",
+    "Números de alunos e funcionários vêm da Wikipédia e podem estar desatualizados.",
+    "Instituição grande e filantrópica: compra provavelmente formal, por cotação com vários fornecedores e prazo longo.",
+    "Não foi encontrado e-mail corporativo geral nem página oficial no LinkedIn confirmada."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "UCSal – Sobre a UCSal (site oficial)",
+      "u": "https://www.ucsal.br/sobre-a-ucsal/"
+    },
+    {
+      "t": "Correio – reitor sobre o curso de Medicina (02/2025)",
+      "u": "https://www.correio24horas.com.br/asteriscao/padrao-de-excelencia-com-a-menor-mensalidade-possivel-diz-reitor-da-ucsal-sobre-novo-curso-de-medicina-0225"
+    },
+    {
+      "t": "Destaque1 – Medicina em Camaçari (02/2025)",
+      "u": "https://destaque1.com/camacari-tera-novos-cursos-de-medicina-em-parceria-com-ucsal-e-unifamec/"
+    },
+    {
+      "t": "UCSal – Engenharia de Software presencial",
+      "u": "https://inscricao.ucsal.br/graduacao-presencial/engenharia-de-software/"
+    },
+    {
+      "t": "Wikipédia – Universidade Católica do Salvador",
+      "u": "https://pt.wikipedia.org/wiki/Universidade_Cat%C3%B3lica_do_Salvador"
+    },
+    {
+      "t": "UCSal – Atos, editais e resoluções",
+      "u": "https://www.ucsal.br/atos-editais-e-resolucoes/"
+    }
+  ]
+}

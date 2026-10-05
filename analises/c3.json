@@ -1,0 +1,92 @@
+{
+  "id": "c3",
+  "empresa": "Costa Andrade Construtora",
+  "identidade_confirmada": true,
+  "resumo": "Construtora e incorporadora de Salvador, fundada em 1990, voltada a empreendimentos residenciais de alto padrão. Lança e constrói edifícios em bairros como Graça, Pituba, Horto Florestal, Barra, Imbuí e Largo da Vitória, além de Lauro de Freitas e Praia do Forte, muitas vezes em parceria com outras incorporadoras.",
+  "porte": "O site fala em 35 anos, mais de 50 lançamentos e mais de 5.000 unidades construídas (o LinkedIn, mais antigo, cita 47 empreendimentos e 3.300 unidades). LinkedIn declara a faixa de 501 a 1.000 funcionários (68 perfis vinculados). Obras em andamento identificadas: LV Square (Largo da Vitória), Blue Graça (Graça) e Blend Pituba (Pituba). Há pelo menos dois estabelecimentos no CNPJ 34.241.588 (0001-97 e 0004-30).",
+  "onde_opera": "Sede na Rua Cel. Almerindo Rehem, 126, Caminho das Árvores, Salvador (Edifício Empresarial Costa Andrade). Obras e empreendimentos em Salvador (Graça, Largo da Vitória, Pituba, Horto Florestal, Barra, Imbuí, entre outros), Lauro de Freitas e Praia do Forte.",
+  "contato_publico": {
+    "telefone": "(71) 3355-6666 (o site identifica este número como SAC)",
+    "email": "contato@costaandrade.com.br",
+    "site": "https://www.costaandrade.com.br",
+    "linkedin": "https://br.linkedin.com/company/costa-andrade"
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "O Bloom Horto Florestal, empreendimento da Costa Andrade com Franisa, Leão Engenharia e Capa Concepts, foi eleito Empreendimento Imobiliário do Ano no 29º Prêmio ADEMI-BA.",
+      "data": "06/2026",
+      "fonte": "https://www.bahianoticias.com.br/bnhall/noticia/10318-premio-ademi-ba-2026-revela-os-destaques-do-mercado-imobiliario-baiano-conheca-vencedores"
+    },
+    {
+      "fato": "O site da empresa mostra o LV Square (Largo da Vitória, 100% vendido) e o Blue Graça (Graça) com status 'em obra'.",
+      "data": "consulta em 10/2026",
+      "fonte": "https://www.costaandrade.com.br/quem-somos"
+    },
+    {
+      "fato": "Lançamento do Blend Pituba, residencial em parceria com a Barcino Esteve, na Rua Rio Grande do Sul; o portal Apto lista o empreendimento como em construção.",
+      "data": "2025 (notícia de 01/2025; o Apto registra o lançamento em 06/2025)",
+      "fonte": "https://portalradarimobiliario.com.br/noticia/5689/barcino-esteve-e-costa-andrade-lancam-blend-pituba-novo-empreendimento-residencial-em-salvador"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: com pelo menos três canteiros ativos em Salvador ao mesmo tempo, cada um deve ter um escritório de obra com computadores expostos à energia instável do canteiro, o que abre espaço para nobreak e para máquinas de mesa; a sede no Caminho das Árvores também deve ter posições administrativas e de engenharia que pedem reposição. A quantidade de posições e a forma de compra não estão confirmadas.",
+  "produto_de_entrada": "Nobreak",
+  "complementares": [
+    "Computador montado",
+    "Câmera AHD avulsa"
+  ],
+  "motivo_da_ligacao": "A Costa Andrade mantém em obra o LV Square, no Largo da Vitória, e o Blue Graça, e o Bloom Horto Florestal recebeu o Prêmio Ademi deste ano. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para o escritório de cada canteiro, com assistência técnica própria em Salvador. Como estão hoje alimentados os computadores dos escritórios de obra dos canteiros em andamento?",
+  "perguntas_especificas": [
+    "Nos canteiros do LV Square, do Blue Graça e do Blend Pituba, quantas posições de computador cada escritório de obra possui hoje?",
+    "Nos empreendimentos em parceria, como o Blend Pituba com a Barcino Esteve, quem equipa o canteiro: a Costa Andrade ou a parceira?",
+    "Há lançamento previsto para entrar em obra nos próximos meses e que demande um novo escritório de canteiro?"
+  ],
+  "quem_procurar": "Compras/suprimentos da construtora, na sede do Caminho das Árvores. O número conhecido cai no SAC: pedir transferência para o administrativo ou para suprimentos, sem apresentar a oferta ao atendimento.",
+  "ressalvas": [
+    "O telefone (71) 3355-6666 é apresentado no site como SAC, canal de atendimento a clientes de imóveis; a recepção pode resistir a transferir ligação comercial.",
+    "A faixa de 501 a 1.000 funcionários é autodeclarada no LinkedIn e provavelmente inclui operários de obra; o número de posições com computador deve ser bem menor.",
+    "Nenhum nome de responsável por compras ou TI foi encontrado em fonte da empresa, LinkedIn ou imprensa. O cadastro de CNPJ da SPE do Bloom lista Antonio Carlos Costa Andrade como administrador, mas isso é dado societário, não indica quem compra equipamento.",
+    "Vários empreendimentos são feitos em parceria (Barcino Esteve, Franisa, Leão Engenharia, Capa Concepts); o canteiro pode ser gerido pela parceira.",
+    "O status 'em obra' do LV Square e do Blue Graça vem do site, sem data de início nem previsão de entrega; a data de lançamento do Blend Pituba diverge entre as fontes (01/2025 e 06/2025).",
+    "A câmera AHD só faz sentido se o canteiro já tiver gravador; a SempreTech não tem CFTV completo confirmado."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "Site oficial: quem somos e contato",
+      "u": "https://www.costaandrade.com.br/quem-somos"
+    },
+    {
+      "t": "Site oficial: empreendimentos",
+      "u": "https://www.costaandrade.com.br/empreendimentos"
+    },
+    {
+      "t": "LinkedIn da empresa",
+      "u": "https://br.linkedin.com/company/costa-andrade"
+    },
+    {
+      "t": "Bahia Notícias: vencedores do Prêmio ADEMI-BA 2026",
+      "u": "https://www.bahianoticias.com.br/bnhall/noticia/10318-premio-ademi-ba-2026-revela-os-destaques-do-mercado-imobiliario-baiano-conheca-vencedores"
+    },
+    {
+      "t": "Portal Radar Imobiliário: lançamento do Blend Pituba",
+      "u": "https://portalradarimobiliario.com.br/noticia/5689/barcino-esteve-e-costa-andrade-lancam-blend-pituba-novo-empreendimento-residencial-em-salvador"
+    },
+    {
+      "t": "Apto: Costa Andrade, lançamentos",
+      "u": "https://apto.vc/empresas/costa-andrade"
+    },
+    {
+      "t": "Econodata, CNPJ 34.241.588/0001-97",
+      "u": "https://www.econodata.com.br/consulta-empresa/34241588000197-costa-andrade-construtora-ltda"
+    },
+    {
+      "t": "Econodata: SPE do Bloom Horto Florestal",
+      "u": "https://www.econodata.com.br/consulta-empresa/37500406000224-horto-florestal-empreendimento-imobiliario-ltda"
+    },
+    {
+      "t": "Guia de construtoras em Salvador (endereço e telefone)",
+      "u": "https://construtorasembrasil.com/bahia/salvador/"
+    }
+  ]
+}

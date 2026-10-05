@@ -1,0 +1,80 @@
+{
+  "id": "c24",
+  "empresa": "Conceito Brasil",
+  "identidade_confirmada": true,
+  "resumo": "Conceito Brasil – Serviços e Promoções de Vendas é uma empresa de Salvador que fornece mão de obra de trade marketing para a indústria no varejo: promotores exclusivos e compartilhados, reposição, merchandising, degustação, abordagem e blitz. Tem matriz em Salvador e filial em Recife e declara atendimento em todo o Nordeste.",
+  "porte": "Faixa de 51 a 200 funcionários (ZoomInfo, via resultado de busca). Matriz e uma filial. A maior parte da equipe são promotores que trabalham em pontos de venda, não em escritório.",
+  "onde_opera": "Matriz: Av. Luís Viana Filho, 6462, Edifício Wall Street, Bloco West, sala 1010, Paralela/Patamares, Salvador (BA). Filial em Recife (PE). Atendimento declarado em todo o Nordeste.",
+  "contato_publico": {
+    "telefone": "(71) 3022-0055",
+    "email": null,
+    "site": "https://www.conceitobrasil.com.br",
+    "linkedin": "https://br.linkedin.com/in/conceito-brasil-04108859"
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Instagram da empresa ativo, com publicações de março a setembro de 2026 e destaque fixo de 'Avisos e vagas'.",
+      "data": "09/2026",
+      "fonte": "https://www.instagram.com/conceitobrasil/"
+    },
+    {
+      "fato": "O site oficial (conceitobrasil.com.br) estava fora do ar na consulta, exibindo erro fatal de WordPress/PHP em todas as páginas testadas.",
+      "data": "10/2026",
+      "fonte": "https://www.conceitobrasil.com.br"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: o escritório é uma sala comercial com equipe administrativa, de RH e de supervisão de promotores, então a demanda provável é pequena: algumas estações com computador e monitor, teclado e mouse, e manutenção das máquinas existentes. A equipe de campo usa celular, que está fora do que pode ser ofertado.",
+  "produto_de_entrada": "computador montado",
+  "complementares": [
+    "monitor",
+    "assistência técnica"
+  ],
+  "motivo_da_ligacao": "A Conceito Brasil coordena promotores em todo o Nordeste a partir do escritório da Paralela, com seleção e supervisão em operação diária. A SempreTech propõe posto de trabalho completo para o administrativo e o RH, com assistência técnica própria em Salvador. Quando uma máquina dessas áreas para, como o atendimento é feito hoje?",
+  "perguntas_especificas": [
+    "Quantas posições de computador o escritório da Paralela possui, entre administrativo, RH e supervisão?",
+    "A filial de Recife é equipada por Salvador ou realiza a aquisição localmente?",
+    "Vocês contam com um profissional de TI interno ou acionam um técnico quando necessário?"
+  ],
+  "quem_procurar": "Gerente administrativo-financeiro ou o sócio-diretor; em empresa desse porte dificilmente há TI ou compras dedicados.",
+  "ressalvas": [
+    "Conta de baixo potencial: escritório em sala comercial, com a maior parte dos funcionários em campo. Despriorizar frente às contas com muitas estações.",
+    "Não foi encontrado fato recente específico (contrato novo, expansão, mudança de sede); o motivo da ligação usa a situação típica de um escritório de serviços, não um evento da empresa.",
+    "Telefone diverge entre fontes: (71) 3022-0055 e (71) 3002-0055 em cadastro e resultados de busca, e 3255-0044 em posts do Instagram. Testar o primeiro e registrar qual atende.",
+    "Site oficial fora do ar na consulta, então serviços, clientes e contatos não puderam ser confirmados na fonte primária; a descrição vem de trechos indexados do site, do Instagram e de diretórios.",
+    "Nenhum nome de sócio ou gestor foi encontrado em fonte pública consultável.",
+    "Homônimos: conceitobrasil.com (outra empresa, de outro ramo) e Conceito Promoções (conceitopromocoes.com.br, do Sul, DDD 48, mesmo ramo). A conta é a de Salvador, CNPJ 34.447.907/0001-15 (Conceito Brasil Promoções LTDA).",
+    "O perfil no LinkedIn é um perfil pessoal usado em nome da empresa, não uma página corporativa."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "Conceito Brasil – site oficial (fora do ar em 10/2026)",
+      "u": "https://www.conceitobrasil.com.br"
+    },
+    {
+      "t": "Conceito Brasil – página inicial indexada",
+      "u": "https://conceitobrasil.com.br/index.html"
+    },
+    {
+      "t": "Conceito Brasil – Instagram",
+      "u": "https://www.instagram.com/conceitobrasil/"
+    },
+    {
+      "t": "Conceito Brasil – perfil no LinkedIn",
+      "u": "https://br.linkedin.com/in/conceito-brasil-04108859"
+    },
+    {
+      "t": "CNPJ.biz – Conceito Brasil Promoções LTDA",
+      "u": "https://cnpj.biz/34447907000115"
+    },
+    {
+      "t": "ZoomInfo – Conceito Brasil Serviços e Promoções de Vendas",
+      "u": "https://www.zoominfo.com/c/conceito-brasil-servic%CC%A7os-e-promoc%CC%A7o%CC%83es-de-vendas/557040657"
+    },
+    {
+      "t": "Conceito Promoções (homônimo do Sul)",
+      "u": "https://www.conceitopromocoes.com.br/"
+    }
+  ]
+}

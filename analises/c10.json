@@ -1,0 +1,68 @@
+{
+  "id": "c10",
+  "empresa": "Projet Empreendimentos",
+  "identidade_confirmada": false,
+  "resumo": "Empresa de construção civil e reformas de Salvador, que se apresenta no Instagram como tendo mais de 11 anos de atuação e capta orçamentos por link na própria rede. Aparece em guias de construtoras com escritório em sala comercial no Caminho das Árvores. Não foi encontrado site próprio nem cadastro de CNPJ com esse nome exato.",
+  "porte": null,
+  "onde_opera": "Salvador. Os guias publicam dois endereços de escritório: Edf. Salvador Trade Center, Av. Tancredo Neves, sala 606, Caminho das Árvores; e Edf. Boulevard Side Empresarial, Rua Ewerton Visco, 290, sala 1901. Os destaques do Instagram citam trabalhos identificados como 'Martagão' e 'UFBA', sem detalhes.",
+  "contato_publico": {
+    "telefone": "(71) 98818-3740 (celular comercial divulgado em guias de construtoras)",
+    "email": null,
+    "site": null,
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Perfil @projetempreendimentos no Instagram, com cerca de 7,7 mil seguidores, destaques de acompanhamento de obras, antes e depois e portfólio; as publicações mais recentes visíveis na consulta eram de maio de 2025.",
+      "data": "05/2025",
+      "fonte": "https://www.instagram.com/projetempreendimentos/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: por ser uma empresa de obras e reformas com escritório em sala comercial, deve ter poucas posições de trabalho (orçamento, projeto, administrativo); a necessidade mais plausível é reposição pontual de computador de mesa, monitor ou manutenção das máquinas existentes, não compra em volume. Sem dado público de porte, isso é suposição.",
+  "produto_de_entrada": "Computador montado",
+  "complementares": [
+    "Assistência técnica",
+    "Monitor"
+  ],
+  "motivo_da_ligacao": "A Projet faz construção e reforma em Salvador há mais de onze anos e recebe bastante demanda de orçamentos. A SempreTech propõe renovação de máquinas por upgrade e posto de trabalho completo para as áreas de orçamento e projeto, com assistência técnica própria em Salvador. Como as máquinas dessas áreas estão respondendo hoje à rotina de trabalho?",
+  "perguntas_especificas": [
+    "O escritório de vocês fica no Salvador Trade Center ou no Boulevard Side, e quantas pessoas trabalham em computador nele?",
+    "Quem elabora os orçamentos e os projetos trabalha em computador de mesa no escritório ou se desloca para a obra?",
+    "Quando um computador para, quem resolve hoje: um técnico de confiança ou vocês o levam a uma assistência?"
+  ],
+  "quem_procurar": "O sócio ou proprietário, que em empresa desse tamanho costuma decidir a compra; se houver, o administrativo do escritório.",
+  "ressalvas": [
+    "Identidade não confirmada por cadastro: não foi encontrado CNPJ com o nome 'Projet Empreendimentos'. No mesmo endereço (Salvador Trade Center, sala 606) está registrada a Projet Instalações e Construções Ltda, CNPJ 22.027.190/0001-73, aberta em 03/2015, com atividade principal de instalação e manutenção elétrica. É provável que seja a mesma empresa, mas isso não foi confirmado.",
+    "Dois endereços diferentes publicados em guias; a empresa pode ter mudado de sala.",
+    "O único telefone público é um celular; quem atende pode ser o próprio dono. Abordagem curta e direta, sem roteiro de recepção.",
+    "Empresa provavelmente pequena, com poucas posições de computador: tíquete baixo. Motivo para despriorizar em relação às demais contas do lote.",
+    "As últimas publicações visíveis no Instagram são de maio de 2025; não foi possível confirmar atividade em 2026.",
+    "Nenhum fato específico e datado de obra ou contrato foi encontrado. O motivo da ligação se apoia no perfil do Instagram e na situação típica de escritório pequeno de construção.",
+    "O número de seguidores variou entre as consultas (7,7 mil e 8,4 mil); tratar como ordem de grandeza.",
+    "Os guias de construtoras que citam a empresa são diretórios automáticos, de confiabilidade baixa."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "Instagram @projetempreendimentos",
+      "u": "https://www.instagram.com/projetempreendimentos/"
+    },
+    {
+      "t": "Guia de construtoras em Salvador (endereço e telefone)",
+      "u": "https://construtorasembrasil.com/bahia/salvador/"
+    },
+    {
+      "t": "Construção AZ: guia das construtoras em Salvador",
+      "u": "https://construcaoaz.com.br/guia-das-construtoras-em-salvador-ba/"
+    },
+    {
+      "t": "Construção AZ: tag Projet Empreendimentos",
+      "u": "https://construcaoaz.com.br/tags/projet-empreendimentos-construtora/"
+    },
+    {
+      "t": "Econodata: Projet Instalações e Construções, CNPJ 22.027.190/0001-73",
+      "u": "https://www.econodata.com.br/consulta-empresa/22027190000173-projet-instalacoes-e-construcoes-ltda"
+    }
+  ]
+}

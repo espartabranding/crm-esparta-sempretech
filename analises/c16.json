@@ -1,0 +1,57 @@
+{
+  "id": "c16",
+  "empresa": "Line Indústria de Cosméticos Ltda.",
+  "identidade_confirmada": true,
+  "resumo": "Indústria de Lauro de Freitas (BA) que desenvolve e fabrica cosméticos para cabelo e pele sob encomenda (terceirização e marca própria). Cuida do processo inteiro para o cliente, da fórmula à embalagem, rótulo, logomarca e catálogo, atendendo redes de supermercado, varejistas, farmácias, distribuidores de salão e revendedores.",
+  "porte": "Enquadrada como EPP (empresa de pequeno porte) no cadastro, fundada em 13/11/2007. Opera em um galpão (Galpão 05) de condomínio empresarial, com fábrica, laboratório de pesquisa e desenvolvimento e controle de qualidade, segundo o site. Número de funcionários não encontrado. CNPJ 09.209.136/0001-80.",
+  "onde_opera": "Rua Silvanir F. Chaves, 528, Condomínio Porto Príncipe, Galpão 05, Pitangueiras, Lauro de Freitas (BA).",
+  "contato_publico": {
+    "telefone": "(71) 3369-1183",
+    "email": null,
+    "site": "https://lineindustria.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: além do administrativo e do faturamento, a empresa faz criação de rótulos, embalagens, logomarcas e catálogos para os clientes, o que sugere ao menos uma máquina de arte que precisa de mais desempenho, e um laboratório cujos registros não podem se perder em queda de energia. Como é EPP, o parque deve ser pequeno e provavelmente sem TI interna. Nada disso foi confirmado.",
+  "produto_de_entrada": "kit de upgrade",
+  "complementares": [
+    "nobreak",
+    "assistência técnica"
+  ],
+  "motivo_da_ligacao": "A Line conduz todo o processo da marca própria, da fórmula ao rótulo e ao catálogo. A SempreTech propõe posto de trabalho completo e renovação de máquinas por upgrade para as áreas de criação e faturamento, com assistência técnica própria em Salvador. Como as máquinas usadas na criação de rótulos e no faturamento estão respondendo hoje?",
+  "perguntas_especificas": [
+    "A criação de rótulos, embalagens e catálogos é feita internamente? Em quantas máquinas, e qual o desempenho delas com os programas de arte?",
+    "Os computadores do laboratório e do controle de qualidade ficam em nobreak?",
+    "Quem cuida dos computadores do galpão em Pitangueiras quando um deles para: alguém da empresa ou um técnico externo?"
+  ],
+  "quem_procurar": "Gerência administrativa ou o sócio responsável; em empresa deste porte dificilmente há TI ou compras separados. Perguntar na recepção quem cuida dos computadores.",
+  "ressalvas": [
+    "Não há fato recente datado (notícia, vaga, expansão); o motivo da ligação se apoia na descrição do serviço no site oficial e na situação típica do segmento.",
+    "Nenhum nome de sócio, gestor ou responsável por compras encontrado em fonte da empresa, LinkedIn ou imprensa.",
+    "O e-mail do site está protegido contra leitura automática e não pôde ser obtido; página de empresa no LinkedIn não localizada.",
+    "O site também divulga um WhatsApp comercial, (71) 98327-6697; usar só conforme a regra de cadência do playbook.",
+    "Empresa pequena (EPP): tíquete provável baixo, de poucas máquinas.",
+    "Máquina de arte pode pedir placa de vídeo, que só existe na linha Gamer com placas antigas; não prometer, apenas sondar.",
+    "Há várias indústrias de cosméticos em Lauro de Freitas com nomes parecidos (Inovativa, Lazo, LH); a identidade foi conferida pelo CNPJ e pelo endereço."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "Site oficial Line Indústria de Cosméticos",
+      "u": "https://lineindustria.com.br/"
+    },
+    {
+      "t": "Sobre nós - Line Indústria",
+      "u": "https://lineindustria.com.br/sobre-nos/"
+    },
+    {
+      "t": "Serasa Experian - CNPJ 09.209.136/0001-80",
+      "u": "https://empresas.serasaexperian.com.br/consulta-gratis/LINE-INDUSTRIA-DE-COSMETICOS-LTDA-09209136000180"
+    },
+    {
+      "t": "Instagram @lineindustria",
+      "u": "https://www.instagram.com/lineindustria/"
+    }
+  ]
+}

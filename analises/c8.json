@@ -1,0 +1,75 @@
+{
+  "id": "c8",
+  "empresa": "Polo Logística Ltda",
+  "identidade_confirmada": true,
+  "resumo": "Transportadora de cargas expressas de Lauro de Freitas, fundada em 2003, que opera transporte aéreo (cobertura nacional) e rodoviário (carga fracionada e lotação), com rastreamento das cargas. Atende empresas a partir de uma única sede no bairro de Itinga.",
+  "porte": "LinkedIn informa faixa de 51 a 200 funcionários, com 93 perfis associados; o Glassdoor indica faixa de 1 a 50. O site lista apenas a sede, sem filiais. Frota e área de armazém não publicadas.",
+  "onde_opera": "Sede na Rua Dr. Gerino de Souza Filho, 2063, Itinga, Lauro de Freitas/BA, CEP 42738-200. Transporte aéreo com cobertura nacional e rodoviário.",
+  "contato_publico": {
+    "telefone": "(71) 3444-0416 (WhatsApp comercial divulgado no site: (71) 3444-0432)",
+    "email": "comercial@polologistica.com.br",
+    "site": "https://polologistica.com.br",
+    "linkedin": "https://www.linkedin.com/company/polo-logistica"
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Publicou no LinkedIn a comemoração de 23 anos de operação.",
+      "data": "set/2026 (aprox., publicação de '1 mês atrás')",
+      "fonte": "https://www.linkedin.com/company/polo-logistica"
+    },
+    {
+      "fato": "Divulgou vaga de estágio para estudantes de administração, logística ou gestão.",
+      "data": "jun/2026 (aprox., publicação de '4 meses atrás')",
+      "fonte": "https://www.linkedin.com/company/polo-logistica"
+    },
+    {
+      "fato": "Comunicou atualização dos canais de contato e destacou o rastreamento de cargas em tempo real.",
+      "data": "mai/2026 (aprox., publicações de '5 meses atrás')",
+      "fonte": "https://www.linkedin.com/company/polo-logistica"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: operação de carga expressa com rastreamento em tempo real depende de estações de emissão de conhecimento, conferência e atendimento ao cliente que não podem parar; com cerca de 90 pessoas e sede única, deve haver reposição periódica de computadores e falta de nobreak em parte das posições. A abertura de vaga de estágio administrativo sugere posição nova de trabalho a equipar.",
+  "produto_de_entrada": "computador montado",
+  "complementares": [
+    "nobreak",
+    "monitor"
+  ],
+  "motivo_da_ligacao": "A Polo Logística completou 23 anos e destaca o rastreamento das cargas em tempo real. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para a expedição e o atendimento, com assistência técnica própria em Salvador. Como estão protegidas hoje as máquinas da operação em Itinga contra falhas de energia?",
+  "perguntas_especificas": [
+    "Quantas posições de computador vocês têm entre emissão, conferência das cargas e atendimento na sede de Itinga?",
+    "A operação aérea trabalha com horário de corte; as máquinas que emitem a documentação ficam em nobreak?",
+    "Para a vaga de estágio aberta no administrativo, a nova posição já está equipada ou a aquisição ainda será feita?"
+  ],
+  "quem_procurar": "Gerente administrativo-financeiro ou os sócios-administradores (empresa de gestão familiar, sede única); se houver, o responsável por TI.",
+  "ressalvas": [
+    "Nenhum decisor foi registrado: o quadro societário (três sócios-administradores) só aparece em agregadores de CNPJ. O LinkedIn da empresa mostra um nome entre os funcionários, mas sem cargo visível; confirmar na recepção.",
+    "Porte divergente entre fontes (LinkedIn 51 a 200, Glassdoor 1 a 50). Tratar como empresa de médio porte até confirmar.",
+    "Um guia online lista outro endereço e telefone em Lauro de Freitas (Av. Brig. Alberto Costa Mattos, Araqui, (71) 3379-0416), provavelmente cadastro antigo; o site oficial só cita Itinga.",
+    "As datas dos fatos recentes são aproximadas, calculadas a partir da idade relativa das publicações no LinkedIn em 05/10/2026.",
+    "Uso de nobreak e quantidade de estações são hipótese; nada publicado sobre o parque de máquinas."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "Site oficial Polo Logística (serviços, endereço, contatos)",
+      "u": "https://polologistica.com.br/index.html"
+    },
+    {
+      "t": "LinkedIn Polo Logística (porte, publicações)",
+      "u": "https://www.linkedin.com/company/polo-logistica"
+    },
+    {
+      "t": "Econodata: CNPJ 05.698.101/0001-00 (fundação, CNAE)",
+      "u": "https://www.econodata.com.br/consulta-empresa/05698101000100-polo-logistica-ltda"
+    },
+    {
+      "t": "Glassdoor: visão geral Polo Logística (faixa de funcionários)",
+      "u": "https://www.glassdoor.com.br/Vis%C3%A3o-geral/Trabalhar-na-Polo-Log%C3%ADstica-EI_IE3011810.13,27.htm"
+    },
+    {
+      "t": "Guia Fácil: cadastro com endereço alternativo",
+      "u": "https://guiafacil.com/site/polo-logistica/lauro-de-freitas/ba/7133790416/"
+    }
+  ]
+}

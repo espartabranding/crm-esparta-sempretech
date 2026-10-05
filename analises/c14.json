@@ -1,0 +1,95 @@
+{
+  "id": "c14",
+  "empresa": "Construtora Lustoza Ltda (na lista como Construtora Lustosa)",
+  "identidade_confirmada": true,
+  "resumo": "Construtora de Lauro de Freitas, aberta em 1997, cuja atividade principal é a construção de rodovias (pavimentação), com atividades secundárias de terraplenagem, serviços de engenharia, aluguel de máquinas e fabricação de produtos de minerais não-metálicos. Trabalha sobretudo com obras públicas para prefeituras baianas, como Mata de São João e Salinas da Margarida.",
+  "porte": "Capital social de R$ 5.000.000,00. Não foi encontrado número de funcionários. Agregador de dados públicos aponta 3 contratos públicos em 2026, 14 convênios com repasses federais (cerca de R$ 10,7 milhões) e 29 operações de financiamento BNDES registradas.",
+  "onde_opera": "Sede na Rua Capim Santo, 593, lotes 01 a 07, Areia Branca, Lauro de Freitas. Há também um ponto da empresa na Via Parafuso, 85, Areia Branca (cadastro de eletroposto de uso restrito). Obras em municípios da Bahia, como Mata de São João e Salinas da Margarida.",
+  "contato_publico": {
+    "telefone": "(71) 3379-6209",
+    "email": "lustoza@lustoza.com",
+    "site": null,
+    "linkedin": null
+  },
+  "decisores": [
+    {
+      "nome": "Ailton Lustoza dos Santos",
+      "cargo": "Sócio-administrador (quadro societário público do CNPJ)",
+      "fonte": "https://brasilapi.com.br/api/cnpj/v1/01785355000104"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Extrato de termo aditivo de contrato público envolvendo a construtora publicado em diário oficial (órgão contratante não visível na fonte).",
+      "data": "09/2026",
+      "fonte": "https://atlaspublico.com.br/empresa/01785355000104"
+    },
+    {
+      "fato": "Aviso de adjudicação (14/08/2026) e extrato de contrato (17/08/2026) em nome da construtora, indicando contrato público novo; órgão e objeto não visíveis na fonte.",
+      "data": "08/2026",
+      "fonte": "https://atlaspublico.com.br/empresa/01785355000104"
+    },
+    {
+      "fato": "Proposta da construtora em concorrência da Prefeitura de Salinas da Margarida (processo CON 002/2024).",
+      "data": "03/2024",
+      "fonte": "https://www.salinasdamargarida.ba.gov.br/Handler.ashx?f=f&query=7c55f59b-b55b-4546-8c3c-5c64579acfe1.pdf&name=CON002-2024PARTE12.pdf"
+    },
+    {
+      "fato": "Contrato nº 282/2021 com a Prefeitura de Mata de São João (Tomada de Preços 13/2021).",
+      "data": "2021",
+      "fonte": "https://www.matadesaojoao.ba.gov.br/Handler.ashx?f=f&query=a8e0abb7-3fc6-45fe-9902-8ebfedc35081.pdf&name=CONTRATO+N%C2%BA.+282+2021+TP+13+2021.pdf"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: construtora de pavimentação com sede e pátio em Areia Branca provavelmente tem um administrativo enxuto (licitações, medição, financeiro) e pontos de apoio em obra, onde computador e nobreak sofrem com poeira e energia instável. A necessidade mais provável é reposição pontual de computador de mesa, nobreak e assistência técnica, e não compra em volume.",
+  "produto_de_entrada": "computador montado",
+  "complementares": [
+    "nobreak",
+    "assistência técnica"
+  ],
+  "motivo_da_ligacao": "A Lustoza teve um novo contrato de obra pública adjudicado em agosto e mantém a sede em Areia Branca. A SempreTech propõe posto de trabalho completo para escritório de apoio e para o administrativo, com assistência técnica própria em Salvador. Com a obra nova em início, que estrutura de equipamentos está prevista para o escritório de apoio e o administrativo?",
+  "perguntas_especificas": [
+    "O contrato novo de agosto contará com escritório de apoio na obra ou a medição e o controle permanecerão na sede de Areia Branca?",
+    "Quantos computadores vocês têm hoje entre a sede e o pátio da Via Parafuso, e quem faz a manutenção deles?",
+    "A máquina usada na elaboração das propostas de licitação e das planilhas de medição está atendendo bem ou já apresenta lentidão?"
+  ],
+  "quem_procurar": "Gerente administrativo ou financeiro; por ser empresa familiar, a compra provavelmente passa pelo sócio-administrador. Perguntar na recepção quem cuida de compras do escritório.",
+  "ressalvas": [
+    "O nome na lista é Lustosa, com S; a empresa encontrada em Lauro de Freitas é Construtora Lustoza Ltda, com Z (CNPJ 01.785.355/0001-04). Tudo indica ser a mesma, mas confirme na ligação.",
+    "A fonte dos contratos de 2026 é um agregador de dados públicos que não mostra órgão, objeto nem valor; o agente deve falar em contrato novo de obra pública sem citar prefeitura.",
+    "O mesmo agregador aponta 17 inscrições em dívida ativa (PGFN) e uma menção no TCU em 2024: priorizar venda à vista ou no cartão e não oferecer prazo sem análise.",
+    "Não foi encontrado site, LinkedIn nem número de funcionários; a empresa pode ter um administrativo pequeno, com ticket baixo.",
+    "Diretórios listam também um endereço em Vilas do Atlântico (Rua Praia de Figueirinha, 30) e o telefone (71) 3379-6209; nenhum foi testado.",
+    "Não foi confirmado o que funciona na Via Parafuso, 85; a única fonte verificada é o cadastro de um eletroposto restrito em nome da empresa."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "CNPJ 01.785.355/0001-04 (BrasilAPI)",
+      "u": "https://brasilapi.com.br/api/cnpj/v1/01785355000104"
+    },
+    {
+      "t": "Atlas Público, Construtora Lustoza",
+      "u": "https://atlaspublico.com.br/empresa/01785355000104"
+    },
+    {
+      "t": "Solutudo, Construtora Lustoza",
+      "u": "https://www.solutudo.com.br/empresas/ba/lauro-freitas/obras-publicas-e-privadas/construtora-lustoza-ltda-11104076"
+    },
+    {
+      "t": "Contrato 282/2021, Mata de São João",
+      "u": "https://www.matadesaojoao.ba.gov.br/Handler.ashx?f=f&query=a8e0abb7-3fc6-45fe-9902-8ebfedc35081.pdf&name=CONTRATO+N%C2%BA.+282+2021+TP+13+2021.pdf"
+    },
+    {
+      "t": "Proposta CON 002/2024, Salinas da Margarida",
+      "u": "https://www.salinasdamargarida.ba.gov.br/Handler.ashx?f=f&query=7c55f59b-b55b-4546-8c3c-5c64579acfe1.pdf&name=CON002-2024PARTE12.pdf"
+    },
+    {
+      "t": "Eletroposto Construtora Lustoza, Via Parafuso",
+      "u": "https://carregados.com.br/estacoes/estacao-construtora-lustoza-ltda-416"
+    },
+    {
+      "t": "Econodata, Construtora Lustoza",
+      "u": "https://www.econodata.com.br/consulta-empresa/01785355000104-CONSTRUTORA-LUSTOZA-LTDA"
+    }
+  ]
+}

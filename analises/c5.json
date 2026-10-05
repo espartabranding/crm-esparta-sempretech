@@ -1,0 +1,92 @@
+{
+  "id": "c5",
+  "empresa": "Grupo Max Forte",
+  "identidade_confirmada": true,
+  "resumo": "Grupo baiano de segurança privada e facilities, no mercado desde 1999, com sede em Brotas, Salvador. Reúne três empresas (Max Forte Segurança, Max Serviços e Max Confiável) e presta vigilância patrimonial, escolta, portaria remota, alarmes, monitoramento de CFTV, limpeza e terceirização de mão de obra para condomínios, shoppings, indústrias, hospitais, escolas e varejo.",
+  "porte": "O site oficial fala em mais de 1.150 profissionais e frota de mais de 70 veículos; publieditorial do Correio (início de 2024) cita 1.315 funcionários, 76 veículos rastreados e mais de 200 clientes privados e públicos. Mantém central de operações 24 horas com monitoramento de alarmes e CFTV. CNPJ da Max Forte Serviços de Segurança: 03.195.862/0001-05.",
+  "onde_opera": "Sede na Rua Padre Daniel Lisboa, 33, Brotas, Salvador. Atende Salvador e Região Metropolitana, Feira de Santana, Santo Antônio de Jesus e Itabuna; o Correio também cita Sergipe, enquanto o site oficial diz atuar na Bahia. Opera segurança de bairro em Horto Florestal, Corredor da Vitória, Cidade Jardim, São Lázaro, Parque São Vicente, Candeal, Alphaville Empresarial e Jaguaribe.",
+  "contato_publico": {
+    "telefone": "(71) 3045-7400",
+    "email": "contato@grupomaxforte.com.br",
+    "site": "https://grupomaxforte.com.br/",
+    "linkedin": null
+  },
+  "decisores": [
+    {
+      "nome": "Raimundo Junior",
+      "cargo": "Diretor do Grupo Max Forte (citado pela imprensa; não é necessariamente quem compra informática)",
+      "fonte": "https://atarde.com.br/colunistas/madeinbahia/seguranca-privada-e-pilar-estrategico-na-bahia-1318405"
+    },
+    {
+      "nome": "Julia Ramos",
+      "cargo": "Diretora de marketing (citada em 2024; cargo atual não confirmado)",
+      "fonte": "https://www.correio24horas.com.br/estudio-correio/referencia-em-seguranca-patrimonial-max-forte-inova-na-oferta-de-solucoes-integradas-0124"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Coluna do A Tarde destaca o grupo, com 25 anos de mercado, três empresas e o projeto de segurança de bairro 'Bairro Seguro'; cita Raimundo Junior como diretor.",
+      "data": "05/2025",
+      "fonte": "https://atarde.com.br/colunistas/madeinbahia/seguranca-privada-e-pilar-estrategico-na-bahia-1318405"
+    },
+    {
+      "fato": "Publieditorial no Correio informa nova gestão desde outubro de 2021, 1.315 funcionários, 76 veículos, mais de 200 clientes (entre eles Wilson Sons e Magazine Luiza) e previsão de crescer 15% em 2024.",
+      "data": "2024 (data inferida do texto e da URL)",
+      "fonte": "https://www.correio24horas.com.br/estudio-correio/referencia-em-seguranca-patrimonial-max-forte-inova-na-oferta-de-solucoes-integradas-0124"
+    },
+    {
+      "fato": "O site oficial mantém página de 'trabalhe conosco' e divulga central de operações 24 horas, portaria remota e monitoramento de CFTV.",
+      "data": "consultado em 10/2026",
+      "fonte": "https://grupomaxforte.com.br/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: uma central de operações 24 horas com portaria remota e monitoramento de CFTV depende de estações de trabalho com monitores ligadas sem interrupção, o que tende a gerar reposição de computador, monitor e nobreak; o administrativo da sede (RH, DP, financeiro para mais de mil funcionários) também deve ter um parque de máquinas de escritório. Não foi confirmado como a empresa compra nem qual é o parque atual.",
+  "produto_de_entrada": "computador montado",
+  "complementares": [
+    "monitor",
+    "nobreak"
+  ],
+  "motivo_da_ligacao": "O Grupo Max Forte mantém uma central de operações 24 horas, com portaria remota e monitoramento, e mais de mil profissionais em campo. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para as estações da central, com assistência técnica própria em Salvador. Quando uma estação da central ou do administrativo para, como é feita a reposição hoje?",
+  "perguntas_especificas": [
+    "As estações da central de operações 24 horas e da portaria remota ficam todas em nobreak, e quem responde pela reposição quando uma máquina ou monitor para?",
+    "A compra de computadores é centralizada para as três empresas do grupo (Max Forte, Max Serviços e Max Confiável) ou cada uma adquire a sua?",
+    "Quando entra um contrato novo que exige posto administrativo ou de supervisão, quem providencia o computador: vocês ou o cliente?"
+  ],
+  "quem_procurar": "Setor de Compras/Suprimentos da sede em Brotas; se houver TI interna, o responsável por TI ou infraestrutura da central de operações. A imprensa cita apenas a diretoria (Raimundo Junior), que não deve ser o primeiro contato.",
+  "ressalvas": [
+    "Não foi encontrado nome de responsável por TI ou compras em fonte pública; os nomes listados são de diretoria e marketing.",
+    "Página de empresa no LinkedIn não localizada.",
+    "Os números de porte divergem entre o site (mais de 1.150 profissionais, mais de 70 veículos) e o Correio (1.315 e 76); a matéria do Correio é conteúdo patrocinado.",
+    "A empresa vende segurança eletrônica e CFTV como serviço: não ofertar câmera como abertura, pois ela já tem fornecedores próprios desse tipo de equipamento.",
+    "Um site de vagas listou vaga de vigia da 'Max Forte' em Salvador em 09/2026, mas a página não pôde ser aberta; não foi confirmado.",
+    "Existe homônimo em Sorocaba/SP (maxfortesecurity.com.br), sem relação com o grupo baiano.",
+    "A maior parte do quadro é de vigilantes e pessoal de campo, que não usam computador; o parque de máquinas é bem menor do que o número de funcionários sugere."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "Site oficial Grupo Max Forte",
+      "u": "https://grupomaxforte.com.br/"
+    },
+    {
+      "t": "Sobre nós - Grupo Max Forte",
+      "u": "https://grupomaxforte.com.br/sobre-nos/"
+    },
+    {
+      "t": "Correio (Estúdio Correio): Max Forte inova em soluções integradas",
+      "u": "https://www.correio24horas.com.br/estudio-correio/referencia-em-seguranca-patrimonial-max-forte-inova-na-oferta-de-solucoes-integradas-0124"
+    },
+    {
+      "t": "A Tarde: Segurança privada é pilar estratégico na Bahia",
+      "u": "https://atarde.com.br/colunistas/madeinbahia/seguranca-privada-e-pilar-estrategico-na-bahia-1318405"
+    },
+    {
+      "t": "CNPJ Max Forte Serviços de Segurança (cnpj.biz)",
+      "u": "https://cnpj.biz/03195862000105"
+    },
+    {
+      "t": "Vaga de vigia Max Forte, 09/2026 (não confirmada)",
+      "u": "https://vagasbr.empregonaweb.com/2026/09/18/vigia-bahia-max-forte-salvador-ba/"
+    }
+  ]
+}

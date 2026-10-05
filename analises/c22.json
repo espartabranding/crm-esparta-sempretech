@@ -1,0 +1,99 @@
+{
+  "id": "c22",
+  "empresa": "Total Atacado (Comercial de Alimentos Gilmar Ltda)",
+  "identidade_confirmada": true,
+  "resumo": "Rede baiana de atacarejo (atacado e varejo de alimentos, limpeza, higiene, açougue, padaria e bebidas) com matriz na Vila Laura, em Salvador. É uma rede de lojas voltada ao consumidor e ao pequeno comerciante, não um operador logístico: o segmento 'logística e distribuição' só se aplica aos depósitos e ao recebimento das lojas.",
+  "porte": "LinkedIn informa faixa de 501 a 1.000 funcionários (297 perfis associados); a imprensa citava cerca de mil empregos diretos em Salvador em nov/2023. Lojas identificadas: Vila Laura (matriz), Engenho Velho de Brotas, Águas Claras, Lauro de Freitas (Parque Shopping Bahia, 12 mil m², 430 postos de trabalho) e São Rafael.",
+  "onde_opera": "Salvador (Vila Laura, Engenho Velho de Brotas, Águas Claras, São Rafael/São Marcos) e Lauro de Freitas (Parque Shopping Bahia). Matriz: Rua Jorge Novis, 135, Vila Laura, Salvador/BA, CEP 40270-370.",
+  "contato_publico": {
+    "telefone": "(71) 3183-1100",
+    "email": "faleconosco@totalatacado.com.br",
+    "site": "https://www.totalatacado.com.br",
+    "linkedin": "https://br.linkedin.com/company/total-atacado-ba"
+  },
+  "decisores": [
+    {
+      "nome": "José Gilvando Andrade Sousa",
+      "cargo": "Fundador do Grupo Total Atacado (referência de quem manda; não é o comprador de informática)",
+      "fonte": "https://negociosba.com.br/noticias/total-atacado-inaugura-nova-loja-em-lauro-de-freitas/"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Inaugurou a loja Total Atacado São Rafael, na Av. São Rafael, em Salvador, em 28/08, segundo publicações da empresa no LinkedIn.",
+      "data": "ago/2026 (ano inferido pela idade das publicações; ver ressalvas)",
+      "fonte": "https://br.linkedin.com/company/total-atacado-ba"
+    },
+    {
+      "fato": "Divulgou vagas de repositor de mercadoria, auxiliar de depósito, conferente e auxiliar de açougue, e antes disso de fiscal de prevenção de perdas.",
+      "data": "jul-ago/2026 (aprox., publicações de '2 a 3 meses atrás')",
+      "fonte": "https://br.linkedin.com/company/total-atacado-ba"
+    },
+    {
+      "fato": "Anunciou patrocínio master do festival de cultura japonesa Bon Odori 2026.",
+      "data": "set/2026",
+      "fonte": "https://br.linkedin.com/company/total-atacado-ba"
+    },
+    {
+      "fato": "Inaugurou a loja de Lauro de Freitas, no Parque Shopping Bahia, com mais de 12 mil m² e 430 postos de trabalho; o fundador declarou intenção de seguir expandindo.",
+      "data": "nov/2023",
+      "fonte": "https://negociosba.com.br/noticias/total-atacado-inaugura-nova-loja-em-lauro-de-freitas/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: rede com cinco lojas e loja recém-aberta tem retaguarda (recebimento de mercadoria, depósito, CPD, prevenção de perdas, administrativo) com muitas estações que param a operação se a energia cai; nobreak para essas posições e computador montado para retaguarda de loja nova são o encaixe. Os caixas (PDV) costumam ser equipamento específico de automação comercial, fora do que a SempreTech oferta.",
+  "produto_de_entrada": "nobreak",
+  "complementares": [
+    "computador montado",
+    "monitor"
+  ],
+  "motivo_da_ligacao": "A Total Atacado abriu a loja de São Rafael e contratou conferentes e auxiliares de depósito. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para o recebimento e o administrativo das lojas, com assistência técnica própria em Salvador. Como estão protegidos hoje os computadores da retaguarda das lojas em caso de queda de energia?",
+  "perguntas_especificas": [
+    "A aquisição de computadores e nobreaks das lojas é centralizada na matriz da Vila Laura ou cada loja resolve a sua?",
+    "Na loja de São Rafael, as posições de recebimento, depósito e administrativo já estão todas equipadas ou resta algum item pendente?",
+    "Há outra loja ou reforma prevista? Com que antecedência vocês adquirem os equipamentos da retaguarda?"
+  ],
+  "quem_procurar": "TI ou CPD da matriz na Vila Laura; se não houver, o setor de compras de uso e consumo (não o comprador de mercadorias).",
+  "ressalvas": [
+    "Não é empresa de logística: é rede de atacarejo. O roteiro do segmento precisa ser adaptado para 'recebimento e retaguarda de loja' em vez de 'expedição'.",
+    "Ano da inauguração de São Rafael não ficou inequívoco: as publicações do LinkedIn citam '28/08' e tinham cerca de um mês em 05/10/2026, o que aponta para agosto de 2026, mas uma leitura da mesma página trouxe 'agosto de 2024', e nenhuma notícia de imprensa confirmou a data. Na ligação, falar 'a loja de São Rafael' sem citar a data.",
+    "O número de lojas (cinco) é soma de fontes de datas diferentes; não há lista oficial de lojas acessível no site (a página inicial só exibiu banner e formulário de contato).",
+    "O decisor de compra de informática não foi identificado. O fundador está listado apenas como referência; não pedir por ele na recepção.",
+    "Existe uma rede homônima, 'Total Atacado e Varejo', em Dias d'Ávila, com outro CNPJ; não confundir.",
+    "Frente de caixa (PDV), impressoras fiscais, coletores e balanças provavelmente vêm de fornecedor de automação comercial e não devem ser ofertados. Câmeras só como avulsas, se perguntarem."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "LinkedIn Total Atacado (porte, loja São Rafael, vagas)",
+      "u": "https://br.linkedin.com/company/total-atacado-ba"
+    },
+    {
+      "t": "Negócios BA: inauguração em Lauro de Freitas, lojas e empregos (23/11/2023)",
+      "u": "https://negociosba.com.br/noticias/total-atacado-inaugura-nova-loja-em-lauro-de-freitas/"
+    },
+    {
+      "t": "Expo Supermercados: Total Atacado inaugura loja na Bahia (24/10/2023)",
+      "u": "https://www.exposupermercados.com.br/post/total-atacado-inaugura-loja-na-bahia"
+    },
+    {
+      "t": "Econodata: matriz CNPJ 05.466.724/0001-49 (endereço, razão social)",
+      "u": "https://www.econodata.com.br/consulta-empresa/05466724000149-comercial-de-alimentos-gilmar-ltda"
+    },
+    {
+      "t": "Econodata: filial Av. São Rafael, CNPJ 05.466.724/0004-91",
+      "u": "https://www.econodata.com.br/consulta-empresa/05466724000491-comercial-de-alimentos-gilmar-ltda"
+    },
+    {
+      "t": "AppLocal: telefone e horário da matriz",
+      "u": "https://applocal.com.br/empresa/total-atacado/salvador/ba/11276755"
+    },
+    {
+      "t": "Site oficial Total Atacado",
+      "u": "https://www.totalatacado.com.br"
+    },
+    {
+      "t": "Mais Região: homônimo Total Atacado e Varejo em Dias d'Ávila",
+      "u": "https://www.maisregiao.com.br/noticia/67857/lojas-total-supermercados-abrem-as-portas-em-dias-dravila-com-ofertas-e-promocoes"
+    }
+  ]
+}

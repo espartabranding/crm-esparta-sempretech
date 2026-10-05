@@ -1,0 +1,108 @@
+{
+  "fonte": "https://www.sempretechba.com.br/",
+  "consultado_em": "2026-10-05",
+  "contato": "(71) 3034-9662 (telefone e WhatsApp) · sac@sempretechba.com.br · seg. a sex., 8h30 às 17h30",
+  "pagamento": "À vista por boleto, transferência ou Pix; a prazo no cartão.",
+  "familias": [
+    {
+      "nome": "Computadores",
+      "resumo": "Desktops montados X-Linne são o forte: 25 modelos na linha Home (20 conferidos) e 9 na Gamer. A categoria Desktop Office está vazia no site e há um único notebook.",
+      "itens": [
+        {"nome": "Computador i3 6100, 8 GB, SSD 240 GB X-Linne", "preco": "R$ 1.449,99"},
+        {"nome": "Computador i5 7400, 8 GB, SSD 120 GB", "preco": "R$ 1.899,99"},
+        {"nome": "Computador i3 10100, 8 GB, SSD 240 GB X-Linne", "preco": "R$ 1.920,91"},
+        {"nome": "Computador i5 9400, 16 GB, SSD 240 GB", "preco": "R$ 2.569,99"},
+        {"nome": "Computador i5 9400, 32 GB, SSD 480 GB", "preco": "R$ 4.029,99"},
+        {"nome": "Computador Gamer i7 9700, 16 GB, SSD M.2 512 GB, GTX 750 Ti 4 GB X-Linne", "preco": "R$ 3.839,90"},
+        {"nome": "Computador Gamer i7 6700, 16 GB, SSD M.2 512 GB, RX 580 4 GB X-Linne", "preco": "R$ 4.489,90"},
+        {"nome": "Notebook Compaq Presario 424, Pentium N3700, 4 GB, 1 TB, 14\"", "preco": "R$ 2.999,99"},
+        {"nome": "Monitor LED AOC 18,5\" VGA/HDMI E970SWHNL", "preco": "R$ 499,99"},
+        {"nome": "Monitor LED AOC 21,5\" Full HD E2270SWHEN (revisado)", "preco": "R$ 699,90"},
+        {"nome": "Monitor LED LG 22\" com ajuste de altura 22BN550Y-B (revisado)", "preco": "R$ 999,90"}
+      ]
+    },
+    {
+      "nome": "Upgrade e componentes",
+      "resumo": "Três kits de upgrade na plataforma 1151, além de placas-mãe, processadores, memórias, armazenamento, fontes e gabinetes avulsos.",
+      "itens": [
+        {"nome": "Kit Upgrade 1151: placa-mãe H110, Pentium G, 8 GB DDR4 e cooler", "preco": "R$ 999,99"},
+        {"nome": "Kit 1151: placa-mãe H110, i3 7100, 8 GB DDR4", "preco": "R$ 1.039,99"},
+        {"nome": "Processador Intel i7 8700 LGA 1151 com cooler", "preco": "R$ 1.419,99"}
+      ]
+    },
+    {
+      "nome": "Energia",
+      "resumo": "Quatro nobreaks de 600 VA a 2000 VA, três estabilizadores e filtros de linha.",
+      "itens": [
+        {"nome": "Nobreak 600 VA Ragtech Save STD TI", "preco": "R$ 555,96"},
+        {"nome": "Nobreak 1500 VA Coletek UPS Safe Pro bivolt, 8 tomadas", "preco": "R$ 1.057,85"},
+        {"nome": "Nobreak UPS Senno VT 1 kVA mono 220 V", "preco": "R$ 2.880,96"},
+        {"nome": "Nobreak 2000 VA Ragtech Easy Pro CBU-TI", "preco": "R$ 3.042,96"},
+        {"nome": "Estabilizador 500 VA Coletek 115 V, 4 tomadas", "preco": "R$ 149,85"},
+        {"nome": "Estabilizador 300 VA TS Shara Powerest, 4 tomadas", "preco": "R$ 156,96"},
+        {"nome": "Estabilizador 300 VA Coletek bivolt", "preco": "R$ 161,96"},
+        {"nome": "Filtro de linha TS Shara com protetor, 6 tomadas", "preco": "R$ 63,96"},
+        {"nome": "Filtro de linha TS Shara com protetor, 8 tomadas", "preco": "R$ 78,96"}
+      ]
+    },
+    {
+      "nome": "Segurança (CFTV)",
+      "resumo": "Três câmeras AHD 1080p da Clear. O site não lista DVR, fonte nem cabeamento de CFTV.",
+      "itens": [
+        {"nome": "Câmera Dome plástico L12 AHD 1080p, IR 20 m, 3,6 mm Clear", "preco": "R$ 99,99"},
+        {"nome": "Câmera Bullet metal L18 AHD 1080p, IR 25 m, IP66 Clear", "preco": "R$ 139,99"},
+        {"nome": "Câmera Bullet plástico AHD 1080p Full Color, IR 20 m, IP66 Clear", "preco": "R$ 149,99"}
+      ]
+    },
+    {
+      "nome": "Periféricos",
+      "resumo": "Seis headsets, 11 itens em mouse e 7 em teclado. A categoria Webcam está vazia.",
+      "itens": [
+        {"nome": "Headset Intelbras CHS 40 RJ9 (revisado)", "preco": "R$ 59,90"},
+        {"nome": "Headset analógico Logitech H111", "preco": "R$ 130,96"},
+        {"nome": "Headset Intelbras CHS 40 USB mono", "preco": "R$ 347,96"},
+        {"nome": "Headset sem fio Logitech Zone Vibe 100 Bluetooth", "preco": "R$ 906,96"},
+        {"nome": "Mouse USB básico TCN 1200 DPI", "preco": "R$ 14,85"},
+        {"nome": "Teclado USB básico Slim 950 TCN", "preco": "R$ 29,85"},
+        {"nome": "Teclado USB Logitech K120", "preco": "R$ 109,90"},
+        {"nome": "Kit teclado e mouse sem fio Logitech MK270", "preco": "R$ 259,90"}
+      ]
+    },
+    {
+      "nome": "Rede",
+      "resumo": "Só cabos, conectores e adaptador Wi-Fi. O site não lista roteador nem switch.",
+      "itens": [
+        {"nome": "Adaptador Wi-Fi USB 600 Mbps dual band Knup KP-AW161", "preco": "R$ 62,90"},
+        {"nome": "Alicate de crimpar RJ45/RJ12/RJ11 Hayom", "preco": "R$ 59,99"},
+        {"nome": "Conector RJ45 Cat 5e, pacote com 20", "preco": "R$ 9,96"},
+        {"nome": "Cabo de rede 1 m Cat 6 Megatron homologado", "preco": "R$ 5,96"}
+      ]
+    }
+  ],
+  "servicos": "Assistência técnica própria: limpeza, diagnóstico completo e teste de componentes, com diagnóstico em até 3 dias úteis. Preço conforme a configuração da máquina.",
+  "situacoes": {
+    "no_site": "No site",
+    "parcial": "Parcial no site",
+    "fora": "Fora do site",
+    "nao_conferido": "Não conferido"
+  },
+  "regras": [
+    {"contem": "placa de video", "situacao": "parcial", "nota": "Só na linha Gamer, com placas antigas (GTX 750 Ti, RX 580, R7 240)."},
+    {"contem": "headsets e webcams", "situacao": "parcial", "nota": "Há headsets; a categoria Webcam está vazia."},
+    {"contem": "webcam", "situacao": "fora", "nota": "Categoria Webcam vazia no site."},
+    {"contem": "headset", "situacao": "no_site", "nota": "Seis modelos, de R$ 59,90 a R$ 906,96."},
+    {"contem": "camera", "situacao": "parcial", "nota": "Três câmeras AHD de R$ 99,99 a R$ 149,99; sem DVR, fonte ou cabeamento no site."},
+    {"contem": "nobreak", "situacao": "no_site", "nota": "Nobreaks de R$ 555,96 a R$ 3.042,96; estabilizadores a partir de R$ 149,85."},
+    {"contem": "notebook", "situacao": "parcial", "nota": "Um único modelo, de entrada (Compaq Pentium N3700, R$ 2.999,99)."},
+    {"contem": "desktop", "situacao": "no_site", "nota": "Linha Home X-Linne de R$ 1.449,99 a R$ 4.029,99. A categoria Office está vazia."},
+    {"contem": "kits upgrade", "situacao": "no_site", "nota": "Kits 1151 de R$ 999,99 a R$ 1.039,99."},
+    {"contem": "monitor", "situacao": "no_site", "nota": "Cinco modelos de R$ 223,90 a R$ 999,90, parte deles revisados."},
+    {"contem": "mouses e teclados", "situacao": "no_site", "nota": "Mouse a partir de R$ 14,85 e teclado a partir de R$ 29,85."},
+    {"contem": "smartphone", "situacao": "fora", "nota": "Categoria Smartphones vazia no site."},
+    {"contem": "impressora", "situacao": "fora", "nota": "O site só tem bobina térmica; nenhuma impressora."},
+    {"contem": "roteadores", "situacao": "parcial", "nota": "Só cabos, conectores e adaptador Wi-Fi; sem roteador ou switch."},
+    {"contem": "caixas de som", "situacao": "nao_conferido", "nota": "Categoria existe no menu do site, mas não foi conferida."},
+    {"contem": "cabos e filtros", "situacao": "no_site", "nota": "Cabos de rede a partir de R$ 1,96 e filtros de linha a partir de R$ 63,96."},
+    {"contem": "assistencia", "situacao": "no_site", "nota": "Serviço próprio, com diagnóstico em até 3 dias úteis."}
+  ]
+}

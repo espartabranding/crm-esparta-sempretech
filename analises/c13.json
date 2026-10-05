@@ -1,0 +1,75 @@
+{
+  "id": "c13",
+  "empresa": "Santacruz Engenharia",
+  "identidade_confirmada": true,
+  "resumo": "Construtora de engenharia civil fundada em 1991, com mais de 30 anos de atuação em obras industriais, de energia, infraestrutura, edificações comerciais, educacionais e residenciais, além de estruturas metálicas e pré-moldados. Atende principalmente indústrias do Polo de Camaçari e do interior da Bahia (Elekeiroz, Proquigel, Vanádio de Maracás, parque eólico em Brotas de Macaúbas), além de escolas, faculdades e obras públicas na região metropolitana de Salvador.",
+  "porte": "LinkedIn informa faixa de 51 a 200 funcionários (36 perfis vinculados). Capital social de R$ 1.080.000,00. Certificada ISO 9001 e PBQP-H nível A. Tem frota própria de equipamentos para canteiros modulares e containers. Não foi encontrado o número de obras em andamento.",
+  "onde_opera": "Sede no Poloplast, em Camaçari (Rua O, s/n, Quadra Q, Lote 01). O site se apresenta como construtora em Salvador, Bahia. Obras listadas em Camaçari, Lauro de Freitas, Salvador, Madre de Deus, Maracás, Brotas de Macaúbas, Vitória da Conquista e uma em Almas (TO).",
+  "contato_publico": {
+    "telefone": "(71) 3644-4451 / (71) 3644-4447",
+    "email": null,
+    "site": "https://santacruzengenharia.com.br",
+    "linkedin": "https://br.linkedin.com/company/santacruz-engenharia"
+  },
+  "decisores": [
+    {
+      "nome": "Augusto Cezar Almeida de Oliveira Pinto",
+      "cargo": "Sócio-administrador (quadro societário público do CNPJ)",
+      "fonte": "https://brasilapi.com.br/api/cnpj/v1/40489197000199"
+    },
+    {
+      "nome": "José Mário Lima Bastos",
+      "cargo": "Sócio-administrador (quadro societário público do CNPJ); aparece como José Bastos na página da empresa no LinkedIn",
+      "fonte": "https://brasilapi.com.br/api/cnpj/v1/40489197000199"
+    }
+  ],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: por montar canteiros modulares em container dentro de plantas industriais e em obras no interior, a empresa provavelmente precisa de computadores de mesa e, sobretudo, nobreaks e estabilizadores para os escritórios de obra, onde a energia provisória oscila. A sede em Camaçari deve ter um administrativo de porte médio com reposição periódica de máquinas e periféricos.",
+  "produto_de_entrada": "nobreak",
+  "complementares": [
+    "computador montado",
+    "estabilizador"
+  ],
+  "motivo_da_ligacao": "A Santacruz trabalha com canteiro modular e container próprios, em obras industriais no Polo e no interior. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para o escritório em container, com assistência técnica própria em Salvador. Como os computadores desses escritórios são alimentados hoje: por nobreak ou direto na energia do canteiro?",
+  "perguntas_especificas": [
+    "Quantas obras vocês têm hoje com escritório em container, e quantas posições de computador em cada uma?",
+    "Os computadores acompanham o container de uma obra para outra ou são adquiridos a cada mobilização?",
+    "A aquisição de equipamentos de informática parte da sede no Poloplast ou cada obra resolve a sua?"
+  ],
+  "quem_procurar": "Setor de compras ou suprimentos na sede de Camaçari; se não houver setor separado, o gerente administrativo-financeiro. Os dois sócios-administradores são a instância final de aprovação.",
+  "ressalvas": [
+    "Não foi encontrado nenhum fato recente com data (obra nova, contrato ou vaga em 2025 ou 2026). O motivo da ligação usa uma característica real publicada no site (canteiros modulares e containers próprios), não uma obra atual.",
+    "O site não informa quais obras estão em andamento; a lista de obras não tem datas nem status.",
+    "A página de contato do site não abriu na consulta; os telefones vêm do cadastro público do CNPJ e de diretórios e não foram testados. Um diretório lista também (71) 3322-5014.",
+    "Diretórios divulgam um e-mail corporativo nominal de uma pessoa da empresa; não foi incluído por não ser um endereço geral. Não foi encontrado e-mail institucional de contato.",
+    "Um diretório informa fundação em 1987; o CNPJ registra início em 09/07/1991.",
+    "Os decisores listados são os sócios do quadro societário público; não foi encontrado o nome de quem responde por compras ou TI."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "Site oficial Santacruz Engenharia",
+      "u": "https://santacruzengenharia.com.br/"
+    },
+    {
+      "t": "Obras no site oficial",
+      "u": "https://santacruzengenharia.com.br/obras/"
+    },
+    {
+      "t": "LinkedIn Santacruz Engenharia",
+      "u": "https://br.linkedin.com/company/santacruz-engenharia"
+    },
+    {
+      "t": "CNPJ 40.489.197/0001-99 (BrasilAPI)",
+      "u": "https://brasilapi.com.br/api/cnpj/v1/40489197000199"
+    },
+    {
+      "t": "Solutudo, Santacruz Engenharia Camaçari",
+      "u": "https://www.solutudo.com.br/empresas/ba/camacari/construtoras/santacruz-engenharia-ltda-3648396"
+    },
+    {
+      "t": "Econodata, Santacruz Engenharia",
+      "u": "https://www.econodata.com.br/consulta-empresa/40489197000199-santacruz-engenharia-ltda"
+    }
+  ]
+}

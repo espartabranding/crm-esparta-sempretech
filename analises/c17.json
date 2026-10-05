@@ -1,0 +1,64 @@
+{
+  "id": "c17",
+  "empresa": "Bahia Logística (Bahia Distribuição e Logística Ltda)",
+  "identidade_confirmada": true,
+  "resumo": "Operador de distribuição e entregas porta a porta fundado em 1999, a partir de um contrato de distribuição do jornal Correio para o interior da Bahia. Hoje faz entregas e coletas de e-commerce, pequenas encomendas, objetos bancários e publicações, com operação de cross-docking em Salvador e rede de parceiros em mais de 100 cidades do estado.",
+  "porte": "LinkedIn informa faixa de 51 a 200 funcionários, com 64 perfis associados. Sede administrativa, frota própria rastreada e galpões em condomínio logístico; as fontes divergem sobre a quantidade (cinco galpões; ou um próprio e três alugados; o endereço do LinkedIn cita galpões 05, 06, 07 e 10).",
+  "onde_opera": "Sede na Rodovia BA-526 (CIA-Aeroporto), km 12, nº 2091, Cassange / São Cristóvão, Salvador/BA, CEP 41505-220. Entregas em mais de 100 cidades da Bahia por rede de parceiros.",
+  "contato_publico": {
+    "telefone": "(71) 3162-8000 (WhatsApp divulgado: (71) 98525-8000)",
+    "email": null,
+    "site": "http://www.bahialogistica.com",
+    "linkedin": "https://www.linkedin.com/company/bahia-log-stica"
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: cross-docking de e-commerce em quatro ou cinco galpões exige estações de triagem, conferência e baixa de entregas ligadas o dia todo; queda de energia em galpão de rodovia para a roteirização e a saída dos veículos. Computador montado para as posições de galpão e nobreak por estação seriam o encaixe.",
+  "produto_de_entrada": "computador montado",
+  "complementares": [
+    "nobreak",
+    "monitor"
+  ],
+  "motivo_da_ligacao": "A Bahia Logística opera cross-docking de e-commerce nos galpões do Cassange e entrega em mais de cem cidades da Bahia. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para a triagem e a conferência, com assistência técnica própria em Salvador. Quantas posições de computador vocês mantêm hoje nos galpões?",
+  "perguntas_especificas": [
+    "Quantas estações de triagem e conferência vocês têm, somando os galpões do condomínio no Cassange?",
+    "Essas posições de galpão ficam em nobreak ou a triagem para quando a energia oscila?",
+    "Nos períodos de pico do e-commerce, como novembro, são montadas posições extras? Com quem os equipamentos são adquiridos?"
+  ],
+  "quem_procurar": "Gerente de operações ou gerente administrativo; se houver, o responsável por TI.",
+  "ressalvas": [
+    "A lista não trazia telefone nem site, então a identidade foi assumida pelo nome, cidade e segmento: a Bahia Distribuição e Logística Ltda (CNPJ 03.043.255/0001-20) é a única empresa de porte com esse nome fantasia em Salvador. Existe um homônimo MEI (CNPJ 49.642.779/0001-38, bairro Pau Miúdo) e empresas de nome parecido (Bahia Sul Transportes, Bahia Log, SAJ Bahia Logística); se o cadastro de origem for outro, refazer.",
+    "O site oficial não respondeu à leitura direta (conexão encerrada); as informações do site vêm dos resumos de busca das suas páginas e do LinkedIn. O site parece antigo, então números como 'mais de 100 cidades' e a quantidade de galpões podem estar desatualizados.",
+    "Nenhum fato recente datado foi encontrado (o LinkedIn não exibe publicações recentes). O motivo da ligação usa a descrição institucional da empresa, não uma novidade.",
+    "O e-mail do cadastro de CNPJ é nominal (de uma pessoa) e não foi registrado; pedir o e-mail de compras na ligação.",
+    "Um funcionário aparece nominalmente no LinkedIn sem cargo visível; não foi listado como decisor.",
+    "A origem no jornal Correio indica possível vínculo comercial com o grupo de mídia; não se sabe se há compras centralizadas."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "LinkedIn Bahia Logística (descrição, porte, endereço)",
+      "u": "https://www.linkedin.com/company/bahia-log-stica"
+    },
+    {
+      "t": "Site oficial Bahia Logística (cross-docking)",
+      "u": "http://bahialogistica.com/"
+    },
+    {
+      "t": "Site oficial: página institucional (história, estrutura)",
+      "u": "http://www.bahialogistica.com/home/v1/detalhes.asp?id=1&tipomenu=subcategoria"
+    },
+    {
+      "t": "Econodata: CNPJ 03.043.255/0001-20 (fundação, CNAE, telefone)",
+      "u": "https://www.econodata.com.br/consulta-empresa/03043255000120-bahia-distribuicao-e-logistica-ltda"
+    },
+    {
+      "t": "Econodata: homônimo MEI CNPJ 49.642.779/0001-38",
+      "u": "https://www.econodata.com.br/consulta-empresa/49642779000138-PAULO-VITOR-BEZERRA-DO-NASCIMENTO"
+    },
+    {
+      "t": "Solutudo: cadastro Bahia Logística (telefone)",
+      "u": "https://www.solutudo.com.br/empresas/ba/salvador/galpoes-logisticos-armazenamento/bahia-logistica-5345872"
+    }
+  ]
+}

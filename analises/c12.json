@@ -1,0 +1,99 @@
+{
+  "id": "c12",
+  "empresa": "ECMAN Engenharia (ECMAN S.A. / Ecman Engenharia Ltda)",
+  "identidade_confirmada": true,
+  "resumo": "Empresa de construção e montagem industrial fundada na Bahia em 1983, que faz obras em regime EPC (projeto, suprimento, construção civil e montagem eletromecânica) para óleo e gás, química, petroquímica, energia e infraestrutura, com especialidade em dutos e tanques de armazenamento. O CNPJ matriz (13.286.323/0001-35) está registrado em Salvador, no Caminho das Árvores, mas a página da empresa no LinkedIn indica sede no Centro do Rio de Janeiro e a atuação é nacional e internacional.",
+  "porte": "Empresa grande para o padrão da lista: capital social de R$ 100 milhões no CNPJ; LinkedIn informa faixa de 1.001 a 5.000 funcionários; reportagem de fev/2021 citava cerca de 2.910 funcionários e presença em 8 países. Não foi encontrado quantas pessoas trabalham no escritório de Salvador (o endereço é uma sala comercial, sala 902).",
+  "onde_opera": "Matriz no CNPJ: Av. Tancredo Neves, 1283, Ed. Omega, sala 902, Caminho das Árvores, Salvador. Endereço de sede no LinkedIn: Rua Santa Luzia, 651, 32º andar, Centro, Rio de Janeiro. Diretórios listam filiais em Barra dos Coqueiros (SE), Cubatão (SP), Rio de Janeiro e São Paulo. O site cita obra de tanques e dutos na Bahia, sem data.",
+  "contato_publico": {
+    "telefone": "(71) 2201-2200",
+    "email": "faleconosco@ecman.com.br",
+    "site": "https://www.ecman.com.br",
+    "linkedin": "https://br.linkedin.com/company/ecmansa"
+  },
+  "decisores": [
+    {
+      "nome": "Luciano de Carvalho",
+      "cargo": "Diretor executivo da Ecman (entrevista de nov/2023); consta como administrador no CNPJ. É o topo da empresa, não o comprador de informática.",
+      "fonte": "https://petronoticias.com.br/ecman-olha-para-oportunidades-em-projetos-de-terminais-de-gnl-ferrovias-e-descomissionamento/"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Diretor executivo disse que 2023 foi um ano sem crescimento de receita por atraso de projetos de clientes, e que a empresa mira terminais de GNL, ferrovias e descomissionamento de plataformas; citou subsidiária local na Nigéria e atuação no Senegal.",
+      "data": "11/2023",
+      "fonte": "https://petronoticias.com.br/ecman-olha-para-oportunidades-em-projetos-de-terminais-de-gnl-ferrovias-e-descomissionamento/"
+    },
+    {
+      "fato": "Reportagem informava cerca de 2.910 funcionários, presença em 8 países da América Latina e África e mais de US$ 175 milhões em obras em andamento; controladora TIUÁ Empreendimentos.",
+      "data": "02/2021",
+      "fonte": "https://en.clickpetroleoegas.com.br/ecman-cresce-no-mercado-de-engenharia-do-brasil-e-se-expande-em-outros-7-paises/"
+    },
+    {
+      "fato": "Situação cadastral ATIVA do CNPJ matriz em Salvador, com data de situação de 12/04/2023.",
+      "data": "04/2023",
+      "fonte": "https://brasilapi.com.br/api/cnpj/v1/13286323000135"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: como cada obra de montagem industrial abre um canteiro com escritório de campo (planejamento, medição, almoxarifado, segurança), a empresa provavelmente precisa de computadores de mesa e nobreaks a cada mobilização, sobretudo nas obras da Bahia e de Sergipe. O escritório de Salvador, sendo uma sala comercial, tende a ter demanda pequena.",
+  "produto_de_entrada": "nobreak",
+  "complementares": [
+    "computador montado",
+    "monitor"
+  ],
+  "motivo_da_ligacao": "A ECMAN realiza montagem industrial, com obras de tanques e dutos na Bahia, e mantém a matriz no Caminho das Árvores. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para o escritório de campo, com assistência técnica própria em Salvador. Ao mobilizar um canteiro na região, de onde vem o equipamento do escritório de campo?",
+  "perguntas_especificas": [
+    "A aquisição de equipamentos de informática é feita pelo escritório de Salvador ou é centralizada no Rio de Janeiro?",
+    "Há obra em andamento ou prevista na Bahia ou em Sergipe que exija a montagem de um escritório de canteiro?",
+    "Nos canteiros de montagem industrial, os computadores ficam em nobreak ou ligados diretamente à energia provisória da obra?"
+  ],
+  "quem_procurar": "Suprimentos ou compras. Como a sala de Salvador pode ser só administrativa, perguntar logo na recepção se compras e TI ficam em Salvador ou no Rio de Janeiro e pedir o contato do setor certo.",
+  "ressalvas": [
+    "O LinkedIn da empresa indica sede no Rio de Janeiro; é provável que compras e TI sejam centralizadas fora da Bahia (não confirmado).",
+    "Não foi encontrada obra da ECMAN na Bahia com data recente; a menção a tanques e dutos na Bahia no site não tem data. O motivo da ligação se apoia nesse fato sem data e na situação típica do segmento.",
+    "Os números de porte são antigos (2021) ou em faixa (LinkedIn). Um diretório chega a listar 5 a 9 funcionários para o CNPJ de Salvador, o que sugere escritório local pequeno.",
+    "Há dois telefones em fontes diferentes: (71) 2201-2200 no CNPJ e (71) 3246-1200 em diretório. Nenhum foi testado.",
+    "Existe um site antigo, ecmanengenharia.com.br, citado em diretórios; o site atual da empresa é ecman.com.br.",
+    "Reportagens antigas mencionam dificuldades após rescisão de contrato no Comperj e comentários de leitores sobre pendências trabalhistas de 2015; vale confirmar condição de pagamento antes de vender a prazo.",
+    "Empresa desse porte costuma preferir notebook para engenheiros, que não está confirmado no catálogo."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "Site oficial ECMAN",
+      "u": "http://www.ecman.com.br"
+    },
+    {
+      "t": "Contato no site ECMAN",
+      "u": "https://www.ecman.com.br/contato"
+    },
+    {
+      "t": "LinkedIn ECMAN S.A.",
+      "u": "https://br.linkedin.com/company/ecmansa"
+    },
+    {
+      "t": "CNPJ matriz Salvador (BrasilAPI)",
+      "u": "https://brasilapi.com.br/api/cnpj/v1/13286323000135"
+    },
+    {
+      "t": "Petronotícias, entrevista nov/2023",
+      "u": "https://petronoticias.com.br/ecman-olha-para-oportunidades-em-projetos-de-terminais-de-gnl-ferrovias-e-descomissionamento/"
+    },
+    {
+      "t": "Click Petróleo e Gás, fev/2021",
+      "u": "https://en.clickpetroleoegas.com.br/ecman-cresce-no-mercado-de-engenharia-do-brasil-e-se-expande-em-outros-7-paises/"
+    },
+    {
+      "t": "Petronotícias, tag Ecman (Comperj)",
+      "u": "https://petronoticias.com.br/tag/ecman-engenharia/"
+    },
+    {
+      "t": "Econodata, Ecman Salvador e filiais",
+      "u": "https://www.econodata.com.br/consulta-empresa/13286323000135-ECMAN-ENGENHARIA-LTDA"
+    },
+    {
+      "t": "ZoomInfo, Ecman Engenharia",
+      "u": "https://www.zoominfo.com/c/ecman-engenharia-sa/372899880"
+    }
+  ]
+}

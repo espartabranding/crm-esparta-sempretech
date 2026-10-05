@@ -1,0 +1,69 @@
+{
+  "id": "c11",
+  "empresa": "Top Engenharia",
+  "identidade_confirmada": true,
+  "resumo": "Construtora pesada de Salvador, fundada em 1977, que executa terraplenagem, pavimentação, infraestrutura, saneamento, barragens, aeroportos e obras de arte especiais em vários estados. Segundo o próprio perfil no LinkedIn, tem frota própria de equipamentos, controla uma pedreira comercial e uma incorporadora.",
+  "porte": "LinkedIn da empresa declara a faixa de 501 a 1.000 funcionários (319 perfis vinculados). Top Engenharia Ltda, CNPJ 14.448.260/0001-39, aberta em 31/10/1977; o cadastro consultado indica capital social de R$ 70,1 milhões. Certificações citadas no LinkedIn: ISO 9001 e Qualiop nível A. Não foi encontrada lista pública de obras ou contratos em andamento.",
+  "onde_opera": "Sede e base na Rua do Zaire, s/n, km 01 da antiga Estrada Velha de Ipitanga, Granjas Rurais Presidente Vargas, Salvador, CEP 41230-060. Obras em vários estados, segundo o LinkedIn; os locais atuais não foram confirmados.",
+  "contato_publico": {
+    "telefone": "(71) 2109-4949",
+    "email": "top@topengenharia.com.br",
+    "site": "http://www.topengenharia.com.br",
+    "linkedin": "https://br.linkedin.com/company/top-engenharia"
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: uma construtora pesada com sede em área industrial, pedreira e canteiros de obra rodoviária e de saneamento deve ter escritórios de campo sujeitos a queda e oscilação de energia e a poeira, o que pede nobreak ou estabilizador, computadores de mesa robustos e manutenção periódica das máquinas que voltam de obra. A quantidade de posições e a forma de compra não estão confirmadas.",
+  "produto_de_entrada": "Nobreak",
+  "complementares": [
+    "Computador montado",
+    "Assistência técnica"
+  ],
+  "motivo_da_ligacao": "A Top Engenharia atua desde 1977 em terraplenagem, pavimentação e saneamento, com frota própria e pedreira, a partir da base na Rua do Zaire. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para o escritório de campo, com assistência técnica própria em Salvador. Como estão protegidos hoje os computadores das obras diante da oscilação dos geradores?",
+  "perguntas_especificas": [
+    "A aquisição de computadores e nobreaks para as obras parte da sede na Rua do Zaire ou fica com o engenheiro residente de cada contrato?",
+    "Na pedreira e nos canteiros com gerador, já houve perda de máquina por oscilação de energia?",
+    "Há obra em mobilização nos próximos meses na Bahia, e quantas posições o escritório de campo costuma ter?"
+  ],
+  "quem_procurar": "Setor de compras/suprimentos na sede; se houver, o responsável por TI. Em segundo lugar, o administrativo-financeiro.",
+  "ressalvas": [
+    "Nenhum fato recente com data foi encontrado (contrato, obra nova, vaga ou notícia de 2025 ou 2026). O motivo da ligação usa o perfil da empresa e a situação típica de construtora pesada, não um evento específico.",
+    "O site oficial apresentou erro de certificado na consulta de 05/10/2026 e não pôde ser lido; os dados vêm do LinkedIn, de cadastros de CNPJ e de guias de empresas.",
+    "'Top Engenharia' é um nome comum, com várias empresas homônimas no Brasil. A de Salvador se confirma pelo endereço da Rua do Zaire, pelo telefone (71) 2109-4949 e pelo CNPJ 14.448.260/0001-39.",
+    "Nenhum nome de responsável por compras ou TI foi encontrado em fonte da empresa, LinkedIn ou imprensa. O cadastro de CNPJ lista sócios da família Cunha Guedes, o que é dado societário e não indica quem compra equipamento.",
+    "Existe também uma 'Top Engenharia SCP' (CNPJ 54.350.547/0001-46) em Salvador; a relação com a empresa não foi verificada.",
+    "As obras ficam em vários estados; parte da compra pode ser feita localmente em cada obra.",
+    "O número de funcionários é a faixa autodeclarada no LinkedIn e inclui operadores e pessoal de campo, que não usam computador."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "LinkedIn da empresa",
+      "u": "https://br.linkedin.com/company/top-engenharia"
+    },
+    {
+      "t": "Econodata, CNPJ 14.448.260/0001-39",
+      "u": "https://www.econodata.com.br/consulta-empresa/14448260000139-top-engenharia-ltda"
+    },
+    {
+      "t": "Solutudo: endereço, telefone, e-mail e fundação",
+      "u": "https://www.solutudo.com.br/empresas/ba/salvador/obras-publicas-e-privadas/top-engenharia-ltda-5403890"
+    },
+    {
+      "t": "Guia de construtoras da Bahia: Top Engenharia",
+      "u": "https://www.materialdeconstrucaoba.com.br/salvador-ba/construtora-e-empreiteira/top-engenharia-salvador-ba"
+    },
+    {
+      "t": "Guia de construtoras em Salvador",
+      "u": "https://construtorasembrasil.com/bahia/salvador/"
+    },
+    {
+      "t": "Site oficial (erro de certificado na consulta)",
+      "u": "http://www.topengenharia.com.br/"
+    },
+    {
+      "t": "CNPJ.biz: Top Engenharia SCP",
+      "u": "https://cnpj.biz/54350547000146"
+    }
+  ]
+}

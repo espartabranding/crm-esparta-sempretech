@@ -1,0 +1,72 @@
+{
+  "id": "c4",
+  "empresa": "Online Gestão (On Line Locação de Mão de Obra Ltda)",
+  "identidade_confirmada": true,
+  "resumo": "Empresa de recursos humanos de Salvador que fornece mão de obra temporária, recrutamento e seleção, terceirização de serviços (limpeza, segurança, RH, logística, recepção) e facilities. Atende empresas de varejo, saúde, indústria, logística, hotelaria e educação, com atendimento declarado em vários estados a partir da Bahia.",
+  "porte": "LinkedIn informa faixa de 51 a 200 funcionários (equipe própria); o site fala em milhares de colaboradores alocados em clientes, sem número exato. Capital social de R$ 300.000,00. Dois endereços em Salvador.",
+  "onde_opera": "Salvador: Rua Arnaldo Lopes da Silva, 66, Stiep (indicado como sede na página de contato) e Av. Tancredo Neves, 1033, Ed. Ferreira Ferraz, salas 309 a 311, Caminho das Árvores (endereço do CNPJ). O site declara atendimento nacional, com ênfase em BA, SE, AL, PE, PB, RN, GO, MG, SP e RJ; não foram encontradas filiais com endereço fora de Salvador.",
+  "contato_publico": {
+    "telefone": "(71) 3039-4150",
+    "email": "contato@onlinegestao.com.br",
+    "site": "https://www.onlinegestao.com.br",
+    "linkedin": "https://br.linkedin.com/company/online-gestao"
+  },
+  "decisores": [
+    {
+      "nome": "Renata Falcão Sousa dos Santos",
+      "cargo": "Sócia-administradora (quadro societário público do CNPJ, desde 06/2023)",
+      "fonte": "https://brasilapi.com.br/api/cnpj/v1/13500336000165"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Divulgou no LinkedIn vagas de gerente comercial bilíngue e de coordenador de operações, além de posts sobre mão de obra temporária e contratação para o varejo.",
+      "data": "09/2026",
+      "fonte": "https://br.linkedin.com/company/online-gestao"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: como o trabalho interno é de recrutamento, seleção, departamento pessoal e atendimento a candidatos e colaboradores por telefone e WhatsApp, a empresa provavelmente precisa de computadores de mesa com monitor e headset para as posições dos dois escritórios, com reposição quando a equipe cresce em picos de temporário (fim de ano no varejo). Em contratos de recepção e apoio administrativo, pode ter de equipar a equipe alocada.",
+  "produto_de_entrada": "computador montado",
+  "complementares": [
+    "monitor",
+    "headset"
+  ],
+  "motivo_da_ligacao": "A Online Gestão divulga vagas de coordenador de operações e de gerente comercial e reforça o quadro temporário para o varejo neste fim de ano. A SempreTech propõe posto de trabalho completo e posição de atendimento com headset para as equipes de recrutamento e de operações, com assistência técnica própria em Salvador. Quando essas equipes crescem, como as posições novas são equipadas?",
+  "perguntas_especificas": [
+    "Quantas posições de trabalho vocês têm hoje entre o escritório do Stiep e o da Tancredo Neves?",
+    "Nos contratos de recepção e apoio administrativo, o computador da equipe alocada é fornecido pelo cliente ou pela Online Gestão?",
+    "A equipe que atende candidatos e colaboradores por telefone e WhatsApp utiliza headset? Com que frequência ocorre a reposição?"
+  ],
+  "quem_procurar": "Administrativo-financeiro ou compras. Se a recepção não souber, pedir o gerente ou coordenador de operações, que sente a falta de equipamento quando a equipe cresce.",
+  "ressalvas": [
+    "O porte real do escritório não foi confirmado: a faixa de 51 a 200 é do LinkedIn, e os milhares de colaboradores citados no site são mão de obra alocada em clientes, que normalmente não usa equipamento da empresa.",
+    "O site fala em mais de 20 anos de mercado, mas o CNPJ 13.500.336/0001-65 foi aberto em 04/2011; pode haver empresa anterior do mesmo grupo (não confirmado).",
+    "A página de contato indica o Stiep como sede, enquanto o CNPJ e a página inicial usam o endereço da Tancredo Neves; confirmar na ligação onde fica o administrativo.",
+    "A sócia-administradora vem do quadro societário público; não foi encontrado em fonte da empresa quem responde por compras ou TI.",
+    "O único fato datado é de vagas no LinkedIn (cerca de um mês antes da consulta, em 05/10/2026); as vagas podem já ter sido preenchidas.",
+    "Os números de WhatsApp divulgados são de atendimento comercial, de candidatos e de currículos; não usar para prospecção sem permissão dada por telefone."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "Site oficial Online Gestão",
+      "u": "https://www.onlinegestao.com.br/"
+    },
+    {
+      "t": "Contato no site oficial",
+      "u": "https://www.onlinegestao.com.br/contato/"
+    },
+    {
+      "t": "Serviços e soluções no site oficial",
+      "u": "https://www.onlinegestao.com.br/servicos-e-solucoes/"
+    },
+    {
+      "t": "LinkedIn Online Gestão",
+      "u": "https://br.linkedin.com/company/online-gestao"
+    },
+    {
+      "t": "CNPJ 13.500.336/0001-65 (BrasilAPI)",
+      "u": "https://brasilapi.com.br/api/cnpj/v1/13500336000165"
+    }
+  ]
+}

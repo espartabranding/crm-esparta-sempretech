@@ -1,0 +1,57 @@
+{
+  "id": "c7",
+  "empresa": "Salvador Armazéns Gerais Ltda",
+  "identidade_confirmada": true,
+  "resumo": "Empresa de armazém geral (CNAE 5211-7/01, armazéns gerais com emissão de warrant) aberta em outubro de 2016 e instalada no Porto Seco Pirajá, às margens da BR-324, em Salvador. Não tem site, LinkedIn nem notícias localizáveis; tudo o que se sabe vem de cadastros públicos de CNPJ.",
+  "porte": "Faixa de 21 a 50 funcionários segundo diretório de empresas (Econodata); um único endereço conhecido (matriz). Área de armazém e número de posições não publicados.",
+  "onde_opera": "Rodovia BR-324 (sentido Feira de Santana), 7334, Quadra A, Lote 21, Porto Seco Pirajá, Salvador/BA, CEP 41233-030.",
+  "contato_publico": {
+    "telefone": "(81) 2138-1552 (telefone do cadastro de CNPJ, DDD de Pernambuco; o (71) 3381-4945 da lista não apareceu em nenhuma fonte pública)",
+    "email": null,
+    "site": null,
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: como armazém geral com emissão de warrant, deve ter poucas estações de trabalho (recebimento, expedição, faturamento e escritório) em galpão de área industrial, onde queda ou oscilação de energia interrompe a emissão de documentos. Nobreak por posição e reposição de computador de expedição seriam as entradas naturais.",
+  "produto_de_entrada": "nobreak",
+  "complementares": [
+    "computador montado",
+    "monitor"
+  ],
+  "motivo_da_ligacao": "Em um armazém geral, uma queda de energia que derruba o computador da expedição pode interromper a saída da carga. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para o recebimento e a expedição, com assistência técnica própria em Salvador. Como estão protegidos hoje os computadores dessas duas áreas?",
+  "perguntas_especificas": [
+    "A aquisição de equipamentos de informática é resolvida no armazém do Porto Seco Pirajá ou passa por um escritório fora de Salvador?",
+    "Quantas posições de computador vocês têm entre recebimento, expedição e faturamento do armazém?",
+    "Quando uma máquina do armazém para, quem faz o conserto hoje e em quanto tempo ela volta a operar?"
+  ],
+  "quem_procurar": "Gerente administrativo ou responsável pela operação do armazém; perguntar logo se as compras são decididas em Salvador.",
+  "ressalvas": [
+    "Pouca informação pública: sem site, LinkedIn, Instagram ou notícia localizados. O motivo da ligação usa a situação típica do segmento, não um fato específico da empresa (o único dado próprio usado é a localização no Porto Seco Pirajá).",
+    "O telefone da lista, (71) 3381-4945, não foi encontrado em nenhuma fonte associada à empresa; pode estar desatualizado ou ser de outro cadastro. Confirmar na primeira ligação.",
+    "O telefone do cadastro de CNPJ tem DDD 81 (Pernambuco), o que sugere administração ou contabilidade fora da Bahia. Isso não foi confirmado; se for verdade, a objeção 'a compra é da matriz' é provável.",
+    "O e-mail que consta no cadastro de CNPJ é um endereço pessoal em provedor gratuito e por isso não foi registrado.",
+    "O quadro societário aparece em agregadores de CNPJ, mas não em fonte da própria empresa, LinkedIn ou imprensa; por isso `decisores` ficou vazio.",
+    "Faixa de funcionários (21 a 50) vem de diretório, não da empresa. As páginas de CNPJ consultadas bloquearam a leitura direta (HTTP 402/403); os dados cadastrais vêm dos resumos de busca dessas páginas e do perfil EMIS.",
+    "Conta para baixa prioridade: empresa pequena, sem sinal público de expansão ou de compra."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "EMIS: perfil Salvador Armazéns Gerais (atividade, endereço, fundação)",
+      "u": "https://www.emis.com/php/company-profile/BR/Salvador_Armazens_Gerais_Ltda_pt_5770913.html"
+    },
+    {
+      "t": "Econodata: CNPJ 26.346.898/0001-48 (porte, CNAE)",
+      "u": "https://www.econodata.com.br/consulta-empresa/26346898000148-salvador-armazens-gerais-ltda"
+    },
+    {
+      "t": "Casa dos Dados: situação cadastral, endereço e telefone",
+      "u": "https://casadosdados.com.br/solucao/cnpj/salvador-armazens-gerais-ltda-26346898000148"
+    },
+    {
+      "t": "CNPJ.biz: cadastro",
+      "u": "https://cnpj.biz/26346898000148"
+    }
+  ]
+}

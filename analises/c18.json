@@ -1,0 +1,98 @@
+{
+  "id": "c18",
+  "empresa": "Escola Rembrandt",
+  "identidade_confirmada": true,
+  "resumo": "Escola particular de Salvador que se apresenta como escola brasileira de alta performance com programa bilíngue, da Educação Infantil ao Ensino Médio. Funciona em um campus único na Av. Luís Viana Filho (Paralela), com matrículas abertas desde o ano letivo de 2024.",
+  "porte": "Um campus, com mais de 10 mil m² segundo a imprensa local. Número de alunos e de funcionários não publicado. O site informa como razão social K-12 Premium LTDA (CNPJ 52.187.368/0001-04).",
+  "onde_opera": "Av. Luís Viana Filho, 8812, Pituaçu/Paralela, Salvador (BA), CEP 41741-590. É o mesmo endereço publicado pelo campus Paralela da UniFTC Salvador.",
+  "contato_publico": {
+    "telefone": "(71) 99913-2108 (informações) e (71) 99643-1537 (admissões), números divulgados no site da escola",
+    "email": "contato@escolarembrandt.com.br",
+    "site": "https://escolarembrandt.com.br",
+    "linkedin": null
+  },
+  "decisores": [
+    {
+      "nome": "Rosa Mandracio",
+      "cargo": "Diretora (citada na imprensa em 11/2023; não confirmado se segue no cargo)",
+      "fonte": "https://aloalobahia.com/notas/salvador-ganha-escola-de-alta-performance-com-mais-de-10-mil-m2-e-integrada-a-area-de-preservacao-ambiental"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Anunciou o Programa de Tempo Integral a partir de 2026: alunos de segunda a sexta até 18h30, com idiomas, esportes diários e estudo orientado; mensalidade-base em torno de R$ 2.000 e adicional de R$ 500.",
+      "data": "08/2025",
+      "fonte": "https://aloalobahia.com/noticias/2025/08/13/escola-rembrandt-lanca-programa-de-tempo-integral-com-foco-em-formacao-completa-a-partir-de-2026/"
+    },
+    {
+      "fato": "Abriu matrículas para 2025, destacando campus de mais de 10 mil m², estúdio de música, campo de futebol e segurança 24 horas.",
+      "data": "10/2024",
+      "fonte": "https://aloalobahia.com/noticias/2024/10/24/escola-rembrandt-abre-matriculas-para-2025-com-foco-em-educacao-de-alta-performance-e-programa-bilingue/"
+    },
+    {
+      "fato": "Lançamento da escola na Av. Paralela, com laboratórios de tecnologia e ciências, biblioteca e complexo esportivo; matrículas para as primeiras turmas de 2024.",
+      "data": "11/2023",
+      "fonte": "https://aloalobahia.com/notas/salvador-ganha-escola-de-alta-performance-com-mais-de-10-mil-m2-e-integrada-a-area-de-preservacao-ambiental"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: escola nova e em crescimento de turmas, que anuncia laboratórios de tecnologia e passou a ter período integral em 2026, pode precisar completar posições de laboratório e de secretaria com computador e monitor. Como a estrutura é recente, upgrade de máquina antiga provavelmente não é a dor aqui.",
+  "produto_de_entrada": "computador montado",
+  "complementares": [
+    "monitor",
+    "nobreak"
+  ],
+  "motivo_da_ligacao": "A Rembrandt iniciou neste ano o Programa de Tempo Integral, com os alunos permanecendo na escola até o fim da tarde. A SempreTech propõe posto de trabalho completo para o laboratório de tecnologia e a secretaria, com assistência técnica própria em Salvador. Que reforço de posições de trabalho está previsto nessas áreas para o próximo ano?",
+  "perguntas_especificas": [
+    "A aquisição de computadores da escola é decidida internamente ou passa por uma mantenedora ou grupo?",
+    "O laboratório de tecnologia utiliza computadores de mesa ou outro tipo de equipamento, e quantas posições possui hoje?",
+    "Estão previstas turmas novas em 2027 que demandem mais máquinas no laboratório ou no administrativo?"
+  ],
+  "quem_procurar": "Direção administrativa ou financeira da escola; se houver, o responsável por TI/infraestrutura do campus.",
+  "ressalvas": [
+    "Os únicos telefones públicos encontrados são celulares de atendimento a famílias (admissões e informações); não foi encontrado telefone fixo nem contato de compras.",
+    "A escola divide o endereço com o campus Paralela da UniFTC Salvador (c26). Não foi encontrada fonte que confirme vínculo societário entre as duas; se houver, a compra pode ser a mesma da Rede UniFTC e vale tratar as duas contas juntas.",
+    "Existe um segundo CNPJ com o nome fantasia Escola Rembrandt em Salvador (Instituto Educar LTDA, 08.949.446/0001-79, aberto em 2007); a relação com a escola atual não foi verificada.",
+    "Diretora citada só em matéria de 11/2023; confirmar quem dirige hoje.",
+    "Número de alunos não publicado: pode ser uma instituição ainda pequena, com compra de poucas unidades.",
+    "Escola nova e de posicionamento premium pode usar notebooks, tablets ou Chromebooks em sala, que estão fora do que pode ser ofertado."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "Escola Rembrandt – site oficial",
+      "u": "https://escolarembrandt.com.br/"
+    },
+    {
+      "t": "Escola Rembrandt – Campus",
+      "u": "https://escolarembrandt.com.br/campus/"
+    },
+    {
+      "t": "Alô Alô Bahia – Tempo Integral 2026 (08/2025)",
+      "u": "https://aloalobahia.com/noticias/2025/08/13/escola-rembrandt-lanca-programa-de-tempo-integral-com-foco-em-formacao-completa-a-partir-de-2026/"
+    },
+    {
+      "t": "Alô Alô Bahia – matrículas 2025 (10/2024)",
+      "u": "https://aloalobahia.com/noticias/2024/10/24/escola-rembrandt-abre-matriculas-para-2025-com-foco-em-educacao-de-alta-performance-e-programa-bilingue/"
+    },
+    {
+      "t": "Alô Alô Bahia – lançamento da escola (11/2023)",
+      "u": "https://aloalobahia.com/notas/salvador-ganha-escola-de-alta-performance-com-mais-de-10-mil-m2-e-integrada-a-area-de-preservacao-ambiental"
+    },
+    {
+      "t": "Escola Rembrandt – Facebook (e-mail de contato)",
+      "u": "https://www.facebook.com/escolarembrandt/"
+    },
+    {
+      "t": "Econodata – K12 Premium LTDA",
+      "u": "https://www.econodata.com.br/consulta-empresa/52187368000104-k12-premium-ltda"
+    },
+    {
+      "t": "CNPJ.biz – Instituto Educar LTDA (homônimo)",
+      "u": "https://cnpj.biz/08949446000179"
+    },
+    {
+      "t": "UniFTC Salvador – endereço do campus Paralela",
+      "u": "https://www.uniftc.edu.br/unidades/faculdade-em-salvador"
+    }
+  ]
+}

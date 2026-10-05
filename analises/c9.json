@@ -1,0 +1,82 @@
+{
+  "id": "c9",
+  "empresa": "Labchecap",
+  "identidade_confirmada": true,
+  "resumo": "Labchecap – Laboratório e Imagem é uma rede baiana de análises clínicas, exames de imagem e vacinas, fundada em 1983 e sediada em Salvador. Atende pacientes e médicos em unidades próprias em Salvador, Região Metropolitana, Feira de Santana e Alagoinhas, e opera um centro técnico próprio no Imbuí que funciona 24 horas.",
+  "porte": "Faixa de 501 a 1.000 funcionários no LinkedIn (844 perfis associados). O LinkedIn da empresa fala em 48 unidades na Bahia; a página de unidades do site listava 27 na consulta de 10/2026. Centro técnico de 800 m² com capacidade de cerca de 1,8 milhão de exames por mês.",
+  "onde_opera": "Salvador (Caminho das Árvores, Alphaville, Barra, Brotas, Cabula, Cajazeiras, Caminho de Areia, Costa Azul, Federação, Graça, Horto, Imbuí, Liberdade, Paripe, Patamares, Pituba, Saboeiro, São Caetano, São Rafael, Stella Maris, Stiep, Salvador Shopping, Shopping Paralela, Av. Paulo VI), além de Lauro de Freitas, Camaçari, Candeias, Simões Filho, Feira de Santana e Alagoinhas. Sede informada no LinkedIn: Rua Pernambuco, 273, Pituba. Centro técnico: Rua Padre Casemiro Queiroga, 2212, Imbuí.",
+  "contato_publico": {
+    "telefone": "(71) 3345-8200",
+    "email": null,
+    "site": "https://www.labchecap.com.br",
+    "linkedin": "https://www.linkedin.com/company/labchecap"
+  },
+  "decisores": [
+    {
+      "nome": "Alexander Benedicto",
+      "cargo": "Head of Operations | CIO | Innovation and Technology (como aparece no LinkedIn da empresa)",
+      "fonte": "https://www.linkedin.com/company/labchecap"
+    },
+    {
+      "nome": "Maurício V. Bernardino",
+      "cargo": "CEO/Presidente",
+      "fonte": "https://www.linkedin.com/company/labchecap"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Inaugurou centro tecnológico de 800 m² no Imbuí, com 18 plataformas Roche, automação pré e pós-analítica, capacidade de cerca de 1,8 milhão de exames por mês e operação 24 horas, sete dias por semana.",
+      "data": "09/2024",
+      "fonte": "https://cbdl.org.br/labchecap-de-salvador-ba-inaugura-centro-tecnologico-com-equipamentos-inovadores-e-de-ultima-geracao/"
+    },
+    {
+      "fato": "LinkedIn da empresa registra posts recentes sobre participação no 58º Congresso Brasileiro de Patologia Clínica e um Fórum de CEOs; não foi encontrada notícia de unidade nova em 2025 ou 2026.",
+      "data": "2026",
+      "fonte": "https://www.linkedin.com/company/labchecap"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: com dezenas de recepções de coleta e um centro técnico 24 horas, a rede provavelmente tem muitas estações de atendimento que não podem cair e que precisam de reposição frequente; nobreak por balcão e computador de atendimento padronizado seriam a porta de entrada. Não há confirmação de que as recepções estejam sem nobreak nem de como a TI compra hoje.",
+  "produto_de_entrada": "nobreak",
+  "complementares": [
+    "computador montado",
+    "assistência técnica"
+  ],
+  "motivo_da_ligacao": "A Labchecap mantém unidades de coleta distribuídas por Salvador e região, além do centro técnico do Imbuí em funcionamento 24 horas. A SempreTech propõe posição de atendimento completa com proteção de energia por nobreak e renovação de máquinas por upgrade, com assistência técnica própria em Salvador. Quando uma estação de recepção para em uma unidade, como e em quanto tempo ocorre a reposição?",
+  "perguntas_especificas": [
+    "As recepções das unidades de coleta ficam todas em nobreak ou apenas o centro técnico do Imbuí?",
+    "A reposição de computadores e periféricos das unidades é feita pela TI central ou cada unidade solicita a sua?",
+    "Há unidade nova, reforma ou troca de máquinas de recepção prevista para os próximos meses?"
+  ],
+  "quem_procurar": "Infraestrutura de TI (suporte às unidades) ou Compras/Suprimentos; a área de tecnologia aparece no LinkedIn sob um Head de Operações/CIO.",
+  "ressalvas": [
+    "Rede grande e estruturada, com área de TI própria: é provável que já tenha fornecedores homologados e contratos; entrar como segunda cotação e em reposição avulsa.",
+    "Número de unidades diverge entre fontes (48 no LinkedIn, 27 listadas no site); não usar número na ligação.",
+    "O nome e o cargo de Alexander Benedicto vieram da listagem de funcionários do LinkedIn da empresa via resultado de busca; confirmar na recepção antes de pedir por ele.",
+    "Não foi encontrado e-mail corporativo de compras ou TI.",
+    "Não foi encontrada evidência de que pertença a grupo nacional (Dasa, Fleury etc.); o site não menciona controlador, mas isso não foi verificado em registro societário.",
+    "A área técnica do laboratório usa equipamentos de fabricante (Roche, Sysmex) com requisitos próprios; a oferta deve ficar em recepção e administrativo."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "Labchecap – Unidades (site oficial)",
+      "u": "https://www.labchecap.com.br/unidades/index.html"
+    },
+    {
+      "t": "Labchecap – LinkedIn da empresa",
+      "u": "https://www.linkedin.com/company/labchecap"
+    },
+    {
+      "t": "CBDL – centro tecnológico (09/2024)",
+      "u": "https://cbdl.org.br/labchecap-de-salvador-ba-inaugura-centro-tecnologico-com-equipamentos-inovadores-e-de-ultima-geracao/"
+    },
+    {
+      "t": "Labchecap – Corpo clínico (site oficial)",
+      "u": "https://www.labchecap.com.br/o-labchecap/corpo-clinico/index.html"
+    },
+    {
+      "t": "Labchecap – site oficial",
+      "u": "https://www.labchecap.com.br/"
+    }
+  ]
+}

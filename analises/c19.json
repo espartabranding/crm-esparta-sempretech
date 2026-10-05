@@ -1,0 +1,103 @@
+{
+  "id": "c19",
+  "empresa": "TEL Centro de Contatos Ltda (Tel Contact Center / TEL Telemática)",
+  "identidade_confirmada": true,
+  "resumo": "Uma das maiores empresas de contact center do Brasil, com matriz em Salvador e mais de 30 anos de mercado. Presta atendimento, vendas, suporte técnico, backoffice e cobrança para grandes contratantes, com operações na Bahia, em São Paulo e em Minas Gerais.",
+  "porte": "O site oficial declara mais de 10.000 colaboradores e mais de 7.000 posições de atendimento; o LinkedIn mostra faixa de 5.001 a 10.000 (4.136 perfis associados) e cita mais de 3,7 milhões de interações por mês. Sete unidades listadas no site, cinco delas na Bahia.",
+  "onde_opera": "Salvador: matriz na Av. Tancredo Neves, 1033 (Ed. Ferreira Ferraz, Caminho das Árvores); Av. Tancredo Neves, 1543; Comércio (R. Lauro Müller, s/n; seleção de pessoal na Rua Portugal, 21); Av. ACM, 4197. Também Feira de Santana/BA, Barueri/SP (Alphaville) e Belo Horizonte/MG. Anúncios de vagas citam ainda unidades no Cabula e na região de Vila Laura/Brotas.",
+  "contato_publico": {
+    "telefone": "(71) 3273-2400 (aparece associado à página da empresa no Facebook, unidade Av. Tancredo Neves, 1543); o cadastro de CNPJ da matriz traz (71) 3341-2989",
+    "email": "financeiro@tel.inf.br (e-mail do cadastro de CNPJ; não é canal de compras)",
+    "site": "https://www.telsmart.com.br",
+    "linkedin": "https://br.linkedin.com/company/tel-centrodecontatos"
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Abriu seleção para 521 vagas de operador de telemarketing receptivo pelo projeto 'Pit Stop', com atendimento presencial de 1º a 13 de outubro na Rua Portugal, 21, Comércio.",
+      "data": "out/2026",
+      "fonte": "https://www.jornaldamidia.com.br/2026/10/01/empresa-de-telemarketing-dispoe-de-521-vagas/"
+    },
+    {
+      "fato": "Abriu 100 vagas exclusivas para pessoas com deficiência em Salvador.",
+      "data": "ago/2026",
+      "fonte": "https://falagenefax.com/2026/08/28/tel-100-vagas-pcd-salvador/"
+    },
+    {
+      "fato": "Anunciou 300 vagas de operador de telemarketing (ativo e receptivo) em Salvador, com unidades citadas no Cabula e em Vila Laura/Brotas.",
+      "data": "mai/2026",
+      "fonte": "https://empregosnabahia.com.br/tel-telematica-vagas-operador-telemarketing-salvador-sem-experiencia/"
+    },
+    {
+      "fato": "Realizou mutirão de empregos com 280 vagas de operador de telemarketing na Rua Portugal, 21, Comércio.",
+      "data": "fev/2026",
+      "fonte": "https://bahiaeconomica.com.br/wp/2026/02/25/tel-centro-de-contatos-promove-mutirao-com-280-vagas-de-operador-de-telemarketing-em-salvador/"
+    },
+    {
+      "fato": "Publicou que venceu seis troféus no Prêmio ABEMD 2026 e que participa da CONAREC 2026 com estande e painel.",
+      "data": "set/2026",
+      "fonte": "https://br.linkedin.com/company/tel-centrodecontatos"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: com mais de 7.000 posições e turmas de centenas de operadores entrando várias vezes por ano, o consumo de headset, teclado e mouse por desgaste e por abertura de posição deve ser alto e contínuo. O lote grande provavelmente vem de distribuidor nacional ou contrato corporativo; o espaço para um fornecedor de Salvador é a reposição rápida e as posições de treinamento das turmas novas.",
+  "produto_de_entrada": "headset",
+  "complementares": [
+    "teclado",
+    "mouse"
+  ],
+  "motivo_da_ligacao": "A TEL abriu seleção para mais de quinhentas vagas de operador neste mês de outubro, no Comércio. A SempreTech propõe posição de atendimento com headset, computador montado, monitor, teclado e mouse prontos para o primeiro dia de treinamento, com assistência técnica própria em Salvador. Como está organizada a reposição de headset para as turmas que estão ingressando?",
+  "perguntas_especificas": [
+    "Para as turmas que ingressam em outubro, as posições de treinamento e de operação já contam com headset ou a aquisição ainda será concluída?",
+    "Vocês padronizam um modelo de headset por operação, USB ou RJ9, ou ele varia conforme o contratante de cada unidade?",
+    "A reposição do dia a dia das unidades de Salvador (Comércio, Tancredo Neves e ACM) é feita localmente ou tudo segue por um contrato corporativo?"
+  ],
+  "quem_procurar": "Compras/suprimentos ou infraestrutura de TI (field service) na matriz da Av. Tancredo Neves, 1033; pedir quem cuida da reposição de periféricos das posições de atendimento.",
+  "ressalvas": [
+    "Empresa muito grande para o porte da SempreTech: é provável que compre periféricos em contrato corporativo ou direto de distribuidor. Tratar como venda de reposição local e pedir para entrar como segunda cotação; não prometer volume nem prazo para lotes de centenas de unidades sem confirmar estoque.",
+    "Nenhum decisor de compras ou de TI foi encontrado em fonte permitida. O LinkedIn da empresa mostra um executivo comercial e de marketing, que não é o comprador e por isso não foi listado.",
+    "O telefone (71) 3273-2400 aparece em resultado de busca ligado à página da empresa no Facebook, mas a leitura direta da página não exibiu o número; confirmar na ligação. Pode ser PABX de uma unidade operacional e cair em URA.",
+    "A notícia das 521 vagas (Jornal da Mídia, 01/10/2026) bloqueou a leitura direta (HTTP 403); os detalhes vêm do resumo de busca da página. Os mutirões de fevereiro e maio foram lidos na íntegra e confirmam o padrão.",
+    "Divergência de porte entre fontes: site diz 10.000+ colaboradores, LinkedIn mostra faixa de 5.001 a 10.000.",
+    "Marca, modelo e conector do headset em uso não são públicos; o catálogo da SempreTech tem Intelbras CHS 40 (USB e RJ9 revisado). Se usarem outra marca, só anotar.",
+    "A empresa usa vários nomes (TEL Centro de Contatos, Tel Contact Center, TEL Telemática, domínio telsmart.com.br); é a mesma empresa, CNPJ raiz 73.663.114, com dezenas de filiais."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "Site oficial Tel (porte, posições, unidades)",
+      "u": "https://www.telsmart.com.br/"
+    },
+    {
+      "t": "LinkedIn Tel Contact Center (porte, publicações de set/2026)",
+      "u": "https://br.linkedin.com/company/tel-centrodecontatos"
+    },
+    {
+      "t": "Jornal da Mídia: 521 vagas (01/10/2026)",
+      "u": "https://www.jornaldamidia.com.br/2026/10/01/empresa-de-telemarketing-dispoe-de-521-vagas/"
+    },
+    {
+      "t": "Fala Genefax: 100 vagas PcD (28/08/2026)",
+      "u": "https://falagenefax.com/2026/08/28/tel-100-vagas-pcd-salvador/"
+    },
+    {
+      "t": "Empregos na Bahia: 300 vagas (mai/2026)",
+      "u": "https://empregosnabahia.com.br/tel-telematica-vagas-operador-telemarketing-salvador-sem-experiencia/"
+    },
+    {
+      "t": "Bahia Econômica: mutirão com 280 vagas (25/02/2026)",
+      "u": "https://bahiaeconomica.com.br/wp/2026/02/25/tel-centro-de-contatos-promove-mutirao-com-280-vagas-de-operador-de-telemarketing-em-salvador/"
+    },
+    {
+      "t": "Bahia Econômica: 200 vagas (30/10/2025)",
+      "u": "https://bahiaeconomica.com.br/wp/2025/10/30/empresa-de-call-center-oferece-200-vagas-para-operador-de-telemarketing/"
+    },
+    {
+      "t": "Facebook Tel Contact Center (telefone)",
+      "u": "https://www.facebook.com/telcontactcenter/"
+    },
+    {
+      "t": "Econodata: matriz CNPJ 73.663.114/0001-95 (endereço, telefone, e-mail)",
+      "u": "https://www.econodata.com.br/consulta-empresa/73663114000195-TEL-CENTRO-DE-CONTATOS-LTDA"
+    }
+  ]
+}

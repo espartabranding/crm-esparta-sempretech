@@ -1,0 +1,89 @@
+{
+  "id": "c1",
+  "empresa": "OCC Empreendimentos e Construções",
+  "identidade_confirmada": true,
+  "resumo": "Construtora com sede em Salvador que executa, sob encomenda, obras privadas de médio e grande porte: indústrias, parques logísticos, shopping centers e obras comerciais, em todas as regiões do Brasil. O portfólio publicado inclui Parque Shopping Bahia, Alstom e Gamesa (Camaçari), Hub Natura (Itupeva-SP), LG (Manaus) e Shopping Porto Velho.",
+  "porte": "LinkedIn da empresa declara a faixa de 501 a 1.000 funcionários (27 perfis vinculados). Duas unidades de escritório: matriz em Salvador e filial em São Paulo. O site fala em 'centenas de profissionais' na equipe técnica. CNPJ 18.075.067/0001-50, aberto em 05/2013. Não há lista pública de obras em andamento; o portfólio do site só mostra obras concluídas.",
+  "onde_opera": "Matriz: Alameda Salvador, 1057, Edf. Salvador Shopping Business, Torre América, Caminho das Árvores, Salvador (o site indica 16º andar; o LinkedIn, 20º). Filial: Rua das Olimpíadas, 205, 4º andar, Vila Olímpia, São Paulo. Obras em vários estados (BA, SP, RJ, AM, RO, SE, AL).",
+  "contato_publico": {
+    "telefone": "(71) 3204-6600 (matriz Salvador); (11) 2389-7110 (filial São Paulo)",
+    "email": null,
+    "site": "https://www.occempreendimentos.com.br",
+    "linkedin": "https://www.linkedin.com/company/occ-empreendimentos"
+  },
+  "decisores": [
+    {
+      "nome": "Marcelo Oliveira",
+      "cargo": "CEO (não é o comprador de informática; serve só como referência de quem dirige a empresa)",
+      "fonte": "http://www.occempreendimentos.com.br/ceo"
+    }
+  ],
+  "fatos_recentes": [
+    {
+      "fato": "Perfil da empresa no Instagram (@occ_empreendimentos) segue ativo, com publicações de obras até junho e julho de 2026. O conteúdo de cada publicação não pôde ser lido.",
+      "data": "07/2026",
+      "fonte": "https://www.instagram.com/occ_empreendimentos/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: como cada obra exige um escritório de canteiro montado do zero, e as obras ficam espalhadas pelo país, a empresa deve comprar computadores e proteção de energia a cada mobilização; a matriz em Salvador também deve ter um parque de máquinas de engenharia e administrativo que precisa de reposição e manutenção. Não há confirmação pública de como essa compra é feita.",
+  "produto_de_entrada": "Nobreak",
+  "complementares": [
+    "Computador montado",
+    "Monitor"
+  ],
+  "motivo_da_ligacao": "A OCC Empreendimentos e Construções atua em obras industriais, de logística e de shopping em todo o Brasil, a partir da sede no Caminho das Árvores. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para o escritório de cada canteiro, com assistência técnica própria em Salvador. Ao mobilizar um canteiro novo, de onde vêm os computadores e nobreaks do escritório da obra?",
+  "perguntas_especificas": [
+    "A aquisição de computadores e nobreaks para os canteiros é centralizada na matriz de Salvador, na filial de São Paulo ou fica a cargo do gerente de contrato de cada obra?",
+    "Há alguma obra na Bahia em mobilização agora ou nos próximos meses, e quantas posições de trabalho o escritório do canteiro costuma ter?",
+    "Ao término de uma obra, as máquinas retornam a Salvador para revisão antes de seguirem para a obra seguinte?"
+  ],
+  "quem_procurar": "Suprimentos/compras corporativo na matriz de Salvador; se houver, o responsável por TI. Em segundo lugar, o administrativo de obras.",
+  "ressalvas": [
+    "Homônimo: existe a OCC Construções e Participações S/A (occonstrucoes.com.br), com sede no Rio de Janeiro e base no Pará, que não tem relação aparente com esta empresa. A notícia de março de 2026 sobre a incorporação da Tridimensional é dessa outra OCC; não usar na ligação.",
+    "Não foi encontrada nenhuma obra em andamento com data confirmada; o portfólio do site lista apenas obras concluídas e não há notícias de 2025 ou 2026 na imprensa sobre esta empresa.",
+    "Boa parte das obras do portfólio fica fora da Bahia; a compra de equipamentos de canteiro pode ser feita localmente em cada obra ou pela filial de São Paulo.",
+    "O número de funcionários é a faixa autodeclarada no LinkedIn, não um dado auditado.",
+    "Nenhum e-mail corporativo é publicado; o site só oferece formulário de contato.",
+    "Não foi identificado, em fonte pública, o nome de quem cuida de compras ou de TI.",
+    "Empresa desse porte provavelmente vai pedir notebooks para engenheiros, item que não está confirmado no catálogo: apenas anotar, sem ofertar."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "Site oficial OCC Empreendimentos",
+      "u": "https://www.occempreendimentos.com.br/"
+    },
+    {
+      "t": "Contato institucional (endereços e telefones)",
+      "u": "https://www.occempreendimentos.com.br/contato"
+    },
+    {
+      "t": "Quem somos",
+      "u": "https://www.occempreendimentos.com.br/quem-somos"
+    },
+    {
+      "t": "Portfólio de obras",
+      "u": "http://www.occempreendimentos.com.br/portfolio"
+    },
+    {
+      "t": "Página do CEO",
+      "u": "http://www.occempreendimentos.com.br/ceo"
+    },
+    {
+      "t": "LinkedIn da empresa",
+      "u": "https://www.linkedin.com/company/occ-empreendimentos"
+    },
+    {
+      "t": "Instagram da empresa",
+      "u": "https://www.instagram.com/occ_empreendimentos/"
+    },
+    {
+      "t": "Econodata, CNPJ 18.075.067/0001-50",
+      "u": "https://www.econodata.com.br/consulta-empresa/18075067000150-occ-empreendimentos-e-construcoes-ltda"
+    },
+    {
+      "t": "Homônimo: OCC Construções e Participações (RJ/PA)",
+      "u": "https://occonstrucoes.com.br/"
+    }
+  ]
+}

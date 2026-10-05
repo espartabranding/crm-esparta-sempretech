@@ -1,0 +1,85 @@
+{
+  "id": "c20",
+  "empresa": "Conterp",
+  "identidade_confirmada": true,
+  "resumo": "Empresa brasileira de serviços para óleo e gás em terra, fundada em 2000 e com sede em Salvador: opera sondas terrestres de perfuração e de intervenção em poços (completação, wireline, pistoneio, desparafinação), além de operação e manutenção especializada e gerenciamento de campos. Atende operadoras como a Petrobras, com equipes em campo no interior da Bahia e em Sergipe.",
+  "porte": "Mais de 750 funcionários segundo o site (LinkedIn mostra cerca de 680 a 700). Frota própria de sondas terrestres e equipamentos. Certificações ISO 9001, 14001 e 45001. Contrato com a Petrobras para perfuração de poços de até 4 mil metros na Bahia, com campanha de setembro de 2025 a junho de 2029.",
+  "onde_opera": "Sede administrativa na Rua Frederico Simões, 125, sala 501, Ed. Liz Corporate, Caminho das Árvores, Salvador. Operação em campo no interior da Bahia (vagas citam Catu, Alagoinhas e Entre Rios; base em Catu citada em 2024) e em Sergipe (vagas de sonda em set/2026).",
+  "contato_publico": {
+    "telefone": "(71) 3037-9044",
+    "email": "atendimento@conterp.com.br",
+    "site": "https://www.conterp.com.br",
+    "linkedin": "https://br.linkedin.com/company/conterp"
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Comunicou aos fornecedores que, a partir de 01/09/2026, os novos processos de compra passam a ser formalizados por Pedido de Compra no sistema Alterdata, no lugar das Autorizações de Fornecimento.",
+      "data": "09/2026",
+      "fonte": "https://br.linkedin.com/company/conterp"
+    },
+    {
+      "fato": "Abriu vagas em Sergipe para mecânico, auxiliar de plataformista, torrista, sondador e plataformista.",
+      "data": "09/2026",
+      "fonte": "https://br.linkedin.com/company/conterp"
+    },
+    {
+      "fato": "Abriu vagas na Bahia para sondador, operador de sonda, plataformista e operador de guindaste, com trabalho em Alagoinhas, Entre Rios e Catu.",
+      "data": "04/2026",
+      "fonte": "https://empregosnabahia.com.br/vagas-conterp-bahia-sonda-operador-plataformista-guindaste/"
+    },
+    {
+      "fato": "Petrobras assinou contratos de cerca de R$ 707 milhões com EBS e Conterp para sondas de perfuração terrestre na Bahia; à Conterp cabem poços de até 4 mil metros, na campanha de setembro de 2025 a junho de 2029.",
+      "data": "02/2025",
+      "fonte": "https://agencia.petrobras.com.br/w/regionais/petrobras-contrata-sondas-de-perfuracao-para-construcao-de-novos-pocos-em-campos-terrestres-na-bahia"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: com contrato longo de perfuração e contratações em andamento na Bahia e em Sergipe, a empresa provavelmente está equipando bases de apoio e escritórios de campo no interior, onde a energia vem de gerador e oscila, o que pede nobreak e computador de mesa robusto. A sede no Caminho das Árvores deve gerar reposição de monitores e periféricos para o administrativo.",
+  "produto_de_entrada": "nobreak",
+  "complementares": [
+    "computador montado",
+    "monitor"
+  ],
+  "motivo_da_ligacao": "A Conterp conduz a campanha de perfuração da Petrobras na Bahia até 2029 e contrata equipes de sonda para Catu, Alagoinhas e Sergipe. A SempreTech propõe posto de trabalho completo com proteção de energia por nobreak para as bases de apoio no interior, com assistência técnica própria em Salvador. Como estão alimentados hoje os computadores dessas bases: por nobreak ou direto na energia do gerador?",
+  "perguntas_especificas": [
+    "Com o novo processo de Pedido de Compra iniciado em setembro, como um fornecedor de informática se cadastra para participar das cotações?",
+    "As bases de Catu e de Sergipe adquirem reposição de informática por conta própria ou tudo passa por suprimentos em Salvador?",
+    "Com a entrada das novas equipes de sonda, há posto administrativo ou escritório de base a equipar nos próximos meses?"
+  ],
+  "quem_procurar": "Suprimentos ou compras, na sede de Salvador (o site indica o e-mail de atendimento para fornecedores). Em paralelo, perguntar se existe TI interna que especifica os equipamentos.",
+  "ressalvas": [
+    "Não foi encontrado nome de responsável por compras ou TI em fonte da empresa, LinkedIn ou imprensa.",
+    "Empresa de porte grande e com processo de compras formal: é provável que exija cadastro de fornecedor e cotação por sistema, e que já tenha fornecedor corporativo de informática.",
+    "Pessoal de campo e engenharia tende a usar notebook, que não está confirmado no catálogo; se pedirem, anotar e não prometer.",
+    "Os computadores X-Linne do catálogo são de linha de entrada; a empresa pode exigir marca corporativa. Nobreak, monitor e periféricos são a porta mais realista.",
+    "A localização exata das bases em Catu e em Sergipe não foi confirmada em fonte da própria empresa; vem de anúncios de vagas.",
+    "O valor de R$ 707 milhões é a soma dos contratos de EBS e Conterp; a parte da Conterp não foi divulgada. O agente não deve citar valor."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "Site oficial Conterp",
+      "u": "https://www.conterp.com.br"
+    },
+    {
+      "t": "LinkedIn Conterp",
+      "u": "https://br.linkedin.com/company/conterp"
+    },
+    {
+      "t": "Agência Petrobras, contrato de sondas na Bahia",
+      "u": "https://agencia.petrobras.com.br/w/regionais/petrobras-contrata-sondas-de-perfuracao-para-construcao-de-novos-pocos-em-campos-terrestres-na-bahia"
+    },
+    {
+      "t": "CNN Brasil, contrato de R$ 707 mi",
+      "u": "https://www.cnnbrasil.com.br/economia/negocios/petrobras-assina-contrato-de-r-707-milhoes-para-ampliar-producao-em-terra-na-bahia/"
+    },
+    {
+      "t": "Empregos na Bahia, vagas Conterp abr/2026",
+      "u": "https://empregosnabahia.com.br/vagas-conterp-bahia-sonda-operador-plataformista-guindaste/"
+    },
+    {
+      "t": "Se Liga Alagoinhas, vagas em Catu jun/2024",
+      "u": "https://www.seligaalagoinhas.com.br/noticia/49900/conterp-abre-diversas-vagas-de-emprego-na-regiao-de-alagoinhas-confira"
+    }
+  ]
+}
