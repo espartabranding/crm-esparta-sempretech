@@ -22,5 +22,11 @@
     "quando": "2026-10-05T18:34:46+00:00",
     "qualificacao": "Decisor identificado",
     "nota": "Contato de suprimentos e tecnologia identificado: Paulo, (71) 99150-9724. Ligar para ele mais tarde."
+  },
+  {
+    "conta": "c1",
+    "quando": "2026-10-05T18:40:27+00:00",
+    "qualificacao": "Enviar material",
+    "nota": "A OCC pediu o envio da proposta por e-mail para gesa.conceicao@occ.eng.br. Enviar hoje e retornar a ligação em 2 dias úteis."
   }
 ]
