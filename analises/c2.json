@@ -6,13 +6,19 @@
   "porte": "LinkedIn da empresa declara a faixa de 501 a 1.000 funcionários (81 perfis vinculados). Razão social EPMAN Comércio de Ferragens, Manutenção e Serviços Ltda, CNPJ 07.502.178/0001-80, aberta em 18/07/2005. Não foram encontrados, em fonte pública, a lista de contratos em andamento nem o número de bases.",
   "onde_opera": "Escritório em Salvador, na Av. Luís Viana Filho (Paralela). Há dois endereços publicados: Hangar Business Park, nº 13223, São Cristóvão (cadastro de CNPJ) e Edf. Wall Street, Torre East, sala 527, nº 6462 (LinkedIn). As equipes atuam nas plantas industriais dos clientes; os locais específicos não foram confirmados.",
   "contato_publico": {
-    "telefone": "(71) 3111-9491",
+    "telefone": "(71) 3111-9493, do cadastro da Receita Federal. O (71) 3111-9491 falhou em 05/10/2026",
     "email": null,
     "site": "http://www.epmanservicos.com.br (não abriu na consulta de 05/10/2026)",
     "linkedin": "https://br.linkedin.com/company/epman"
   },
   "decisores": [],
-  "fatos_recentes": [],
+  "fatos_recentes": [
+    {
+      "fato": "CNPJ 07.502.178/0001-80 em situação BAIXADA por inaptidão na Receita Federal.",
+      "data": "12/2024",
+      "fonte": "https://brasilapi.com.br/api/cnpj/v1/07502178000180"
+    }
+  ],
   "necessidade_provavel": "Hipótese: com centenas de funcionários alocados em plantas de clientes, a empresa deve manter um escritório central em Salvador (planejamento, RH, financeiro) e pequenas bases administrativas dentro dos contratos, que precisam de computador de mesa e proteção de energia; a compra tende a acompanhar o início de cada contrato ou parada de manutenção. Nada disso está confirmado em fonte pública.",
   "produto_de_entrada": "Computador montado",
   "complementares": [
@@ -27,16 +33,13 @@
   ],
   "quem_procurar": "Compras/suprimentos no escritório de Salvador; se não houver setor, o administrativo-financeiro. O responsável por planejamento sente a falta do equipamento e pode indicar quem compra.",
   "ressalvas": [
+    "O CNPJ 07.502.178/0001-80 consta como BAIXADO na Receita Federal desde 09/12/2024, por inaptidão, e com porte de microempresa. A empresa pode ter encerrado ou passado a operar com outro CNPJ. Candidata a sair da rodada.",
+    "A ligação para o (71) 3111-9491 falhou em 05/10/2026. O único outro número encontrado, (71) 3111-9493, vem do mesmo cadastro baixado e não foi testado.",
+    "O site epmanservicos.com.br está fora do ar e a página do LinkedIn não tem publicação recente nem telefone. O site epman.com.br é de outra empresa (autopeças).",
     "O segmento real é manutenção industrial, não construção civil. O roteiro de 'Engenharia e construção' precisa ser adaptado: trocar 'obra' e 'canteiro' por 'contrato', 'base' e 'parada'.",
-    "O site conhecido (epmanservicos.com.br) não resolveu DNS na consulta de 05/10/2026; pode estar fora do ar ou ter mudado de domínio. Não significa que a empresa encerrou: há cadastro de CNPJ atualizado em julho de 2026 e LinkedIn ativo.",
-    "Dois endereços diferentes publicados (Hangar Business Park e Wall Street); confirmar qual é o atual logo no início da ligação.",
-    "O telefone (71) 3111-9491 vem de bases de consulta de CNPJ, não de fonte da própria empresa; pode estar desatualizado.",
-    "Nenhum fato recente com data foi encontrado (contrato novo, vaga ou notícia). O motivo da ligação usa o perfil da empresa e a situação típica do segmento, não um evento específico.",
-    "Nenhum nome de decisor publicado com cargo foi encontrado.",
-    "A maior parte do quadro é de campo (mecânicos, caldeireiros e afins), que não usa computador; o número de posições administrativas pode ser bem menor do que o porte sugere.",
-    "O número de funcionários é a faixa autodeclarada no LinkedIn."
+    "Dois endereços diferentes publicados (Hangar Business Park e Wall Street); confirmar qual é o atual logo no início da ligação."
   ],
-  "confianca": "media",
+  "confianca": "baixa",
   "fontes": [
     {
       "t": "LinkedIn da empresa",
@@ -61,6 +64,10 @@
     {
       "t": "Notícia no site da EPMAN: contenção de vazamentos (indexada, sem data)",
       "u": "https://www.epmanservicos.com.br/noticia/contencao-de-vazamentos/"
+    },
+    {
+      "t": "Receita Federal via BrasilAPI: situação cadastral e telefone",
+      "u": "https://brasilapi.com.br/api/cnpj/v1/07502178000180"
     }
   ]
 }
