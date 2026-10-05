@@ -4,5 +4,11 @@
     "quando": "2026-10-05T18:27:09+00:00",
     "qualificacao": "Retornar em data combinada",
     "nota": "Não pôde atender a chamada no momento. Retornar a tentativa."
+  },
+  {
+    "conta": "c3",
+    "quando": "2026-10-05T18:28:19+00:00",
+    "qualificacao": "Decisor identificado",
+    "nota": "Responsável por compras identificado: Sergio, (71) 3018-0988. Realizar a ligação em breve."
   }
 ]

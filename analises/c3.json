@@ -6,12 +6,18 @@
   "porte": "O site fala em 35 anos, mais de 50 lançamentos e mais de 5.000 unidades construídas (o LinkedIn, mais antigo, cita 47 empreendimentos e 3.300 unidades). LinkedIn declara a faixa de 501 a 1.000 funcionários (68 perfis vinculados). Obras em andamento identificadas: LV Square (Largo da Vitória), Blue Graça (Graça) e Blend Pituba (Pituba). Há pelo menos dois estabelecimentos no CNPJ 34.241.588 (0001-97 e 0004-30).",
   "onde_opera": "Sede na Rua Cel. Almerindo Rehem, 126, Caminho das Árvores, Salvador (Edifício Empresarial Costa Andrade). Obras e empreendimentos em Salvador (Graça, Largo da Vitória, Pituba, Horto Florestal, Barra, Imbuí, entre outros), Lauro de Freitas e Praia do Forte.",
   "contato_publico": {
-    "telefone": "(71) 3355-6666 (o site identifica este número como SAC)",
+    "telefone": "(71) 3018-0988, direto de compras (Sergio). Geral: (71) 3355-6666 (o site identifica este número como SAC)",
     "email": "contato@costaandrade.com.br",
     "site": "https://www.costaandrade.com.br",
     "linkedin": "https://br.linkedin.com/company/costa-andrade"
   },
-  "decisores": [],
+  "decisores": [
+    {
+      "nome": "Sergio",
+      "cargo": "Responsável por compras (contato informado pela Esparta em 05/10/2026)",
+      "fonte": ""
+    }
+  ],
   "fatos_recentes": [
     {
       "fato": "O Bloom Horto Florestal, empreendimento da Costa Andrade com Franisa, Leão Engenharia e Capa Concepts, foi eleito Empreendimento Imobiliário do Ano no 29º Prêmio ADEMI-BA.",
@@ -41,7 +47,7 @@
     "Nos empreendimentos em parceria, como o Blend Pituba com a Barcino Esteve, quem equipa o canteiro: a Costa Andrade ou a parceira?",
     "Há lançamento previsto para entrar em obra nos próximos meses e que demande um novo escritório de canteiro?"
   ],
-  "quem_procurar": "Compras/suprimentos da construtora, na sede do Caminho das Árvores. O número conhecido cai no SAC: pedir transferência para o administrativo ou para suprimentos, sem apresentar a oferta ao atendimento.",
+  "quem_procurar": "Sergio, responsável por compras, no (71) 3018-0988.",
   "ressalvas": [
     "O telefone (71) 3355-6666 é apresentado no site como SAC, canal de atendimento a clientes de imóveis; a recepção pode resistir a transferir ligação comercial.",
     "A faixa de 501 a 1.000 funcionários é autodeclarada no LinkedIn e provavelmente inclui operários de obra; o número de posições com computador deve ser bem menor.",
