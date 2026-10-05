@@ -240,10 +240,9 @@ section{margin-bottom:38px}
 const DB = __DADOS__;
 const FIT = ["Compra decidida em Salvador","Porte compatível","Demanda por projeto","Acesso ao decisor"];
 const SIT = {
-  interesse:{t:"Com interesse", c:"--verde"},
-  conversou:{t:"Conversou", c:"--cobalto"},
-  tentativa:{t:"Sem contato", c:"--ambar"},
-  pendente:{t:"Não abordada", c:"--cinza"},
+  conversou:{t:"Conversou", c:"--verde"},
+  tentativa:{t:"Não conversou", c:"--ambar"},
+  pendente:{t:"Sem contato", c:"--cinza"},
 };
 const SITP = {no_site:"--verde", parcial:"--ambar", fora:"--vermelho", nao_conferido:"--cinza"};
 const CONF = {alta:"--verde", media:"--ambar", baixa:"--vermelho"};
@@ -263,7 +262,7 @@ const conf = a => pill("confiança "+String(a.confianca).replace("media","média
 for (const c of C){
   const ok = c.chamadas.filter(x=>x.completada);
   c.falado = ok.reduce((a,x)=>a+x.falado,0);
-  c.sit = ok.some(x=>x.sucesso) ? "interesse" : ok.length ? "conversou" : c.chamadas.length ? "tentativa" : "pendente";
+  c.sit = ok.length ? "conversou" : c.chamadas.length ? "tentativa" : "pendente";
 }
 const todas = [...C.flatMap(c=>c.chamadas), ...DB.avulsas];
 const atendidas = todas.filter(x=>x.completada);
@@ -309,9 +308,9 @@ function geral(){
   for (const x of atendidas){ const k=x.qualificacao||"Sem qualificação"; (q[k] ??= {n:0, ok:x.sucesso}).n++ }
   const quals = Object.entries(q).sort((a,b)=>b[1].n-a[1].n), max = quals[0]?.[1].n || 1;
   return `
-  <div class="cab"><div><div class="olho">Campanha de prospecção · Salvador e região</div><h1>${abord} de ${C.length} contas abordadas</h1>
+  <div class="cab"><div><div class="olho">Campanha de prospecção · Salvador e região</div><h1>${abord} de ${C.length} contas ligadas</h1>
     <p class="meta">${todas.length ? `${todas.length} ligações feitas, ${atendidas.length} atendidas.` : "Nenhuma ligação registrada ainda. Os números aparecem depois da primeira sincronização com o Callix."}</p></div></div>
-  <div class="numeros">${[[todas.length,"ligações feitas"],[atendidas.length,"atendidas"],[taxa,"taxa de atendimento"],[tempo(atendidas.reduce((a,x)=>a+x.falado,0)),"tempo falado"],[C.filter(c=>c.sit==="interesse").length,"contas com interesse"]]
+  <div class="numeros">${[[todas.length,"ligações feitas"],[atendidas.length,"atendidas"],[taxa,"taxa de atendimento"],[C.filter(c=>c.sit==="conversou").length,"contas em que houve conversa"]]
     .map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join("")}</div>
   <section class="grade">
     <div class="folha"><h3>Situação das contas</h3>${ordemSit.map(k=>{const n=C.filter(c=>c.sit===k).length; return `<div class="faixa" style="--c:var(${SIT[k].c}); --w:${n/C.length*100}%"><span>${SIT[k].t}</span><i></i><b>${n}</b></div>`}).join("")}</div>
@@ -593,15 +592,15 @@ function bi(c){
 
 let segFoco = "";
 function segmentacao(){
-  const segs = [...new Set(C.map(c=>c.segmento))].map(s=>{ const l=doSegmento(s); return {s, l, fit:media(l.map(nota)), perfil:perfilMedio(l), abord:l.filter(c=>c.sit!=="pendente").length, inter:l.filter(c=>c.sit==="interesse").length, sol:P.solucoes[P.segmentos[s]?.ofertas[0]?.solucao]?.nome||""} }).sort((a,b)=>b.l.length-a.l.length || b.fit-a.fit);
+  const segs = [...new Set(C.map(c=>c.segmento))].map(s=>{ const l=doSegmento(s); return {s, l, fit:media(l.map(nota)), perfil:perfilMedio(l), abord:l.filter(c=>c.sit!=="pendente").length, sol:P.solucoes[P.segmentos[s]?.ofertas[0]?.solucao]?.nome||""} }).sort((a,b)=>b.l.length-a.l.length || b.fit-a.fit);
   const porFaixa = k => C.filter(c=>faixa(c)===k).sort((a,b)=>nota(b)-nota(a));
   return `
   <div class="cab"><div><div class="olho">Como a carteira se divide</div><h1>Segmentação</h1></div></div>
   <section><h2>Prioridade de ligação</h2><p class="sub">Três faixas, calculadas do fit do plano e da confiança da pesquisa de cada empresa.</p>
     <div class="faixas">${["A","B","C"].map(k=>`<div class="folha"><h3>Faixa ${k}</h3><b>${porFaixa(k).length}</b><p class="obs" style="margin:8px 0 10px">${FAIXA[k]}</p>${porFaixa(k).map(c=>`<button data-ir="lead/${c.id}/bi">${esc(c.empresa)} <span class="mono" style="color:var(--tinta-2)">${nota(c)}</span></button>`).join("")}</div>`).join("")}</div></section>
   <section><h2>Segmentos</h2><p class="sub">Quantas contas em cada segmento, o encaixe médio, por qual solução entrar e como está o andamento.</p>
-    <div class="folha rol"><table><thead><tr><th>Segmento</th><th class="num">Contas</th><th class="num">Fit médio</th><th>Solução de entrada</th><th class="num">Abordadas</th><th class="num">Com interesse</th></tr></thead><tbody>
-    ${segs.map(g=>`<tr class="vai" data-seg="${esc(g.s)}" tabindex="0"><td><b>${esc(g.s)}</b></td><td class="num">${g.l.length}</td><td class="num">${um(g.fit)}/12</td><td>${esc(g.sol)}</td><td class="num">${g.abord}</td><td class="num">${g.inter}</td></tr>`).join("")}</tbody></table></div></section>
+    <div class="folha rol"><table><thead><tr><th>Segmento</th><th class="num">Contas</th><th class="num">Fit médio</th><th>Solução de entrada</th><th class="num">Ligadas</th><th class="num">Conversou</th></tr></thead><tbody>
+    ${segs.map(g=>`<tr class="vai" data-seg="${esc(g.s)}" tabindex="0"><td><b>${esc(g.s)}</b></td><td class="num">${g.l.length}</td><td class="num">${um(g.fit)}/12</td><td>${esc(g.sol)}</td><td class="num">${g.abord}</td><td class="num">${g.l.filter(c=>c.sit==="conversou").length}</td></tr>`).join("")}</tbody></table></div></section>
   <section><h2>Aderência por segmento e tipo de produto</h2><p class="sub">Média de 0 a 10. Quanto mais escuro, mais o segmento precisa daquele tipo de produto.</p>
     <div class="folha rol"><table class="calor"><thead><tr><th>Segmento</th>${CURTO.map(e=>`<th>${e}</th>`).join("")}</tr></thead><tbody>
     ${segs.map(g=>`<tr><td><b>${esc(g.s)}</b></td>${g.perfil.map((v,i)=>`<td class="cel" data-tip="${esc(g.s)}, ${esc(DB.eixos[i])}: ${um(v)} de 10 (${g.l.length} contas)" style="background:color-mix(in srgb, var(--cobalto) ${Math.round(v*9)}%, var(--folha)); color:var(${v>=6.5?"--folha":"--tinta"})">${um(v)}</td>`).join("")}</tr>`).join("")}</tbody></table></div></section>
