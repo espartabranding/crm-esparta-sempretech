@@ -16,5 +16,11 @@
     "quando": "2026-10-05T18:30:29+00:00",
     "qualificacao": "Número errado",
     "nota": "A ligação para o (71) 3111-9491 falhou. Novo número a testar: (71) 3111-9493. O CNPJ consta como baixado desde 12/2024."
+  },
+  {
+    "conta": "c5",
+    "quando": "2026-10-05T18:34:46+00:00",
+    "qualificacao": "Decisor identificado",
+    "nota": "Contato de suprimentos e tecnologia identificado: Paulo, (71) 99150-9724. Ligar para ele mais tarde."
   }
 ]

@@ -6,12 +6,17 @@
   "porte": "O site oficial fala em mais de 1.150 profissionais e frota de mais de 70 veículos; publieditorial do Correio (início de 2024) cita 1.315 funcionários, 76 veículos rastreados e mais de 200 clientes privados e públicos. Mantém central de operações 24 horas com monitoramento de alarmes e CFTV. CNPJ da Max Forte Serviços de Segurança: 03.195.862/0001-05.",
   "onde_opera": "Sede na Rua Padre Daniel Lisboa, 33, Brotas, Salvador. Atende Salvador e Região Metropolitana, Feira de Santana, Santo Antônio de Jesus e Itabuna; o Correio também cita Sergipe, enquanto o site oficial diz atuar na Bahia. Opera segurança de bairro em Horto Florestal, Corredor da Vitória, Cidade Jardim, São Lázaro, Parque São Vicente, Candeal, Alphaville Empresarial e Jaguaribe.",
   "contato_publico": {
-    "telefone": "(71) 3045-7400",
+    "telefone": "(71) 99150-9724, celular de Paulo (suprimentos e tecnologia). Geral: (71) 3045-7400",
     "email": "contato@grupomaxforte.com.br",
     "site": "https://grupomaxforte.com.br/",
     "linkedin": null
   },
   "decisores": [
+    {
+      "nome": "Paulo",
+      "cargo": "Suprimentos e tecnologia do grupo (contato informado pela Esparta em 05/10/2026)",
+      "fonte": ""
+    },
     {
       "nome": "Raimundo Junior",
       "cargo": "Diretor do Grupo Max Forte (citado pela imprensa; não é necessariamente quem compra informática)",
@@ -52,7 +57,7 @@
     "A compra de computadores é centralizada para as três empresas do grupo (Max Forte, Max Serviços e Max Confiável) ou cada uma adquire a sua?",
     "Quando entra um contrato novo que exige posto administrativo ou de supervisão, quem providencia o computador: vocês ou o cliente?"
   ],
-  "quem_procurar": "Setor de Compras/Suprimentos da sede em Brotas; se houver TI interna, o responsável por TI ou infraestrutura da central de operações. A imprensa cita apenas a diretoria (Raimundo Junior), que não deve ser o primeiro contato.",
+  "quem_procurar": "Paulo, de suprimentos e tecnologia do grupo, no (71) 99150-9724.",
   "ressalvas": [
     "Não foi encontrado nome de responsável por TI ou compras em fonte pública; os nomes listados são de diretoria e marketing.",
     "Página de empresa no LinkedIn não localizada.",
