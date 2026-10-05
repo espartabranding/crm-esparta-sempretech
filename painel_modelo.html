@@ -247,6 +247,8 @@ const SIT = {
 const SITP = {no_site:"--verde", parcial:"--ambar", fora:"--vermelho", nao_conferido:"--cinza"};
 const CONF = {alta:"--verde", media:"--ambar", baixa:"--vermelho"};
 const P = DB.playbook, K = DB.catalogo, C = DB.contas;
+/* No relatório do cliente ficam o CRM, as esteiras e os dados das empresas; o material de roteiro não aparece */
+const CLIENTE = DB.modo === "cliente";
 const $ = id => document.getElementById(id);
 const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const nota = c => c.fit.reduce((a,b)=>a+b,0);
@@ -273,8 +275,10 @@ const ordenadas = [...C].sort((a,b)=>ordemSit.indexOf(a.sit)-ordemSit.indexOf(b.
 /* Cada lead tem endereço próprio (#lead/c1) e pode abrir em outra aba do navegador */
 function rota(){
   const [v,id,sub] = location.hash.slice(1).split(/[./]/);
-  if (v==="lead" && C.some(c=>c.id===id)) return {v, id, sub:sub||"ligacao"};
-  return {v:["playbook","catalogo","segmentacao","esteiras"].includes(v)?v:"geral"};
+  const inicial = CLIENTE ? "analise" : "ligacao";
+  if (v==="lead" && C.some(c=>c.id===id)) return {v, id, sub:(CLIENTE && sub==="ligacao") ? inicial : (sub||inicial)};
+  const telas = CLIENTE ? ["segmentacao","esteiras"] : ["playbook","catalogo","segmentacao","esteiras"];
+  return {v:telas.includes(v)?v:"geral"};
 }
 
 function trilho(){
@@ -308,7 +312,7 @@ function geral(){
   for (const x of atendidas){ const k=x.qualificacao||"Sem qualificação"; (q[k] ??= {n:0, ok:x.sucesso}).n++ }
   const quals = Object.entries(q).sort((a,b)=>b[1].n-a[1].n), max = quals[0]?.[1].n || 1;
   return `
-  <div class="cab"><div><div class="olho">Campanha de prospecção · Salvador e região</div><h1>${abord} de ${C.length} contas ligadas</h1>
+  <div class="cab"><div><div class="olho">${CLIENTE ? "Relatório de prospecção para a SempreTech · Salvador e região" : "Campanha de prospecção · Salvador e região"}</div><h1>${abord} de ${C.length} contas ligadas</h1>
     <p class="meta">${todas.length ? `${todas.length} ligações feitas, ${atendidas.length} atendidas.` : "Nenhuma ligação registrada ainda. Os números aparecem depois da primeira sincronização com o Callix."}</p></div></div>
   <div class="numeros">${[[todas.length,"ligações feitas"],[atendidas.length,"atendidas"],[taxa,"taxa de atendimento"],[C.filter(c=>c.sit==="conversou").length,"contas em que houve conversa"]]
     .map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join("")}</div>
@@ -316,7 +320,7 @@ function geral(){
     <div class="folha"><h3>Situação das contas</h3>${ordemSit.map(k=>{const n=C.filter(c=>c.sit===k).length; return `<div class="faixa" style="--c:var(${SIT[k].c}); --w:${n/C.length*100}%"><span>${SIT[k].t}</span><i></i><b>${n}</b></div>`}).join("")}</div>
     <div class="folha"><h3>Resultado das conversas</h3>${quals.length ? quals.map(([k,v])=>`<div class="faixa" style="--c:var(${v.ok?"--verde":"--cinza"}); --w:${v.n/max*100}%"><span>${esc(k)}</span><i></i><b>${v.n}</b></div>`).join("") : `<p class="vazio">Aparece quando as ligações atendidas forem qualificadas no Callix.</p>`}</div>
   </section>
-  <section><h2>Contas</h2><p class="sub">Cada conta abre numa aba própria, com o roteiro da ligação, a análise da empresa e o histórico.</p>
+  <section><h2>Contas</h2><p class="sub">${CLIENTE ? "Cada conta abre numa página própria, com os dados da empresa, o BI e o histórico de contatos." : "Cada conta abre numa aba própria, com o roteiro da ligação, a análise da empresa e o histórico."}</p>
     <div class="folha rol"><table><thead><tr><th>Conta</th><th>Situação</th><th class="ocultar">Entrar por</th><th class="ocultar">Análise</th><th class="num">Ligações</th><th class="num">Fit</th></tr></thead><tbody>
     ${ordenadas.map(c=>`<tr class="vai" data-ir="lead/${c.id}" tabindex="0"><td><b>${esc(c.empresa)}</b><small>${esc(c.segmento)}, ${esc(c.cidade)}</small></td>
       <td>${pill(SIT[c.sit].t,SIT[c.sit].c)}</td><td class="ocultar">${esc(entrada(c).nome)}</td>
@@ -354,7 +358,7 @@ const etapaDe = c => c.chamadas.find(x=>x.etapa)?.etapa || "tentar";
 const contatoDe = c => (c.analise?.decisores||[]).filter(d=>/informado pela Esparta/.test(d.cargo)).map(d=>d.nome).join(" e ");
 
 function esteiras(){
-  const cartao = c => `<button class="cartao" data-ir="lead/${c.id}"><b>${esc(c.empresa)}</b><small>${esc(c.segmento)}${contatoDe(c)?` · contato: ${esc(contatoDe(c))}`:""}</small>${c.chamadas[0]?.nota?`<small class="prox">${esc(c.chamadas[0].nota)}</small>`:""}</button>`;
+  const cartao = c => `<button class="cartao" data-ir="lead/${c.id}${CLIENTE?"/historico":""}"><b>${esc(c.empresa)}</b><small>${esc(c.segmento)}${contatoDe(c)?` · contato: ${esc(contatoDe(c))}`:""}</small>${c.chamadas[0]?.nota?`<small class="prox">${esc(c.chamadas[0].nota)}</small>`:""}</button>`;
   const coluna = k => { const l = C.filter(c=>etapaDe(c)===k).sort((a,b)=>nota(b)-nota(a)); return `<div class="col-et"><h3><span>${ETAPAS[k].t}</span><span class="mono">${l.length}</span></h3>${l.map(cartao).join("") || `<small class="vazio">Nenhuma conta nesta etapa.</small>`}</div>` };
   const total = n => C.filter(c=>ETAPAS[etapaDe(c)].e===n).length;
   const E = P.esteiras;
@@ -454,6 +458,7 @@ function ligacao(c){
         <details><summary>Objeções gerais (${P.geral.objecoes.length})</summary><div>${P.geral.objecoes.map(objHtml).join("")}</div></details>
         <details><summary>Situações fora do roteiro (${P.geral.ramos.length})</summary><div>${P.geral.ramos.map(ramoHtml).join("")}</div></details></div>
       <div class="etapa" data-n="7"><h2>Pedido</h2>${fala(r.pedido)}<p class="obs" style="margin:12px 0 6px">Se não der:</p>${fala(r.plano_b)}</div>
+      <div class="etapa" data-n="8"><h2>Ao desligar, marque no Callix</h2><div class="chips">${P.geral.tabulacoes.map(t=>`<span class="chip ${t.sucesso?"ok":""}" title="${esc(t.quando+" Depois: "+(t.proxima_acao||""))}">${esc(t.nome)}</span>`).join("")}</div></div>
     </div></div>
     <aside class="folha fixa"><h3>Antes de discar</h3><dl class="ficha">
       <div><dt>Telefone</dt><dd>${tel?telLink(tel):`<span class="vazio">não encontrado</span>`}</dd></div>
@@ -626,7 +631,7 @@ function historico(c){
 function lead(r){
   const c = C.find(x=>x.id===r.id), a = c.analise;
   const site = a?.contato_publico?.site || c.site, tel = telefone(c);
-  const abas = [["ligacao","Ligação"],["analise","Análise da empresa"],["bi","BI da conta"],["historico",`Histórico (${c.chamadas.length})`]];
+  const abas = [["ligacao","Ligação"],["analise","Dados da empresa"],["bi","BI da conta"],["historico",`Histórico de contatos (${c.chamadas.length})`]].filter(a=>!(CLIENTE && a[0]==="ligacao"));
   return `
   <div class="cab"><div><div class="olho">${esc(c.segmento)} · ${esc(c.cidade)}</div><h1>${esc(c.empresa)}</h1>
     <div class="meta">${pill(SIT[c.sit].t,SIT[c.sit].c)}${a?conf(a):""}${tel?telLink(tel):""}${site?link(site,dominio(site)):""}<a href="#lead.${c.id}.${r.sub}" target="_blank" rel="noopener" style="font-family:var(--texto)">Abrir em nova aba</a></div></div>
@@ -663,7 +668,8 @@ document.addEventListener("mousemove", e=>{
 document.addEventListener("keydown", e=>{ if (e.key==="Enter" && e.target.matches("tr[data-ir]")) location.hash = e.target.dataset.ir.replaceAll("/",".") });
 $("busca").addEventListener("input", ()=>{ $("trilho").classList.add("aberto"); trilho() });
 $("menu").addEventListener("click", ()=>$("trilho").classList.toggle("aberto"));
-$("atualizado").textContent = "Mesa de ligação · atualizado " + quando(DB.gerado_em);
+$("atualizado").textContent = (CLIENTE ? "Relatório de prospecção · Esparta Hunter · atualizado " : "Mesa de ligação · atualizado ") + quando(DB.gerado_em);
+if (CLIENTE) document.querySelectorAll('.nav [data-ir="playbook"], .nav [data-ir="catalogo"]').forEach(b=>b.remove());
 desenhar();
 </script>
 </body>

@@ -168,6 +168,31 @@ def montar(db: sqlite3.Connection, plano: dict, catalogo: dict, playbook: dict) 
     }
 
 
+def _para_cliente(dados: dict) -> dict:
+    """Relatório do cliente: CRM, esteiras e dados das empresas, sem o material interno.
+
+    Saem o playbook (roteiros, objeções, perguntas em aberto), o catálogo e as ressalvas
+    de trabalho de cada conta. Do playbook fica só o necessário para nomear as esteiras
+    e a solução de entrada de cada segmento.
+    """
+    playbook = dados["playbook"]
+    enxuto = {
+        "esteiras": playbook["esteiras"],
+        "solucoes": playbook["solucoes"],
+        "segmentos": {
+            nome: {"ofertas": [{"solucao": o["solucao"]} for o in seg["ofertas"]]}
+            for nome, seg in playbook["segmentos"].items()
+        },
+    }
+    contas = []
+    for conta in dados["contas"]:
+        analise = conta["analise"]
+        if analise:
+            analise = {**analise, "ressalvas": [], "motivo_da_ligacao": "", "perguntas_especificas": []}
+        contas.append({**conta, "analise": analise, "ofertas": []})
+    return {**dados, "modo": "cliente", "playbook": enxuto, "catalogo": {}, "contas": contas}
+
+
 def gerar(db_arquivo: Path, saida: Path) -> None:
     plano = json.loads((RAIZ / "contas.json").read_text(encoding="utf-8"))
     catalogo = json.loads((RAIZ / "catalogo.json").read_text(encoding="utf-8"))
@@ -186,6 +211,14 @@ def gerar(db_arquivo: Path, saida: Path) -> None:
         (RAIZ / "docs").mkdir(exist_ok=True)
         (RAIZ / "docs" / "index.html").write_text(
             pagina.replace("<head>", '<head><meta name="robots" content="noindex, nofollow">', 1),
+            encoding="utf-8",
+        )
+        # Relatório do cliente, em docs/cliente/ e ao lado do painel local.
+        cliente = pagina_de(_para_cliente(completo))
+        saida.with_name("relatorio_cliente.html").write_text(cliente, encoding="utf-8")
+        (RAIZ / "docs" / "cliente").mkdir(exist_ok=True)
+        (RAIZ / "docs" / "cliente" / "index.html").write_text(
+            cliente.replace("<head>", '<head><meta name="robots" content="noindex, nofollow">', 1),
             encoding="utf-8",
         )
     # Versão para publicar como link: a hospedagem acrescenta o esqueleto da página por conta própria.
