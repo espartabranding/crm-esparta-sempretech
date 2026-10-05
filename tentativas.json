@@ -47,5 +47,11 @@
     "conversou": true,
     "qualificacao": "Sem interesse",
     "nota": "Informaram que não têm interesse. Motivo não registrado. Pausar a conta por pelo menos um mês."
+  },
+  {
+    "conta": "c14",
+    "quando": "2026-10-05T18:56:42+00:00",
+    "qualificacao": "Não atendeu / caixa postal",
+    "nota": "Telefone desligado ou fora da área de cobertura. O (71) 3379-6209 é o único número no cadastro da Receita. Tentar em outro horário e enviar e-mail para lustoza@lustoza.com."
   }
 ]
