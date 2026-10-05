@@ -156,9 +156,13 @@ def gerar(db_arquivo: Path, saida: Path) -> None:
 
     pagina = pagina_de(completo)
     saida.write_text(pagina, encoding="utf-8")
-    # Cópia completa versionada no repositório privado, para a equipe abrir sem rodar nada.
+    # Cópia completa em docs/, que é a pasta servida pelo GitHub Pages. Pede aos buscadores que não a indexem.
     if saida.parent == DADOS:
-        (RAIZ / "painel.html").write_text(pagina, encoding="utf-8")
+        (RAIZ / "docs").mkdir(exist_ok=True)
+        (RAIZ / "docs" / "index.html").write_text(
+            pagina.replace("<head>", '<head><meta name="robots" content="noindex, nofollow">', 1),
+            encoding="utf-8",
+        )
     # Versão para publicar como link: a hospedagem acrescenta o esqueleto da página por conta própria.
     miolo = re.sub(r"<!DOCTYPE html>|</?html[^>]*>|</?head>|</?body>|<meta[^>]*>", "", pagina)
     saida.with_name(saida.stem + "_link.html").write_text(miolo.strip(), encoding="utf-8")
