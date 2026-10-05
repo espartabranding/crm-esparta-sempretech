@@ -2,8 +2,8 @@
   "cliente": "SempreTech",
   "tipo_de_venda": "mista",
   "objetivo": {
-    "recepcao": "Com a recepção: sair com o nome e o cargo de quem decide, o melhor horário para falar com essa pessoa e se a informática é cuidada por equipe interna ou por terceiro.",
-    "principal": "Com quem decide: confirmar que o problema existe e combinar o levantamento (quantas posições, estações ou máquinas, o que para hoje e para quando). É com o levantamento que a SempreTech monta a proposta da solução.",
+    "recepcao": "Esteira 1, com a recepção: sair com o nome do responsável por Operações e Tecnologia, um contato direto e o melhor horário para falar com ele.",
+    "principal": "Esteira 2, com o contato obtido: apresentar a proposta objetiva, confirmar o problema e combinar o levantamento (quantas posições, estações ou máquinas, e para quando).",
     "plano_b": "Se não houver levantamento: sair com o contato direto, a data provável da próxima necessidade e permissão para mandar a proposta de referência."
   },
   "a_confirmar": [
@@ -16,7 +16,8 @@
     "Clientes empresariais que podem ser citados como referência, por segmento.",
     "Garantia dos computadores montados X-Linne e dos itens revisados.",
     "A SempreTech faz levantamento no local (visita técnica, inventário das máquinas, teste dos nobreaks)? Hoje o roteiro pede o levantamento por telefone ou e-mail.",
-    "De onde vieram os telefones da lista? O agente precisa responder a verdade quando perguntarem."
+    "De onde vieram os telefones da lista? O agente precisa responder a verdade quando perguntarem.",
+    "O posicionamento “especialistas em logística e performance em informática” foi definido pela Esparta para a abordagem. Confirmar com a SempreTech se ela se apresenta assim."
   ],
   "geral": {
     "regras": [
@@ -97,9 +98,9 @@
       }
     ],
     "nao_atendeu": {
-      "caixa_postal": "Bom dia, [Nome]. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para manter os computadores da empresa em operação sem paradas. Retorno amanhã pela manhã.",
+      "caixa_postal": "Bom dia, [Nome]. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Tenho uma proposta para manter os computadores da empresa em operação sem paradas. Retorno amanhã pela manhã.",
       "whatsapp": "Bom dia, [Nome]. Aqui é [Seu nome], da SempreTech. Conforme combinado por telefone, segue a proposta de referência. Qual é hoje o ponto mais urgente, para que eu ajuste a proposta à necessidade da empresa?",
-      "email": "Assunto: Proposta de postos de trabalho e proteção de energia para [Empresa]\n\n[Nome], a SempreTech é uma empresa de informática de Salvador, com assistência técnica própria.\n\nNossa proposta para [Empresa] tem três frentes: fornecer o posto de trabalho completo, proteger as estações críticas contra quedas de energia e renovar máquinas lentas sem substituir o parque inteiro.\n\nQual dessas frentes é prioridade hoje? Com essa informação, envio a proposta detalhada no mesmo dia."
+      "email": "Assunto: Proposta de postos de trabalho e proteção de energia para [Empresa]\n\n[Nome], a SempreTech reúne especialistas em logística e performance em informática, com assistência técnica própria em Salvador.\n\nNossa proposta para [Empresa] tem três frentes: fornecer o posto de trabalho completo, proteger as estações críticas contra quedas de energia e renovar máquinas lentas sem substituir o parque inteiro.\n\nQual dessas frentes é prioridade hoje? Com essa informação, envio a proposta detalhada no mesmo dia."
     },
     "cadencia": [
       "Até 8 contatos por conta em três semanas, somando telefone, e-mail e WhatsApp.",
@@ -231,12 +232,12 @@
       "Próximo passo e data"
     ],
     "recepcao": {
-      "com_nome": "Bom dia. Gostaria de falar com [Nome], por favor. Aqui é [Seu nome], da SempreTech.",
+      "com_nome": "Bom dia. Gostaria de falar com [Nome], de Operações e Tecnologia, por favor. Aqui é [Seu nome], da SempreTech.",
       "colher": [
-        "Nome e cargo de quem decide a compra de equipamentos",
-        "Melhor horário para falar com essa pessoa",
-        "Se a informática é cuidada por equipe interna ou por um terceiro",
-        "Ramal ou e-mail direto, se oferecerem"
+        "Nome do responsável por Operações e Tecnologia",
+        "Telefone direto, e-mail ou WhatsApp dessa pessoa",
+        "Melhor horário para falar com ela",
+        "Se a informática é cuidada por equipe interna ou por um terceiro"
       ],
       "nao_fazer": "Não apresente a solução, não esconda o motivo e não finja que a pessoa está esperando a ligação."
     },
@@ -251,7 +252,7 @@
     "ramos": [
       {
         "situacao": "O cliente retorna a ligação",
-        "fala": "Agradeço o retorno. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Liguei para apresentar uma proposta ao responsável pelos computadores da empresa. É com você?",
+        "fala": "Agradeço o retorno. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Liguei para apresentar uma proposta ao responsável pelos computadores da empresa. É com você?",
         "depois": "Seguir do passo 3 do roteiro."
       },
       {
@@ -293,9 +294,9 @@
   },
   "segmentos": {
     "Engenharia e construção": {
-      "procurar": "Responsável por compras ou suprimentos; em construtora menor, o gerente administrativo ou o sócio.",
-      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores do escritório e das obras. Com quem posso tratar do assunto?",
-      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "procurar": "Responsável por Operações e Tecnologia. Se a área não existir com esse nome: TI, compras ou o administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech. Somos especialistas em logística e performance em informática e temos uma proposta para a empresa. Quem responde pela área de Operações e Tecnologia?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Temos uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
       "problema": "Em canteiro de obra, a energia instável costuma queimar computador e interromper o trabalho da equipe técnica. A SempreTech propõe equipar cada obra com pontos de trabalho já protegidos, com computador, nobreak e filtro de linha, e assistência técnica própria em Salvador. Como os canteiros de vocês estão equipados hoje?",
       "perguntas": [
         "Quando uma obra nova começa, vocês compram máquinas novas ou levam as de outra obra?",
@@ -336,9 +337,9 @@
       "plano_b": "Entendido. Para quando está prevista a próxima obra? Retorno duas semanas antes, com a proposta preparada. Qual o melhor contato direto para falar com você?"
     },
     "Indústria": {
-      "procurar": "Responsável por TI ou manutenção; se não houver, compras ou o gerente administrativo.",
-      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores do administrativo e da fábrica. Com quem posso tratar do assunto?",
-      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "procurar": "Responsável por Operações e Tecnologia. Se a área não existir com esse nome: TI, compras ou o administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech. Somos especialistas em logística e performance em informática e temos uma proposta para a empresa. Quem responde pela área de Operações e Tecnologia?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Temos uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
       "problema": "Quando o computador do PCP ou do faturamento para, a produção e a expedição param junto. A SempreTech propõe renovar as máquinas lentas sem substituir o parque inteiro e proteger com nobreak as estações que não podem cair, com assistência técnica própria em Salvador. Como a empresa trata hoje a manutenção desses equipamentos?",
       "perguntas": [
         "Quando uma máquina do administrativo ou do PCP para, quanto tempo leva para voltar?",
@@ -379,9 +380,9 @@
       "plano_b": "Entendido. Quando a empresa fecha o planejamento de compras? Retorno antes dessa data e, nesse intervalo, envio a proposta de referência. Qual o seu e-mail direto?"
     },
     "Logística e distribuição": {
-      "procurar": "Gerente administrativo ou de operações; em empresa maior, compras ou TI.",
-      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores da expedição e do escritório. Com quem posso tratar do assunto?",
-      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "procurar": "Responsável por Operações e Tecnologia. Se a área não existir com esse nome: TI, compras ou o administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech. Somos especialistas em logística e performance em informática e temos uma proposta para a empresa. Quem responde pela área de Operações e Tecnologia?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Temos uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
       "problema": "Em operação de armazém, uma queda de energia na expedição interrompe a emissão de notas e atrasa a saída das cargas. A SempreTech propõe proteger cada posição crítica com nobreak e padronizar os postos de trabalho, com assistência técnica própria em Salvador. As posições da expedição contam com proteção de energia hoje?",
       "perguntas": [
         "Quantas posições de computador vocês têm na expedição e no recebimento?",
@@ -423,9 +424,9 @@
       "plano_b": "Entendido. Quando costuma haver reposição ou ampliação? Retorno antes dessa data. Qual o melhor contato direto para falar com você?"
     },
     "Educação": {
-      "procurar": "Coordenação de TI ou de laboratórios; em escola menor, a direção administrativa.",
-      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos laboratórios de informática e pelos computadores do administrativo. Com quem posso tratar do assunto?",
-      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "procurar": "Responsável por Operações e Tecnologia. Se a área não existir com esse nome: TI, compras ou o administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech. Somos especialistas em logística e performance em informática e temos uma proposta para a empresa. Quem responde pela área de Operações e Tecnologia?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Temos uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
       "problema": "Laboratórios de informática envelhecem mais rápido do que o orçamento de renovação. A SempreTech propõe recuperar o desempenho das máquinas com upgrade, aproveitando gabinete, fonte e monitor, e substituir apenas as que não compensam. Como a instituição planeja a renovação dos laboratórios?",
       "perguntas": [
         "Quantas máquinas tem o laboratório, e de que ano são, mais ou menos?",
@@ -466,9 +467,9 @@
       "plano_b": "Entendido. Quando fecha a previsão orçamentária do próximo semestre? Retorno duas semanas antes. Qual o seu e-mail direto?"
     },
     "Terceirização e facilities": {
-      "procurar": "Compras ou suprimentos; o gerente de contratos também decide equipamento de equipe alocada.",
-      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores do escritório e das equipes dos contratos. Com quem posso tratar do assunto?",
-      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "procurar": "Responsável por Operações e Tecnologia. Se a área não existir com esse nome: TI, compras ou o administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech. Somos especialistas em logística e performance em informática e temos uma proposta para a empresa. Quem responde pela área de Operações e Tecnologia?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Temos uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
       "problema": "Contrato novo tem data para começar, e a equipe precisa de posto de trabalho pronto no primeiro dia. A SempreTech propõe fornecer os postos completos, em configuração única, com assistência técnica própria em Salvador. Como a empresa equipa hoje as equipes de um contrato novo?",
       "perguntas": [
         "Quando vocês assumem um contrato novo, quem providencia os computadores da equipe?",
@@ -509,9 +510,9 @@
       "plano_b": "Entendido. Envio a proposta da configuração padrão para que o valor fique à disposição. Qual o seu e-mail direto?"
     },
     "Grupos e serviços corporativos": {
-      "procurar": "TI corporativa ou compras do grupo; em grupo menor, o diretor administrativo.",
-      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pela área de tecnologia das empresas do grupo. Com quem posso tratar do assunto?",
-      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "procurar": "Responsável por Operações e Tecnologia. Se a área não existir com esse nome: TI, compras ou o administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech. Somos especialistas em logística e performance em informática e temos uma proposta para a empresa. Quem responde pela área de Operações e Tecnologia?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Temos uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
       "problema": "Em grupos empresariais, cada unidade costuma comprar equipamento por conta própria, o que dificulta e encarece a manutenção. A SempreTech propõe padronizar o posto de trabalho das empresas do grupo e concentrar a assistência técnica em um único fornecedor, em Salvador. A compra de equipamentos é centralizada ou cada empresa decide a sua?",
       "perguntas": [
         "A compra de computadores é centralizada ou cada empresa do grupo resolve a sua?",
@@ -552,9 +553,9 @@
       "plano_b": "Entendido. Para quando está prevista a próxima compra? Retorno antes dessa data. Qual o seu e-mail direto para o envio da proposta de referência?"
     },
     "Saúde": {
-      "procurar": "TI ou compras; em rede de unidades, o responsável por infraestrutura.",
-      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos computadores das recepções e das unidades. Com quem posso tratar do assunto?",
-      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "procurar": "Responsável por Operações e Tecnologia. Se a área não existir com esse nome: TI, compras ou o administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech. Somos especialistas em logística e performance em informática e temos uma proposta para a empresa. Quem responde pela área de Operações e Tecnologia?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Temos uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
       "problema": "Em unidades de atendimento, uma queda de energia na recepção interrompe o sistema e forma fila. A SempreTech propõe proteger cada estação de atendimento com nobreak e padronizar os equipamentos das unidades, com assistência técnica própria em Salvador. As recepções contam com proteção de energia hoje?",
       "perguntas": [
         "Quantas unidades e quantas estações de atendimento vocês têm?",
@@ -594,9 +595,9 @@
       "plano_b": "Entendido. Há unidade nova prevista? Retorno antes da montagem. Qual o melhor contato direto para falar com você?"
     },
     "Contact center": {
-      "procurar": "Compras, suprimentos ou infraestrutura de TI; o gerente de operações sente a falta do equipamento.",
-      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Tenho uma proposta para a área responsável pelos headsets e equipamentos das posições de atendimento. Com quem posso tratar do assunto?",
-      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, empresa de informática de Salvador. Ligo com uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "procurar": "Responsável por Operações e Tecnologia. Se a área não existir com esse nome: TI, compras ou o administrativo.",
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech. Somos especialistas em logística e performance em informática e temos uma proposta para a empresa. Quem responde pela área de Operações e Tecnologia?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, especialistas em logística e performance em informática. Temos uma proposta objetiva para a empresa. Apresento em um minuto e você avalia se vale avançar.",
       "problema": "Em operações de atendimento, headset com defeito significa posição parada, e cada turma nova exige posições completas no primeiro dia. A SempreTech propõe fornecer a posição pronta, com headset, teclado e mouse, e manter a reposição recorrente. Como a operação organiza hoje a reposição desses equipamentos?",
       "perguntas": [
         "Quantas posições vocês têm hoje, e quantas abrem com as novas turmas?",
@@ -722,5 +723,31 @@
         "assist"
       ]
     }
-  }
+  },
+  "posicionamento": "Especialistas em logística e performance em informática.",
+  "esteiras": [
+    {
+      "id": 1,
+      "nome": "Abordagem inicial",
+      "objetivo": "Localizar o responsável por Operações e Tecnologia e apresentar a SempreTech como especialista em logística e performance em informática, com uma proposta para a empresa.",
+      "sair_com": [
+        "Nome do responsável por Operações e Tecnologia",
+        "Telefone direto, e-mail ou WhatsApp",
+        "Melhor horário para falar"
+      ],
+      "passa_quando": "A conta passa para a esteira 2 quando há um contato identificado ou um pedido de proposta."
+    },
+    {
+      "id": 2,
+      "nome": "Proposta objetiva",
+      "objetivo": "Apresentar ao contato obtido uma proposta objetiva para a empresa dele e combinar o levantamento que fecha os números.",
+      "sair_com": [
+        "Problema confirmado pelo contato",
+        "Quantidade de posições, estações ou máquinas",
+        "Prazo",
+        "Data do próximo passo"
+      ],
+      "passa_quando": "A conta se encerra com a proposta aceita, recusada ou sem resposta depois da cadência."
+    }
+  ]
 }

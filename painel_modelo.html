@@ -167,6 +167,19 @@ details>div{margin-top:14px}
 .faixas button{display:block; background:none; border:0; padding:3px 0; cursor:pointer; text-align:left; color:var(--cobalto); font-size:14px}
 #dica{position:fixed; z-index:50; pointer-events:none; background:var(--tinta); color:var(--papel); font-size:12.5px; line-height:1.4; padding:6px 9px; border-radius:6px; max-width:260px; display:none}
 
+/* Esteiras */
+.esteira{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr)); gap:14px; align-items:start}
+.col-et{background:var(--suave); border-radius:14px; padding:14px; display:flex; flex-direction:column; gap:10px; min-width:0}
+.col-et>h3{margin:0; display:flex; justify-content:space-between; gap:8px}
+.cartao{background:var(--folha); border:1px solid var(--linha); border-radius:10px; padding:12px 14px; text-align:left; cursor:pointer; width:100%; display:block}
+.cartao:hover{border-color:var(--cobalto)}
+.cartao b{display:block; font-weight:600}
+.cartao small{display:block; color:var(--tinta-2); font-size:13px; margin-top:3px}
+.cartao .prox{color:var(--tinta); margin-top:8px}
+.faixa-et{display:flex; gap:10px; align-items:baseline; flex-wrap:wrap; background:var(--suave); border-radius:10px; padding:10px 14px; margin-bottom:20px; font-size:14px}
+.sep-et{font:600 12px/1.3 var(--texto); letter-spacing:.06em; text-transform:uppercase; color:var(--cobalto); margin:0 0 16px -34px; padding-top:4px}
+.etapa + .sep-et{margin-top:6px; padding-top:20px; border-top:1px solid var(--linha)}
+
 /* Visão geral */
 .numeros{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--linha); border:1px solid var(--linha); border-radius:14px; overflow:hidden; margin-bottom:26px}
 .numeros div{background:var(--folha); padding:18px 20px}
@@ -209,6 +222,7 @@ section{margin-bottom:38px}
     <div class="marca"><b>SempreTech</b><span id="atualizado"></span></div>
     <nav class="nav" aria-label="Seções">
       <button class="aba" data-ir="geral">Visão geral</button>
+      <button class="aba" data-ir="esteiras">Esteiras</button>
       <button class="aba" data-ir="segmentacao">Segmentação</button>
       <button class="aba" data-ir="playbook">Playbook</button>
       <button class="aba" data-ir="catalogo">Soluções e catálogo</button>
@@ -261,7 +275,7 @@ const ordenadas = [...C].sort((a,b)=>ordemSit.indexOf(a.sit)-ordemSit.indexOf(b.
 function rota(){
   const [v,id,sub] = location.hash.slice(1).split(/[./]/);
   if (v==="lead" && C.some(c=>c.id===id)) return {v, id, sub:sub||"ligacao"};
-  return {v:["playbook","catalogo","segmentacao"].includes(v)?v:"geral"};
+  return {v:["playbook","catalogo","segmentacao","esteiras"].includes(v)?v:"geral"};
 }
 
 function trilho(){
@@ -327,6 +341,32 @@ function qualidade(){
     <div class="folha">${linhas.map(([k,n])=>`<div class="faixa" style="--c:var(${corNota(n)}); --w:${n}%; grid-template-columns:minmax(150px,46%) 1fr 34px"><span>${esc(k)}</span><i></i><b>${n}</b></div>`).join("")}</div></section>`;
 }
 
+/* Esteiras: 1 localiza o responsável; 2 apresenta a proposta objetiva ao contato obtido */
+const ETAPAS = {
+  tentar:{e:1, t:"Ligar e localizar o responsável"},
+  retornar:{e:1, t:"Retorno combinado"},
+  canal:{e:1, t:"Abordar por WhatsApp"},
+  apresentar:{e:2, t:"Ligar para o contato e apresentar a proposta"},
+  enviar:{e:2, t:"Enviar a proposta pedida"},
+  aguardando:{e:2, t:"Proposta enviada, aguardando retorno"},
+  encerrada:{e:0, t:"Encerradas nesta rodada"},
+};
+const etapaDe = c => c.chamadas.find(x=>x.etapa)?.etapa || "tentar";
+const contatoDe = c => (c.analise?.decisores||[]).filter(d=>/informado pela Esparta/.test(d.cargo)).map(d=>d.nome).join(" e ");
+
+function esteiras(){
+  const cartao = c => `<button class="cartao" data-ir="lead/${c.id}"><b>${esc(c.empresa)}</b><small>${esc(c.segmento)}${contatoDe(c)?` · contato: ${esc(contatoDe(c))}`:""}</small>${c.chamadas[0]?.nota?`<small class="prox">${esc(c.chamadas[0].nota)}</small>`:""}</button>`;
+  const coluna = k => { const l = C.filter(c=>etapaDe(c)===k).sort((a,b)=>nota(b)-nota(a)); return `<div class="col-et"><h3><span>${ETAPAS[k].t}</span><span class="mono">${l.length}</span></h3>${l.map(cartao).join("") || `<small class="vazio">Nenhuma conta nesta etapa.</small>`}</div>` };
+  const total = n => C.filter(c=>ETAPAS[etapaDe(c)].e===n).length;
+  const E = P.esteiras;
+  return `
+  <div class="cab"><div><div class="olho">Onde está cada conta e qual é o próximo passo</div><h1>Esteiras</h1></div></div>
+  <div class="numeros">${[[total(1),"na esteira 1, abordagem inicial"],[total(2),"na esteira 2, proposta objetiva"],[total(0),"encerradas nesta rodada"],[C.length,"contas na carteira"]].map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join("")}</div>
+  ${E.map(e=>`<section><h2>Esteira ${e.id}: ${esc(e.nome)}</h2><p class="sub">${esc(e.objetivo)} ${esc(e.passa_quando)}</p>
+    <div class="esteira">${Object.keys(ETAPAS).filter(k=>ETAPAS[k].e===e.id).map(coluna).join("")}</div></section>`).join("")}
+  <section><h2>Fora da rodada</h2><div class="esteira">${coluna("encerrada")}</div></section>`;
+}
+
 const objHtml = o => `<div class="obj"><b>“${esc(o.objecao)}”${o.tipo?`<span class="tag">${esc(o.tipo)}</span>`:""}</b>${o.por_tras?`<div class="obs">${esc(o.por_tras)}</div>`:""}${fala(o.resposta)}${o.nao_fazer?`<div class="obs">${esc(o.nao_fazer)}</div>`:""}${o.proximo_passo?`<div class="obs">Depois: ${esc(o.proximo_passo)}</div>`:""}</div>`;
 const ramoHtml = o => `<div class="obj"><b>${esc(o.situacao)}</b>${fala(o.fala)}<div class="obs">Depois: ${esc(o.depois)}</div></div>`;
 
@@ -385,21 +425,24 @@ function catalogo(){
 }
 
 function ligacao(c){
-  const r = P.segmentos[c.segmento], a = c.analise, e = entrada(c);
+  const r = P.segmentos[c.segmento], a = c.analise, e = entrada(c), et = etapaDe(c);
   if (!r) return `<p class="vazio">Sem roteiro para este segmento.</p>`;
   const ofertas = [...r.ofertas].sort((x,y)=>(y.solucao===e.id)-(x.solucao===e.id)).map(o=>({...P.solucoes[o.solucao], fala:o.fala}));
   const perguntas = [...(a?.perguntas_especificas||[]).map(p=>esc(p)+`<span class="tag dest">desta conta</span>`), ...r.perguntas.map(esc)];
   const fatos = (a?.fatos_recentes||[]).slice(0,2);
   const tel = telefone(c);
   // Só vale pedir pelo nome quem tem cargo de compra, TI ou operação; diretoria e presidência ficam como referência
-  const nomes = (a?.decisores||[]).filter(d=>/\b(ti|cio|compras|suprimentos|infraestrutura|opera[cç]|industrial|administrativ)/i.test(d.cargo) && !/não é o/i.test(d.cargo));
+  const nomes = (a?.decisores||[]).filter(d=>/informado pela Esparta|\b(ti|cio|compras|suprimentos|infraestrutura|opera[cç]|industrial|administrativ)/i.test(d.cargo) && !/não é o/i.test(d.cargo));
   return `<div class="duas">
-    <div class="folha"><p class="obs" style="margin-bottom:20px">As falas marcadas são um guia. Mantenha o tom profissional e propositivo.</p><div class="roteiro">
-      <div class="etapa" data-n="1"><h2>Na recepção</h2>${fala(nomes.length ? `Bom dia. Gostaria de falar com ${nomes[0].nome.split(" ").slice(0,2).join(" ")}, por favor. Aqui é [Seu nome], da SempreTech.` : r.central)}
+    <div class="folha"><div class="faixa-et">${pill(ETAPAS[et].e ? `Esteira ${ETAPAS[et].e}: ${P.esteiras[ETAPAS[et].e-1].nome}` : "Fora da rodada", ETAPAS[et].e===2?"--verde":ETAPAS[et].e===1?"--cobalto":"--cinza")}<span><b>Próximo passo:</b> ${esc(ETAPAS[et].t)}${c.chamadas[0]?.nota?`. ${esc(c.chamadas[0].nota)}`:""}</span></div>
+      <p class="obs" style="margin-bottom:20px">As falas marcadas são um guia. Mantenha o tom profissional e propositivo.</p><div class="roteiro">
+      <p class="sep-et">Esteira 1 · Abordagem inicial: localizar o responsável por Operações e Tecnologia</p>
+      <div class="etapa" data-n="1"><h2>Na recepção</h2>${fala(nomes.length ? `Bom dia. Gostaria de falar com ${nomes[0].nome.split(" ").slice(0,2).join(" ")}, por favor. Aqui é [Seu nome], da SempreTech.`  : r.central)}
         ${nomes.length?`<details><summary>Se não passarem a ligação</summary><div>${fala(r.central)}</div></details>`:""}
-        <p class="obs" style="margin-top:10px">Saia com: ${P.geral.recepcao.colher.map(x=>esc(x.toLowerCase())).join("; ")}. ${esc(P.geral.recepcao.nao_fazer)}</p></div>
-      <div class="etapa" data-n="2"><h2>Abertura com quem decide</h2>${fala(r.abertura)}</div>
-      <div class="etapa" data-n="3"><h2>Motivo da ligação${a?.motivo_da_ligacao?`<span class="tag dest">desta conta</span>`:""}</h2>${fala(a?.motivo_da_ligacao || r.problema)}
+        <p class="obs" style="margin-top:10px">Saia com: ${P.geral.recepcao.colher.map(x=>esc(x[0].toLowerCase()+x.slice(1))).join("; ")}. ${esc(P.geral.recepcao.nao_fazer)}</p></div>
+      <div class="etapa" data-n="2"><h2>Apresentação ao responsável</h2>${fala(r.abertura)}</div>
+      <p class="sep-et">Esteira 2 · Proposta objetiva para o contato obtido</p>
+      <div class="etapa" data-n="3"><h2>Proposta para a empresa${a?.motivo_da_ligacao?`<span class="tag dest">desta conta</span>`:""}</h2>${fala(a?.motivo_da_ligacao || r.problema)}
         ${a?.motivo_da_ligacao?`<details><summary>Versão padrão do segmento</summary><div>${fala(r.problema)}</div></details>`:""}
         <p class="obs" style="margin-top:10px">Outra entrada possível: ${esc(c.gancho)}</p></div>
       <div class="etapa" data-n="4"><h2>Perguntas</h2>${ul(perguntas,"falada")}<p class="obs">Uma por vez. Escute a resposta inteira e pergunte sobre o que a pessoa acabou de dizer.</p>
@@ -598,7 +641,7 @@ let chaveAnterior = "";
 function desenhar(){
   const r = rota(), chave = r.v+(r.id||"")+(r.sub||"");
   document.querySelectorAll("audio").forEach(a=>a.pause());
-  $("main").innerHTML = r.v==="lead" ? lead(r) : r.v==="playbook" ? playbook() : r.v==="catalogo" ? catalogo() : r.v==="segmentacao" ? segmentacao() : geral();
+  $("main").innerHTML = r.v==="lead" ? lead(r) : r.v==="playbook" ? playbook() : r.v==="catalogo" ? catalogo() : r.v==="segmentacao" ? segmentacao() : r.v==="esteiras" ? esteiras() : geral();
   document.title = (r.v==="lead" ? C.find(c=>c.id===r.id).empresa+" — " : "") + "SempreTech";
   trilho();
   $("trilho").classList.remove("aberto");

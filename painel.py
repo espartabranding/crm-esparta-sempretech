@@ -150,6 +150,7 @@ def montar(db: sqlite3.Connection, plano: dict, catalogo: dict, playbook: dict) 
                 "sucesso": False,
                 "agente": t.get("agente"),
                 "nota": t["nota"],
+                "etapa": t.get("etapa"),
                 "desligamento": None,
                 "audio": None,
                 "resumo": None,

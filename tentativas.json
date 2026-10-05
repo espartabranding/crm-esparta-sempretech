@@ -3,136 +3,158 @@
     "conta": "c4",
     "quando": "2026-10-05T18:27:09+00:00",
     "qualificacao": "Retornar em data combinada",
-    "nota": "Não pôde atender a chamada no momento. Retornar a tentativa."
+    "nota": "Não pôde atender a chamada no momento. Retornar a tentativa.",
+    "etapa": "retornar"
   },
   {
     "conta": "c3",
     "quando": "2026-10-05T18:28:19+00:00",
     "qualificacao": "Decisor identificado",
-    "nota": "Responsável por compras identificado: Sergio, (71) 3018-0988. Realizar a ligação em breve."
+    "nota": "Responsável por compras identificado: Sergio, (71) 3018-0988. Realizar a ligação em breve.",
+    "etapa": "apresentar"
   },
   {
     "conta": "c2",
     "quando": "2026-10-05T18:30:29+00:00",
     "qualificacao": "Número errado",
-    "nota": "A ligação para o (71) 3111-9491 falhou. Novo número a testar: (71) 3111-9493. O CNPJ consta como baixado desde 12/2024."
+    "nota": "A ligação para o (71) 3111-9491 falhou. Novo número a testar: (71) 3111-9493. O CNPJ consta como baixado desde 12/2024.",
+    "etapa": "tentar"
   },
   {
     "conta": "c5",
     "quando": "2026-10-05T18:34:46+00:00",
     "qualificacao": "Decisor identificado",
-    "nota": "Contato de suprimentos e tecnologia identificado: Paulo, (71) 99150-9724. Ligar para ele mais tarde."
+    "nota": "Contato de suprimentos e tecnologia identificado: Paulo, (71) 99150-9724. Ligar para ele mais tarde.",
+    "etapa": "apresentar"
   },
   {
     "conta": "c1",
     "quando": "2026-10-05T18:40:27+00:00",
     "qualificacao": "Enviar material",
-    "nota": "A OCC pediu o envio da proposta por e-mail para gesa.conceicao@occ.eng.br. Enviar hoje e retornar a ligação em 2 dias úteis."
+    "nota": "A OCC pediu o envio da proposta por e-mail para gesa.conceicao@occ.eng.br. Enviar hoje e retornar a ligação em 2 dias úteis.",
+    "etapa": "enviar"
   },
   {
     "conta": "c6",
     "quando": "2026-10-05T18:50:56+00:00",
     "qualificacao": "Recepção passou informação",
-    "nota": "A informática é terceirizada. Não houve contato com quem decide. Próxima tentativa: pedir compras ou o administrativo e o nome da empresa de suporte."
+    "nota": "A informática é terceirizada. Não houve contato com quem decide. Próxima tentativa: pedir compras ou o administrativo e o nome da empresa de suporte.",
+    "etapa": "tentar"
   },
   {
     "conta": "c8",
     "quando": "2026-10-05T18:52:00+00:00",
     "qualificacao": "Retornar em data combinada",
-    "nota": "Pediram para ligar novamente “em horário comercial”. Retornar no próximo dia útil, pela manhã."
+    "nota": "Pediram para ligar novamente “em horário comercial”. Retornar no próximo dia útil, pela manhã.",
+    "etapa": "retornar"
   },
   {
     "conta": "c7",
     "quando": "2026-10-05T18:54:54+00:00",
     "conversou": true,
     "qualificacao": "Sem interesse",
-    "nota": "Informaram que não têm interesse. Motivo não registrado. Pausar a conta por pelo menos um mês."
+    "nota": "Informaram que não têm interesse. Motivo não registrado. Pausar a conta por pelo menos um mês.",
+    "etapa": "encerrada"
   },
   {
     "conta": "c14",
     "quando": "2026-10-05T18:56:42+00:00",
     "qualificacao": "Não atendeu / caixa postal",
-    "nota": "Telefone desligado ou fora da área de cobertura. O (71) 3379-6209 é o único número no cadastro da Receita. Tentar em outro horário e enviar e-mail para lustoza@lustoza.com."
+    "nota": "Telefone desligado ou fora da área de cobertura. O (71) 3379-6209 é o único número no cadastro da Receita. Tentar em outro horário e enviar e-mail para lustoza@lustoza.com.",
+    "etapa": "tentar"
   },
   {
     "conta": "c12",
     "quando": "2026-10-05T18:59:01+00:00",
     "qualificacao": "Não atendeu / caixa postal",
-    "nota": "Não atendeu. Nova tentativa em outro horário."
+    "nota": "Não atendeu. Nova tentativa em outro horário.",
+    "etapa": "tentar"
   },
   {
     "conta": "c10",
     "quando": "2026-10-05T19:03:51+00:00",
     "qualificacao": "Enviar material",
-    "nota": "Fazer o contato por WhatsApp, no (71) 98818-3740. Enviar a mensagem de apresentação e aguardar resposta."
+    "nota": "Fazer o contato por WhatsApp, no (71) 98818-3740. Enviar a mensagem de apresentação e aguardar resposta.",
+    "etapa": "canal"
   },
   {
     "conta": "c13",
     "quando": "2026-10-05T19:07:21+00:00",
     "conversou": true,
     "qualificacao": "Enviar material",
-    "nota": "Antônio, do setor de compras, pediu o envio da proposta para compras@santacruzengenharia.com.br. Enviar hoje e retornar a ligação em 2 dias úteis."
+    "nota": "Antônio, do setor de compras, pediu o envio da proposta para compras@santacruzengenharia.com.br. Enviar hoje e retornar a ligação em 2 dias úteis.",
+    "etapa": "enviar"
   },
   {
     "conta": "c11",
     "quando": "2026-10-05T19:10:58+00:00",
     "qualificacao": "Recepção passou informação",
-    "nota": "Falar com Lucas e Antonio, de Operações e Tecnologia, no (71) 2109-4949. Ligar amanhã, 06/10."
+    "nota": "Falar com Lucas e Antonio, de Operações e Tecnologia, no (71) 2109-4949. Ligar amanhã, 06/10.",
+    "etapa": "apresentar"
   },
   {
     "conta": "c17",
     "quando": "2026-10-05T19:12:21+00:00",
     "qualificacao": "Não atendeu / caixa postal",
-    "nota": "Não atende. Nova tentativa em outro horário."
+    "nota": "Não atende. Nova tentativa em outro horário.",
+    "etapa": "tentar"
   },
   {
     "conta": "c24",
     "quando": "2026-10-05T19:13:20+00:00",
     "qualificacao": "Não atendeu / caixa postal",
-    "nota": "Não atende. Nova tentativa em outro horário."
+    "nota": "Não atende. Nova tentativa em outro horário.",
+    "etapa": "tentar"
   },
   {
     "conta": "c18",
     "quando": "2026-10-05T19:14:41+00:00",
     "qualificacao": "Enviar material",
-    "nota": "Fazer o contato por WhatsApp, no (71) 99913-2108. Enviar a mensagem de apresentação e aguardar resposta."
+    "nota": "Fazer o contato por WhatsApp, no (71) 99913-2108. Enviar a mensagem de apresentação e aguardar resposta.",
+    "etapa": "canal"
   },
   {
     "conta": "c23",
     "quando": "2026-10-05T19:15:21+00:00",
     "qualificacao": "Não atendeu / caixa postal",
-    "nota": "Não atende. Nova tentativa em outro horário."
+    "nota": "Não atende. Nova tentativa em outro horário.",
+    "etapa": "tentar"
   },
   {
     "conta": "c16",
     "quando": "2026-10-05T19:16:34+00:00",
     "qualificacao": "Não atendeu / caixa postal",
-    "nota": "Não atende. Tentar novamente amanhã, 06/10."
+    "nota": "Não atende. Tentar novamente amanhã, 06/10.",
+    "etapa": "tentar"
   },
   {
     "conta": "c19",
     "quando": "2026-10-05T19:17:21+00:00",
     "qualificacao": "Não atendeu / caixa postal",
-    "nota": "Não atende. Tentar novamente amanhã, 06/10."
+    "nota": "Não atende. Tentar novamente amanhã, 06/10.",
+    "etapa": "tentar"
   },
   {
     "conta": "c21",
     "quando": "2026-10-05T19:22:10+00:00",
     "conversou": true,
     "qualificacao": "Enviar material",
-    "nota": "Pediram o envio da proposta para o Diego, em diego@tidelli.com.br. Enviar hoje e retornar a ligação em 2 dias úteis."
+    "nota": "Pediram o envio da proposta para o Diego, em diego@tidelli.com.br. Enviar hoje e retornar a ligação em 2 dias úteis.",
+    "etapa": "enviar"
   },
   {
     "conta": "c22",
     "quando": "2026-10-05T19:26:45+00:00",
     "conversou": true,
     "qualificacao": "Enviar material",
-    "nota": "Pediram o envio da proposta para o Igor, pelo WhatsApp (71) 3183-1115. Enviar hoje e retornar em 2 dias úteis."
+    "nota": "Pediram o envio da proposta para o Igor, pelo WhatsApp (71) 3183-1115. Enviar hoje e retornar em 2 dias úteis.",
+    "etapa": "enviar"
   },
   {
     "conta": "c9",
     "quando": "2026-10-05T19:28:26+00:00",
     "qualificacao": "Não atendeu / caixa postal",
-    "nota": "Não atende. Nova tentativa em outro horário."
+    "nota": "Não atende. Nova tentativa em outro horário.",
+    "etapa": "tentar"
   }
 ]
