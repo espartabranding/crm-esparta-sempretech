@@ -13,6 +13,11 @@
   },
   "decisores": [
     {
+      "nome": "Antônio",
+      "cargo": "Setor de compras (contato informado pela Esparta em 05/10/2026)",
+      "fonte": ""
+    },
+    {
       "nome": "Augusto Cezar Almeida de Oliveira Pinto",
       "cargo": "Sócio-administrador (quadro societário público do CNPJ)",
       "fonte": "https://brasilapi.com.br/api/cnpj/v1/40489197000199"
@@ -36,7 +41,7 @@
     "Os computadores acompanham o container de uma obra para outra ou são adquiridos a cada mobilização?",
     "A aquisição de equipamentos de informática parte da sede no Poloplast ou cada obra resolve a sua?"
   ],
-  "quem_procurar": "Setor de compras, pelo e-mail compras@santacruzengenharia.com.br.",
+  "quem_procurar": "Antônio, do setor de compras, pelo e-mail compras@santacruzengenharia.com.br.",
   "ressalvas": [
     "Não foi encontrado nenhum fato recente com data (obra nova, contrato ou vaga em 2025 ou 2026). O motivo da ligação usa uma característica real publicada no site (canteiros modulares e containers próprios), não uma obra atual.",
     "O site não informa quais obras estão em andamento; a lista de obras não tem datas nem status.",
