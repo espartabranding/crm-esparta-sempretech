@@ -114,5 +114,12 @@
     "quando": "2026-10-05T19:17:21+00:00",
     "qualificacao": "Não atendeu / caixa postal",
     "nota": "Não atende. Tentar novamente amanhã, 06/10."
+  },
+  {
+    "conta": "c21",
+    "quando": "2026-10-05T19:22:10+00:00",
+    "conversou": true,
+    "qualificacao": "Enviar material",
+    "nota": "Pediram o envio da proposta para o Diego, em diego@tidelli.com.br. Enviar hoje e retornar a ligação em 2 dias úteis."
   }
 ]

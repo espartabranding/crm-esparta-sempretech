@@ -7,11 +7,16 @@
   "onde_opera": "Fábrica e sede na Rua Moradas da Lagoa, 452, Nova Brasília de Valéria (Moradas da Lagoa), Salvador. Loja em Salvador na Alameda dos Sombreiros, 1181, Caminho das Árvores. Rede de lojas em outras capitais e no exterior.",
   "contato_publico": {
     "telefone": "(71) 3311-3350",
-    "email": "falecom@tidelli.com.br",
+    "email": "diego@tidelli.com.br (indicado pela empresa em 05/10/2026)",
     "site": "https://www.tidelli.com",
     "linkedin": "https://br.linkedin.com/company/tidelli-brasil"
   },
   "decisores": [
+    {
+      "nome": "Diego",
+      "cargo": "Contato que pediu a proposta (informado pela Esparta em 05/10/2026; cargo não informado)",
+      "fonte": ""
+    },
     {
       "nome": "Luciano Mandelli",
       "cargo": "Presidente (não é o contato para compra de informática; serve como referência de quem dirige a empresa)",
@@ -52,7 +57,7 @@
     "Considerando a poeira da marcenaria e da pintura, com que frequência as máquinas da produção precisam ser limpas ou trocadas?",
     "A reposição do dia a dia, como nobreak, monitor e teclado, é feita pela TI da fábrica em Salvador ou passa por um setor de compras?"
   ],
-  "quem_procurar": "Setor de TI ou infraestrutura da fábrica em Moradas da Lagoa; como segunda opção, Compras/Suprimentos. Não ligar para a loja do Caminho das Árvores, que é ponto de venda.",
+  "quem_procurar": "Diego, pelo e-mail diego@tidelli.com.br.",
   "ressalvas": [
     "Nenhum nome de responsável por TI ou compras foi encontrado em fonte pública; só o presidente é citado.",
     "O telefone da fábrica, (71) 3311-3350, vem de um guia comercial e não do site oficial; confirmar. O telefone publicado no site, (71) 3341-6626, é da loja de Salvador.",
