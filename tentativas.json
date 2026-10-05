@@ -72,5 +72,11 @@
     "conversou": true,
     "qualificacao": "Enviar material",
     "nota": "Antônio, do setor de compras, pediu o envio da proposta para compras@santacruzengenharia.com.br. Enviar hoje e retornar a ligação em 2 dias úteis."
+  },
+  {
+    "conta": "c11",
+    "quando": "2026-10-05T19:10:58+00:00",
+    "qualificacao": "Recepção passou informação",
+    "nota": "Falar com Lucas e Antonio, de Operações e Tecnologia, no (71) 2109-4949. Ligar amanhã, 06/10."
   }
 ]

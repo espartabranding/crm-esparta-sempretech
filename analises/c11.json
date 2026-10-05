@@ -11,7 +11,18 @@
     "site": "http://www.topengenharia.com.br",
     "linkedin": "https://br.linkedin.com/company/top-engenharia"
   },
-  "decisores": [],
+  "decisores": [
+    {
+      "nome": "Lucas",
+      "cargo": "Operações e Tecnologia (contato informado pela Esparta em 05/10/2026)",
+      "fonte": ""
+    },
+    {
+      "nome": "Antonio",
+      "cargo": "Operações e Tecnologia (contato informado pela Esparta em 05/10/2026)",
+      "fonte": ""
+    }
+  ],
   "fatos_recentes": [],
   "necessidade_provavel": "Hipótese: uma construtora pesada com sede em área industrial, pedreira e canteiros de obra rodoviária e de saneamento deve ter escritórios de campo sujeitos a queda e oscilação de energia e a poeira, o que pede nobreak ou estabilizador, computadores de mesa robustos e manutenção periódica das máquinas que voltam de obra. A quantidade de posições e a forma de compra não estão confirmadas.",
   "produto_de_entrada": "Nobreak",
@@ -25,7 +36,7 @@
     "Na pedreira e nos canteiros com gerador, já houve perda de máquina por oscilação de energia?",
     "Há obra em mobilização nos próximos meses na Bahia, e quantas posições o escritório de campo costuma ter?"
   ],
-  "quem_procurar": "Setor de compras/suprimentos na sede; se houver, o responsável por TI. Em segundo lugar, o administrativo-financeiro.",
+  "quem_procurar": "Lucas e Antonio, de Operações e Tecnologia, no (71) 2109-4949.",
   "ressalvas": [
     "Nenhum fato recente com data foi encontrado (contrato, obra nova, vaga ou notícia de 2025 ou 2026). O motivo da ligação usa o perfil da empresa e a situação típica de construtora pesada, não um evento específico.",
     "O site oficial apresentou erro de certificado na consulta de 05/10/2026 e não pôde ser lido; os dados vêm do LinkedIn, de cadastros de CNPJ e de guias de empresas.",
