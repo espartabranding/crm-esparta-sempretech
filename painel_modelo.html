@@ -754,15 +754,15 @@ function historico(c){
     <aside class="folha"><h3>Contato no Callix</h3>${contato ? `<dl class="ficha">${Object.entries(contato).map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>` : `<p class="vazio">Aparece depois da primeira ligação.</p>`}</aside></div>`;
 }
 
-/* Prazos pelo dia de São Paulo, no molde do organizador do GBOEX: atrasada, hoje, próxima */
+/* Prazos pelo dia de São Paulo, no molde do organizador do GBOEX: a fazer (prazo vencido), hoje, próxima */
 const diaSP = d => new Date(d).toLocaleDateString("en-CA",{timeZone:"America/Sao_Paulo"});
 const HOJE = diaSP(Date.now());
 const maisUteis = (dia, n) => { const d = new Date(dia+"T12:00:00Z"); while (n>0){ d.setUTCDate(d.getUTCDate()+1); if (d.getUTCDay()%6) n-- } return d.toISOString().slice(0,10) };
 const diasEntre = (a,b) => Math.round((new Date(b+"T12:00:00Z")-new Date(a+"T12:00:00Z"))/864e5);
 const dataCurta = dia => dia.slice(8)+"/"+dia.slice(5,7);
-const PRAZO = {atrasada:{t:"Atrasada", c:"--vermelho"}, hoje:{t:"Hoje", c:"--ambar"}, proxima:{t:"Próxima", c:"--cobalto"}, semdata:{t:"Sem data", c:"--cinza"}, feita:{t:"Concluída", c:"--verde"}};
+const PRAZO = {atrasada:{t:"A fazer", c:"--cobalto"}, hoje:{t:"Hoje", c:"--ambar"}, proxima:{t:"Próxima", c:"--cobalto"}, semdata:{t:"Sem data", c:"--cinza"}, feita:{t:"Concluída", c:"--verde"}};
 const selo = (txt, cor) => `<span class="selo" style="--c:var(${cor})">${esc(txt)}</span>`;
-const seloPrazo = t => t.sit==="feita" ? selo("Concluída","--verde") : t.prazo ? selo((t.sit==="atrasada"?"Atrasada · ":t.sit==="hoje"?"Hoje · ":"")+dataCurta(t.prazo), PRAZO[t.sit].c) : "";
+const seloPrazo = t => t.sit==="feita" ? selo("Concluída","--verde") : t.prazo ? selo((t.sit==="atrasada"?"A fazer · ":t.sit==="hoje"?"Hoje · ":"")+dataCurta(t.prazo), PRAZO[t.sit].c) : "";
 
 /* Kanban no molde do GBOEX: filete com o tom da etapa (aberta azul, ganho verde, perdido vermelho), contagem e
    total por coluna, cartão com valor e dias na etapa. Arrastar muda a etapa só neste navegador; o registro
@@ -867,12 +867,12 @@ function tarefas(){
     <div class="selos">${seloPrazo(t)}${t.prio==="alta"?selo("Alta","--ambar"):""}${selo(t.tipo,"--cinza")}${t.manual&&!CLIENTE?`<button class="chip" data-tarapagar="${esc(t.id)}">Excluir</button>`:""}</div></div>`;
   const grupo = k => { const g = l.filter(t=>t.sit===k).sort((a,b)=>(a.prazo||"9").localeCompare(b.prazo||"9") || (b.prio==="alta")-(a.prio==="alta") || a.titulo.localeCompare(b.titulo)); if (!g.length) return "";
     const corpo = g.map(linha).join("");
-    return `<section><h2>${{atrasada:"Atrasadas", hoje:"Para hoje", proxima:"Próximas", semdata:"Sem data", feita:"Concluídas"}[k]} <span class="kn">${g.length}</span></h2><div class="folha">${k==="feita"||(k==="semdata"&&g.length>12)?`<details ${k==="feita"?"":"open"}><summary>${g.length} ${g.length>1?"tarefas":"tarefa"}</summary><div>${corpo}</div></details>`:corpo}</div></section>` };
+    return `<section><h2>${{atrasada:"A fazer", hoje:"Para hoje", proxima:"Próximas", semdata:"Sem data", feita:"Concluídas"}[k]} <span class="kn">${g.length}</span></h2><div class="folha">${k==="feita"||(k==="semdata"&&g.length>12)?`<details ${k==="feita"?"":"open"}><summary>${g.length} ${g.length>1?"tarefas":"tarefa"}</summary><div>${corpo}</div></details>`:corpo}</div></section>` };
   const tipos = contar(todas, t=>t.tipo), abertas = l.filter(t=>t.sit!=="feita").length;
   return `
   <div class="cab"><div><div class="olho">O que fazer agora, a partir do CRM</div><h1>Tarefas</h1>
     <p class="meta">${abertas} em aberto${tarTipo?`, em ${esc(tarTipo)}`:""}. O próximo passo de cada conta vira tarefa, com prazo contado em dias úteis depois do último contato.</p></div></div>
-  <div class="numeros">${ordem.map(k=>`<div><b style="color:var(${n(k)&&k==="atrasada"?"--vermelho":"--tinta"})">${n(k)}</b><span>${{atrasada:"atrasadas", hoje:"para hoje", proxima:"próximas", semdata:"sem data", feita:"concluídas"}[k]}</span></div>`).join("")}</div>
+  <div class="numeros">${ordem.map(k=>`<div><b>${n(k)}</b><span>${{atrasada:"a fazer", hoje:"para hoje", proxima:"próximas", semdata:"sem data", feita:"concluídas"}[k]}</span></div>`).join("")}</div>
   ${l.length?`<div class="bateria" role="img" aria-label="Tarefas por prazo: ${ordem.map(k=>`${PRAZO[k].t} ${n(k)}`).join(", ")}">${ordem.filter(n).map(k=>`<span style="--c:var(${PRAZO[k].c}); width:${n(k)/l.length*100}%" data-tip="${PRAZO[k].t}: ${n(k)}"></span>`).join("")}</div>`:""}
   <div class="chips" style="margin:18px 0"><button class="chip ${tarTipo?"":"ok"}" data-tartipo="">Todas (${todas.length})</button>${tipos.map(([t,q])=>`<button class="chip ${tarTipo===t?"ok":""}" data-tartipo="${esc(t)}">${esc(t)} (${q})</button>`).join("")}</div>
   ${CLIENTE?"":`<section><div class="folha"><h3>Nova tarefa</h3><form class="form-t" id="nova-tarefa">
