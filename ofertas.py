@@ -14,7 +14,12 @@ import html
 import json
 import os
 import re
+import shutil
+import subprocess
+import sys
+import tempfile
 import unicodedata
+from concurrent.futures import ThreadPoolExecutor
 from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote
@@ -23,6 +28,63 @@ RAIZ = Path(__file__).parent
 SAIDA = RAIZ / "docs" / "ofertas"
 FOTOS = RAIZ / "ofertas_img"
 PROPOSTAS = RAIZ / "propostas.json"
+PDFS = SAIDA / "pdf"
+# O PDF é um caderno em A4 deitado: capa, um produto por página, galeria, demais itens, resumo e fecho.
+PDF_LARGURA, PDF_ALTURA = 1440, 1018
+PDF_CSS = """
+@page{size:1440px 1018px;margin:0}
+:root{--borda:40px}
+html,body{width:1440px}
+body{padding:0}
+.barra,.dedo{display:none}
+.faixa{width:100%;max-width:1300px;box-sizing:border-box;padding:0 60px}
+.topo,.painel,.perto,.ainda,.conta,.fecho{height:1018px;box-sizing:border-box;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:0;padding-bottom:0;break-inside:avoid;break-after:page}
+.heroi{grid-template-columns:.92fr 1.08fr;column-gap:10px;grid-template-areas:"abre palco" "resto palco";align-items:start;margin-top:26px}
+.abre{align-self:end}
+h1{font-size:90px}
+.palco{height:700px;margin:0 -40px 0 0}
+.palco .principal{width:660px}
+.luz{width:620px}.anel{width:680px}.anel.a2{width:540px}
+.nota-t::after{width:56px}
+.resto{padding-bottom:0}
+.resto .botao{width:auto}
+.preco b{font-size:76px}
+.ganhos{grid-template-columns:1fr 1fr;margin-top:22px}
+.ganhos li,.ganhos li:nth-child(even){padding:12px 14px 12px 34px;border-right:1px solid var(--linha)}
+.ganhos li:nth-child(even){border-right:0}
+.ganhos li::before,.ganhos li:nth-child(even)::before{left:12px;top:18px}
+.painel .faixa{grid-template-columns:1fr 1.15fr;gap:30px}
+.painel:nth-of-type(even) .faixa{grid-template-columns:1.15fr 1fr}
+.painel:nth-of-type(even) .cena{order:-1}
+.painel h2{font-size:80px}
+.painel .apoio{font-size:20px}
+.cena{min-height:680px;margin:0}
+.cena .luz{width:600px}.cena .anel{width:660px}.cena img{width:660px}
+.perto,.ainda{height:auto;display:block;overflow:visible}
+.perto{padding:54px 0 44px;break-after:auto}
+.ainda{padding:44px 0 50px}
+.perto h2,.ainda h2{font-size:62px;margin-top:12px}
+.galeria{overflow:visible;display:grid;grid-template-columns:repeat(4,1fr);margin:0;padding:26px 0 0}
+.galeria li{flex:none}
+.galeria img{aspect-ratio:auto;height:250px}
+.itens{grid-template-columns:repeat(var(--colunas,3),minmax(0,1fr));margin-top:24px}
+.item{break-inside:avoid}
+.item img{aspect-ratio:auto;height:190px}
+.item h3{font-size:28px}
+.conta .faixa{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.conta h2{font-size:84px}
+.total b{font-size:100px}
+.lotes b{font-size:30px}
+.fecho{height:928px;break-after:auto}
+.fecho h2{font-size:150px}
+.fecho p{font-size:20px}
+footer{height:84px;box-sizing:border-box}
+"""
+NAVEGADORES = (
+    Path(os.environ.get("PROGRAMFILES", "")) / "Google/Chrome/Application/chrome.exe",
+    Path(os.environ.get("PROGRAMFILES(X86)", "")) / "Google/Chrome/Application/chrome.exe",
+    Path(os.environ.get("PROGRAMFILES(X86)", "")) / "Microsoft/Edge/Application/msedge.exe",
+)
 # Coleta do site da SempreTech (texto, preço e fotos de cada produto), feita em 06/10/2026.
 SITE = Path(os.environ.get("OFERTAS_SITE", Path.home() / "Desktop" / "SempreTech" / "site"))
 ENDERECO = "https://espartabranding.github.io/crm-esparta-sempretech/ofertas/"
@@ -455,6 +517,15 @@ footer{padding:22px 0 12px;font-size:12.5px;color:var(--tinta-2);border-top:1px 
   *,*::before,*::after{animation:none!important;transition:none!important}
   .sobe,.nota-t{opacity:1}
 }
+/* Impressão e PDF: sem animação, tudo visível e com as cores de fundo */
+@media print{
+  *,*::before,*::after{animation:none!important;transition:none!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sobe,.nota-t,.rola{opacity:1!important;transform:none!important}
+  .painel h2{clip-path:none!important}
+  body{padding-bottom:0}
+  .barra,.dedo{display:none}
+  .painel,.item,.galeria li,.lista li{break-inside:avoid}
+}
 """
 
 ICONE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm0 1.800a8.200 8.200 0 0 1 7 12.500 8.200 8.200 0 0 1-11 2.900l-.400-.200-2.900.800.800-2.800-.300-.500A8.200 8.200 0 0 1 12 3.800Zm-3.300 4c-.200 0-.500 0-.700.300-.300.300-1 1-1 2.300s1 2.700 1.200 2.900c.100.200 2 3.200 5 4.300 2.400.900 2.900.700 3.400.700.500-.100 1.700-.700 1.900-1.300.200-.700.200-1.200.200-1.300-.100-.200-.300-.200-.600-.400l-1.900-.900c-.300-.100-.500-.200-.700.100l-.900 1.100c-.200.200-.300.200-.600.100-.300-.200-1.200-.500-2.300-1.400-.800-.800-1.400-1.700-1.600-2-.200-.300 0-.400.100-.600l.400-.500.300-.500c.100-.200 0-.400 0-.500l-.900-2c-.200-.500-.400-.500-.600-.500h-.600Z"/></svg>'
@@ -602,7 +673,7 @@ h1{{font-size:30px;letter-spacing:-.02em;margin:0 0 6px}}p{{margin:0 0 18px;colo
 th,td{{text-align:left;padding:12px 14px;border-bottom:1px solid #DDE2F0;vertical-align:top}}th{{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#5A6685}}
 small{{display:block;color:#5A6685;font-size:13px}}a{{color:#2B50FF}}details p{{margin:8px 0 0;color:#0E1730;max-width:52ch}}summary{{cursor:pointer;color:#2B50FF;font-size:13px}}</style></head>
 <body><main><h1>Ofertas por WhatsApp</h1>
-<p>Uma página de oferta para cada uma das {len(linhas)} contas com combo definido. O link "Abrir o WhatsApp da conta" já leva a mensagem pronta; troque [Seu nome] antes de enviar. Envie só para número que a empresa divulga para contato comercial ou com permissão dada por telefone.</p>
+<p>Uma página de oferta para cada uma das {len(linhas)} contas com proposta: as estudadas e as que estão na etapa de proposta. O link "Abrir o WhatsApp da conta" já leva a mensagem pronta; troque [Seu nome] antes de enviar. Envie só para número que a empresa divulga para contato comercial ou com permissão dada por telefone.</p>
 <div class="rol"><table><thead><tr><th>Conta</th><th>Oferta</th><th>Enviar</th></tr></thead><tbody>{corpo}</tbody></table></div></main></body></html>
 """
 
@@ -611,11 +682,18 @@ def gerar() -> None:
     SAIDA.mkdir(parents=True, exist_ok=True)
     combos = montar_combos()
     plano = json.loads((RAIZ / "contas.json").read_text(encoding="utf-8"))
-    ordem = {"s1": "Semana 1", "s2": "Semana 2", "validar": "Validar dados antes", "base": "Base, sem estudo individual"}
+    ordem = {"s1": "Semana 1", "s2": "Semana 2", "validar": "Validar dados antes"}
+    # Contas que o registro manual deixou na etapa de proposta (a última etapa anotada de cada uma).
+    etapa = {}
+    tentativas = RAIZ / "tentativas.json"
+    for t in sorted(json.loads(tentativas.read_text(encoding="utf-8")) if tentativas.exists() else [], key=lambda t: t["quando"]):
+        if t.get("etapa"):
+            etapa[t["conta"]] = t["etapa"]
+    em_proposta = {conta for conta, e in etapa.items() if e in ("apresentar", "enviar")}
     linhas, propostas = [], {}
     for conta in plano["contas"]:
-        # Toda conta com combo definido ganha a sua página; as da primeira rodada, sem combo, ficam de fora.
-        if not conta.get("combo"):
+        # Ganham proposta as contas estudadas e as que estão na etapa de apresentar a proposta personalizada.
+        if not conta.get("combo") or not (conta.get("onda") in ordem or conta["id"] in em_proposta):
             continue
         arquivo = f"{slug(conta['empresa'])}.html"
         (SAIDA / arquivo).write_text(pagina(conta, combos), encoding="utf-8")
@@ -626,15 +704,88 @@ def gerar() -> None:
             f"Posso apresentar os detalhes por aqui ou em uma ligação?"
         )
         numero = re.sub(r"\D", "", conta.get("telefone") or "")
-        linha = {"empresa": conta["empresa"], "cidade": conta["cidade"], "ordem": ordem.get(conta["onda"], ""), "combo": c["nome"], "total": c["total"], "unidade": c["unidade"],
-                 "arquivo": arquivo, "mensagem": mensagem, "whats": f"https://wa.me/{numero}?text={quote(mensagem)}" if numero else ""}
+        linha = {"empresa": conta["empresa"], "cidade": conta["cidade"], "ordem": ordem.get(conta["onda"], "Em fase de proposta"), "combo": c["nome"], "total": c["total"], "unidade": c["unidade"],
+                 "arquivo": arquivo, "pdf": f"pdf/{arquivo[:-5]}.pdf", "mensagem": mensagem, "whats": f"https://wa.me/{numero}?text={quote(mensagem)}" if numero else ""}
         linhas.append(linha)
-        propostas[conta["id"]] = {k: linha[k] for k in ("combo", "total", "unidade", "arquivo", "mensagem", "whats")}
+        propostas[conta["id"]] = {k: linha[k] for k in ("combo", "total", "unidade", "arquivo", "pdf", "mensagem", "whats")}
+    # Sai a página (e o PDF) de conta que deixou de ter proposta.
+    validas = {linha["arquivo"][:-5] for linha in linhas} | {"index"}
+    for sobra in [*SAIDA.glob("*.html"), *PDFS.glob("*.pdf")]:
+        if sobra.stem not in validas:
+            sobra.unlink()
     (SAIDA / "index.html").write_text(indice(linhas), encoding="utf-8")
     # O painel lê este arquivo para mostrar a proposta dentro da ficha de cada conta.
     PROPOSTAS.write_text(json.dumps(propostas, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(linhas)} ofertas em {SAIDA}")
 
 
+def _pdf(navegador: Path, origem: Path, destino: Path) -> None:
+    """Imprime a oferta como caderno em A4 deitado e põe a marca, a empresa e o número em cada página."""
+    import pymupdf
+    from PIL import Image
+
+    fonte = origem.read_text(encoding="utf-8")
+    empresa = html.unescape(re.search(r'class="para">Proposta para <b>(.*?)</b>', fonte).group(1))
+    with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as pasta:
+        temp = Path(pasta)
+        # O navegador deixa pastas de trabalho na pasta temporária; aqui elas somem junto com esta.
+        ambiente = {**os.environ, "TEMP": pasta, "TMP": pasta}
+        (temp / "oferta.html").write_text(fonte.replace("</head>", f"<style>{PDF_CSS}</style></head>", 1), encoding="utf-8")
+        # O navegador às vezes devolve o arquivo vazio quando vários rodam ao mesmo tempo: tenta de novo.
+        for _ in range(4):
+            subprocess.run(
+                [str(navegador), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--user-data-dir={temp / 'perfil'}",
+                 f"--print-to-pdf={temp / 'oferta.pdf'}", (temp / "oferta.html").as_uri()],
+                check=False, capture_output=True, timeout=180, env=ambiente,
+            )
+            if (temp / "oferta.pdf").is_file() and (temp / "oferta.pdf").stat().st_size:
+                break
+        doc = pymupdf.open(temp / "oferta.pdf")
+        # As fotos entram sem compressão no PDF do navegador; em JPEG o arquivo cai para um terço.
+        feitas = set()
+        for folha in doc:
+            for imagem in folha.get_images(full=True):
+                ref, mascara = imagem[0], imagem[1]
+                if ref in feitas or mascara:
+                    continue
+                feitas.add(ref)
+                foto = Image.open(BytesIO(pymupdf.Pixmap(doc, ref).tobytes("png"))).convert("RGB")
+                foto.thumbnail((600, 600), Image.LANCZOS)
+                saida = BytesIO()
+                foto.save(saida, "JPEG", quality=74, optimize=True)
+                folha.replace_image(ref, stream=saida.getvalue())
+        for n, folha in enumerate(doc, 1):
+            if n in (1, len(doc)):
+                continue  # a capa já traz a marca e a empresa, e a última página tem o rodapé com as condições
+            largura, altura = folha.rect.width, folha.rect.height
+            # Rodapé claro nas páginas escuras e escuro nas claras.
+            amostra = folha.get_pixmap(dpi=20, clip=pymupdf.Rect(40, altura - 40, 200, altura - 14)).samples
+            cor = (0.66, 0.70, 0.80) if sum(amostra) / len(amostra) < 110 else (0.36, 0.39, 0.47)
+            folha.insert_text((45, altura - 24), f"SempreTech  ·  Proposta para {empresa}", fontsize=8.5, fontname="helv", color=cor)
+            numero = f"{n} / {len(doc)}"
+            folha.insert_text((largura - 45 - pymupdf.get_text_length(numero, "helv", 8.5), altura - 24), numero, fontsize=8.5, fontname="helv", color=cor)
+        doc.set_metadata({"title": f"Proposta SempreTech para {empresa}", "author": "SempreTech"})
+        doc.save(destino, garbage=4, deflate=True, deflate_fonts=True, use_objstms=1)
+        doc.close()
+
+
+def gerar_pdfs(refazer: bool = False) -> None:
+    """PDF de cada oferta em docs/ofertas/pdf/. Só gera os que faltam, a não ser que se peça para refazer."""
+    navegador = next((n for n in NAVEGADORES if n.is_file()), None)
+    if not navegador:
+        raise SystemExit("Chrome ou Edge não encontrado para gerar os PDFs.")
+    if refazer:
+        shutil.rmtree(PDFS, ignore_errors=True)
+    PDFS.mkdir(parents=True, exist_ok=True)
+    paginas = [p for p in sorted(SAIDA.glob("*.html")) if p.name != "index.html"]
+    faltam = [p for p in paginas if not (PDFS / f"{p.stem}.pdf").exists()]
+    with ThreadPoolExecutor(4) as fila:
+        list(fila.map(lambda p: _pdf(navegador, p, PDFS / f"{p.stem}.pdf"), faltam))
+    print(f"{len(faltam)} PDFs gerados em {PDFS} ({len(paginas) - len(faltam)} já existiam)")
+
+
 if __name__ == "__main__":
     gerar()
+    # uv run python ofertas.py --pdf gera os PDFs que faltam; --pdf-refazer gera todos de novo.
+    if "--pdf" in sys.argv or "--pdf-refazer" in sys.argv:
+        gerar_pdfs(refazer="--pdf-refazer" in sys.argv)

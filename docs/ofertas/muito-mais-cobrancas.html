@@ -209,6 +209,15 @@ footer{padding:22px 0 12px;font-size:12.5px;color:var(--tinta-2);border-top:1px 
   *,*::before,*::after{animation:none!important;transition:none!important}
   .sobe,.nota-t{opacity:1}
 }
+/* Impressão e PDF: sem animação, tudo visível e com as cores de fundo */
+@media print{
+  *,*::before,*::after{animation:none!important;transition:none!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sobe,.nota-t,.rola{opacity:1!important;transform:none!important}
+  .painel h2{clip-path:none!important}
+  body{padding-bottom:0}
+  .barra,.dedo{display:none}
+  .painel,.item,.galeria li,.lista li{break-inside:avoid}
+}
 </style>
 </head>
 <body>

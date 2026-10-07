@@ -25,9 +25,11 @@ As ofertas das contas novas são os combos C1 a C7 (Estação Criativa, Laborat�
 ## Painel e ofertas (06/10/2026)
 
 - O painel abre na tela **Inteligência** (o que já foi abordado, status, fila com técnica e oferta, combos) e ganhou **Kanban** e **Tarefas**. Mover cartão e concluir tarefa ficam só no navegador de quem mexe.
-- **Ofertas por WhatsApp:** `ofertas.py` gera uma página por conta estudada em `docs/ofertas/` (40 páginas e um índice com a mensagem pronta de cada conta). Sem JavaScript, com as fotos embutidas. Para gerar de novo: `uv run python ofertas.py`.
+- **Propostas visuais:** `ofertas.py` gera a página de oferta das contas estudadas e das que estão na etapa de apresentar a proposta personalizada (47 em 07/10), em `docs/ofertas/`, com um índice e a mensagem pronta de cada conta. Sem JavaScript, com as fotos embutidas. Para gerar de novo: `uv run python ofertas.py`.
+- **PDF de cada proposta:** `uv run python ofertas.py --pdf` gera em `docs/ofertas/pdf/` os PDFs que faltam (caderno de 7 páginas em A4 deitado; usa o Chrome ou o Edge instalado). `--pdf-refazer` gera todos de novo.
+- **Na ficha do lead:** os botões "Visualizar proposta" e "Baixar proposta para envio" (PDF ou HTML) aparecem em todas as abas, e a aba "Proposta visual" mostra a página. As contas da primeira rodada usam o combo Escritório em Dia.
+- O kanban tem uma só etapa de proposta, "Apresentar a proposta personalizada"; o registro antigo "enviar" cai nela.
 - O botão das ofertas leva ao WhatsApp do site da SempreTech, (71) 3034-9662; os preços são os de varejo do site em 06/10.
-- **Nada disto está publicado:** os links do GitHub Pages continuam na versão de 05/10 até o próximo `git push`. As mensagens das ofertas já apontam para o endereço público.
 - O CRM com banco e login está em outro projeto, `../SempreTech_CRM`, com a mesma carteira carregada.
 
 ## Números de 05/10
