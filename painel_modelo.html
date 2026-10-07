@@ -787,7 +787,7 @@ function kanban(){
     return `<article class="kcard" style="--c:var(${cor})" ${CLIENTE?"":'draggable="true"'} data-kb="${c.id}" data-ir="lead/${c.id}" tabindex="0" title="${esc(c.chamadas[0]?.nota||"")}">
       <b>${esc(c.empresa)}</b><small>${esc(entrada(c).nome)} · ${esc(c.segmento)}</small>
       <div class="kv"><span>${c.valor_referencia?brl(c.valor_referencia):"Sem valor"}</span><small>${dias!=null ? (dias===1?"1 dia na etapa":`${dias} dias na etapa`) : esc(ONDA[c.onda]&&c.onda!=="base"?ONDA[c.onda]:"Base de 300")}</small></div>
-      <div class="kf"><span>${esc(contatoDe(c) ? "Contato: "+contatoDe(c) : c.cidade)}</span>${t?seloPrazo(t):""}</div>
+      <div class="kf"><span>${esc(contatoDe(c) ? "Contato: "+contatoDe(c) : c.cidade)}</span>${t && t.sit!=="atrasada"?seloPrazo(t):""}</div>
       ${MOV[c.id]?`<small style="color:var(--ambar); margin-top:6px">Movida neste navegador</small>`:""}</article>` };
   const coluna = ([k,t,cor]) => { const l = lista.filter(c=>colunaDe(c)===k).sort(ordem), corta = k==="nova" && !kbTudo && l.length>LIMITE;
     return `<section class="kcol" data-col="${k}" style="--c:var(${cor})"><header><h3><span>${t}</span><span class="kn">${l.length}</span></h3><small>${brl(valor(l))}</small></header>
