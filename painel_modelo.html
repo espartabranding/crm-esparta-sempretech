@@ -270,7 +270,6 @@ section{margin-bottom:38px}
       <button class="aba" data-ir="inteligencia">Inteligência</button>
       <button class="aba" data-ir="kanban">Kanban</button>
       <button class="aba" data-ir="tarefas">Tarefas</button>
-      <button class="aba" data-ir="geral">Visão geral</button>
       <button class="aba" data-ir="segmentacao">Segmentação</button>
       <button class="aba" data-ir="playbook">Playbook</button>
       <button class="aba" data-ir="catalogo">Soluções e catálogo</button>
@@ -334,7 +333,7 @@ function rota(){
   const [v,id,sub] = location.hash.slice(1).split(/[./]/);
   const inicial = CLIENTE ? "analise" : "ligacao";
   if (v==="lead" && C.some(c=>c.id===id)) return {v, id, sub:(CLIENTE && sub==="ligacao") ? inicial : (sub||inicial)};
-  const telas = CLIENTE ? ["geral","kanban","tarefas","segmentacao"] : ["geral","kanban","tarefas","playbook","catalogo","segmentacao"];
+  const telas = CLIENTE ? ["kanban","tarefas","segmentacao"] : ["kanban","tarefas","playbook","catalogo","segmentacao"];
   return {v:telas.includes(v)?v:"inteligencia"};
 }
 
@@ -361,45 +360,6 @@ function telefone(c){
   return soNumero(c.analise?.contato_publico?.telefone) || soNumero(c.telefone) || c.chamadas.find(x=>x.telefone)?.telefone || "";
 }
 const telLink = t => `<a class="mono" href="tel:${esc(t.replace(/[^\d+]/g,""))}">${esc(t)}</a>`;
-
-function geral(){
-  const abord = C.filter(c=>c.sit!=="pendente").length;
-  const taxa = todas.length ? Math.round(atendidas.length/todas.length*100)+"%" : "–";
-  const q = {};
-  for (const x of atendidas){ const k=x.qualificacao||"Sem qualificação"; (q[k] ??= {n:0, ok:x.sucesso}).n++ }
-  const quals = Object.entries(q).sort((a,b)=>b[1].n-a[1].n), max = quals[0]?.[1].n || 1;
-  return `
-  <div class="cab"><div><div class="olho">${CLIENTE ? "Relatório de prospecção para a SempreTech · Salvador e região" : "Campanha de prospecção · Salvador e região"}</div><h1>${abord} de ${C.length} contas ligadas</h1>
-    <p class="meta">${todas.length ? `${todas.length} ligações feitas, ${atendidas.length} atendidas.` : "Nenhuma ligação registrada ainda. Os números aparecem depois da primeira sincronização com o Callix."}</p></div></div>
-  <div class="numeros">${[[todas.length,"ligações feitas"],[atendidas.length,"atendidas"],[taxa,"taxa de atendimento"],[C.filter(c=>c.sit==="conversou").length,"contas em que houve conversa"]]
-    .map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join("")}</div>
-  <section class="grade">
-    <div class="folha"><h3>Situação das contas</h3>${ordemSit.map(k=>{const n=C.filter(c=>c.sit===k).length; return `<div class="faixa" style="--c:var(${SIT[k].c}); --w:${n/C.length*100}%"><span>${SIT[k].t}</span><i></i><b>${n}</b></div>`}).join("")}</div>
-    <div class="folha"><h3>Resultado das conversas</h3>${quals.length ? quals.map(([k,v])=>`<div class="faixa" style="--c:var(${v.ok?"--verde":"--cinza"}); --w:${v.n/max*100}%"><span>${esc(k)}</span><i></i><b>${v.n}</b></div>`).join("") : `<p class="vazio">Aparece quando as ligações atendidas forem qualificadas no Callix.</p>`}</div>
-  </section>
-  <section><h2>Contas</h2><p class="sub">${CLIENTE ? "Cada conta abre numa página própria, com os dados da empresa, o BI e o histórico de contatos." : "Cada conta abre numa aba própria, com o roteiro da ligação, a análise da empresa e o histórico."}</p>
-    <div class="folha rol"><table><thead><tr><th>Conta</th><th>Situação</th><th class="ocultar">Entrar por</th><th class="ocultar">Análise</th><th class="num">Ligações</th><th class="num">Fit</th></tr></thead><tbody>
-    ${ordenadas.map(c=>`<tr class="vai" data-ir="lead/${c.id}" tabindex="0"><td><b>${esc(c.empresa)}</b><small>${esc(c.segmento)}, ${esc(c.cidade)}</small></td>
-      <td>${pill(SIT[c.sit].t,SIT[c.sit].c)}</td><td class="ocultar">${esc(entrada(c).nome)}</td>
-      <td class="ocultar">${c.analise?conf(c.analise):`<span class="vazio">sem análise</span>`}</td>
-      <td class="num">${c.chamadas.length}</td><td class="num">${nota(c)}/12</td></tr>`).join("")}</tbody></table></div></section>
-  ${qualidade()}
-  ${DB.avulsas.length?`<section><h2>Ligações sem conta correspondente</h2><p class="sub">O contato no Callix não bate com nenhuma das contas do plano.</p><div class="folha">${DB.avulsas.map(ligHtml).join("")}</div></section>`:""}`;
-}
-
-/* Média das avaliações: onde a equipe mais perde ponto */
-function qualidade(){
-  const av = todas.map(x=>x.conversa).filter(v=>v?.analise);
-  if (!av.length) return "";
-  const media = a => Math.round(a.reduce((s,x)=>s+x,0)/a.length);
-  const notas = av.map(v=>v.analise.nota_pct).filter(n=>n!=null);
-  const porCrit = new Map();
-  for (const v of av) for (const c of v.analise.criterios) if (c.nota!=null) (porCrit.get(c.nome) || porCrit.set(c.nome,[]).get(c.nome)).push(c.nota/3*100);
-  const linhas = [...porCrit].map(([k,a])=>[k,media(a)]).sort((a,b)=>a[1]-b[1]);
-  return `<section><h2>Qualidade das conversas</h2><p class="sub">Média de ${av.length} ligações avaliadas a partir da transcrição. Os critérios com nota mais baixa vêm primeiro.</p>
-    <div class="numeros">${[[notas.length?media(notas):"–","nota média, de 0 a 100"],[media(av.map(v=>v.metricas.fala_agente_pct))+"%","do tempo quem fala é o agente"],[media(av.map(v=>v.metricas.maior_monologo_agente))+"s","maior fala seguida do agente"],[media(av.map(v=>v.metricas.perguntas)),"perguntas por ligação"]].map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join("")}</div>
-    <div class="folha">${linhas.map(([k,n])=>`<div class="faixa" style="--c:var(${corNota(n)}); --w:${n}%; grid-template-columns:minmax(150px,46%) 1fr 34px"><span>${esc(k)}</span><i></i><b>${n}</b></div>`).join("")}</div></section>`;
-}
 
 /* Esteiras: 1 localiza o responsável; 2 apresenta a proposta objetiva ao contato obtido */
 const ETAPAS = {
@@ -934,7 +894,7 @@ let chaveAnterior = "";
 function desenhar(){
   const r = rota(), chave = r.v+(r.id||"")+(r.sub||"");
   document.querySelectorAll("audio").forEach(a=>a.pause());
-  $("main").innerHTML = r.v==="lead" ? lead(r) : r.v==="playbook" ? playbook() : r.v==="catalogo" ? catalogo() : r.v==="segmentacao" ? segmentacao() : r.v==="geral" ? geral() : r.v==="kanban" ? kanban() : r.v==="tarefas" ? tarefas() : inteligencia();
+  $("main").innerHTML = r.v==="lead" ? lead(r) : r.v==="playbook" ? playbook() : r.v==="catalogo" ? catalogo() : r.v==="segmentacao" ? segmentacao() : r.v==="kanban" ? kanban() : r.v==="tarefas" ? tarefas() : inteligencia();
   document.title = (r.v==="lead" ? C.find(c=>c.id===r.id).empresa+" — " : "") + "SempreTech";
   trilho();
   $("trilho").classList.remove("aberto");
