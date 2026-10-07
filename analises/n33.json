@@ -1,0 +1,44 @@
+{
+  "id": "n33",
+  "empresa": "ConstruVilas Materiais para Construção",
+  "identidade_confirmada": null,
+  "resumo": "Loja de materiais de construção no Centro de Lauro de Freitas, com site próprio.",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Av. Luiz Tarquínio, R. das Pitangueiras, 978 - Centro, Lauro de Freitas - BA, 42700-000.",
+  "contato_publico": {
+    "telefone": "+55 71 93500-0564",
+    "email": null,
+    "site": "https://www.construvilas.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Varejo de materiais com site e balcão pede caixa estável e impressão térmica; câmeras como complemento. Site próprio (leitura bloqueada); CNPJ encontrado de Construvila é de Mato Grosso (homônimo, descartado).",
+  "produto_de_entrada": "Caixa Pronto (desktop i3 de 10ª geração, monitor de 15,6\", nobreak de 600 va, bobina térmica)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário/sócio (não publicado)",
+  "ressalvas": [
+    "Homônimo no MT descartado; unidades não verificadas.",
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 6.367) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "construvilas.com.br",
+      "u": "https://www.construvilas.com.br/"
+    },
+    {
+      "t": "cnpj-api.com",
+      "u": "https://cnpj-api.com/en/cnpj/08774368000119"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJYZPQBCQ9FgcRxygkMuF_QAI"
+    }
+  ]
+}

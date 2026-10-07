@@ -1,0 +1,45 @@
+{
+  "id": "n27",
+  "empresa": "Monte Moryah Engenharia e Projetos",
+  "identidade_confirmada": null,
+  "resumo": "Empresa de serviços de engenharia civil e projetos sediada em Salvador/BA.",
+  "porte": "Porte na Receita: ME. Abertura: 2007. CNPJ 09.010.376/0001-51 (provável; endereço e telefone do cadastro diferem dos informados, a confirmar).",
+  "onde_opera": "1 escritório (sede em Salvador). Endereço no Google Maps: R. Flórida, 235 - Sl 03 - Graça, Salvador - BA, 40150-480.",
+  "contato_publico": {
+    "telefone": "+55 71 99214-9196",
+    "email": null,
+    "site": "http://www.montemoryah.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Projetos de engenharia costumam usar CAD/BIM, que exigem estação com placa de vídeo; o escritório também precisa de máquinas de escritório com nobreak. Atividade de projetos e engenharia sugere uso de softwares de CAD/BIM; site oficial não pôde ser lido (bloqueio).",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [
+    "O escritório funciona na Graça ou na Barra?"
+  ],
+  "quem_procurar": "Sócio-administrador ou coordenador de projetos (nome a confirmar)",
+  "ressalvas": [
+    "Cadastro de CNPJ encontrado aponta Av. Almirante Marques de Leão, 318, Barra, e não R. Flórida, Graça; pode ser mudança de endereço ou homônimo.",
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 14.135) serve para priorizar, não como previsão de venda."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "monitorcnpj.com.br",
+      "u": "https://monitorcnpj.com.br/cnpj/09010376000151/"
+    },
+    {
+      "t": "solutudo.com.br",
+      "u": "https://www.solutudo.com.br/empresas/ba/salvador/engenharia-engenheiros/monte-moryah-engenharia-ltda-5361755"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJERgfVoAEFgcRPl3ukSxbio8"
+    }
+  ]
+}

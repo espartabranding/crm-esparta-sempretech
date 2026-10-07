@@ -1,0 +1,48 @@
+{
+  "id": "n22",
+  "empresa": "Bio Odonto",
+  "identidade_confirmada": null,
+  "resumo": "Clínica odontológica em Lauro de Freitas/BA especializada em implantes dentários e reabilitação oral.",
+  "porte": "Funcionários: até 19 (microempresa, segundo perfil no InfoJobs).",
+  "onde_opera": "1 (R. Itagi, 85, Pitangueiras). Endereço no Google Maps: R. Itagi, 85 - Pitangueiras, Lauro de Freitas - BA, 42701-370.",
+  "contato_publico": {
+    "telefone": "+55 71 92001-2263",
+    "email": null,
+    "site": "https://bioodontolauro.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Vaga aberta (1 vaga no InfoJobs, publicada há mais de um mês; data exata a confirmar)",
+      "data": "",
+      "fonte": "https://www.infojobs.com.br/empresa-bio-odonto-lauro-freitas__960708.aspx"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: Clínica precisa de estações office com monitor e nobreak para recepção e consultórios; câmeras na recepção são complemento. Clínica de implantes tende a usar computadores para prontuário, agenda e imagens (inferência); site próprio.",
+  "produto_de_entrada": "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [
+    "A clínica é independente ou faz parte de uma rede, com compra centralizada?"
+  ],
+  "quem_procurar": "Dentista responsável/proprietário",
+  "ressalvas": [
+    "CNPJ e razão social não confirmados; possível vinculação a rede não verificada.",
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 6.857) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "infojobs.com.br",
+      "u": "https://www.infojobs.com.br/empresa-bio-odonto-lauro-freitas__960708.aspx"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJ5x3DzEI_FgcR0LiPm6bAnzc"
+    }
+  ]
+}

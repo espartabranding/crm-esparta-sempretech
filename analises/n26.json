@@ -1,0 +1,40 @@
+{
+  "id": "n26",
+  "empresa": "Escola Técnica Star Brasil",
+  "identidade_confirmada": null,
+  "resumo": "Escola técnica em Salvador (Ladeira dos Barris, Piedade).",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Ladeira dos Barris, n° 03 - Piedade, Salvador - BA, 40070-310.",
+  "contato_publico": {
+    "telefone": "+55 71 3838-8835",
+    "email": null,
+    "site": "https://www.escolastarbrasil.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Escola técnica tende a ter laboratório e secretaria; lote de desktops i3/i5 e kits de upgrade se aplicam. Site oficial não pôde ser lido (bloqueio); sem evidência de estrutura de TI.",
+  "produto_de_entrada": "Laboratório Pronto (desktop i3 de 10ª geração, monitor de 15,6\", headset, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Diretor(a) / coordenação administrativa",
+  "ressalvas": [
+    "Dados cadastrais não localizados; busca retornou homônimos.",
+    "A quantidade de 8 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 19.819) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "escolastarbrasil.com.br",
+      "u": "https://www.escolastarbrasil.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJ-XonwuUEFgcRCln6k7Pi2_U"
+    }
+  ]
+}

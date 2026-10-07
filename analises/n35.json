@@ -1,0 +1,38 @@
+{
+  "id": "n35",
+  "empresa": "InfoStore Computadores",
+  "identidade_confirmada": null,
+  "resumo": "Loja e assistência de informática no Itaigara, Salvador (site infostorecomputadores.com.br).",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Av. Antônio Carlos Magalhães, 656 - Loja 11 - Terreo - Itaigara, Salvador - BA, 41825-000.",
+  "contato_publico": {
+    "telefone": "+55 71 99999-6767",
+    "email": null,
+    "site": "https://www.infostorecomputadores.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Assistência técnica consome componentes e kits de upgrade com preço de revenda. Possui site próprio (não acessível pela ferramenta); atividade de informática e assistência.",
+  "produto_de_entrada": "Parceiro Técnico (componentes (ssd, memória, fonte e hd))",
+  "complementares": [],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário",
+  "ressalvas": [
+    "Pode ser concorrente (loja de computadores); homônimo InfoStore em Manaus descartado; dados não confirmados.",
+    "A quantidade de 1 cesta(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 4.629) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "infostorecomputadores.com.br",
+      "u": "https://www.infostorecomputadores.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJ_____0AbFgcR7ONu4r6X01c"
+    }
+  ]
+}

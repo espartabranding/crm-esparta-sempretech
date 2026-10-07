@@ -1,0 +1,51 @@
+{
+  "id": "n1",
+  "empresa": "Colégio Aurora",
+  "identidade_confirmada": null,
+  "resumo": "Colégio bilíngue de base católica, da educação infantil ao 9º ano, em Lauro de Freitas.",
+  "porte": "Funcionários: 20 a 99 funcionários (perfil InfoJobs); site cita 20+ profissionais de educação.",
+  "onde_opera": "1 unidade (Recreio Ipitanga). Endereço no Google Maps: R. dos Prazeres, 363 - Recreio Ipitanga, Lauro de Freitas - BA, 42700-290.",
+  "contato_publico": {
+    "telefone": "+55 71 98126-2448",
+    "email": null,
+    "site": "https://www.colegioaurora.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Matrículas abertas para 2027 (site oficial, consultado em out/2026).",
+      "data": "10/2026",
+      "fonte": "https://www.colegioaurora.com.br/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: Colégio em período de matrículas pode atualizar laboratório e secretaria com lote de desktops e headsets (aulas de inglês). Ensino bilíngue, metodologia Singapore Math; site cita 2.000 m² de instalações e 1.000+ famílias; laboratório de informática não confirmado.",
+  "produto_de_entrada": "Laboratório Pronto (desktop i3 de 10ª geração, monitor de 15,6\", headset, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "O Colégio Aurora está com as matrículas de 2027 abertas. A SempreTech propõe o Laboratório Pronto para o próximo ano letivo: computador compatível com o Windows 11, monitor, headset e estabilizador em cada posição, com assistência técnica própria em Salvador. Como o colégio planeja os computadores do laboratório e da secretaria para 2027?",
+  "perguntas_especificas": [
+    "O colégio tem laboratório de informática, ou os computadores se concentram na secretaria e na coordenação?"
+  ],
+  "quem_procurar": "Diretor(a) / administrativo",
+  "ressalvas": [
+    "A quantidade de 8 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 19.819) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "colegioaurora.com.br",
+      "u": "https://www.colegioaurora.com.br/"
+    },
+    {
+      "t": "infojobs.com.br",
+      "u": "https://www.infojobs.com.br/empresa-colegio-aurora__953223.aspx"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJZ4Ga8HQXFgcRbPd7Cs2QgVU"
+    }
+  ]
+}

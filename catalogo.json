@@ -1,21 +1,22 @@
 {
   "fonte": "https://www.sempretechba.com.br/",
-  "consultado_em": "2026-10-05",
+  "consultado_em": "2026-10-06",
   "contato": "(71) 3034-9662 (telefone e WhatsApp) · sac@sempretechba.com.br · seg. a sex., 8h30 às 17h30",
   "pagamento": "À vista por boleto, transferência ou Pix; a prazo no cartão.",
   "familias": [
     {
       "nome": "Computadores",
-      "resumo": "Desktops montados X-Linne são o forte: 25 modelos na linha Home (20 conferidos) e 9 na Gamer. A categoria Desktop Office está vazia no site e há um único notebook.",
+      "resumo": "Desktops montados X-Linne são o forte: 59 anúncios na categoria Desktop, 9 deles na linha Gamer. O Windows 11 só roda nos modelos com Intel de 8ª geração em diante (i3 10100, i5 9400, i7 9700); os de i3 2100, 3240, 6100 e 7100, i5 2400, 3470 e 7400, i7 6700 e Pentium G4560 ficam fora das ofertas. A categoria Desktop Office está vazia e há um único notebook.",
       "itens": [
-        {"nome": "Computador i3 6100, 8 GB, SSD 240 GB X-Linne", "preco": "R$ 1.449,99"},
-        {"nome": "Computador i5 7400, 8 GB, SSD 120 GB", "preco": "R$ 1.899,99"},
+        {"nome": "Computador i3 6100, 8 GB, SSD 240 GB X-Linne", "preco": "R$ 1.659,99"},
+        {"nome": "Computador i5 7400, 8 GB, SSD 120 GB", "preco": "R$ 2.179,99"},
         {"nome": "Computador i3 10100, 8 GB, SSD 240 GB X-Linne", "preco": "R$ 1.920,91"},
-        {"nome": "Computador i5 9400, 16 GB, SSD 240 GB", "preco": "R$ 2.569,99"},
-        {"nome": "Computador i5 9400, 32 GB, SSD 480 GB", "preco": "R$ 4.029,99"},
-        {"nome": "Computador Gamer i7 9700, 16 GB, SSD M.2 512 GB, GTX 750 Ti 4 GB X-Linne", "preco": "R$ 3.839,90"},
-        {"nome": "Computador Gamer i7 6700, 16 GB, SSD M.2 512 GB, RX 580 4 GB X-Linne", "preco": "R$ 4.489,90"},
+        {"nome": "Computador i5 9400, 16 GB, SSD 240 GB", "preco": "R$ 2.929,99"},
+        {"nome": "Computador i5 9400, 32 GB, SSD 480 GB", "preco": "R$ 4.599,99"},
+        {"nome": "Computador Gamer i7 9700, 16 GB, SSD M.2 512 GB, GTX 750 Ti 4 GB X-Linne", "preco": "R$ 4.749,90"},
+        {"nome": "Computador Gamer i7 6700, 16 GB, SSD M.2 512 GB, RX 580 4 GB X-Linne", "preco": "R$ 5.559,90"},
         {"nome": "Notebook Compaq Presario 424, Pentium N3700, 4 GB, 1 TB, 14\"", "preco": "R$ 2.999,99"},
+        {"nome": "Monitor LED VX Pro 15,6\" HDMI/VGA", "preco": "R$ 223,90"},
         {"nome": "Monitor LED AOC 18,5\" VGA/HDMI E970SWHNL", "preco": "R$ 499,99"},
         {"nome": "Monitor LED AOC 21,5\" Full HD E2270SWHEN (revisado)", "preco": "R$ 699,90"},
         {"nome": "Monitor LED LG 22\" com ajuste de altura 22BN550Y-B (revisado)", "preco": "R$ 999,90"}
@@ -27,7 +28,11 @@
       "itens": [
         {"nome": "Kit Upgrade 1151: placa-mãe H110, Pentium G, 8 GB DDR4 e cooler", "preco": "R$ 999,99"},
         {"nome": "Kit 1151: placa-mãe H110, i3 7100, 8 GB DDR4", "preco": "R$ 1.039,99"},
-        {"nome": "Processador Intel i7 8700 LGA 1151 com cooler", "preco": "R$ 1.419,99"}
+        {"nome": "Processador Intel i7 8700 LGA 1151 com cooler", "preco": "R$ 1.419,99"},
+        {"nome": "SSD 120 GB XByte", "preco": "R$ 189,99"},
+        {"nome": "Memória DDR4 8 GB HyperX Fury", "preco": "R$ 499,99"},
+        {"nome": "Fonte ATX 500 W com PFC ativo", "preco": "R$ 259,90"},
+        {"nome": "HD 500 GB Western Digital", "preco": "R$ 199,90"}
       ]
     },
     {
@@ -65,6 +70,8 @@
         {"nome": "Mouse USB básico TCN 1200 DPI", "preco": "R$ 14,85"},
         {"nome": "Teclado USB básico Slim 950 TCN", "preco": "R$ 29,85"},
         {"nome": "Teclado USB Logitech K120", "preco": "R$ 109,90"},
+        {"nome": "Mouse USB Logitech M90", "preco": "R$ 61,96"},
+        {"nome": "Bobina térmica 80 x 30 mm, 30 unidades", "preco": "R$ 157,90"},
         {"nome": "Kit teclado e mouse sem fio Logitech MK270", "preco": "R$ 259,90"}
       ]
     },
@@ -94,9 +101,13 @@
     {"contem": "camera", "situacao": "parcial", "nota": "Três câmeras AHD de R$ 99,99 a R$ 149,99; sem DVR, fonte ou cabeamento no site."},
     {"contem": "nobreak", "situacao": "no_site", "nota": "Nobreaks de R$ 555,96 a R$ 3.042,96; estabilizadores a partir de R$ 149,85."},
     {"contem": "notebook", "situacao": "parcial", "nota": "Um único modelo, de entrada (Compaq Pentium N3700, R$ 2.999,99)."},
-    {"contem": "desktop", "situacao": "no_site", "nota": "Linha Home X-Linne de R$ 1.449,99 a R$ 4.029,99. A categoria Office está vazia."},
+    {"contem": "desktop", "situacao": "no_site", "nota": "Linha X-Linne; o i3 10100 sai por R$ 1.920,91 e o i5 9400 a partir de R$ 2.929,99. Só os modelos de 8ª geração em diante rodam o Windows 11."},
     {"contem": "kits upgrade", "situacao": "no_site", "nota": "Kits 1151 de R$ 999,99 a R$ 1.039,99."},
     {"contem": "monitor", "situacao": "no_site", "nota": "Cinco modelos de R$ 223,90 a R$ 999,90, parte deles revisados."},
+    {"contem": "teclado e mouse", "situacao": "no_site", "nota": "Logitech K120 a R$ 109,90 e M90 a R$ 61,96; linha TCN a partir de R$ 14,85."},
+    {"contem": "estabilizador", "situacao": "no_site", "nota": "Três modelos, de R$ 149,85 a R$ 161,96."},
+    {"contem": "bobina", "situacao": "no_site", "nota": "Bobina térmica 80 x 30 mm, 30 unidades, R$ 157,90. O site não tem impressora térmica."},
+    {"contem": "componentes", "situacao": "no_site", "nota": "SSD, memória, fonte e HD avulsos; condição de revenda a confirmar."},
     {"contem": "mouses e teclados", "situacao": "no_site", "nota": "Mouse a partir de R$ 14,85 e teclado a partir de R$ 29,85."},
     {"contem": "smartphone", "situacao": "fora", "nota": "Categoria Smartphones vazia no site."},
     {"contem": "impressora", "situacao": "fora", "nota": "O site só tem bobina térmica; nenhuma impressora."},

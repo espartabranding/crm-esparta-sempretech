@@ -1,0 +1,36 @@
+{
+  "id": "n20",
+  "empresa": "Aln Gráfica e Comunicação Visual",
+  "identidade_confirmada": null,
+  "resumo": "Gráfica e comunicação visual em Camaçari, com presença via Instagram.",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: R. Dias d'Ávila, 04 - Bela Vista, Camaçari - BA, 42809-347.",
+  "contato_publico": {
+    "telefone": "+55 71 98433-1929",
+    "email": null,
+    "site": "https://www.instagram.com/alngrafica/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Comunicação visual exige estação de arte com placa de vídeo e nobreak; desktop office cobre o administrativo. Comunicação visual (plotagem e arte) depende de computadores de arte; sem dados específicos.",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário",
+  "ressalvas": [
+    "Instagram bloqueou a consulta; dados cadastrais não localizados; provável empresa pequena.",
+    "A quantidade de 1 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 7.068) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJde4eYZtpFgcRVgzi8NFpfpc"
+    }
+  ]
+}

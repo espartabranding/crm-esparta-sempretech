@@ -1,0 +1,39 @@
+{
+  "id": "n12",
+  "empresa": "Lavik Engenharia",
+  "identidade_confirmada": null,
+  "resumo": "Engenharia de prevenção e combate a incêndio: projetos PPCI, AVCB/CLCB, instalação e manutenção de sprinklers, hidrantes e detectores em Salvador e Bahia.",
+  "porte": "",
+  "onde_opera": "1 escritório (sala 603, Edifício Salvador Prime, Salvador). Endereço no Google Maps: Edifício Salvador Prime - Av. Tancredo Neves, 2227 - Sl 603 - Caminho das Árvores, Salvador - BA, 42820-020.",
+  "contato_publico": {
+    "telefone": "+55 71 98384-8213",
+    "email": null,
+    "site": "https://www.lavikengenharia.com/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Projetos em CAD justificam estações com placa de vídeo, monitor e nobreak; o escritório usa desktop office. Elaboração de projetos de incêndio (PPCI) implica CAD; software específico não divulgado.",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "A Lavik elabora projetos de prevenção e combate a incêndio, trabalho técnico feito em computador. A SempreTech propõe a Estação Criativa: computador i7 com placa de vídeo dedicada, monitor de 22 polegadas e nobreak, com montagem e assistência técnica próprias em Salvador. Como as estações da equipe de projetos estão respondendo hoje?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Sócio/engenheiro responsável",
+  "ressalvas": [
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 14.135) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "lavikengenharia.com",
+      "u": "https://www.lavikengenharia.com/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJr52k4wsw7CARHrOk6j3sr24"
+    }
+  ]
+}

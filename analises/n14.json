@@ -1,0 +1,40 @@
+{
+  "id": "n14",
+  "empresa": "Mecadiesel Peças e Serviços",
+  "identidade_confirmada": null,
+  "resumo": "Autopeças e oficina especializada em manutenção de veículos diesel (caminhões, pickups e máquinas pesadas) em Camaçari/BA.",
+  "porte": "",
+  "onde_opera": "1 (Camaçari, Via Copec, Lama Preta); nenhuma filial citada. Endereço no Google Maps: ROD BA, Via Copec, 522 - Lama Preta, Camaçari - BA, 42804-491.",
+  "contato_publico": {
+    "telefone": "+55 71 3621-3157",
+    "email": null,
+    "site": "http://www.mecadieselpecas.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Balcão de peças e escritório de ordens de serviço pedem desktops office com nobreak; câmeras protegem estoque e oficina. Site com WhatsApp e horários; balcão de peças e oficina exigem sistema de estoque/OS (inferência).",
+  "produto_de_entrada": "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "A Mecadiesel reúne balcão de autopeças e oficina de veículos diesel em Camaçari. A SempreTech propõe o Escritório em Dia para o balcão e o escritório: computador compatível com o Windows 11, monitor e nobreak, com assistência técnica própria em Salvador. Os computadores do balcão já rodam o Windows 11?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário ou gerente administrativo",
+  "ressalvas": [
+    "CNPJ não localizado; confirmar dados.",
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 6.857) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "mecadieselpecas.com.br",
+      "u": "http://www.mecadieselpecas.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJ4zYi9cdpFgcRufoEJUWF-P8"
+    }
+  ]
+}

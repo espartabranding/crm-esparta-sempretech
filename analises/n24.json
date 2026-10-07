@@ -1,0 +1,45 @@
+{
+  "id": "n24",
+  "empresa": "MR Informática",
+  "identidade_confirmada": true,
+  "resumo": "Venda e otimização de computadores (SSD, memória, montagem de PCs e PCs gamer) em Salvador, com atendimento em loja e a domicílio.",
+  "porte": "Abertura: 2009 (ano de fundação segundo o site). CNPJ 23.371.080/0001-97 (informado no site; não validado em base cadastral).",
+  "onde_opera": "1 loja citada no site (Shopping Vasco da Gama); endereço do Maps é Av. Tancredo Neves, 3133, divergência a confirmar. Endereço no Google Maps: Av. Tancredo Neves, 3133 - Caminho das Árvores, Salvador - BA, 41820-021.",
+  "contato_publico": {
+    "telefone": "+55 71 99141-4159",
+    "email": null,
+    "site": "https://www.mrinformaticasalvador.com.br/",
+    "linkedin": null
+  },
+  "decisores": [
+    {
+      "nome": "Marco Rocha",
+      "cargo": "Fundador da loja, conforme o site",
+      "fonte": null
+    }
+  ],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Monta e faz upgrades, portanto compra componentes; é parceiro técnico potencial com preço de revenda. Monta PCs personalizados e gamer; instala SSD e RAM.",
+  "produto_de_entrada": "Parceiro Técnico (componentes (ssd, memória, fonte e hd))",
+  "complementares": [],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [
+    "A loja atende no Shopping Vasco da Gama ou na Av. Tancredo Neves?"
+  ],
+  "quem_procurar": "Fundador (Marco Rocha, publicado no site oficial)",
+  "ressalvas": [
+    "Concorrente direto em montagem de PCs; negócio de porte muito pequeno; endereço do site diverge do Maps.",
+    "A quantidade de 1 cesta(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 4.629) serve para priorizar, não como previsão de venda."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "mrinformaticasalvador.com.br",
+      "u": "https://www.mrinformaticasalvador.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJNb_aOLs_FgcRtC9ngz5sQ8k"
+    }
+  ]
+}

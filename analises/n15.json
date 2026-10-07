@@ -1,0 +1,46 @@
+{
+  "id": "n15",
+  "empresa": "Colégio Carpe Diem - Gleba É",
+  "identidade_confirmada": null,
+  "resumo": "Unidade de rede de colégios privados de Camaçari (Centro Educacional Carpe Diem, fundado em 2002, método Pueri Domus).",
+  "porte": "Abertura: 2002 (rede).",
+  "onde_opera": "Rede com várias unidades em Camaçari (ao menos Kids/Lama Preta e Monte Gordo). Endereço no Google Maps: R. das Algarobas, 15 - Gleba e, Camaçari - BA, 42804-620.",
+  "contato_publico": {
+    "telefone": "+55 71 99910-9872",
+    "email": null,
+    "site": "http://redeeducarpe.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Rede escolar com várias unidades pode renovar laboratórios e secretarias em lote. Usa o sistema Pueri Domus e plataforma Allevo (bônus aos alunos); site da rede não pôde ser lido.",
+  "produto_de_entrada": "Laboratório Pronto (desktop i3 de 10ª geração, monitor de 15,6\", headset, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "O Carpe Diem mantém várias unidades em Camaçari. A SempreTech propõe o Laboratório Pronto em lote, na mesma configuração para todas as unidades: computador compatível com o Windows 11, monitor, headset e estabilizador em cada posição, com assistência técnica própria em Salvador. A compra de computadores é decidida em cada unidade ou pela direção da rede?",
+  "perguntas_especificas": [
+    "A compra de computadores é decidida em cada unidade ou pela direção da rede?"
+  ],
+  "quem_procurar": "Direção da rede / compras",
+  "ressalvas": [
+    "Faz parte de uma rede com várias unidades; decisão pode ser centralizada.",
+    "A quantidade de 10 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 24.774) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "melhorescola.com.br",
+      "u": "https://www.melhorescola.com.br/escola/centro-educacional-carpe-diem-unid-kids"
+    },
+    {
+      "t": "redeeducarpe.com.br",
+      "u": "http://redeeducarpe.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJN9Nef_FpFgcRgU-pTyu9XMU"
+    }
+  ]
+}

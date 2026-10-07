@@ -1,0 +1,40 @@
+{
+  "id": "n36",
+  "empresa": "Piso Bello - Material para Construção",
+  "identidade_confirmada": null,
+  "resumo": "Loja de materiais de construção e pisos no Itinga, Lauro de Freitas (presença no Facebook).",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Av. Fortaleza, Lote 31 - Itinga, Lauro de Freitas - BA, 42739-210.",
+  "contato_publico": {
+    "telefone": "+55 71 99341-2222",
+    "email": null,
+    "site": "https://www.facebook.com/bellopisomat/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Varejo de materiais com balcão e caixa se beneficia de desktop de caixa com nobreak e bobina térmica; câmeras para o depósito. Apenas página no Facebook e WhatsApp; sistema de caixa não confirmado.",
+  "produto_de_entrada": "Caixa Pronto (desktop i3 de 10ª geração, monitor de 15,6\", nobreak de 600 va, bobina térmica)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário/sócio (não publicado)",
+  "ressalvas": [
+    "Pequeno varejo; CNPJ não confirmado (busca retornou apenas homônimos).",
+    "A quantidade de 1 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 3.463) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "facebook.com",
+      "u": "https://www.facebook.com/bellopisomat/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJsRt1FvAXFgcRVMtwcxy6a4E"
+    }
+  ]
+}

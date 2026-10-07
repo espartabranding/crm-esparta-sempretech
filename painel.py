@@ -137,6 +137,9 @@ def montar(db: sqlite3.Connection, plano: dict, catalogo: dict, playbook: dict) 
     manuais = RAIZ / "tentativas.json"
     por_id = {c["id"]: c for c in contas}
     for t in json.loads(manuais.read_text(encoding="utf-8")) if manuais.exists() else []:
+        # O registro de uma conta que saiu da carteira continua no arquivo, mas não entra no painel.
+        if t["conta"] not in por_id:
+            continue
         por_id[t["conta"]]["chamadas"].insert(
             0,
             {
@@ -151,6 +154,7 @@ def montar(db: sqlite3.Connection, plano: dict, catalogo: dict, playbook: dict) 
                 "agente": t.get("agente"),
                 "nota": t["nota"],
                 "etapa": t.get("etapa"),
+                "prazo": t.get("prazo"),
                 "desligamento": None,
                 "audio": None,
                 "resumo": None,

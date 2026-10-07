@@ -1,0 +1,42 @@
+{
+  "id": "n13",
+  "empresa": "ES Idiomas",
+  "identidade_confirmada": null,
+  "resumo": "Escola de inglês com aulas ao vivo em plataforma online, para crianças, adolescentes e adultos.",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Edf. Naylamar - Av. 28 de Setembro, n° 420 - 2° andar - Alto da Cruz, Camaçari - BA, 42803-135.",
+  "contato_publico": {
+    "telefone": "+55 71 98470-2129",
+    "email": null,
+    "site": "https://www.esidiomass.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Equipe de professores e atendimento usa computadores e headsets; posição de atendimento com headset é adequada. Modelo 100% online com aulas ao vivo por computador, tablet ou smartphone; professores e atendimento dependem de computadores.",
+  "produto_de_entrada": "Posição de Atendimento (desktop i3 de 10ª geração, monitor de 18,5\", headset intelbras chs 40, estabilizador)",
+  "complementares": [
+    "Laboratório Pronto (desktop i3 de 10ª geração, monitor de 15,6\", headset, estabilizador)"
+  ],
+  "motivo_da_ligacao": "A ES Idiomas dá aulas ao vivo pela internet, e cada professor depende de computador e headset em funcionamento durante a aula. A SempreTech propõe a Posição de Atendimento: computador, monitor, headset de operação e estabilizador, com assistência técnica própria em Salvador. Os professores utilizam equipamento da escola ou próprio?",
+  "perguntas_especificas": [
+    "Quantos professores e atendentes trabalham presencialmente em Camaçari?"
+  ],
+  "quem_procurar": "Sócio-diretor / coordenação pedagógica",
+  "ressalvas": [
+    "Escola predominantemente online; a quantidade de professores presenciais é incerta.",
+    "A quantidade de 3 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 8.912) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "esidiomass.com.br",
+      "u": "https://www.esidiomass.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJO2f9_c5pFgcRS-daiFi_Eaw"
+    }
+  ]
+}

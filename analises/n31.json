@@ -1,0 +1,40 @@
+{
+  "id": "n31",
+  "empresa": "BS Services",
+  "identidade_confirmada": false,
+  "resumo": "Empresa de BPO/terceirização de serviços em Salvador (Caminho das Árvores).",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Av. Tancredo Neves, 805 - 603 - Caminho das Árvores, Salvador - BA, 41820-021.",
+  "contato_publico": {
+    "telefone": "+55 71 3341-1972",
+    "email": null,
+    "site": "http://www.bsservices.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Perfil de BPO sugere posições de atendimento/back-office; combo de posição com nobreak ou escritório em dia. Não foi possível acessar o site (bloqueio de robôs) nem confirmar CNPJ; por ser BPO, tende a usar estações de escritório e atendimento.",
+  "produto_de_entrada": "Posição de Atendimento (desktop i3 de 10ª geração, monitor de 18,5\", headset intelbras chs 40, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Sócio ou gerente administrativo (não confirmado)",
+  "ressalvas": [
+    "Dados não verificados: busca retornou apenas homônimos e o site bloqueou leitura.",
+    "A quantidade de 3 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 8.912) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "bsservices.com.br",
+      "u": "http://www.bsservices.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJ89ol3BsbFgcR3XDGYl9OsXk"
+    }
+  ]
+}

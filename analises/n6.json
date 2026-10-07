@@ -1,0 +1,44 @@
+{
+  "id": "n6",
+  "empresa": "Escritório de Contabilidade Barcellos",
+  "identidade_confirmada": null,
+  "resumo": "Escritório de contabilidade em Lauro de Freitas/BA com serviços fiscal, contábil, RH, consultoria, MEI e certificação digital.",
+  "porte": "Abertura: 2005 (ano de fundação informado no site).",
+  "onde_opera": "1 (Av. Santos Dumont, 3269, salas 101-102, Recreio Ipitanga). Endereço no Google Maps: Av. Santos Dumont, 3269 - Sl 101 - Recreio Ipitanga, Lauro de Freitas - BA, 42700-170.",
+  "contato_publico": {
+    "telefone": "+55 71 98895-6882",
+    "email": null,
+    "site": "https://contabilidadebarcellos.com.br/",
+    "linkedin": null
+  },
+  "decisores": [
+    {
+      "nome": "Cláudio Barcellos",
+      "cargo": "Contador responsável pelo escritório",
+      "fonte": null
+    }
+  ],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Escritório contábil usa estações office com monitor e nobreak para escrituração e sistemas fiscais. Contabilidade digital e escrituração fiscal; certificadora digital afiliada (Barcellos Certificadora); site próprio.",
+  "produto_de_entrada": "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)",
+  "complementares": [],
+  "motivo_da_ligacao": "O escritório reúne as áreas fiscal, contábil e de departamento pessoal, além da certificação digital, rotinas que dependem de computador disponível o dia inteiro. O Windows 10 deixou de receber atualizações de segurança em outubro de 2025. A SempreTech propõe o Escritório em Dia: computador compatível com o Windows 11, monitor e nobreak, com assistência técnica própria em Salvador. As estações do escritório já rodam o Windows 11?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Cláudio Barcellos, contador responsável (publicado no site oficial)",
+  "ressalvas": [
+    "CNPJ não localizado; confirmar.",
+    "A quantidade de 4 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 12.595) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "contabilidadebarcellos.com.br",
+      "u": "https://contabilidadebarcellos.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJeRQentsXFgcRUgoQ9uX-Ojs"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "n2",
+  "empresa": "Ogunjá Produções em Vídeo",
+  "identidade_confirmada": true,
+  "resumo": "Produtora de vídeo em Salvador: institucionais, documentários, reportagens, clipes, comerciais, animações 2D e imagens aéreas com drones.",
+  "porte": "Porte na Receita: ME. Abertura: 2010 (11/03/2010 na Receita; o site cita 2000). CNPJ 11.667.583/0001-25.",
+  "onde_opera": "1 (Salvador, São Cristóvão). Endereço no Google Maps: Condomínio Leblon, Rua Leblon, Alameda Corcovado, 210 - São Cristóvão, Salvador - BA, 41500-020.",
+  "contato_publico": {
+    "telefone": "+55 71 99233-9194",
+    "email": null,
+    "site": "https://www.ogunjavideos.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Edição de vídeo, animação e render pedem desktop i7 com placa de vídeo, monitor e nobreak. Pós-produção e animação 2D exigem edição de vídeo e render; usa drones; presença no YouTube, Instagram e LinkedIn.",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "A Ogunjá produz institucionais, documentários e animação 2D, trabalhos que exigem bastante da máquina na edição e na exportação. A SempreTech propõe a Estação Criativa: computador i7 com placa de vídeo dedicada, monitor de 22 polegadas e nobreak, com montagem e assistência técnica próprias em Salvador. Como as ilhas de edição estão respondendo hoje aos projetos mais pesados?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Sócio-administrador (nome registrado na Receita; não publicado no site)",
+  "ressalvas": [
+    "Microempresa; razão social na Receita é Ogunja Producao de Conteudos e Videos LTDA.",
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 14.135) serve para priorizar, não como previsão de venda."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "ogunjavideos.com.br",
+      "u": "https://www.ogunjavideos.com.br/"
+    },
+    {
+      "t": "cnpja.com",
+      "u": "https://cnpja.com/office/11667583000125"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJLebhlqsXFgcRd61VokA3dlM"
+    }
+  ]
+}

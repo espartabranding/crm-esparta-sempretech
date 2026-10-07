@@ -1,0 +1,42 @@
+{
+  "id": "n28",
+  "empresa": "Retral Engenharia LTDA",
+  "identidade_confirmada": null,
+  "resumo": "Empresa de engenharia atuante em projetos estruturais, laudos, inspeções prediais e obras industriais/prediais, com clientes como Correios e Decameron.",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: R. Francisco Drumond, 41 - Centro, Camaçari - BA, 42800-063.",
+  "contato_publico": {
+    "telefone": "+55 71 98793-3242",
+    "email": null,
+    "site": "http://www.retralengenharia.com/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Projetos estruturais exigem estações potentes para cálculo e CAD; escritório também usa máquinas administrativas. Projetos estruturais, análise estrutural dinâmica e planos de rigging indicam uso de software técnico (cálculo estrutural/CAD); site oficial lista e-mail e dois WhatsApps.",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [
+    "O escritório funciona em Camaçari ou em Salvador?"
+  ],
+  "quem_procurar": "Engenheiro sócio / diretor técnico (nome a confirmar)",
+  "ressalvas": [
+    "Site informa sede em Salvador, enquanto o Maps indica Camaçari; mesmo endereço de Simple English (e16), possivelmente registro errado no Maps.",
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 14.135) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "retralengenharia.com",
+      "u": "http://www.retralengenharia.com/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJc8Gu0jUbFgcRyFkTK1l568s"
+    }
+  ]
+}

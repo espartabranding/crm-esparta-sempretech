@@ -1,0 +1,46 @@
+{
+  "id": "n39",
+  "empresa": "GrupoLek",
+  "identidade_confirmada": false,
+  "resumo": "Produtora de eventos que atua em consultoria, organização, produção, shows, cenografia, comunicação visual e locação de som e iluminação.",
+  "porte": "",
+  "onde_opera": "1 base (Salvador); diretório oHub lista endereço no Stiep, divergente do Maps (Pituaçu), então identidade a confirmar. Endereço no Google Maps: R. Gonçalves Cezimbra, 125 - Pituaçu, Salvador - BA, 41741-155.",
+  "contato_publico": {
+    "telefone": "+55 71 99112-6659",
+    "email": null,
+    "site": "https://grupolek.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Criação de projetos, cenografia e comunicação visual demandam estação criativa; a parte administrativa e orçamentos usa desktop office. Comunicação visual e criação de projetos sugerem uso de computadores de arte e edição; sem dados específicos.",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [
+    "A empresa funciona em Pituaçu ou no Stiep?"
+  ],
+  "quem_procurar": "Sócio-diretor/proprietário",
+  "ressalvas": [
+    "Endereço divergente entre fontes (Pituaçu x Stiep); possível homônimo Grupo Leke; empresa pequena.",
+    "A quantidade de 1 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 7.068) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "grupolek.com.br",
+      "u": "https://grupolek.com.br/"
+    },
+    {
+      "t": "ohub.com.br",
+      "u": "https://www.ohub.com.br/empresa/grupo-lek-salvador-ba-515880"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJy3Yfr-YEFgcRBLnRr_Z-eWM"
+    }
+  ]
+}

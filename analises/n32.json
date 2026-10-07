@@ -1,0 +1,40 @@
+{
+  "id": "n32",
+  "empresa": "D2 Estúdio Fotográfico",
+  "identidade_confirmada": null,
+  "resumo": "Estúdio de fotografia de família, maternidade, newborn, retratos corporativos e formaturas, com atuação em Salvador, Lauro de Freitas e litoral norte.",
+  "porte": "",
+  "onde_opera": "Atendimento em vários pontos da Bahia (Salvador, Lauro de Freitas, Praia do Forte, Imbassaí, Costa do Sauípe); sem franquia mencionada. Endereço no Google Maps: R. Gregório Maquende, 35 - Jardim Armação, Salvador - BA, 41750-105.",
+  "contato_publico": {
+    "telefone": "+55 71 98629-9149",
+    "email": null,
+    "site": "https://www.d2estudiofotografico.com/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Edição e tratamento de imagens exigem desktop i7 com placa de vídeo, monitor e nobreak; o atendimento usa desktop office. Galerias online na plataforma Alboom; fluxo de tratamento e edição de fotos em computador.",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário/fotógrafo responsável",
+  "ressalvas": [
+    "Telefone do site (99219-4586) difere do Maps (98629-9149); possível micro-empresa.",
+    "A quantidade de 1 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 7.068) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "d2estudiofotografico.com",
+      "u": "https://www.d2estudiofotografico.com/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJk6x8AxAbFgcRA5qfj3h-V6k"
+    }
+  ]
+}

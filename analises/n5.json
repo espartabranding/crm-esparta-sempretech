@@ -1,0 +1,45 @@
+{
+  "id": "n5",
+  "empresa": "Gráfica Tiposet",
+  "identidade_confirmada": null,
+  "resumo": "Gráfica offset e digital com comunicação visual, impressos comerciais, institucionais e embalagens, em Lauro de Freitas desde 1991.",
+  "porte": "Abertura: 1991 (segundo o site da empresa).",
+  "onde_opera": "1 unidade (Lauro de Freitas). Endereço no Google Maps: Av. Luiz Tarquínio Pontes, S/N - Pitangueiras, Lauro de Freitas - BA, 42700-000.",
+  "contato_publico": {
+    "telefone": "+55 71 98224-9582",
+    "email": null,
+    "site": "https://www.graficatiposet.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Loja virtual 'em breve' no site (data não informada).",
+      "data": "",
+      "fonte": "https://www.graficatiposet.com.br/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: Gráfica com pré-impressão e arte final precisa de estações com placa de vídeo e nobreak para proteger as máquinas; o administrativo usa desktop office. Site declara equipamentos de ponta e impressoras de grande formato; fluxo de pré-impressão e arte gráfica em computador; loja virtual anunciada como em breve.",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "A Tiposet opera com offset, impressão digital e grande formato, e a pré-impressão depende de estações que abram arquivos pesados sem travar. A SempreTech propõe a Estação Criativa: computador i7 com placa de vídeo dedicada, monitor de 22 polegadas e nobreak, com montagem e assistência técnica próprias em Salvador. Como as estações de arte e pré-impressão estão respondendo hoje?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário/sócio-gestor",
+  "ressalvas": [
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 14.135) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "graficatiposet.com.br",
+      "u": "https://www.graficatiposet.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJmbjuGAYWFgcRFePgt9iZDT4"
+    }
+  ]
+}

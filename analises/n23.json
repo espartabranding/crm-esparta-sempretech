@@ -1,0 +1,40 @@
+{
+  "id": "n23",
+  "empresa": "Casa do Requeijão",
+  "identidade_confirmada": null,
+  "resumo": "Hipermercado/mercado de bairro no centro de Camaçari/BA, com presença no Instagram @casadorequeijao.",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Ao lado do Banco do Brasil - R. do Mercado, 4 - Centro, Camaçari - BA, 42800-047.",
+  "contato_publico": {
+    "telefone": "+55 71 3627-5196",
+    "email": null,
+    "site": "https://www.instagram.com/casadorequeijao/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Varejo alimentar com frente de caixa tende a precisar de computadores de caixa, nobreak e bobina térmica; câmeras complementam a loja. Nenhum site próprio localizado; varejo com PDV presumido (não confirmado).",
+  "produto_de_entrada": "Caixa Pronto (desktop i3 de 10ª geração, monitor de 15,6\", nobreak de 600 va, bobina térmica)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário/gerente da loja",
+  "ressalvas": [
+    "Pouca informação pública; não foi possível confirmar CNPJ nem porte (buscas não retornaram a empresa).",
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 6.367) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "instagram.com",
+      "u": "https://www.instagram.com/casadorequeijao/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJ5_1XrtFpFgcR2dAFgVVjXcI"
+    }
+  ]
+}

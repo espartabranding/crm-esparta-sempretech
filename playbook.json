@@ -17,7 +17,13 @@
     "Garantia dos computadores montados X-Linne e dos itens revisados.",
     "A SempreTech faz levantamento no local (visita técnica, inventário das máquinas, teste dos nobreaks)? Hoje o roteiro pede o levantamento por telefone ou e-mail.",
     "De onde vieram os telefones da lista? O agente precisa responder a verdade quando perguntarem.",
-    "O posicionamento “especialistas em logística e performance em informática” foi definido pela Esparta para a abordagem. Confirmar com a SempreTech se ela se apresenta assim."
+    "O posicionamento “especialistas em logística e performance em informática” foi definido pela Esparta para a abordagem. Confirmar com a SempreTech se ela se apresenta assim.",
+    "A SempreTech faz locação de equipamentos? Nada no site sustenta, e a oferta ficou fora das abordagens.",
+    "Capacidade de volume: estoque e prazo para pedidos de 10 a 40 computadores.",
+    "Vende gravador (DVR) e instala câmeras? O combo Segurança tem apenas as câmeras.",
+    "Há condição de revenda para assistências técnicas (combo Parceiro Técnico)?",
+    "Quem atende os pedidos corporativos dentro da SempreTech.",
+    "CNPJ da SempreTech e relação com a marca X-Linne. O agente apresenta os computadores como de montagem própria."
   ],
   "geral": {
     "regras": [
@@ -29,7 +35,8 @@
       "Uma pergunta por vez. Escute a resposta inteira, não fale por cima e faça uma pergunta sobre o que a pessoa acabou de dizer.",
       "Se a pessoa hesitar, diga que percebeu e ofereça parar. Um “não” claro vale mais que um “talvez”.",
       "Depois de um “não” claro, agradeça, registre o motivo e encerre. Se pedirem para não ligar mais, confirme que vai retirar o número.",
-      "Combine sempre uma data para o próximo passo e cumpra no horário."
+      "Combine sempre uma data para o próximo passo e cumpra no horário.",
+      "Computador só entra na oferta se rodar o Windows 11: Intel de 8ª geração em diante (no site, i3 10100, i5 9400, i7 8700 e i7 9700). Não use o fim do Windows 10 para oferecer máquina mais antiga."
     ],
     "objecoes": [
       {
@@ -636,9 +643,429 @@
       ],
       "pedido": "Proponho o seguinte: com o número de posições da próxima turma e o volume mensal de reposição de headsets, envio ainda hoje a proposta da posição pronta e da reposição. Qual o melhor e-mail para o envio?",
       "plano_b": "Entendido. Quando entra a próxima turma? Retorno uma semana antes. Qual o melhor contato direto para falar com você?"
+    },
+    "Projetos e criativos": {
+      "procurar": "Sócio, proprietário ou coordenador de projetos. Em empresa pequena, quem atende costuma ser quem decide.",
+      "alvo": "localizar quem decide a compra de computadores",
+      "colher": [
+        "Nome de quem decide a compra (sócio, proprietário ou coordenador)",
+        "Telefone direto, e-mail ou WhatsApp dessa pessoa",
+        "Melhor horário para falar com ela",
+        "Quantas pessoas trabalham em projeto, edição ou arte"
+      ],
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta de estações de trabalho para a equipe de projetos. Com quem trato da compra de computadores da empresa?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta objetiva para a equipe de projetos da empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Programas de projeto, render e edição exigem mais da máquina a cada versão, e a estação que atendia bem há três anos passa a travar no meio do trabalho. A SempreTech propõe a Estação Criativa: computador i7 com placa de vídeo dedicada, monitor de 22 polegadas e nobreak, com montagem e assistência técnica próprias em Salvador. Como as estações da equipe estão respondendo hoje aos arquivos mais pesados?",
+      "perguntas": [
+        "Quantas pessoas trabalham hoje em projeto, edição ou arte, e em que tipo de máquina?",
+        "Em quais programas ou arquivos as máquinas ficam mais lentas?",
+        "Quando uma estação para, como a empresa resolve e em quanto tempo?",
+        "Há contratação ou troca de equipamento prevista para os próximos meses?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "estacao",
+          "fala": "Cada profissional de projeto ou edição recebe a estação completa: computador i7 com 16 GB de memória, SSD e placa de vídeo dedicada, monitor de 22 polegadas com ajuste de altura e nobreak. O arquivo pesado abre, e uma queda de energia não derruba o trabalho em andamento."
+        },
+        {
+          "solucao": "escritorio",
+          "fala": "Para o administrativo e o atendimento, fornecemos a estação de escritório com processador de décima geração, compatível com o Windows 11, monitor e nobreak."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "Quando um equipamento apresenta defeito, a assistência técnica própria entrega o diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Notebooks para reuniões e visitas a clientes",
+        "Segundo monitor ou monitor maior",
+        "Placa de vídeo acima da linha do site",
+        "Câmeras para galpão ou loja"
+      ],
+      "objecoes": [
+        {
+          "objecao": "Trabalhamos com notebook.",
+          "resposta": "Entendido, o notebook atende bem a mobilidade. Para render, exportação e arquivos pesados, a empresa mantém alguma estação fixa? É nesse posto que a proposta se aplica."
+        },
+        {
+          "objecao": "Essa configuração não atende o programa que usamos.",
+          "resposta": "Qual é o programa e a configuração recomendada pelo fabricante? Com essa especificação, confirmo o que a SempreTech monta e envio a proposta na mesma base."
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de estações e os programas utilizados, envio ainda hoje a proposta da Estação Criativa, com a configuração e o valor por estação. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Para quando está prevista a próxima troca ou contratação? Retorno duas semanas antes, com a proposta preparada. Qual o melhor contato direto para falar com você?",
+      "tecnica": {
+        "nome": "Proposição de problema com pergunta neutra",
+        "como": "Descrever a estação que trava no arquivo pesado e perguntar como as máquinas estão respondendo. Descoberta curta: quantas estações e quais programas."
+      }
+    },
+    "Cursos com laboratório": {
+      "procurar": "Direção ou coordenação administrativa. Em rede de colégios, confirmar se a compra é da unidade ou da mantenedora.",
+      "alvo": "localizar quem decide a compra de computadores",
+      "colher": [
+        "Nome de quem decide a compra (direção ou coordenação administrativa)",
+        "Telefone direto, e-mail ou WhatsApp dessa pessoa",
+        "Melhor horário para falar com ela",
+        "Se a escola tem laboratório de informática e quantas posições"
+      ],
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta de laboratório de informática para a escola. Com quem trato da compra de computadores: a direção ou o administrativo?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta objetiva para o laboratório e a secretaria da escola. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Laboratório de escola funciona o dia inteiro, com turmas em sequência, e as máquinas se desgastam mais depressa que as de escritório. A SempreTech propõe o Laboratório Pronto: computador de décima geração, compatível com o Windows 11, com monitor, headset e estabilizador em cada posição, e assistência técnica própria em Salvador. Como a escola planeja a renovação do laboratório para o próximo período letivo?",
+      "perguntas": [
+        "Quantas posições tem o laboratório hoje, e de que ano são as máquinas?",
+        "As máquinas atuais rodam o Windows 11 ou continuam no Windows 10?",
+        "A escola renova por período letivo ou conforme as máquinas apresentam defeito?",
+        "Quando fecha o orçamento do próximo ano letivo, e quem aprova a compra?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "laboratorio",
+          "fala": "Cada posição do laboratório chega completa: computador, monitor, headset, teclado, mouse e estabilizador, todos na mesma configuração. A turma entra e todas as máquinas respondem igual."
+        },
+        {
+          "solucao": "posicao",
+          "fala": "Para aulas ao vivo e atendimento a alunos, fornecemos a posição com computador, monitor e headset de operação."
+        },
+        {
+          "solucao": "escritorio",
+          "fala": "Para a secretaria e a coordenação, fornecemos a estação de escritório com monitor e nobreak."
+        }
+      ],
+      "sondar": [
+        "Notebooks para professores",
+        "Projetor e caixas de som para sala de aula",
+        "Webcams para aulas ao vivo",
+        "Rede e Wi-Fi do laboratório"
+      ],
+      "objecoes": [
+        {
+          "objecao": "A verba só sai no próximo ano letivo.",
+          "resposta": "Entendido. Envio a proposta agora para que o valor entre na previsão orçamentária. Quantas posições compõem o laboratório?"
+        },
+        {
+          "objecao": "Os alunos usam notebook ou tablet.",
+          "resposta": "Entendido. A secretaria, a coordenação e as salas de apoio trabalham em computador de mesa? A proposta também cobre essas estações."
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de posições do laboratório e o ano das máquinas atuais, envio ainda hoje a proposta por posição e por laboratório, pronta para apresentação à direção. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Quando fecha a previsão orçamentária do próximo ano letivo? Retorno duas semanas antes. Qual o seu e-mail direto?",
+      "tecnica": {
+        "nome": "Contexto do calendário letivo",
+        "como": "Abrir pelo próximo período letivo ou pelas matrículas e pedir o número de posições do laboratório. A proposta sai pronta para apresentação à direção."
+      }
+    },
+    "Call center e cobrança": {
+      "procurar": "Sócio-diretor ou gestor de operações.",
+      "alvo": "localizar quem decide a compra de computadores",
+      "colher": [
+        "Nome de quem decide a compra (sócio-diretor ou gestor de operações)",
+        "Telefone direto, e-mail ou WhatsApp dessa pessoa",
+        "Melhor horário para falar com ela",
+        "Quantas posições de atendimento a operação tem"
+      ],
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta de posições de atendimento para a operação. Com quem trato da compra de computadores e headsets?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta objetiva para a operação de atendimento da empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Em operação de atendimento e cobrança, posição parada é contato que deixa de ser feito, e o headset é a peça que mais se desgasta. A SempreTech propõe a Posição de Atendimento: computador, monitor, headset de operação e estabilizador, na mesma configuração para toda a equipe, com reposição de headset e assistência técnica própria em Salvador. Como a operação repõe hoje o equipamento das posições?",
+      "perguntas": [
+        "Quantas posições a operação tem hoje, e há ampliação prevista?",
+        "Qual headset a equipe utiliza, USB ou RJ9?",
+        "Quantos headsets a operação repõe por mês, aproximadamente?",
+        "De quem a empresa compra hoje, e em quanto tempo o equipamento chega?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "posicao",
+          "fala": "Cada operador novo recebe a posição pronta: computador, monitor, headset Intelbras de operação, teclado, mouse e estabilizador. Para a reposição, há headset revisado a partir de R$ 59,90."
+        },
+        {
+          "solucao": "escritorio",
+          "fala": "Para a supervisão e o administrativo, fornecemos a estação de escritório com monitor e nobreak."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "Quando um equipamento apresenta defeito, a assistência técnica própria entrega o diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Nobreak para o servidor ou o rack",
+        "Webcams",
+        "Equipamentos de rede",
+        "Headset de outra marca"
+      ],
+      "objecoes": [
+        {
+          "objecao": "A equipe trabalha de casa.",
+          "resposta": "Entendido. O equipamento de quem trabalha de casa é fornecido pela empresa? A posição completa também atende esse caso."
+        },
+        {
+          "objecao": "Usamos outra marca de headset.",
+          "resposta": "Qual marca a operação utiliza? Registro e confirmo a disponibilidade. Computador, monitor e estabilizador são fornecidos por quem?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de posições e o volume mensal de reposição de headsets, envio ainda hoje a proposta da posição completa e da reposição. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Quando entra a próxima turma de operadores? Retorno uma semana antes. Qual o melhor contato direto para falar com você?",
+      "tecnica": {
+        "nome": "Situação e problema em duas perguntas",
+        "como": "Perguntar quantas posições a operação tem e quantos headsets repõe por mês. A reposição é a porta de entrada; a posição completa vem depois."
+      }
+    },
+    "Varejo com caixa": {
+      "procurar": "Proprietário ou gerente da loja.",
+      "alvo": "localizar quem decide a compra de computadores",
+      "colher": [
+        "Nome de quem decide a compra (proprietário ou gerente)",
+        "Telefone direto, e-mail ou WhatsApp dessa pessoa",
+        "Melhor horário para falar com ela",
+        "Quantos caixas com computador a loja tem"
+      ],
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta de equipamento para os caixas da loja. Com quem trato do assunto: o proprietário ou a gerência?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta objetiva para os caixas da loja. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Desde agosto, a nota fiscal passou a exigir os campos da reforma tributária, e os sistemas de caixa foram atualizados. Sistema novo em computador antigo deixa o caixa lento, e uma queda de energia interrompe a venda. A SempreTech propõe o Caixa Pronto: computador de décima geração, monitor e nobreak, com assistência técnica própria em Salvador. Como os caixas da loja responderam depois da atualização do sistema?",
+      "perguntas": [
+        "Quantos caixas e pontos de venda com computador a loja tem?",
+        "Os caixas ficam ligados em nobreak?",
+        "Quando um caixa para, como a loja resolve e em quanto tempo?",
+        "O fornecedor do sistema exige alguma configuração mínima de computador?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "caixa",
+          "fala": "Cada caixa recebe o conjunto completo: computador, monitor, teclado, mouse e nobreak. Se a energia oscila, há tempo para concluir a venda e emitir a nota. A bobina térmica acompanha o fornecimento."
+        },
+        {
+          "solucao": "seguranca",
+          "fala": "Para o caixa, o estoque e os acessos, fornecemos câmeras de alta definição com visão noturna, em kit de quatro unidades."
+        },
+        {
+          "solucao": "escritorio",
+          "fala": "Para o balcão de vendas e o escritório, fornecemos a estação com monitor e nobreak, compatível com o Windows 11."
+        }
+      ],
+      "sondar": [
+        "Gravador (DVR) e instalação das câmeras",
+        "Impressora térmica e leitor de código de barras",
+        "Gaveta de dinheiro e balança",
+        "Rede e Wi-Fi da loja"
+      ],
+      "objecoes": [
+        {
+          "objecao": "O fornecedor do sistema indica o equipamento.",
+          "resposta": "Entendido. Ele indica apenas a configuração ou também fornece a máquina? Se for a configuração, montamos na mesma especificação para comparação."
+        },
+        {
+          "objecao": "Os computadores ainda funcionam.",
+          "resposta": "Entendido, a proposta não exige troca imediata. As máquinas dos caixas rodam o Windows 11 ou continuam no Windows 10, que deixou de receber atualizações de segurança em outubro de 2025?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de caixas e a configuração exigida pelo sistema, envio ainda hoje a proposta do Caixa Pronto, com o valor por caixa. Qual o melhor e-mail ou WhatsApp para o envio?",
+      "plano_b": "Entendido. Quando a loja costuma rever os equipamentos? Retorno antes dessa data. Qual o melhor contato direto para falar com você?",
+      "tecnica": {
+        "nome": "Dado útil como motivo da ligação",
+        "como": "Abrir pela atualização fiscal de agosto e pela energia no caixa. Fechamento direto, com a proposta por caixa enviada por e-mail ou WhatsApp."
+      }
+    },
+    "Técnicos e assistências": {
+      "procurar": "Proprietário ou sócio. Em assistência pequena, quem atende costuma ser quem decide.",
+      "alvo": "localizar quem compra as peças da assistência",
+      "colher": [
+        "Nome de quem decide a compra (proprietário ou sócio)",
+        "Telefone direto, e-mail ou WhatsApp dessa pessoa",
+        "Melhor horário para falar com ela",
+        "Quais componentes a assistência mais utiliza"
+      ],
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta de fornecimento de componentes para a assistência. Com quem trato da compra de peças?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta objetiva para o fornecimento de componentes da assistência. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "Assistência técnica depende de peça disponível: quando falta SSD, memória ou fonte, o reparo espera e o cliente também. A SempreTech propõe ser o fornecedor local de componentes da assistência, com loja em Salvador e catálogo de processadores, placas-mãe, memórias, fontes e armazenamento. De onde vêm hoje os componentes que a assistência mais utiliza?",
+      "perguntas": [
+        "Quais componentes a assistência mais utiliza por semana?",
+        "De quem compra hoje, e em quanto tempo a peça chega?",
+        "Quando falta uma peça, como a assistência resolve?",
+        "A compra é feita por pedido semanal ou conforme a demanda de cada reparo?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "parceiro",
+          "fala": "A assistência passa a contar com um fornecedor em Salvador para os componentes de maior giro: SSD, memória, fonte e HD. Como referência, a cesta com cinco SSDs, cinco memórias de 8 GB, três fontes e dois HDs soma R$ 4.629,40 a preço de site."
+        }
+      ],
+      "sondar": [
+        "Condição de revenda ou desconto por quantidade",
+        "Telas, baterias e teclados de notebook",
+        "Placas de vídeo",
+        "Garantia e troca dos componentes"
+      ],
+      "objecoes": [
+        {
+          "objecao": "Vocês também montam e vendem computador: são concorrentes.",
+          "resposta": "É um ponto legítimo. A proposta trata do fornecimento de componentes, área em que as duas empresas se complementam. Quais peças a assistência mais repõe?"
+        },
+        {
+          "objecao": "Já compramos de distribuidor.",
+          "resposta": "Entendido. A proposta é complementar: a peça de urgência, que não pode esperar o prazo do distribuidor, é comprada onde hoje?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com a lista dos componentes de maior giro e a quantidade mensal, envio ainda hoje a cotação da cesta de reposição. Qual o melhor e-mail ou WhatsApp para o envio?",
+      "plano_b": "Entendido. Proponho enviar a lista de componentes disponíveis, para consulta na próxima reposição de urgência. Qual o melhor canal para o envio?",
+      "tecnica": {
+        "nome": "Segunda cotação",
+        "como": "Entrada transacional: pedir a lista dos componentes de maior giro e cotar na mesma base do fornecedor atual. Sem prometer preço de revenda."
+      }
+    },
+    "Contabilidade e saúde independente": {
+      "procurar": "Contador responsável, dentista ou médico responsável, ou gerente administrativo.",
+      "alvo": "localizar quem decide a compra de computadores",
+      "colher": [
+        "Nome de quem decide a compra (responsável técnico ou gerente administrativo)",
+        "Telefone direto, e-mail ou WhatsApp dessa pessoa",
+        "Melhor horário para falar com ela",
+        "Quantas estações de trabalho a empresa tem"
+      ],
+      "central": "Bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta de computadores para as estações de trabalho da empresa. Com quem trato do assunto: o responsável ou o administrativo?",
+      "abertura": "[Nome], bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta objetiva para as estações de trabalho da empresa. Apresento em um minuto e você avalia se vale avançar.",
+      "problema": "O Windows 10 deixou de receber atualizações de segurança em outubro de 2025, e computadores anteriores à oitava geração não recebem o Windows 11. Para quem trabalha com dados fiscais ou de pacientes, é um risco que cresce a cada mês. A SempreTech propõe o Escritório em Dia: computador compatível com o Windows 11, monitor e nobreak, com assistência técnica própria em Salvador. As máquinas da empresa já rodam o Windows 11?",
+      "perguntas": [
+        "Quantas estações de trabalho a empresa tem, e quantas ainda estão no Windows 10?",
+        "Os sistemas utilizados exigem alguma configuração mínima?",
+        "As estações ficam ligadas em nobreak?",
+        "Quem cuida da manutenção quando uma máquina para?"
+      ],
+      "ofertas": [
+        {
+          "solucao": "escritorio",
+          "fala": "Cada estação antiga é substituída por um conjunto completo: computador de décima geração, monitor, teclado, mouse e nobreak. O sistema volta a receber atualizações, e uma queda de energia não interrompe o trabalho."
+        },
+        {
+          "solucao": "seguranca",
+          "fala": "Para a recepção e os acessos, fornecemos câmeras de alta definição com visão noturna, em kit de quatro unidades."
+        },
+        {
+          "solucao": "manutencao",
+          "fala": "Quando um equipamento apresenta defeito, a assistência técnica própria entrega o diagnóstico em até três dias úteis."
+        }
+      ],
+      "sondar": [
+        "Notebooks",
+        "Impressoras e scanners",
+        "Gravador (DVR) e instalação das câmeras",
+        "Migração de dados e instalação de sistemas"
+      ],
+      "objecoes": [
+        {
+          "objecao": "As máquinas ainda funcionam bem.",
+          "resposta": "Entendido, a proposta não exige troca imediata. Proponho começar pelas estações que não recebem o Windows 11. Quantas estão nessa situação?"
+        },
+        {
+          "objecao": "Temos um técnico que cuida disso.",
+          "resposta": "Ótimo, isso facilita a especificação. A proposta não substitui o técnico: a SempreTech fornece o equipamento na configuração que ele indicar. Posso enviar a proposta para avaliação dele?"
+        }
+      ],
+      "pedido": "Proponho o seguinte: com o número de estações ainda no Windows 10, envio ainda hoje a proposta de substituição, com o valor por estação. Qual o melhor e-mail para o envio?",
+      "plano_b": "Entendido. Quando a empresa pretende rever os computadores? Retorno antes dessa data e, nesse intervalo, envio a proposta de referência. Qual o seu e-mail direto?",
+      "tecnica": {
+        "nome": "Dado útil como motivo da ligação",
+        "como": "Abrir pelo fim das atualizações do Windows 10 e perguntar quantas estações ainda estão nele. Começar pelas que não recebem o Windows 11."
+      }
     }
   },
   "solucoes": {
+    "estacao": {
+      "nome": "Estação Criativa",
+      "resolve": "O arquivo pesado de projeto, render ou edição abre sem travar, e uma queda de energia não derruba o trabalho em andamento.",
+      "composicao": [
+        "Computador Gamer i7 9700, 16 GB, SSD M.2 512 GB, GTX 750 Ti 4 GB X-Linne",
+        "Monitor LG de 22\" com ajuste de altura",
+        "Nobreak de 1500 VA",
+        "Kit teclado e mouse sem fio Logitech"
+      ],
+      "referencia": "R$ 7.067,55 por estação (R$ 4.749,90 + R$ 999,90 + R$ 1.057,85 + R$ 259,90), a preço de site em 06/10/2026",
+      "chaves": [
+        "estação criativa"
+      ]
+    },
+    "laboratorio": {
+      "nome": "Laboratório Pronto",
+      "resolve": "A turma entra e todas as posições do laboratório respondem igual, em máquinas que rodam o Windows 11.",
+      "composicao": [
+        "Computador i3 10100, 8 GB, SSD 240 GB X-Linne",
+        "Monitor VX Pro de 15,6\"",
+        "Headset Logitech H111",
+        "Teclado e mouse TCN",
+        "Estabilizador de 300 VA"
+      ],
+      "referencia": "R$ 2.477,43 por posição; R$ 24.774 por laboratório de 10 posições, a preço de site em 06/10/2026",
+      "chaves": [
+        "laboratório pronto"
+      ]
+    },
+    "posicao": {
+      "nome": "Posição de Atendimento",
+      "resolve": "O operador novo recebe a posição completa, e o headset que quebra tem reposição sem deixar a posição parada.",
+      "composicao": [
+        "Computador i3 10100, 8 GB, SSD 240 GB X-Linne",
+        "Monitor AOC de 18,5\"",
+        "Headset Intelbras CHS 40 USB",
+        "Teclado e mouse TCN",
+        "Estabilizador de 300 VA"
+      ],
+      "referencia": "R$ 2.970,52 por posição; reposição com headset CHS 40 RJ9 revisado a R$ 59,90, a preço de site em 06/10/2026",
+      "chaves": [
+        "posição de atendimento"
+      ]
+    },
+    "caixa": {
+      "nome": "Caixa Pronto",
+      "resolve": "O caixa roda o sistema fiscal atualizado sem lentidão e, quando a energia oscila, há tempo para concluir a venda e emitir a nota.",
+      "composicao": [
+        "Computador i3 10100, 8 GB, SSD 240 GB X-Linne",
+        "Monitor VX Pro de 15,6\"",
+        "Nobreak de 600 VA",
+        "Teclado e mouse TCN",
+        "Bobina térmica 80 x 30 mm (30 unidades)"
+      ],
+      "referencia": "R$ 2.903,37 por caixa, a preço de site em 06/10/2026",
+      "chaves": [
+        "caixa pronto"
+      ]
+    },
+    "parceiro": {
+      "nome": "Parceiro Técnico",
+      "resolve": "A assistência tem em Salvador um fornecedor para os componentes de maior giro, e o reparo não espera a peça.",
+      "composicao": [
+        "5 SSDs de 120 GB XByte",
+        "5 memórias DDR4 de 8 GB HyperX Fury",
+        "3 fontes ATX de 500 W com PFC ativo",
+        "2 HDs de 500 GB Western Digital"
+      ],
+      "referencia": "R$ 4.629,40 por cesta de reposição, a preço de site em 06/10/2026; condição de revenda a confirmar",
+      "chaves": [
+        "parceiro técnico"
+      ]
+    },
+    "escritorio": {
+      "nome": "Escritório em Dia",
+      "resolve": "A estação antiga dá lugar a uma máquina que roda o Windows 11 e volta a receber atualizações, protegida contra queda de energia.",
+      "composicao": [
+        "Computador i3 10100, 8 GB, SSD 240 GB X-Linne",
+        "Monitor AOC de 18,5\"",
+        "Nobreak de 600 VA",
+        "Teclado Logitech K120 e mouse Logitech M90"
+      ],
+      "referencia": "R$ 3.148,72 por estação; com i5 9400, 16 GB e SSD 240 GB, o computador passa de R$ 1.920,91 para R$ 2.929,99, a preço de site em 06/10/2026",
+      "chaves": [
+        "escritório em dia"
+      ]
+    },
+    "seguranca": {
+      "nome": "Segurança",
+      "resolve": "Caixa, estoque e acessos ficam sob câmera de alta definição, com visão noturna.",
+      "composicao": [
+        "4 câmeras Bullet metal AHD 1080p, IR 25 m"
+      ],
+      "referencia": "R$ 559,96 por kit de 4 câmeras, a preço de site em 06/10/2026; o site não lista gravador (DVR) nem instalação",
+      "chaves": [
+        "segurança"
+      ]
+    },
     "posto": {
       "nome": "Posto de trabalho pronto",
       "resolve": "A pessoa nova senta e trabalha no primeiro dia, com tudo vindo de um fornecedor só e assistência no mesmo lugar.",
@@ -648,7 +1075,7 @@
         "Teclado e mouse",
         "Nobreak de 600 VA"
       ],
-      "referencia": "A partir de cerca de R$ 2.550 por posição (R$ 1.449,99 + R$ 499,99 + R$ 44,70 + R$ 555,96)",
+      "referencia": "A partir de cerca de R$ 3.020 por posição (R$ 1.920,91 + R$ 499,99 + R$ 44,70 + R$ 555,96)",
       "chaves": [
         "computador",
         "monitor",
@@ -663,7 +1090,7 @@
         "Nobreak de 1500 VA com 8 tomadas",
         "Filtro de linha com protetor"
       ],
-      "referencia": "A partir de cerca de R$ 2.570 por ponto (R$ 1.449,99 + R$ 1.057,85 + R$ 63,96)",
+      "referencia": "A partir de cerca de R$ 3.040 por ponto (R$ 1.920,91 + R$ 1.057,85 + R$ 63,96)",
       "chaves": []
     },
     "energia": {
@@ -689,7 +1116,7 @@
         "Kit de upgrade (placa-mãe, processador, memória)",
         "Computador novo para as que não compensam"
       ],
-      "referencia": "A partir de R$ 999,99 por máquina renovada, contra R$ 1.449,99 da máquina nova",
+      "referencia": "A partir de R$ 999,99 por máquina renovada, contra R$ 1.920,91 da máquina nova",
       "chaves": [
         "kit",
         "upgrade"

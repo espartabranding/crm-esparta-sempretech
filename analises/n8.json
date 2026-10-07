@@ -1,0 +1,39 @@
+{
+  "id": "n8",
+  "empresa": "Casarão Itinga Materiais de Construção",
+  "identidade_confirmada": null,
+  "resumo": "Loja de materiais de construção (pisos, porcelanatos, hidráulica, elétrica, tintas, ferramentas) no Itinga, Lauro de Freitas.",
+  "porte": "",
+  "onde_opera": "1 loja (Av. Fortaleza, 1500, Itinga). Endereço no Google Maps: Av. Fortaleza, 1500 - Itinga, Lauro de Freitas - BA, 42739-210.",
+  "contato_publico": {
+    "telefone": "+55 71 98157-2231",
+    "email": null,
+    "site": "https://casaraoitinga.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Varejo de materiais com PDV precisa de caixa estável e impressão térmica; câmeras como complemento. Site com e-commerce em WordPress; WhatsApp e e-mail comercial; loja física com horário seg-sáb.",
+  "produto_de_entrada": "Caixa Pronto (desktop i3 de 10ª geração, monitor de 15,6\", nobreak de 600 va, bobina térmica)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário/sócio (não publicado)",
+  "ressalvas": [
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 6.367) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "casaraoitinga.com.br",
+      "u": "https://casaraoitinga.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJj4HJhGkWFgcRjM16dVk5mDg"
+    }
+  ]
+}

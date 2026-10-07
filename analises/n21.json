@@ -1,0 +1,40 @@
+{
+  "id": "n21",
+  "empresa": "DELEVER",
+  "identidade_confirmada": null,
+  "resumo": "Fabricante em Camaçari de bolsas, sacolas para ferramentas, capas, brindes corporativos, materiais gráficos e sinalização.",
+  "porte": "",
+  "onde_opera": "1 (Camaçari). Endereço no Google Maps: R. Maria Emília, 239 - Camaçari de Dentro, Camaçari - BA, 42804-487.",
+  "contato_publico": {
+    "telefone": "+55 71 99934-7239",
+    "email": null,
+    "site": "https://delever.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Fabricação e atendimento a clientes industriais do polo de Camaçari pedem desktop office, monitor e nobreak; câmeras AHD protegem o galpão. Produção sob medida com personalização e materiais gráficos, o que indica computadores de arte e orçamento; sem dados específicos.",
+  "produto_de_entrada": "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "A Delever fabrica bolsas, capas, brindes e sinalização sob medida em Camaçari. A SempreTech propõe o Escritório em Dia para o atendimento e o administrativo: computador compatível com o Windows 11, monitor e nobreak, com assistência técnica própria em Salvador. As máquinas da empresa já rodam o Windows 11?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário/gerente comercial",
+  "ressalvas": [
+    "Site bloqueou a consulta automática; dados cadastrais não localizados.",
+    "A quantidade de 2 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 6.857) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "ohub.com.br",
+      "u": "https://www.ohub.com.br/empresa/delever-camacari-ba-528341"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJVVVVFWVCFgcRt5d9MeKKXPY"
+    }
+  ]
+}

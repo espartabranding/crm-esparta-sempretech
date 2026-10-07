@@ -31,7 +31,7 @@ A transcrição usa a instalação do Esparta Transcribe em `C:\Scripts\esparta-
 | `painel.py`, `painel_modelo.html` | Geração do painel |
 | `contas.json` | As contas do plano, com fit e aderência |
 | `analises/` | Pesquisa de cada empresa |
-| `catalogo.json` | Catálogo da SempreTech (site, consultado em 05/10/2026) |
+| `catalogo.json` | Catálogo da SempreTech (site, consultado em 06/10/2026) |
 | `playbook.json` | Soluções, roteiros por segmento, objeções e qualificações |
 | `prompts.md` | Prompts prontos para abordagem, resumo e avaliação |
 

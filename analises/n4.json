@@ -1,0 +1,45 @@
+{
+  "id": "n4",
+  "empresa": "Escola Irmã Dulce - Barris",
+  "identidade_confirmada": null,
+  "resumo": "Centro de formação técnica em enfermagem em Salvador, com aulas diurnas e noturnas, salas climatizadas, biblioteca e acesso a internet, laptops e tablets.",
+  "porte": "",
+  "onde_opera": "1 unidade (Barris). Endereço no Google Maps: R. do Salete, 378 - Barris, Salvador - BA, 40070-200.",
+  "contato_publico": {
+    "telefone": "+55 71 99932-1322",
+    "email": null,
+    "site": "http://escolatecnicairmadulce.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Escola técnica com infraestrutura de tecnologia pode atualizar ou ampliar laboratório e secretaria. Escola informa banda larga, laptops e tablets para alunos; possui site próprio.",
+  "produto_de_entrada": "Laboratório Pronto (desktop i3 de 10ª geração, monitor de 15,6\", headset, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "A escola funciona com turmas diurnas e noturnas, o que mantém os computadores em uso o dia inteiro. A SempreTech propõe o Laboratório Pronto: computador compatível com o Windows 11, monitor, headset e estabilizador em cada posição, com assistência técnica própria em Salvador. Como a escola planeja a renovação dos computadores do laboratório e da secretaria?",
+  "perguntas_especificas": [
+    "Os alunos utilizam computadores de mesa em laboratório, ou apenas os laptops e tablets que a escola disponibiliza?"
+  ],
+  "quem_procurar": "Diretor(a) / coordenação administrativa",
+  "ressalvas": [
+    "A quantidade de 6 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 14.865) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "escol.as",
+      "u": "https://www.escol.as/326034-centro-de-formacao-tecnica-em-enfermagem-irma-dulce"
+    },
+    {
+      "t": "escolatecnicairmadulce.com.br",
+      "u": "http://escolatecnicairmadulce.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJvZpzaFwFFgcRLRMcTppw8N0"
+    }
+  ]
+}

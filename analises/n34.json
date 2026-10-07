@@ -1,0 +1,41 @@
+{
+  "id": "n34",
+  "empresa": "Curso de Refrigeração Salvador",
+  "identidade_confirmada": null,
+  "resumo": "Escola vocacional de cursos de refrigeração e climatização em Salvador (marca Treina Fácil).",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: R. Antero de Britto, 76 - Macaúbas, Salvador - BA, 40300-680.",
+  "contato_publico": {
+    "telefone": "+55 71 98512-8040",
+    "email": null,
+    "site": "https://treinafacil.com/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Escola ligada ao ramo de refrigeração, cujos alunos e ex-alunos são técnicos; kits e componentes com preço de revenda podem interessar, e a secretaria pode usar um desktop de escritório. Site não pôde ser lido (bloqueio); curso prático de refrigeração tende a ter pouco uso de computadores.",
+  "produto_de_entrada": "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)",
+  "complementares": [
+    "Parceiro Técnico (componentes (ssd, memória, fonte e hd))"
+  ],
+  "motivo_da_ligacao": "A SempreTech propõe o Escritório em Dia para a secretaria e o atendimento do curso: computador compatível com o Windows 11, monitor e nobreak, com assistência técnica própria em Salvador. Os computadores do curso já rodam o Windows 11?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário / coordenador do curso",
+  "ressalvas": [
+    "Possível empresa de pequeno porte/individual; não foi possível confirmar dados cadastrais.",
+    "O estudo apontou o C5 Parceiro Técnico como combo principal, pela ligação do curso com técnicos. Como a escola tende a usar poucos computadores, a entrada sugerida aqui é a secretaria; a revenda de componentes fica como assunto a sondar.",
+    "A quantidade de 1 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 4.629) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "treinafacil.com",
+      "u": "https://treinafacil.com/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJs65DHdgEFgcRZzwJtagXonM"
+    }
+  ]
+}

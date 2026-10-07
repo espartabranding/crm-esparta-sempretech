@@ -1,0 +1,47 @@
+{
+  "id": "n9",
+  "empresa": "Bahia Tech Notebooks",
+  "identidade_confirmada": true,
+  "resumo": "Assistência técnica e varejo especializado em notebooks, MacBooks e projetores, no Shopping da Gente (Brotas, Salvador).",
+  "porte": "Porte na Receita: ME. Abertura: 2018 (18/09/2018). CNPJ 31.535.983/0001-94.",
+  "onde_opera": "1 (Shopping da Gente, Box 196, Brotas). Endereço no Google Maps: Av. Antônio Carlos Magalhães, 4591 - Lj 196, Térreo - Brotas, Salvador - BA, 40280-901.",
+  "contato_publico": {
+    "telefone": "+55 71 98830-2445",
+    "email": null,
+    "site": "http://bahianotebook.com.br/",
+    "linkedin": null
+  },
+  "decisores": [
+    {
+      "nome": "Cleberson Bosque Dias",
+      "cargo": "Sócio-administrador e responsável pela loja, conforme o cadastro do CNPJ",
+      "fonte": null
+    }
+  ],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Assistência técnica com alto volume de reparos consome componentes e kits de upgrade com preço de revenda. Assistência técnica multimarca; Google 4,9 com 632 avaliações (alto volume de atendimentos); blog técnico.",
+  "produto_de_entrada": "Parceiro Técnico (componentes (ssd, memória, fonte e hd))",
+  "complementares": [],
+  "motivo_da_ligacao": "A Bahia Tech atende reparos de notebooks, MacBooks e projetores no Shopping da Gente. A SempreTech propõe ser o fornecedor local de componentes da assistência, com loja em Salvador e catálogo de SSD, memória, fonte e armazenamento. De onde vêm hoje os componentes que a assistência mais utiliza?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Sócio-administrador (Cleberson Bosque Dias, conforme cadastro CNPJ)",
+  "ressalvas": [
+    "Possível concorrente em parte do varejo de informática; foco como cliente revendedor.",
+    "A quantidade de 1 cesta(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 4.629) serve para priorizar, não como previsão de venda."
+  ],
+  "confianca": "alta",
+  "fontes": [
+    {
+      "t": "cnpja.com",
+      "u": "https://cnpja.com/office/31535983000194"
+    },
+    {
+      "t": "bahianotebook.com.br",
+      "u": "http://bahianotebook.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJAQBkoyQbFgcRzSNOcGD_0ts"
+    }
+  ]
+}

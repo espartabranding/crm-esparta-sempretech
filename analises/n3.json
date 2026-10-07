@@ -1,0 +1,52 @@
+{
+  "id": "n3",
+  "empresa": "BNS Engenharia",
+  "identidade_confirmada": true,
+  "resumo": "Engenharia e construção com projetos estruturais, hidrossanitários, elétricos, combate a incêndio (AVCB), reformas e modelagem BIM, com obras em vários estados.",
+  "porte": "Porte na Receita: ME. Abertura: 2018 (15/05/2018). CNPJ 30.456.657/0001-29.",
+  "onde_opera": "Matriz em Salvador (Salvador Shopping Business) e escritório em São Paulo, segundo o site; cnpja lista endereço em Lauro de Freitas. Endereço no Google Maps: Salvador Shopping Business, Alameda Salvador, 1057 - Sl 904 - Caminho das Árvores, Salvador - BA, 41820-790.",
+  "contato_publico": {
+    "telefone": "+55 71 99347-8420",
+    "email": null,
+    "site": "http://www.bnsengenharia.com/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [
+    {
+      "fato": "Escritório em São Paulo e obras em SC, RS, SP, MG e PR indicam expansão geográfica (datas não informadas).",
+      "data": "",
+      "fonte": "http://www.bnsengenharia.com/"
+    }
+  ],
+  "necessidade_provavel": "Hipótese: BIM e projetos 3D exigem desktop i7 com placa de vídeo, monitor e nobreak; escritório de obra usa desktop office. Usa BIM (modelagem e compatibilização virtual) conforme o site, o que exige estações com placa de vídeo; e-mail de RH ativo.",
+  "produto_de_entrada": "Estação Criativa (desktop i7 com placa de vídeo, monitor de 22\", nobreak de 1500 va)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "A BNS trabalha com modelagem e compatibilização em BIM, que exige estação com placa de vídeo e proteção de energia. A SempreTech propõe a Estação Criativa: computador i7 com placa de vídeo dedicada, monitor de 22 polegadas e nobreak, com montagem e assistência técnica próprias em Salvador. Como as estações da equipe de projetos estão respondendo hoje aos modelos mais pesados?",
+  "perguntas_especificas": [
+    "As compras de equipamento são decididas em Salvador ou no escritório de São Paulo?",
+    "A equipe de projetos trabalha no Salvador Shopping Business ou em Lauro de Freitas?"
+  ],
+  "quem_procurar": "Sócio-administrador (nome registrado na Receita; não publicado no site)",
+  "ressalvas": [
+    "Endereço da Receita (Lauro de Freitas) difere do site (Salvador Shopping Business); telefone confere.",
+    "A quantidade de 3 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 21.203) serve para priorizar, não como previsão de venda."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "bnsengenharia.com",
+      "u": "http://www.bnsengenharia.com/"
+    },
+    {
+      "t": "cnpja.com",
+      "u": "https://cnpja.com/office/30456657000129"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJETQvayURFgcR3obqReYfa78"
+    }
+  ]
+}

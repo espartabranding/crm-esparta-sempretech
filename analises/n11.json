@@ -1,0 +1,45 @@
+{
+  "id": "n11",
+  "empresa": "Solucob - Empresa de cobrança",
+  "identidade_confirmada": null,
+  "resumo": "Empresa de gestão de crédito e cobrança (análise de crédito, cobrança extrajudicial e judicial, protesto) com atuação em mais de 20 estados.",
+  "porte": "Abertura: 2019 (informado em diretório oHub).",
+  "onde_opera": "Matriz em Salvador (Caminho das Árvores); atuação remota/nacional em 20+ estados. Endereço no Google Maps: Av. Tancredo Neves, 2539 - Caminho das Árvores, Salvador - BA, 41820-021.",
+  "contato_publico": {
+    "telefone": "+55 71 98368-6788",
+    "email": null,
+    "site": "http://www.solucob.com/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Atividade de cobrança depende de posições de atendimento com headset; desktop office e nobreak sustentam a operação. Operação de cobrança com equipe de especialistas e tecnologia própria não nomeada; site em WordPress/Elementor; trabalho de análise e cobrança exige estações com headset e sistema.",
+  "produto_de_entrada": "Posição de Atendimento (desktop i3 de 10ª geração, monitor de 18,5\", headset intelbras chs 40, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "A Solucob atua com análise de crédito e cobrança em mais de 20 estados a partir de Salvador, operação que depende de cada posição de atendimento em funcionamento. A SempreTech propõe a Posição de Atendimento: computador, monitor, headset de operação e estabilizador, com assistência técnica própria em Salvador. Como a operação repõe hoje o equipamento das posições?",
+  "perguntas_especificas": [
+    "A equipe de cobrança trabalha no escritório do Caminho das Árvores ou de forma remota?"
+  ],
+  "quem_procurar": "Sócio-diretor ou gestor de operações (não publicado)",
+  "ressalvas": [
+    "A quantidade de 5 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 14.853) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "solucob.com",
+      "u": "http://www.solucob.com/"
+    },
+    {
+      "t": "ohub.com.br",
+      "u": "https://www.ohub.com.br/empresa/solucob-empresa-de-cobranca-salvador-ba-698925"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJKVLkCwMRFgcRy3dricl8Bts"
+    }
+  ]
+}

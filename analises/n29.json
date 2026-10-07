@@ -1,0 +1,44 @@
+{
+  "id": "n29",
+  "empresa": "Forte Supermercado",
+  "identidade_confirmada": null,
+  "resumo": "Supermercado no bairro Tancredo Neves, Salvador (presença no Instagram).",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: R. Bahia, 77 - Tancredo Neves, Salvador - BA, 41210-000.",
+  "contato_publico": {
+    "telefone": "+55 71 3415-5500",
+    "email": null,
+    "site": "https://www.instagram.com/fortesupermercado/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Supermercado opera com vários caixas PDV; nobreak, estabilizador e bobina térmica são itens recorrentes; câmeras AHD complementam. Apenas Instagram; leitura bloqueada. Rede Forte Supermercados no InfoJobs é do Rio Grande do Sul (homônimo, descartado).",
+  "produto_de_entrada": "Caixa Pronto (desktop i3 de 10ª geração, monitor de 15,6\", nobreak de 600 va, bobina térmica)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário ou gerente da loja (não publicado)",
+  "ressalvas": [
+    "Homônimos (Fort Atacadista, Rede Forte RS) descartados; porte e unidades não confirmados.",
+    "A quantidade de 3 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 9.270) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "instagram.com",
+      "u": "https://www.instagram.com/fortesupermercado/"
+    },
+    {
+      "t": "infojobs.com.br",
+      "u": "https://www.infojobs.com.br/supermercado-rede-forte"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJVV2tAoYaFgcROq0YypHPxPc"
+    }
+  ]
+}

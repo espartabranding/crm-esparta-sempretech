@@ -1,0 +1,44 @@
+{
+  "id": "n19",
+  "empresa": "Muito Mais Cobranças",
+  "identidade_confirmada": null,
+  "resumo": "Assessoria de cobrança e recuperação de crédito extrajudicial, com modelo de cobrança por êxito.",
+  "porte": "Abertura: 2012 (informado no site).",
+  "onde_opera": "1 sede em Salvador; atuação nacional. Endereço no Google Maps: sala 107, Rua Luiz Anselmo, 590 - Vila Laura, Salvador - BA, 40270-580.",
+  "contato_publico": {
+    "telefone": "+55 71 98395-8800",
+    "email": null,
+    "site": "http://www.muitomaisassessoria.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Operação de cobrança por telefone/WhatsApp pede posições com headset e nobreak; escritório pequeno em sala comercial. Operação de cobrança com emissão de boletos e relatório online de contas; telefone fixo e WhatsApp; estações de atendimento prováveis.",
+  "produto_de_entrada": "Posição de Atendimento (desktop i3 de 10ª geração, monitor de 18,5\", headset intelbras chs 40, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Sócio-administrador (não publicado)",
+  "ressalvas": [
+    "Empresa pequena, sala 107; endereço do diretório oHub mostra CEP diferente do informado.",
+    "A quantidade de 3 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 8.912) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "muitomaisassessoria.com.br",
+      "u": "http://www.muitomaisassessoria.com.br/"
+    },
+    {
+      "t": "ohub.com.br",
+      "u": "https://www.ohub.com.br/empresa/muito-mais-cobrancas-salvador-ba-661312"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJYVCaqOkEFgcR106Bma9miGk"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "n30",
+  "empresa": "Simple English",
+  "identidade_confirmada": null,
+  "resumo": "Escola de inglês com aulas on-demand, em grupo (até 6 alunos) e particulares, ao vivo por Skype/Google Meet, com professor brasileiro, nativo e tutor de IA.",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: R. Francisco Drumond, 41 - Centro, Camaçari - BA, 42800-500.",
+  "contato_publico": {
+    "telefone": "+55 71 99387-0559",
+    "email": null,
+    "site": "https://www.simplenglish.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Operação digital com suporte contínuo e aulas ao vivo precisa de posições com headset e desktop. Aulas ao vivo online e tutor de IA; suporte 11h por dia, 7 dias por semana, implica equipe de atendimento e professores em computador.",
+  "produto_de_entrada": "Posição de Atendimento (desktop i3 de 10ª geração, monitor de 18,5\", headset intelbras chs 40, estabilizador)",
+  "complementares": [
+    "Laboratório Pronto (desktop i3 de 10ª geração, monitor de 15,6\", headset, estabilizador)"
+  ],
+  "motivo_da_ligacao": "A Simple English dá aulas ao vivo pela internet e mantém suporte aos alunos durante toda a semana. A SempreTech propõe a Posição de Atendimento para professores e suporte: computador, monitor, headset de operação e estabilizador, com assistência técnica própria em Salvador. A equipe utiliza equipamento da escola ou próprio?",
+  "perguntas_especificas": [
+    "A escola tem equipe presencial em Camaçari, ou todos trabalham de forma remota?"
+  ],
+  "quem_procurar": "Sócio-diretor / coordenação",
+  "ressalvas": [
+    "Endereço do Maps é o mesmo de Retral Engenharia (e12); pode ser dado errado; existem homônimos Simple English em outras cidades.",
+    "A quantidade de 3 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 8.912) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "simplenglish.com.br",
+      "u": "https://www.simplenglish.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJTcuBxcZpFgcRlyvsXpxEKVI"
+    }
+  ]
+}

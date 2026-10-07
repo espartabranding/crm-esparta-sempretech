@@ -1,0 +1,38 @@
+{
+  "id": "n25",
+  "empresa": "1Click Informática",
+  "identidade_confirmada": null,
+  "resumo": "Manutenção de computadores e notebooks, montagem de PCs gamer e venda de periféricos gamer nos Barris, Salvador.",
+  "porte": "",
+  "onde_opera": "1 (Rua do Salete, 101, sala 101, Barris). Endereço no Google Maps: R. do Salete, 101 - Andar 1 Sala 101 - Barris, Salvador - BA, 40070-200.",
+  "contato_publico": {
+    "telefone": "+55 71 98209-0987",
+    "email": null,
+    "site": "http://www.1clickinformatica.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Faz upgrades e montagens, logo compra componentes e kits com preço de revenda. Reparo de placa-mãe, upgrades de RAM, SSD e GPU, troca de pasta térmica; vende PCs gamer sob cotação.",
+  "produto_de_entrada": "Parceiro Técnico (componentes (ssd, memória, fonte e hd))",
+  "complementares": [],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário",
+  "ressalvas": [
+    "Concorrente parcial em PCs gamer; negócio muito pequeno; CNPJ não localizado.",
+    "A quantidade de 1 cesta(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 4.629) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "1clickinformatica.com.br",
+      "u": "http://www.1clickinformatica.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJFUE1Q8IFFgcR4xiB0iWBcIM"
+    }
+  ]
+}

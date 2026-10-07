@@ -1,0 +1,40 @@
+{
+  "id": "n17",
+  "empresa": "Total Materiais de Construção",
+  "identidade_confirmada": null,
+  "resumo": "Loja de materiais de construção em Lauro de Freitas/BA (site totalmc.com.br).",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Av. Luiz Tarquínio Pontes, 2771 - Vilas do Atlântico, Lauro de Freitas - BA, 42701-450.",
+  "contato_publico": {
+    "telefone": "+55 71 3369-2550",
+    "email": null,
+    "site": "http://www.totalmc.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Varejo de construção com balcão e caixa; câmeras complementam depósito e loja. Possui site próprio; o conteúdo não pôde ser lido (bloqueio de robots.txt).",
+  "produto_de_entrada": "Caixa Pronto (desktop i3 de 10ª geração, monitor de 15,6\", nobreak de 600 va, bobina térmica)",
+  "complementares": [
+    "Segurança (câmeras ahd 1080p (kit de 4))"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário ou gerente da loja",
+  "ressalvas": [
+    "Dados cadastrais não localizados; site não acessível pela ferramenta.",
+    "A quantidade de 3 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 9.270) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "totalmc.com.br",
+      "u": "http://www.totalmc.com.br/"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJs7AS-g8-FgcRi9Lu2ZRHcWw"
+    }
+  ]
+}

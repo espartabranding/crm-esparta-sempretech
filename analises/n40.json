@@ -1,0 +1,36 @@
+{
+  "id": "n40",
+  "empresa": "Copy Print",
+  "identidade_confirmada": false,
+  "resumo": "Gráfica e copiadora no Centro de Lauro de Freitas que recebe orçamentos por WhatsApp.",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Av. Pref. Celso Alves Pinheiro da Silva, 189B - Centro, Lauro de Freitas - BA, 42700-000.",
+  "contato_publico": {
+    "telefone": "+55 71 98853-4670",
+    "email": null,
+    "site": "https://api.whatsapp.com/send?phone=5571988534670&text=Ol%C3%A1!%20Quero%20Saber%20Solicitar%20um%20Or%C3%A7amento!",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Pequena gráfica/copiadora de balcão usa desktop office para atendimento e arte simples; desktop de caixa e bobina térmica servem ao ponto de venda. Atendimento por WhatsApp e produção de impressos digitais; sem dados detalhados encontrados.",
+  "produto_de_entrada": "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)",
+  "complementares": [
+    "Caixa Pronto (desktop i3 de 10ª geração, monitor de 15,6\", nobreak de 600 va, bobina térmica)"
+  ],
+  "motivo_da_ligacao": "A SempreTech propõe o Escritório em Dia para o balcão e a arte da gráfica: computador compatível com o Windows 11, monitor e nobreak, com assistência técnica própria em Salvador. Os computadores da loja já rodam o Windows 11?",
+  "perguntas_especificas": [],
+  "quem_procurar": "Proprietário",
+  "ressalvas": [
+    "Dados públicos não localizados (nome comum, risco de homônimo); provável empresa muito pequena.",
+    "A quantidade de 1 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 3.149) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJiZ7naBsWFgcRgOU2GfpjQNU"
+    }
+  ]
+}

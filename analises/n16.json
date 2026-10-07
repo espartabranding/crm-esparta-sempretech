@@ -1,0 +1,41 @@
+{
+  "id": "n16",
+  "empresa": "Escola Técnica de Saúde Evangélica",
+  "identidade_confirmada": null,
+  "resumo": "Escola técnica de cursos da área da saúde em Lauro de Freitas (presença no Instagram ETSEL).",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Rua Romualdo de Brito, 160 - Centro, Lauro de Freitas - BA, 42700-000.",
+  "contato_publico": {
+    "telefone": "+55 71 99163-4399",
+    "email": null,
+    "site": "https://instagram.com/etsel.oficial?igshid=MmVlMjlkMTBhMg==",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Escola técnica pode precisar de laboratório de informática e secretaria. Site oficial é apenas Instagram; sem evidência de estrutura de TI.",
+  "produto_de_entrada": "Laboratório Pronto (desktop i3 de 10ª geração, monitor de 15,6\", headset, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Diretor(a) / coordenação",
+  "ressalvas": [
+    "Instagram bloqueado para leitura; dados cadastrais não localizados.",
+    "A escola tem um segundo cadastro no Google Maps, com o telefone fixo +55 71 3011-7386; vale como alternativa se o celular não atender.",
+    "A quantidade de 5 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 12.387) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "instagram.com",
+      "u": "https://instagram.com/etsel.oficial"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJYy_pNhoWFgcRJANQg6O-pag"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "n18",
+  "empresa": "Destak Contact Center",
+  "identidade_confirmada": false,
+  "resumo": "Call center em Salvador (Ed. Suerdieck, Comércio), segundo a ficha informada.",
+  "porte": "",
+  "onde_opera": "Endereço no Google Maps: Ed. Suerdieck - 3, Av. Estados Unidos, 161 - Comércio, Salvador - BA, 40010-020.",
+  "contato_publico": {
+    "telefone": "+55 71 2224-5500",
+    "email": null,
+    "site": "http://destak.srv.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Call center usa posições de atendimento com headset; é o caso de uso central do combo C3. Site bloqueou leitura; resultados de CNPJ/InfoJobs encontrados referem-se a homônimos (Paraná e Ceará) e foram descartados.",
+  "produto_de_entrada": "Posição de Atendimento (desktop i3 de 10ª geração, monitor de 18,5\", headset intelbras chs 40, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "",
+  "perguntas_especificas": [],
+  "quem_procurar": "Gestor de operações ou diretor (não confirmado)",
+  "ressalvas": [
+    "Possível homônimo no InfoJobs (Destak Teleatendimento, Paraná); identidade com a empresa de Salvador não confirmada.",
+    "A quantidade de 3 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 8.912) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "baixa",
+  "fontes": [
+    {
+      "t": "destak.srv.br",
+      "u": "http://destak.srv.br/"
+    },
+    {
+      "t": "infojobs.com.br",
+      "u": "https://www.infojobs.com.br/empresa-destak-servicos-teleatendimento__-111547.aspx"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJUVtmsOUEFgcRbBbJrtBvZ3g"
+    }
+  ]
+}

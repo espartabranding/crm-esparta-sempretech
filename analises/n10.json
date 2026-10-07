@@ -1,0 +1,46 @@
+{
+  "id": "n10",
+  "empresa": "Centro Técnico San Rafael",
+  "identidade_confirmada": null,
+  "resumo": "Escola de ensino técnico em Salvador com foco em Técnico em Enfermagem, cuidador de idosos e programa de formações com a Itália.",
+  "porte": "Funcionários: até 19 (classificação InfoJobs, desatualizada); a confirmar.",
+  "onde_opera": "1 unidade (Canela, Salvador). Endereço no Google Maps: R. Mal. Floriano, 17 - Canela, Salvador - BA, 40110-010.",
+  "contato_publico": {
+    "telefone": "+55 71 3336-3090",
+    "email": null,
+    "site": "https://centrotecnicosanrafael.com.br/",
+    "linkedin": null
+  },
+  "decisores": [],
+  "fatos_recentes": [],
+  "necessidade_provavel": "Hipótese: Escola com laboratórios e salas de aula pode renovar ou ampliar estações com lote de desktops e kits de upgrade; área administrativa pode usar desktop office com nobreak. Laboratórios de anatomia, habilidades práticas e neonatal, além de salas de aula; presença digital com site e WhatsApp; vagas de RH e Storymaker no InfoJobs indicam equipe de marketing/administrativa em desktops.",
+  "produto_de_entrada": "Laboratório Pronto (desktop i3 de 10ª geração, monitor de 15,6\", headset, estabilizador)",
+  "complementares": [
+    "Escritório em Dia (desktop i3 de 10ª geração, monitor de 18,5\", nobreak de 600 va, teclado e mouse logitech)"
+  ],
+  "motivo_da_ligacao": "O San Rafael mantém laboratórios e salas de aula para os cursos técnicos de saúde, além da equipe administrativa. A SempreTech propõe o Laboratório Pronto: computador compatível com o Windows 11, monitor, headset e estabilizador em cada posição, com assistência técnica própria em Salvador. Como a escola planeja a renovação dos computadores das salas e da secretaria?",
+  "perguntas_especificas": [
+    "Há laboratório de informática, ou os computadores ficam na secretaria e na equipe administrativa?"
+  ],
+  "quem_procurar": "Direção ou coordenação administrativa (nomes não publicados)",
+  "ressalvas": [
+    "Escola de nicho em saúde; uso de computadores provavelmente concentrado na secretaria e nos laboratórios de informática, se houver.",
+    "A quantidade de 6 unidade(s) é estimativa, sem contagem pública de máquinas. O valor de referência (R$ 14.865) serve para priorizar, não como previsão de venda.",
+    "CNPJ não confirmado em fonte pública."
+  ],
+  "confianca": "media",
+  "fontes": [
+    {
+      "t": "centrotecnicosanrafael.com.br",
+      "u": "https://centrotecnicosanrafael.com.br/"
+    },
+    {
+      "t": "infojobs.com.br",
+      "u": "https://www.infojobs.com.br/empresa-centro-tecnico-san-rafael__735891.aspx"
+    },
+    {
+      "t": "Google Maps",
+      "u": "https://www.google.com/maps/place/?q=place_id:ChIJIWRD1IYEFgcRRjI6rjeJbbU"
+    }
+  ]
+}
