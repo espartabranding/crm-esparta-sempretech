@@ -396,13 +396,14 @@ const ETAPAS = {
   tentar:{e:1, t:"Ligar e localizar o responsável"},
   retornar:{e:1, t:"Retorno combinado"},
   canal:{e:1, t:"Abordar por WhatsApp"},
-  apresentar:{e:2, t:"Ligar para o contato e apresentar a proposta"},
-  enviar:{e:2, t:"Enviar a proposta pedida"},
+  apresentar:{e:2, t:"Apresentar a proposta personalizada"},
   aguardando:{e:2, t:"Proposta enviada, aguardando retorno"},
   ganha:{e:0, t:"Proposta aceita"},
   encerrada:{e:0, t:"Encerradas nesta rodada"},
 };
-const etapaDe = c => MOV[c.id]?.etapa || c.chamadas.find(x=>x.etapa)?.etapa || "tentar";
+/* A antiga etapa "enviar a proposta pedida" foi unida à de apresentar a proposta personalizada */
+const unida = k => k==="enviar" ? "apresentar" : k;
+const etapaDe = c => unida(MOV[c.id]?.etapa || c.chamadas.find(x=>x.etapa)?.etapa || "tentar");
 const contatoDe = c => (c.analise?.decisores||[]).filter(d=>/informado pela Esparta/.test(d.cargo)).map(d=>d.nome).join(" e ");
 
 /* Inteligência: o que já foi abordado e em que pé está, o que falta abordar, com qual técnica e qual oferta */
@@ -758,14 +759,13 @@ const KB = [
   ["tentar","Localizar o responsável","--cobalto"],
   ["retornar","Retorno combinado","--cobalto"],
   ["canal","Abordar por WhatsApp","--cobalto"],
-  ["apresentar","Apresentar a proposta","--cobalto"],
-  ["enviar","Enviar a proposta pedida","--cobalto"],
+  ["apresentar","Apresentar a proposta personalizada","--cobalto"],
   ["aguardando","Proposta enviada","--cobalto"],
   ["ganha","Proposta aceita","--verde"],
   ["encerrada","Encerrada sem negócio","--vermelho"],
 ];
 const colunaDe = c => c.sit==="pendente" ? "nova" : etapaDe(c);
-const etapaRegistrada = c => c.chamadas.find(x=>x.etapa)?.etapa || (c.chamadas.length ? "tentar" : "nova");
+const etapaRegistrada = c => unida(c.chamadas.find(x=>x.etapa)?.etapa) || (c.chamadas.length ? "tentar" : "nova");
 const entradaNaEtapa = c => MOV[c.id]?.quando || c.chamadas.find(x=>x.etapa)?.inicio || c.chamadas[0]?.inicio || null;
 function mover(id, col){
   const c = C.find(x=>x.id===id);
@@ -809,7 +809,7 @@ let TAR = {feitas:{}, minhas:[]};
 try { if (!CLIENTE) TAR = {...TAR, ...JSON.parse(localStorage.getItem("sempretech-tarefas"))} } catch {}
 const guardarTar = () => { try { localStorage.setItem("sempretech-tarefas", JSON.stringify(TAR)) } catch {} };
 /* Prazo de cada etapa em dias úteis depois do contato, conforme as qualificações do playbook */
-const DIAS_ATE = {tentar:1, retornar:1, canal:1, apresentar:1, enviar:0, aguardando:2};
+const DIAS_ATE = {tentar:1, retornar:1, canal:1, apresentar:1, aguardando:2};
 const chave = s => { let h = 0; for (const ch of s) h = (h*31 + ch.charCodeAt(0)) >>> 0; return h.toString(36) };
 function listaTarefas(){
   const l = [];
