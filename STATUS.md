@@ -29,6 +29,7 @@ As ofertas das contas novas são os combos C1 a C7 (Estação Criativa, Laborat�
 - **PDF de cada proposta:** `uv run python ofertas.py --pdf` gera em `docs/ofertas/pdf/` os PDFs que faltam (caderno de 7 páginas em A4 deitado; usa o Chrome ou o Edge instalado). `--pdf-refazer` gera todos de novo.
 - **Na ficha do lead:** os botões "Visualizar proposta" e "Baixar proposta para envio" (PDF ou HTML) aparecem em todas as abas, e a aba "Proposta visual" mostra a página. As contas da primeira rodada usam o combo Escritório em Dia.
 - O kanban tem uma só etapa de proposta, "Apresentar a proposta personalizada"; o registro antigo "enviar" cai nela.
+- **Desconto:** desde 07/10 todas as propostas saem com 15% de desconto sobre a soma dos itens a preço de site (constante `DESCONTO` em `ofertas.py`). O preço de cada item continua sendo o do site; o desconto aparece na capa, no resumo e nos lotes.
 - O botão das ofertas leva ao WhatsApp do site da SempreTech, (71) 3034-9662; os preços são os de varejo do site em 06/10.
 - O CRM com banco e login está em outro projeto, `../SempreTech_CRM`, com a mesma carteira carregada.
 

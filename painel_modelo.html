@@ -873,7 +873,7 @@ function proposta(c){
   const p = c.proposta;
   if (!p) return `<div class="folha"><p class="vazio">A proposta visual é gerada para as contas estudadas e para as que estão na etapa de apresentar a proposta personalizada.</p></div>`;
   const pub = "https://espartabranding.github.io/crm-esparta-sempretech/ofertas/"+p.arquivo;
-  return `<div class="folha"><div class="oferta"><div class="t"><b>${esc(p.combo)}</b><span class="preco">R$ ${p.total.toLocaleString("pt-BR",{minimumFractionDigits:2})} por ${esc(p.unidade)}, preço de site</span></div>
+  return `<div class="folha"><div class="oferta"><div class="t"><b>${esc(p.combo)}</b><span class="preco">R$ ${p.total.toLocaleString("pt-BR",{minimumFractionDigits:2})} por ${esc(p.unidade)}, com ${p.desconto}% de desconto sobre o preço de site (R$ ${p.cheio.toLocaleString("pt-BR",{minimumFractionDigits:2})})</span></div>
       <div class="chips"><a class="chip" href="${OFERTAS+esc(p.arquivo)}" target="_blank" rel="noopener">Abrir a proposta em nova aba</a>${!CLIENTE && p.whats?`<a class="chip ok" href="${esc(p.whats)}" target="_blank" rel="noopener">Enviar pelo WhatsApp da conta</a>`:""}</div>
       ${CLIENTE?"":`<p class="obs" style="margin:14px 0 6px">Mensagem que acompanha o link. Troque [Seu nome] antes de enviar.</p>${fala(p.mensagem)}<p class="obs">Link da proposta: ${link(pub,pub)}</p>`}</div></div>
     <iframe class="proposta" src="${OFERTAS+esc(p.arquivo)}" title="Proposta visual para ${esc(c.empresa)}" loading="lazy"></iframe>`;

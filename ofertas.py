@@ -92,6 +92,7 @@ ENDERECO = "https://espartabranding.github.io/crm-esparta-sempretech/ofertas/"
 WHATSAPP = "557130349662"
 TELEFONE = "(71) 3034-9662"
 CONSULTA = "06/10/2026"
+DESCONTO = 15  # por cento, sobre a soma dos itens a preço de site, em todas as propostas
 GALERIA = 4  # fotos do produto principal
 DESTAQUES = 3  # itens que ganham painel inteiro; os demais vão para a grade
 
@@ -282,7 +283,7 @@ def capa(sigla: str, combo: dict) -> None:
         pincel.text((60, y), palavra.replace(" ", " "), font=fonte(96), fill="#060B1F")
         y += 102
     pincel.text((60, y + 24), reais(combo["total"]), font=fonte(78), fill="#1437FF")
-    pincel.text((62, y + 112), f"por {combo['unidade']}, a preço de site", font=fonte(28), fill="#4A5678")
+    pincel.text((62, y + 112), f"por {combo['unidade']}, com {DESCONTO}% de desconto", font=fonte(28), fill="#4A5678")
     arquivo.parent.mkdir(parents=True, exist_ok=True)
     tela.save(arquivo, "JPEG", quality=88)
 
@@ -303,7 +304,8 @@ def montar_combos() -> dict:
             fotos = [f for f in (foto(p, n) for n in range(GALERIA if posicao == 0 else 1)) if f]
             combo["linhas"].append({"nome": nome, "ficha": ficha, "beneficio": beneficio, "apoio": apoio, "area": AREA[pid], "qtd": qtd,
                                     "preco": float(p["preco"]), "fotos": fotos})
-        combo["total"] = round(sum(linha["qtd"] * linha["preco"] for linha in combo["linhas"]), 2)
+        combo["cheio"] = round(sum(linha["qtd"] * linha["preco"] for linha in combo["linhas"]), 2)
+        combo["total"] = round(combo["cheio"] * (100 - DESCONTO) / 100, 2)
         capa(sigla, combo)
     FOTOS.mkdir(exist_ok=True)
     catalogo.write_text(json.dumps(usados, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -437,6 +439,8 @@ h1 em{font-style:normal;color:var(--azul)}
 .lista li{display:flex;align-items:baseline;gap:14px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:15px}
 .lista li span:first-child{flex:1;color:#D5DBEA}
 .lista li span:last-child{font:500 14px var(--mono);white-space:nowrap}
+.lista li.desc span{color:var(--azul-2)}
+.preco s{color:var(--tinta-2)}
 .total{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-top:26px}
 .total span{font:500 11.5px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#A9B3CC}
 .total b{font:400 clamp(52px,14.5vw,112px)/.92 var(--cartaz);white-space:nowrap}
@@ -581,7 +585,7 @@ def pagina(conta: dict, combos: dict) -> str:
     lotes = "" if sigla == "C5" else (
         '<ul class="lotes rola">'
         + "".join(f"<li><small>{n} {c['unidade'] if n == 1 else c['plural']}</small><b>{reais(n * c['total'])}</b></li>" for n in (1, 5, 10))
-        + '</ul><p class="nota rola">Soma dos itens a preço de site. Para lotes, a condição comercial é definida na proposta.</p>'
+        + f'</ul><p class="nota rola">Soma dos itens a preço de site, com {DESCONTO}% de desconto. Para lotes, a condição comercial é definida na proposta.</p>'
     )
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -591,9 +595,9 @@ def pagina(conta: dict, combos: dict) -> str:
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#ffffff">
 <title>{esc(c['nome'])} para {esc(empresa)} · SempreTech</title>
-<meta name="description" content="{esc(c['chamada'])} {reais(c['total'])} por {c['unidade']}, a preço de site.">
+<meta name="description" content="{esc(c['chamada'])} {reais(c['total'])} por {c['unidade']}, com {DESCONTO}% de desconto.">
 <meta property="og:title" content="{esc(c['nome'])} para {esc(empresa)}">
-<meta property="og:description" content="{esc(c['chamada'])} {reais(c['total'])} por {c['unidade']}.">
+<meta property="og:description" content="{esc(c['chamada'])} {reais(c['total'])} por {c['unidade']}, com {DESCONTO}% de desconto.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="{ENDERECO}og/{sigla.lower()}.jpg">
 <meta property="og:image:width" content="1200">
@@ -616,7 +620,7 @@ def pagina(conta: dict, combos: dict) -> str:
     </div>
     <div class="resto">
       <p class="texto sobe" style="--i:3">{esc(c['texto'])}</p>
-      <p class="preco sobe" style="--i:4"><b>{reais(c['total'])}</b><span>por {c['unidade']}, a preço de site</span></p>
+      <p class="preco sobe" style="--i:4"><b>{reais(c['total'])}</b><span>por {c['unidade']}, com {DESCONTO}% de desconto. <s>{reais(c['cheio'])}</s> a preço de site</span></p>
       <div class="sobe" style="--i:5">{botao}</div>
       <ul class="ganhos sobe" style="--i:6">{''.join(f'<li>{esc(p)}</li>' for p in c['pontos'])}</ul>
     </div>
@@ -631,12 +635,12 @@ def pagina(conta: dict, combos: dict) -> str:
   <div>
     <p class="rotulo rola">Resumo do conjunto</p>
     <h2 class="cartaz rola">Tudo isto em <em>cada {c['unidade']}</em></h2>
-    <ul class="lista rola">{''.join(f'<li><span>{esc(vezes(linha) + linha["nome"])}</span><span>{reais(linha["qtd"] * linha["preco"])}</span></li>' for linha in linhas)}</ul>
-    <p class="total rola"><span>Total por {c['unidade']}</span><b>{reais(c['total'])}</b></p>
+    <ul class="lista rola">{''.join(f'<li><span>{esc(vezes(linha) + linha["nome"])}</span><span>{reais(linha["qtd"] * linha["preco"])}</span></li>' for linha in linhas)}<li><span>Soma a preço de site</span><span>{reais(c['cheio'])}</span></li><li class="desc"><span>Desconto de {DESCONTO}%</span><span>- {reais(c['cheio'] - c['total'])}</span></li></ul>
+    <p class="total rola"><span>Total por {c['unidade']}, com desconto</span><b>{reais(c['total'])}</b></p>
   </div>
   <div>
     {lotes if lotes else '<p class="nota rola" style="font-size:16px;color:#D5DBEA;margin-top:0">As quantidades da cesta são uma referência. A cotação sai com os componentes e os volumes que a assistência mais utiliza.</p>'}
-    {f'<div class="extra rola"><img src="{extra["linhas"][0]["fotos"][0]}" alt="" loading="lazy"><div><p class="rotulo">Complemento sugerido</p><b>{esc(extra["nome"])}</b><p>{esc(extra["chamada"])} {reais(extra["total"])} por {extra["unidade"]}.</p></div></div>' if extra else ''}
+    {f'<div class="extra rola"><img src="{extra["linhas"][0]["fotos"][0]}" alt="" loading="lazy"><div><p class="rotulo">Complemento sugerido</p><b>{esc(extra["nome"])}</b><p>{esc(extra["chamada"])} {reais(extra["total"])} por {extra["unidade"]}, com {DESCONTO}% de desconto.</p></div></div>' if extra else ''}
   </div>
 </div></section>
 </main>
@@ -648,7 +652,7 @@ def pagina(conta: dict, combos: dict) -> str:
   <a class="fone" href="tel:+{WHATSAPP}">ou ligue: {TELEFONE}</a>
 </div></section>
 
-<footer><div class="faixa">Preços de varejo do site sempretechba.com.br, consultados em {CONSULTA}, sujeitos a alteração e à disponibilidade em estoque. Imagens dos produtos conforme o site; o gabinete pode variar com o estoque.</div></footer>
+<footer><div class="faixa">Preços de varejo do site sempretechba.com.br, consultados em {CONSULTA}, com {DESCONTO}% de desconto sobre a soma dos itens, sujeitos a alteração e à disponibilidade em estoque. Imagens dos produtos conforme o site; o gabinete pode variar com o estoque.</div></footer>
 
 <div class="barra"><div><small>{esc(c['nome'])}, por {c['unidade']}</small><b>{reais(c['total'])}</b></div><a class="botao" href="{whats}" target="_blank" rel="noopener">{ICONE}Pedir proposta</a></div>
 </body>
@@ -659,7 +663,7 @@ def pagina(conta: dict, combos: dict) -> str:
 def indice(linhas: list[dict]) -> str:
     corpo = "".join(
         f"""<tr><td><b>{esc(linha['empresa'])}</b><small>{esc(linha['ordem'])} · {esc(linha['cidade'])}</small></td>
-<td>{esc(linha['combo'])}<small>{reais(linha['total'])} por {linha['unidade']}</small></td>
+<td>{esc(linha['combo'])}<small>{reais(linha['total'])} por {linha['unidade']}, com {DESCONTO}% de desconto</small></td>
 <td><a href="{linha['arquivo']}">Ver a oferta</a><small>{f'<a href="{esc(linha["whats"])}" target="_blank" rel="noopener">Abrir o WhatsApp da conta</a>' if linha['whats'] else 'Sem telefone'}</small>
 <details><summary>Mensagem</summary><p>{esc(linha['mensagem'])}</p></details></td></tr>"""
         for linha in linhas
@@ -700,14 +704,14 @@ def gerar() -> None:
         c = combos[conta["combo"].split()[0]]
         mensagem = (
             f"Bom dia. Aqui é [Seu nome], da SempreTech, distribuidora de informática de Salvador. "
-            f"Preparamos uma proposta {c['de']} {c['nome']} para {conta['empresa']}: {ENDERECO}{arquivo} "
+            f"Preparamos uma proposta {c['de']} {c['nome']} para {conta['empresa']}, com {DESCONTO}% de desconto sobre o preço de site: {ENDERECO}{arquivo} "
             f"Posso apresentar os detalhes por aqui ou em uma ligação?"
         )
         numero = re.sub(r"\D", "", conta.get("telefone") or "")
-        linha = {"empresa": conta["empresa"], "cidade": conta["cidade"], "ordem": ordem.get(conta["onda"], "Em fase de proposta"), "combo": c["nome"], "total": c["total"], "unidade": c["unidade"],
+        linha = {"empresa": conta["empresa"], "cidade": conta["cidade"], "ordem": ordem.get(conta["onda"], "Em fase de proposta"), "combo": c["nome"], "total": c["total"], "cheio": c["cheio"], "desconto": DESCONTO, "unidade": c["unidade"],
                  "arquivo": arquivo, "pdf": f"pdf/{arquivo[:-5]}.pdf", "mensagem": mensagem, "whats": f"https://wa.me/{numero}?text={quote(mensagem)}" if numero else ""}
         linhas.append(linha)
-        propostas[conta["id"]] = {k: linha[k] for k in ("combo", "total", "unidade", "arquivo", "pdf", "mensagem", "whats")}
+        propostas[conta["id"]] = {k: linha[k] for k in ("combo", "total", "cheio", "desconto", "unidade", "arquivo", "pdf", "mensagem", "whats")}
     # Sai a página (e o PDF) de conta que deixou de ter proposta.
     validas = {linha["arquivo"][:-5] for linha in linhas} | {"index"}
     for sobra in [*SAIDA.glob("*.html"), *PDFS.glob("*.pdf")]:
@@ -731,13 +735,16 @@ def _pdf(navegador: Path, origem: Path, destino: Path) -> None:
         # O navegador deixa pastas de trabalho na pasta temporária; aqui elas somem junto com esta.
         ambiente = {**os.environ, "TEMP": pasta, "TMP": pasta}
         (temp / "oferta.html").write_text(fonte.replace("</head>", f"<style>{PDF_CSS}</style></head>", 1), encoding="utf-8")
-        # O navegador às vezes devolve o arquivo vazio quando vários rodam ao mesmo tempo: tenta de novo.
+        # O navegador às vezes trava ou devolve o arquivo vazio quando vários rodam ao mesmo tempo: tenta de novo.
         for _ in range(4):
-            subprocess.run(
-                [str(navegador), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--user-data-dir={temp / 'perfil'}",
-                 f"--print-to-pdf={temp / 'oferta.pdf'}", (temp / "oferta.html").as_uri()],
-                check=False, capture_output=True, timeout=180, env=ambiente,
-            )
+            try:
+                subprocess.run(
+                    [str(navegador), "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--user-data-dir={temp / 'perfil'}",
+                     f"--print-to-pdf={temp / 'oferta.pdf'}", (temp / "oferta.html").as_uri()],
+                    check=False, capture_output=True, timeout=90, env=ambiente,
+                )
+            except subprocess.TimeoutExpired:
+                continue
             if (temp / "oferta.pdf").is_file() and (temp / "oferta.pdf").stat().st_size:
                 break
         doc = pymupdf.open(temp / "oferta.pdf")
