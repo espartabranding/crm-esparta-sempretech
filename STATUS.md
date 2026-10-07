@@ -18,7 +18,7 @@ O ICP foi refeito a partir do catálogo real da SempreTech (empresa local de 5 a
 
 - 259 contas restantes da base de 300 (prioridade A), com identificador `m1` a `m259`, sem estudo individual: entram como não abordadas, com o roteiro da frente e o combo indicado na planilha. O fit delas é preliminar (avaliações no Google, site e celular) e nunca chega à faixa A.
 
-Saíram do painel 13 contas da lista antiga (EPMAN, Iplasa, Salvador Armazéns Gerais, Labchecap, Projet, ECMAN, Construtora Lustosa, Line, Bahia Logística, Escola Rembrandt, TEL, Grupo LAS e Conceito Brasil). O histórico delas continua em `tentativas.json` e as pesquisas em `analises/`; para voltar, basta recolocar a conta em `contas.json`.
+Em 07/10 voltaram ao painel as 13 contas da lista antiga que tinham saído com o novo ICP (EPMAN, Iplasa, Salvador Armazéns Gerais, Labchecap, Projet, ECMAN, Construtora Lustosa, Line, Bahia Logística, Escola Rembrandt, TEL, Grupo LAS e Conceito Brasil): todas foram abordadas em 05/10 e precisam aparecer no kanban. A carteira tem 321 contas, 22 delas já abordadas.
 
 As ofertas das contas novas são os combos C1 a C7 (Estação Criativa, Laboratório Pronto, Posição de Atendimento, Caixa Pronto, Parceiro Técnico, Escritório em Dia e Segurança). Só entram máquinas que rodam o Windows 11. O fit das contas novas foi derivado do estudo: compra local, quantidade estimada, aderência e acesso a quem decide.
 
