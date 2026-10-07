@@ -179,14 +179,6 @@ details>div{margin-top:14px}
 #dica{position:fixed; z-index:50; pointer-events:none; background:var(--tinta); color:var(--papel); font-size:12.5px; line-height:1.4; padding:6px 9px; border-radius:6px; max-width:260px; display:none}
 
 /* Esteiras */
-.esteira{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr)); gap:14px; align-items:start}
-.col-et{background:var(--suave); border-radius:14px; padding:14px; display:flex; flex-direction:column; gap:10px; min-width:0}
-.col-et>h3{margin:0; display:flex; justify-content:space-between; gap:8px}
-.cartao{background:var(--folha); border:1px solid var(--linha); border-radius:10px; padding:12px 14px; text-align:left; cursor:pointer; width:100%; display:block}
-.cartao:hover{border-color:var(--cobalto)}
-.cartao b{display:block; font-weight:600}
-.cartao small{display:block; color:var(--tinta-2); font-size:13px; margin-top:3px}
-.cartao .prox{color:var(--tinta); margin-top:8px}
 /* Uma cor por etapa do kanban: vai no rótulo do cabeçalho, no filete da coluna e na borda dos cartões */
 :root{--f-nova:#5F6B85; --f-tentar:#2B50FF; --f-retornar:#7A3FD1; --f-canal:#0B7F96; --f-apresentar:#C2570A; --f-aguardando:#B0288F; --f-ganha:#12855F; --f-encerrada:#C0392B}
 .kcol header{background:var(--c); color:#fff; border-radius:11px 11px 0 0; margin-bottom:10px}
@@ -279,7 +271,6 @@ section{margin-bottom:38px}
       <button class="aba" data-ir="kanban">Kanban</button>
       <button class="aba" data-ir="tarefas">Tarefas</button>
       <button class="aba" data-ir="geral">Visão geral</button>
-      <button class="aba" data-ir="esteiras">Esteiras</button>
       <button class="aba" data-ir="segmentacao">Segmentação</button>
       <button class="aba" data-ir="playbook">Playbook</button>
       <button class="aba" data-ir="catalogo">Soluções e catálogo</button>
@@ -343,7 +334,7 @@ function rota(){
   const [v,id,sub] = location.hash.slice(1).split(/[./]/);
   const inicial = CLIENTE ? "analise" : "ligacao";
   if (v==="lead" && C.some(c=>c.id===id)) return {v, id, sub:(CLIENTE && sub==="ligacao") ? inicial : (sub||inicial)};
-  const telas = CLIENTE ? ["geral","kanban","tarefas","segmentacao","esteiras"] : ["geral","kanban","tarefas","playbook","catalogo","segmentacao","esteiras"];
+  const telas = CLIENTE ? ["geral","kanban","tarefas","segmentacao"] : ["geral","kanban","tarefas","playbook","catalogo","segmentacao"];
   return {v:telas.includes(v)?v:"inteligencia"};
 }
 
@@ -486,19 +477,6 @@ function inteligencia(){
       <p class="obs" style="margin-top:10px"><b>${x.n}</b> ${x.n>1?"contas a abordar por esta oferta":"conta a abordar por esta oferta"}${valor(x.l)?` · ${brl(valor(x.l))} de referência nas estudadas`:""}</p></div>`).join("")}</div></section>`;
 }
 
-
-function esteiras(){
-  const cartao = c => `<button class="cartao" data-ir="lead/${c.id}${CLIENTE?"/historico":""}"><b>${esc(c.empresa)}</b><small>${esc(c.segmento)}${contatoDe(c)?` · contato: ${esc(contatoDe(c))}`:""}</small>${c.chamadas[0]?.nota?`<small class="prox">${esc(c.chamadas[0].nota)}</small>`:""}</button>`;
-  const coluna = k => { const l = C.filter(c=>etapaDe(c)===k).sort((a,b)=>nota(b)-nota(a)); return `<div class="col-et"><h3><span>${ETAPAS[k].t}</span><span class="mono">${l.length}</span></h3>${l.map(cartao).join("") || `<small class="vazio">Nenhuma conta nesta etapa.</small>`}</div>` };
-  const total = n => C.filter(c=>ETAPAS[etapaDe(c)].e===n).length;
-  const E = P.esteiras;
-  return `
-  <div class="cab"><div><div class="olho">Onde está cada conta e qual é o próximo passo</div><h1>Esteiras</h1></div></div>
-  <div class="numeros">${[[total(1),"na esteira 1, abordagem inicial"],[total(2),"na esteira 2, proposta objetiva"],[total(0),"encerradas nesta rodada"],[C.length,"contas na carteira"]].map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join("")}</div>
-  ${E.map(e=>`<section><h2>Esteira ${e.id}: ${esc(e.nome)}</h2><p class="sub">${esc(e.objetivo)} ${esc(e.passa_quando)}</p>
-    <div class="esteira">${Object.keys(ETAPAS).filter(k=>ETAPAS[k].e===e.id).map(coluna).join("")}</div></section>`).join("")}
-  <section><h2>Fora da rodada</h2><div class="esteira">${coluna("encerrada")}</div></section>`;
-}
 
 const objHtml = o => `<div class="obj"><b>“${esc(o.objecao)}”${o.tipo?`<span class="tag">${esc(o.tipo)}</span>`:""}</b>${o.por_tras?`<div class="obs">${esc(o.por_tras)}</div>`:""}${fala(o.resposta)}${o.nao_fazer?`<div class="obs">${esc(o.nao_fazer)}</div>`:""}${o.proximo_passo?`<div class="obs">Depois: ${esc(o.proximo_passo)}</div>`:""}</div>`;
 const ramoHtml = o => `<div class="obj"><b>${esc(o.situacao)}</b>${fala(o.fala)}<div class="obs">Depois: ${esc(o.depois)}</div></div>`;
@@ -956,7 +934,7 @@ let chaveAnterior = "";
 function desenhar(){
   const r = rota(), chave = r.v+(r.id||"")+(r.sub||"");
   document.querySelectorAll("audio").forEach(a=>a.pause());
-  $("main").innerHTML = r.v==="lead" ? lead(r) : r.v==="playbook" ? playbook() : r.v==="catalogo" ? catalogo() : r.v==="segmentacao" ? segmentacao() : r.v==="esteiras" ? esteiras() : r.v==="geral" ? geral() : r.v==="kanban" ? kanban() : r.v==="tarefas" ? tarefas() : inteligencia();
+  $("main").innerHTML = r.v==="lead" ? lead(r) : r.v==="playbook" ? playbook() : r.v==="catalogo" ? catalogo() : r.v==="segmentacao" ? segmentacao() : r.v==="geral" ? geral() : r.v==="kanban" ? kanban() : r.v==="tarefas" ? tarefas() : inteligencia();
   document.title = (r.v==="lead" ? C.find(c=>c.id===r.id).empresa+" — " : "") + "SempreTech";
   trilho();
   $("trilho").classList.remove("aberto");
