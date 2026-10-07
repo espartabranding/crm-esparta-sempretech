@@ -1,6 +1,6 @@
 # Status da campanha SempreTech
 
-Atualizado em 06/10/2026, com a entrada do novo ICP. Os números de ligação são do primeiro dia, 05/10.
+Atualizado em 07/10/2026. A carteira tem 321 contas: 22 abordadas e 299 a abordar. Os números de ligação são do primeiro dia, 05/10; não houve registro de contato novo em 06/10 nem em 07/10.
 
 ## Onde ver
 
@@ -22,9 +22,12 @@ Em 07/10 voltaram ao painel as 13 contas da lista antiga que tinham saído com o
 
 As ofertas das contas novas são os combos C1 a C7 (Estação Criativa, Laboratório Pronto, Posição de Atendimento, Caixa Pronto, Parceiro Técnico, Escritório em Dia e Segurança). Só entram máquinas que rodam o Windows 11. O fit das contas novas foi derivado do estudo: compra local, quantidade estimada, aderência e acesso a quem decide.
 
-## Painel e ofertas (06/10/2026)
+## Painel e ofertas (07/10/2026)
 
-- O painel abre na tela **Inteligência** (o que já foi abordado, status, fila com técnica e oferta, combos) e ganhou **Kanban** e **Tarefas**. Mover cartão e concluir tarefa ficam só no navegador de quem mexe.
+- O menu tem **Inteligência** (tela de abertura), **Kanban**, **Tarefas**, **Segmentação**, **Playbook** e **Soluções e catálogo** (os dois últimos só no painel do SDR). As telas Esteiras e Visão geral saíram em 07/10; com a Visão geral saiu o bloco "Qualidade das conversas".
+- **Kanban:** uma cor por etapa, com o cabeçalho da coluna pintado; sem valores em reais e sem rolagem interna (só "Não abordada" mostra 25 e um botão para as demais). Cada cartão tem o campo "Evolução até esta etapa", preenchido com os registros de contato e aberto para edição. Mover cartão, escrever na evolução e concluir tarefa ficam só no navegador de quem mexe.
+- **Etapas:** "Abordar por WhatsApp" passou a "Abordar por canais de apoio". Nas tarefas, o prazo vencido aparece como "A fazer", sem o termo "Atrasada".
+- **Visual:** fonte Montserrat em pesos leves, logotipo da SempreTech em branco na barra lateral e os blocos "Painel" e "Leads" em molduras separadas, com faixa azul de título.
 - **Propostas visuais:** `ofertas.py` gera a página de oferta das contas estudadas e das que estão na etapa de apresentar a proposta personalizada (47 em 07/10), em `docs/ofertas/`, com um índice e a mensagem pronta de cada conta. Sem JavaScript, com as fotos embutidas. Para gerar de novo: `uv run python ofertas.py`.
 - **PDF de cada proposta:** `uv run python ofertas.py --pdf` gera em `docs/ofertas/pdf/` os PDFs que faltam (caderno de 7 páginas em A4 deitado; usa o Chrome ou o Edge instalado). `--pdf-refazer` gera todos de novo.
 - **Na ficha do lead:** os botões "Visualizar proposta" e "Baixar proposta para envio" (PDF ou HTML) aparecem em todas as abas, e a aba "Proposta visual" mostra a página. As contas da primeira rodada usam o combo Escritório em Dia.
@@ -35,7 +38,7 @@ As ofertas das contas novas são os combos C1 a C7 (Estação Criativa, Laborat�
 
 ## Números de 05/10
 
-- 22 contas na carteira (26 no início; saíram Hullo, UNIFTC, Conterp e UCSal).
+- 22 contas na carteira daquele dia (26 no início; saíram Hullo, UNIFTC, Conterp e UCSal).
 - 22 contas ligadas, 10 atendidas.
 - 14 contas na esteira 1 (abordagem inicial), 7 na esteira 2 (proposta objetiva), 1 encerrada.
 
@@ -58,7 +61,7 @@ Em 07/10 foram marcadas como revenda 18 das 25 contas de "Técnicos e assistênc
 ## Esteira 1: abordagem inicial
 
 - Retorno combinado: Online Gestão, Polo Logística (em horário comercial, pela manhã).
-- Abordar por WhatsApp: Projet (71) 98818-3740, Escola Rembrandt (71) 99913-2108.
+- Abordar por canais de apoio (WhatsApp): Projet (71) 98818-3740, Escola Rembrandt (71) 99913-2108.
 - Nova tentativa: ECMAN, Bahia Logística, Conceito Brasil, Grupo LAS, Line (06/10), TEL (06/10), Labchecap, Construtora Lustosa (telefone fora de área).
 - Iplasa: informática terceirizada; pedir compras ou o administrativo.
 - EPMAN: ligação falhou e o CNPJ consta como baixado; testar o (71) 3111-9493 uma vez.
@@ -68,14 +71,17 @@ Encerrada: Salvador Armazéns Gerais (sem interesse).
 ## Pendências
 
 - Enviar os três e-mails e as três mensagens de WhatsApp já redigidos (OCC, Santacruz, Tidelli; Total Atacado, Projet, Escola Rembrandt).
-- Importar no Callix as contas novas, a começar pelas 15 da semana 1, e tirar da campanha as 13 que saíram.
-- Rever as propostas da esteira 2 antes do envio: os preços do site subiram entre 05/10 e 06/10 (o i3 6100 passou de R$ 1.449,99 para R$ 1.659,99), e a referência do posto de trabalho passou para o i3 10100, de R$ 1.920,91.
+- Importar no Callix as contas novas, a começar pelas 15 da semana 1. As 13 contas antigas voltaram ao painel em 07/10 e seguem na campanha.
+- As 7 contas da esteira 2 têm proposta pronta para baixar no painel (HTML e PDF), no combo Escritório em Dia com 15% de desconto. O combo foi escolhido pela entrada "computador e nobreak" do estudo de cada conta; confirmar se alguma pediu outra coisa por telefone.
+- Confirmar com a SempreTech a validade e as condições do desconto de 15% (prazo, quantidade mínima, forma de pagamento); a proposta não traz nenhuma.
+- Definir o tratamento das 18 revendas: tabela própria, outra oferta ou saída da campanha.
+- O disco C: da máquina tem cerca de 4,5 GB livres; a geração dos PDFs chegou a enchê-lo em 07/10.
 - Confirmar com a SempreTech os itens da lista "A confirmar" do playbook, a começar pelo posicionamento "especialistas em logística e performance em informática" e pelos produtos fora do site.
-- Criar as qualificações no Callix e tirar da lista da campanha as quatro contas removidas.
+- Criar as qualificações no Callix e tirar da lista da campanha as quatro contas removidas (Hullo, UNIFTC, Conterp e UCSal).
 - As ligações de 05/10 não passaram pelo Callix: foram registradas à mão em `tentativas.json`, sem gravação nem transcrição.
 
 ## Como atualizar
 
-1. Registrar o resultado de cada contato em `tentativas.json` (conta, quando, nota, qualificação, etapa, se conversou, e, se quiser fixar o prazo da tarefa, `prazo` no formato `2026-10-08`). Etapas mudadas no kanban e tarefas concluídas no painel ficam só no navegador de quem mexeu: o kanban tem um botão que copia os movimentos prontos para colar neste arquivo.
-2. `uv run python main.py` sincroniza o Callix e regenera o painel e o relatório do cliente em `docs/`.
+1. Registrar o resultado de cada contato em `tentativas.json` (conta, quando, nota, qualificação, etapa, se conversou, e, se quiser fixar o prazo da tarefa, `prazo` no formato `2026-10-08`). Etapas mudadas no kanban, textos escritos em "Evolução até esta etapa" e tarefas concluídas no painel ficam só no navegador de quem mexeu: o kanban tem um botão que copia os movimentos prontos para colar neste arquivo.
+2. `uv run python main.py` sincroniza o Callix e regenera o painel e o relatório do cliente em `docs/`. Se mudou conta, combo, preço ou etapa de proposta, rodar antes `uv run python ofertas.py --pdf` para atualizar as propostas.
 3. Um único `git push` publica os dois endereços. Publicar em lote: envios seguidos cancelam a publicação que está na fila.
