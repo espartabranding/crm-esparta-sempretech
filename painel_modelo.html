@@ -771,7 +771,7 @@ const selo = (txt, cor) => `<span class="selo" style="--c:var(${cor})">${esc(txt
 const seloPrazo = t => t.sit==="feita" ? selo("Concluída","--verde") : t.prazo ? selo((t.sit==="atrasada"?"A fazer · ":t.sit==="hoje"?"Hoje · ":"")+dataCurta(t.prazo), PRAZO[t.sit].c) : "";
 
 /* Kanban no molde do GBOEX: filete com o tom da etapa (aberta azul, ganho verde, perdido vermelho), contagem e
-   total por coluna, cartão com valor e dias na etapa. Arrastar muda a etapa só neste navegador; o registro
+   cartão com os dias na etapa. Arrastar muda a etapa só neste navegador; o registro
    definitivo continua sendo o tentativas.json, e o botão de copiar gera as linhas para ele. */
 const KB = [
   ["nova","Não abordada","--f-nova"],
@@ -813,25 +813,24 @@ function kanban(){
   const lista = C.filter(c=>!kbSeg || c.segmento===kbSeg), ordemOnda = Object.keys(ONDA);
   const vez = c => ordemOnda.indexOf(c.onda)+1 || 9;
   const ordem = (a,b) => vez(a)-vez(b) || nota(b)-nota(a) || a.empresa.localeCompare(b.empresa);
-  const valor = l => l.reduce((s,c)=>s+(c.valor_referencia||0),0);
   const porConta = new Map(listaTarefas().filter(t=>t.conta && t.sit!=="feita").map(t=>[t.conta.id, t]));
   const cartao = (c, cor) => { const k = colunaDe(c), ini = entradaNaEtapa(c), t = porConta.get(c.id), dias = ini && k!=="nova" ? Math.max(0, diasEntre(diaSP(ini), HOJE)) : null;
     return `<article class="kcard" style="--c:var(${cor})" ${CLIENTE?"":'draggable="true"'} data-kb="${c.id}" data-ir="lead/${c.id}" tabindex="0" title="${esc(c.chamadas[0]?.nota||"")}">
       <b>${esc(c.empresa)}</b><small>${esc(entrada(c).nome)} · ${esc(c.segmento)}</small>
-      <div class="kv"><span>${c.valor_referencia?brl(c.valor_referencia):"Sem valor"}</span><small>${dias!=null ? (dias===1?"1 dia na etapa":`${dias} dias na etapa`) : esc(ONDA[c.onda]&&c.onda!=="base"?ONDA[c.onda]:"Base de 300")}</small></div>
+      <div class="kv"><small>${dias!=null ? (dias===1?"1 dia na etapa":`${dias} dias na etapa`) : esc(ONDA[c.onda]&&c.onda!=="base"?ONDA[c.onda]:"Base de 300")}</small></div>
       <div class="kf"><span>${esc(contatoDe(c) ? "Contato: "+contatoDe(c) : c.cidade)}</span>${t && t.sit!=="atrasada"?seloPrazo(t):""}</div>
       ${MOV[c.id]?`<small style="color:var(--ambar); margin-top:6px">Movida neste navegador</small>`:""}
       ${(()=>{ const txt = relatorioDe(c), linhas = Math.min(14, Math.max(3, txt.split("\n").reduce((n,l)=>n+Math.max(1, Math.ceil(l.length/30)), 0)));
         return `<details class="krel" data-semir ${k!=="nova"?"open":""}><summary>Evolução até esta etapa</summary>
         <textarea data-rel="${c.id}" rows="${linhas}" ${CLIENTE?"readonly":""} placeholder="O que aconteceu em cada contato e o que levou a conta a esta etapa.">${esc(txt)}</textarea></details>` })()}</article>` };
   const coluna = ([k,t,cor]) => { const l = lista.filter(c=>colunaDe(c)===k).sort(ordem), corta = k==="nova" && !kbTudo && l.length>LIMITE;
-    return `<section class="kcol" data-col="${k}" style="--c:var(${cor})"><header><h3><span class="kfase">${t}</span><span class="kn">${l.length}</span></h3><small>${brl(valor(l))}</small></header>
+    return `<section class="kcol" data-col="${k}" style="--c:var(${cor})"><header><h3><span class="kfase">${t}</span><span class="kn">${l.length}</span></h3></header>
       <div class="kcards">${(corta?l.slice(0,LIMITE):l).map(c=>cartao(c,cor)).join("") || `<p class="kvazio">Nenhuma conta aqui.</p>`}
       ${corta?`<button class="chip" data-kbtudo>Mostrar as outras ${l.length-LIMITE}</button>`:""}</div></section>` };
   const segs = contar(C, c=>c.segmento);
   return `
   <div class="cab"><div><div class="olho">CRM da campanha · uma coluna por etapa</div><h1>Kanban</h1>
-    <p class="meta">${lista.filter(c=>c.sit!=="pendente").length} contas em andamento, ${lista.filter(c=>c.sit==="pendente").length} não abordadas${kbSeg?`, em ${esc(kbSeg)}`:""}. O total de cada coluna é o valor de referência das contas estudadas.</p></div></div>
+    <p class="meta">${lista.filter(c=>c.sit!=="pendente").length} contas em andamento, ${lista.filter(c=>c.sit==="pendente").length} não abordadas${kbSeg?`, em ${esc(kbSeg)}`:""}.</p></div></div>
   <div class="chips" style="margin-bottom:14px"><button class="chip ${kbSeg?"":"ok"}" data-kbseg="">Todas (${C.length})</button>${segs.map(([s,n])=>`<button class="chip ${kbSeg===s?"ok":""}" data-kbseg="${esc(s)}">${esc(s)} (${n})</button>`).join("")}</div>
   ${CLIENTE?"":`<div class="faixa-et"><span>Arraste um cartão para mudar a etapa. A mudança e o que for escrito em "Evolução até esta etapa" ficam só neste navegador até entrarem no <span class="mono">tentativas.json</span>.</span>
     ${movidas?`<button class="chip ok" data-kbcopiar>Copiar ${movidas} ${movidas>1?"movimentos":"movimento"} para o tentativas.json</button><button class="chip" data-kbdesfazer>Desfazer</button>`:""}</div>`}
