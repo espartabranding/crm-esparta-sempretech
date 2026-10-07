@@ -108,6 +108,8 @@ h3{font:600 12px/1.3 var(--texto); letter-spacing:.06em; text-transform:uppercas
 .oferta .t{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:baseline; margin-bottom:6px}
 .oferta .t b{font-weight:600}
 .preco{font:500 13px var(--mono); color:var(--tinta-2)}
+iframe.proposta{display:block; width:100%; height:82vh; margin-top:18px; border:1px solid var(--linha); border-radius:14px; background:#fff}
+a.chip{text-decoration:none; color:inherit}
 .obj{border-top:1px solid var(--linha); padding:14px 0}
 .obj:first-child{border-top:0; padding-top:0}
 .obj:last-child{padding-bottom:0}
@@ -881,16 +883,28 @@ document.addEventListener("dragover", e=>{ const col = e.target.closest?.("[data
 document.addEventListener("dragleave", e=>{ e.target.closest?.("[data-col]")?.classList.remove("alvo") });
 document.addEventListener("drop", e=>{ const col = e.target.closest?.("[data-col]"); if (!col) return; e.preventDefault(); mover(e.dataTransfer.getData("text/plain"), col.dataset.col) });
 
+/* Proposta visual da conta: a página de oferta gerada por ofertas.py, com os produtos e os preços da SempreTech */
+const OFERTAS = location.protocol==="file:" && /\/data\/[^/]*$/.test(location.pathname) ? "../docs/ofertas/" : CLIENTE ? "../ofertas/" : "ofertas/";
+function proposta(c){
+  const p = c.proposta;
+  if (!p) return `<div class="folha"><p class="vazio">Esta conta ainda não tem combo definido, por isso não há proposta visual.</p></div>`;
+  const pub = "https://espartabranding.github.io/crm-esparta-sempretech/ofertas/"+p.arquivo;
+  return `<div class="folha"><div class="oferta"><div class="t"><b>${esc(p.combo)}</b><span class="preco">R$ ${p.total.toLocaleString("pt-BR",{minimumFractionDigits:2})} por ${esc(p.unidade)}, preço de site</span></div>
+      <div class="chips"><a class="chip" href="${OFERTAS+esc(p.arquivo)}" target="_blank" rel="noopener">Abrir a proposta em nova aba</a>${!CLIENTE && p.whats?`<a class="chip ok" href="${esc(p.whats)}" target="_blank" rel="noopener">Enviar pelo WhatsApp da conta</a>`:""}</div>
+      ${CLIENTE?"":`<p class="obs" style="margin:14px 0 6px">Mensagem que acompanha o link. Troque [Seu nome] antes de enviar.</p>${fala(p.mensagem)}<p class="obs">Link da proposta: ${link(pub,pub)}</p>`}</div></div>
+    <iframe class="proposta" src="${OFERTAS+esc(p.arquivo)}" title="Proposta visual para ${esc(c.empresa)}" loading="lazy"></iframe>`;
+}
+
 function lead(r){
   const c = C.find(x=>x.id===r.id), a = c.analise;
   const site = a?.contato_publico?.site || c.site, tel = telefone(c);
-  const abas = [["ligacao","Ligação"],["analise","Dados da empresa"],["bi","BI da conta"],["historico",`Histórico de contatos (${c.chamadas.length})`]].filter(a=>!(CLIENTE && a[0]==="ligacao"));
+  const abas = [["ligacao","Ligação"],["proposta","Proposta visual"],["analise","Dados da empresa"],["bi","BI da conta"],["historico",`Histórico de contatos (${c.chamadas.length})`]].filter(a=>!(CLIENTE && a[0]==="ligacao"));
   return `
   <div class="cab"><div><div class="olho">${esc(c.segmento)} · ${esc(c.cidade)}${ONDA[c.onda]?` · ${ONDA[c.onda]}`:""}</div><h1>${esc(c.empresa)}</h1>
     <div class="meta">${pill(SIT[c.sit].t,SIT[c.sit].c)}${a?conf(a):""}${tel?telLink(tel):""}${site?link(site,dominio(site)):""}<a href="#lead.${c.id}.${r.sub}" target="_blank" rel="noopener" style="font-family:var(--texto)">Abrir em nova aba</a></div></div>
     <div class="nota"><b>${nota(c)}</b><span>fit, de 12</span></div></div>
   <div class="subabas" role="tablist">${abas.map(([k,t])=>`<button role="tab" aria-selected="${r.sub===k}" data-ir="lead/${c.id}/${k}">${t}</button>`).join("")}</div>
-  ${r.sub==="analise" ? analise(c) : r.sub==="historico" ? historico(c) : r.sub==="bi" ? bi(c) : ligacao(c)}`;
+  ${r.sub==="proposta" ? proposta(c) : r.sub==="analise" ? analise(c) : r.sub==="historico" ? historico(c) : r.sub==="bi" ? bi(c) : ligacao(c)}`;
 }
 
 let chaveAnterior = "";

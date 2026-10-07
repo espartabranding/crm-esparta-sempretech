@@ -113,10 +113,14 @@ def _analise(conta_id: str) -> dict | None:
 
 def montar(db: sqlite3.Connection, plano: dict, catalogo: dict, playbook: dict) -> dict:
     db.row_factory = sqlite3.Row
+    # Proposta visual de cada conta, gravada por ofertas.py.
+    arquivo = RAIZ / "propostas.json"
+    propostas = json.loads(arquivo.read_text(encoding="utf-8")) if arquivo.exists() else {}
     contas = [
         {
             **c,
             "chamadas": [],
+            "proposta": propostas.get(c["id"]),
             "ofertas": _ofertas(c, catalogo["regras"]),
             "analise": _analise(c["id"]),
         }

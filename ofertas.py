@@ -22,6 +22,7 @@ from urllib.parse import quote
 RAIZ = Path(__file__).parent
 SAIDA = RAIZ / "docs" / "ofertas"
 FOTOS = RAIZ / "ofertas_img"
+PROPOSTAS = RAIZ / "propostas.json"
 # Coleta do site da SempreTech (texto, preço e fotos de cada produto), feita em 06/10/2026.
 SITE = Path(os.environ.get("OFERTAS_SITE", Path.home() / "Desktop" / "SempreTech" / "site"))
 ENDERECO = "https://espartabranding.github.io/crm-esparta-sempretech/ofertas/"
@@ -588,7 +589,7 @@ def indice(linhas: list[dict]) -> str:
     corpo = "".join(
         f"""<tr><td><b>{esc(linha['empresa'])}</b><small>{esc(linha['ordem'])} · {esc(linha['cidade'])}</small></td>
 <td>{esc(linha['combo'])}<small>{reais(linha['total'])} por {linha['unidade']}</small></td>
-<td><a href="{linha['arquivo']}">Ver a oferta</a><small><a href="{esc(linha['whats'])}" target="_blank" rel="noopener">Abrir o WhatsApp da conta</a></small>
+<td><a href="{linha['arquivo']}">Ver a oferta</a><small>{f'<a href="{esc(linha["whats"])}" target="_blank" rel="noopener">Abrir o WhatsApp da conta</a>' if linha['whats'] else 'Sem telefone'}</small>
 <details><summary>Mensagem</summary><p>{esc(linha['mensagem'])}</p></details></td></tr>"""
         for linha in linhas
     )
@@ -601,7 +602,7 @@ h1{{font-size:30px;letter-spacing:-.02em;margin:0 0 6px}}p{{margin:0 0 18px;colo
 th,td{{text-align:left;padding:12px 14px;border-bottom:1px solid #DDE2F0;vertical-align:top}}th{{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:#5A6685}}
 small{{display:block;color:#5A6685;font-size:13px}}a{{color:#2B50FF}}details p{{margin:8px 0 0;color:#0E1730;max-width:52ch}}summary{{cursor:pointer;color:#2B50FF;font-size:13px}}</style></head>
 <body><main><h1>Ofertas por WhatsApp</h1>
-<p>Uma página de oferta para cada uma das {len(linhas)} contas estudadas. O link "Abrir o WhatsApp da conta" já leva a mensagem pronta; troque [Seu nome] antes de enviar. Envie só para número que a empresa divulga para contato comercial ou com permissão dada por telefone.</p>
+<p>Uma página de oferta para cada uma das {len(linhas)} contas com combo definido. O link "Abrir o WhatsApp da conta" já leva a mensagem pronta; troque [Seu nome] antes de enviar. Envie só para número que a empresa divulga para contato comercial ou com permissão dada por telefone.</p>
 <div class="rol"><table><thead><tr><th>Conta</th><th>Oferta</th><th>Enviar</th></tr></thead><tbody>{corpo}</tbody></table></div></main></body></html>
 """
 
@@ -610,10 +611,11 @@ def gerar() -> None:
     SAIDA.mkdir(parents=True, exist_ok=True)
     combos = montar_combos()
     plano = json.loads((RAIZ / "contas.json").read_text(encoding="utf-8"))
-    ordem = {"s1": "Semana 1", "s2": "Semana 2", "validar": "Validar dados antes"}
-    linhas = []
+    ordem = {"s1": "Semana 1", "s2": "Semana 2", "validar": "Validar dados antes", "base": "Base, sem estudo individual"}
+    linhas, propostas = [], {}
     for conta in plano["contas"]:
-        if conta.get("onda") not in ordem:
+        # Toda conta com combo definido ganha a sua página; as da primeira rodada, sem combo, ficam de fora.
+        if not conta.get("combo"):
             continue
         arquivo = f"{slug(conta['empresa'])}.html"
         (SAIDA / arquivo).write_text(pagina(conta, combos), encoding="utf-8")
@@ -623,10 +625,14 @@ def gerar() -> None:
             f"Preparamos uma proposta {c['de']} {c['nome']} para {conta['empresa']}: {ENDERECO}{arquivo} "
             f"Posso apresentar os detalhes por aqui ou em uma ligação?"
         )
-        numero = re.sub(r"\D", "", conta["telefone"])
-        linhas.append({"empresa": conta["empresa"], "cidade": conta["cidade"], "ordem": ordem[conta["onda"]], "combo": c["nome"], "total": c["total"], "unidade": c["unidade"],
-                       "arquivo": arquivo, "mensagem": mensagem, "whats": f"https://wa.me/{numero}?text={quote(mensagem)}"})
+        numero = re.sub(r"\D", "", conta.get("telefone") or "")
+        linha = {"empresa": conta["empresa"], "cidade": conta["cidade"], "ordem": ordem.get(conta["onda"], ""), "combo": c["nome"], "total": c["total"], "unidade": c["unidade"],
+                 "arquivo": arquivo, "mensagem": mensagem, "whats": f"https://wa.me/{numero}?text={quote(mensagem)}" if numero else ""}
+        linhas.append(linha)
+        propostas[conta["id"]] = {k: linha[k] for k in ("combo", "total", "unidade", "arquivo", "mensagem", "whats")}
     (SAIDA / "index.html").write_text(indice(linhas), encoding="utf-8")
+    # O painel lê este arquivo para mostrar a proposta dentro da ficha de cada conta.
+    PROPOSTAS.write_text(json.dumps(propostas, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{len(linhas)} ofertas em {SAIDA}")
 
 
