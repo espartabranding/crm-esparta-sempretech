@@ -39,6 +39,10 @@ As ofertas das contas novas são os combos C1 a C7 (Estação Criativa, Laborat�
 - 22 contas ligadas, 10 atendidas.
 - 14 contas na esteira 1 (abordagem inicial), 7 na esteira 2 (proposta objetiva), 1 encerrada.
 
+## Revendas
+
+Em 07/10 foram marcadas como revenda 18 das 25 contas de "Técnicos e assistências" (campo `revenda` em `contas.json`): as que o Google Maps classifica também como loja (de informática, de acessórios, de celulares, de computadores usados) ou fornecedor de peças. É indício público, não confirmação por telefone. As 7 sem categoria de loja ficaram como assistência: Graftecno, Tecno Digital, Merontechx, Inforteck, Gigatech, Central Informática e ESA Tech.
+
 ## Esteira 2: proposta objetiva
 
 | Conta | Contato | Próximo passo |

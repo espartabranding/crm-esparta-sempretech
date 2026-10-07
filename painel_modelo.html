@@ -351,10 +351,10 @@ function rota(){
 
 function trilho(){
   const r = rota(), q = $("busca").value.trim().toLowerCase();
-  const vis = ordenadas.filter(c=>!q || (c.empresa+" "+c.segmento+" "+c.cidade).toLowerCase().includes(q));
+  const vis = ordenadas.filter(c=>!q || (c.empresa+" "+c.segmento+" "+c.cidade+(c.revenda?" revenda":"")).toLowerCase().includes(q));
   $("conta").textContent = vis.length;
   $("leads").innerHTML = vis.map(c=>`<button class="aba" data-ir="lead/${c.id}" ${r.id===c.id?'aria-current="page"':""} title="${SIT[c.sit].t}">
-    <i class="pt" style="--c:var(${SIT[c.sit].c})"></i><span><span class="n">${esc(c.empresa)}</span><span class="s">${esc(c.segmento)}</span></span><span class="f">${nota(c)}</span></button>`).join("")
+    <i class="pt" style="--c:var(${SIT[c.sit].c})"></i><span><span class="n">${esc(c.empresa)}</span><span class="s">${esc(c.segmento)}${c.revenda?" · revenda":""}</span></span><span class="f">${nota(c)}</span></button>`).join("")
     || `<div class="rotulo">Nenhum lead encontrado</div>`;
   document.querySelectorAll(".nav .aba").forEach(b=>{ if (b.dataset.ir===r.v) b.setAttribute("aria-current","page"); else b.removeAttribute("aria-current") });
 }
@@ -766,7 +766,7 @@ function kanban(){
   const porConta = new Map(listaTarefas().filter(t=>t.conta && t.sit!=="feita").map(t=>[t.conta.id, t]));
   const cartao = (c, cor) => { const k = colunaDe(c), ini = entradaNaEtapa(c), t = porConta.get(c.id), dias = ini && k!=="nova" ? Math.max(0, diasEntre(diaSP(ini), HOJE)) : null;
     return `<article class="kcard" style="--c:var(${cor})" ${CLIENTE?"":'draggable="true"'} data-kb="${c.id}" data-ir="lead/${c.id}" tabindex="0" title="${esc(c.chamadas[0]?.nota||"")}">
-      <b>${esc(c.empresa)}</b><small>${esc(entrada(c).nome)} · ${esc(c.segmento)}</small>
+      <b>${esc(c.empresa)}</b><small>${esc(entrada(c).nome)} · ${esc(c.segmento)}${c.revenda?" · revenda":""}</small>
       <div class="kv"><small>${dias!=null ? (dias===1?"1 dia na etapa":`${dias} dias na etapa`) : esc(ONDA[c.onda]&&c.onda!=="base"?ONDA[c.onda]:"Base de 300")}</small></div>
       <div class="kf"><span>${esc(contatoDe(c) ? "Contato: "+contatoDe(c) : c.cidade)}</span>${t && t.sit!=="atrasada"?seloPrazo(t):""}</div>
       ${MOV[c.id]?`<small style="color:var(--ambar); margin-top:6px">Movida neste navegador</small>`:""}
@@ -896,7 +896,7 @@ function lead(r){
   const abas = [["ligacao","Ligação"],["proposta","Proposta visual"],["analise","Dados da empresa"],["bi","BI da conta"],["historico",`Histórico de contatos (${c.chamadas.length})`]].filter(a=>!(CLIENTE && a[0]==="ligacao"));
   return `
   <div class="cab"><div><div class="olho">${esc(c.segmento)} · ${esc(c.cidade)}${ONDA[c.onda]?` · ${ONDA[c.onda]}`:""}</div><h1>${esc(c.empresa)}</h1>
-    <div class="meta">${pill(SIT[c.sit].t,SIT[c.sit].c)}${a?conf(a):""}${tel?telLink(tel):""}${site?link(site,dominio(site)):""}<a href="#lead.${c.id}.${r.sub}" target="_blank" rel="noopener" style="font-family:var(--texto)">Abrir em nova aba</a></div>${acoesProposta(c)}</div>
+    <div class="meta">${pill(SIT[c.sit].t,SIT[c.sit].c)}${c.revenda?`<span title="No Google Maps: ${esc(c.revenda.join(", "))}">${pill("Revenda","--ambar")}</span>`:""}${a?conf(a):""}${tel?telLink(tel):""}${site?link(site,dominio(site)):""}<a href="#lead.${c.id}.${r.sub}" target="_blank" rel="noopener" style="font-family:var(--texto)">Abrir em nova aba</a></div>${acoesProposta(c)}</div>
     <div class="nota"><b>${nota(c)}</b><span>fit, de 12</span></div></div>
   <div class="subabas" role="tablist">${abas.map(([k,t])=>`<button role="tab" aria-selected="${r.sub===k}" data-ir="lead/${c.id}/${k}">${t}</button>`).join("")}</div>
   ${r.sub==="proposta" ? proposta(c) : r.sub==="analise" ? analise(c) : r.sub==="historico" ? historico(c) : r.sub==="bi" ? bi(c) : ligacao(c)}`;
