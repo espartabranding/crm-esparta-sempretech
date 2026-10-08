@@ -86,6 +86,29 @@
       ]
     }
   ],
+  "outras_ofertas": {
+    "origem": "Folhetos enviados pela SempreTech em 07/10/2026. Nenhum traz preço: o orçamento é feito sob consulta, e o desconto das propostas não se aplica a estas ofertas.",
+    "itens": [
+      {"id": "energia-solar", "nome": "Energia solar", "tipo": "Serviço", "pedido": "energia solar",
+       "resumo": "Projeto personalizado, aprovação, documentação e instalação, com economia de até 30% na conta de energia e investimento inicial de R$ 0,00.",
+       "pontos": ["Economia de até 30% na conta de energia", "Investimento inicial de R$ 0,00", "Parceiro autorizado Coelba", "Baixa manutenção"]},
+      {"id": "aluguel-gamer", "nome": "Aluguel de máquinas gamers", "tipo": "Locação", "pedido": "aluguel de máquinas gamers",
+       "resumo": "Máquinas de alto desempenho para eventos, campeonatos, feiras e treinamentos, com suporte técnico, entrega e retirada.",
+       "pontos": ["Planos por diária, semana ou mês", "Suporte técnico durante o evento", "Entrega e retirada"]},
+      {"id": "aluguel-home", "nome": "Aluguel de máquinas home", "tipo": "Locação", "pedido": "aluguel de computadores",
+       "resumo": "Computadores para home office, estudo e pequenas empresas, com suporte técnico, manutenção e trocas inclusas.",
+       "pontos": ["Planos mensal, semestral ou anual", "Manutenção e trocas inclusas", "Suporte técnico especializado"]},
+      {"id": "kit-pdv", "nome": "Kit PDV", "tipo": "Produto", "pedido": "Kit PDV",
+       "resumo": "Ponto de venda completo: CPU, monitor LED, teclado, mouse, leitor de código de barras e impressora térmica, com o sistema PDV instalado e configurado.",
+       "pontos": ["CPU, monitor LED, teclado e mouse", "Leitor de código de barras", "Impressora térmica", "Sistema PDV instalado e configurado"]},
+      {"id": "bobinas-termicas", "nome": "Bobinas térmicas 80 x 40", "tipo": "Produto", "pedido": "bobinas térmicas 80 x 40",
+       "resumo": "Bobina de 80 mm de largura por 40 m de comprimento, em caixa com 30 rolos, para cupom fiscal e PDV.",
+       "pontos": ["80 mm x 40 m", "Caixa com 30 rolos", "Para cupom fiscal e PDV"]},
+      {"id": "fardamentos", "nome": "Fardamentos", "tipo": "Produto", "pedido": "fardamentos",
+       "resumo": "Uniformes em malha PV (67% poliéster e 33% viscose), do P ao XG, em preto, azul-marinho e cinza mescla.",
+       "pontos": ["Malha PV: 67% poliéster e 33% viscose", "Tamanhos do P ao XG", "Preto, azul-marinho e cinza mescla"]}
+    ]
+  },
   "servicos": "Assistência técnica própria: limpeza, diagnóstico completo e teste de componentes, com diagnóstico em até 3 dias úteis. Preço conforme a configuração da máquina.",
   "situacoes": {
     "no_site": "No site",

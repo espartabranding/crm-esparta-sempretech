@@ -20,6 +20,7 @@ import sys
 import tempfile
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor
+from functools import cache
 from io import BytesIO
 from pathlib import Path
 from urllib.parse import quote
@@ -38,7 +39,7 @@ html,body{width:1440px}
 body{padding:0}
 .barra,.dedo{display:none}
 .faixa{width:100%;max-width:1300px;box-sizing:border-box;padding:0 60px}
-.topo,.painel,.perto,.ainda,.conta,.fecho{height:1018px;box-sizing:border-box;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:0;padding-bottom:0;break-inside:avoid;break-after:page}
+.topo,.painel,.perto,.ainda,.conta,.mais,.fecho{height:1018px;box-sizing:border-box;overflow:hidden;display:flex;flex-direction:column;justify-content:center;padding-top:0;padding-bottom:0;break-inside:avoid;break-after:page}
 .heroi{grid-template-columns:.92fr 1.08fr;column-gap:10px;grid-template-areas:"abre palco" "resto palco";align-items:start;margin-top:26px}
 .abre{align-self:end}
 h1{font-size:90px}
@@ -75,6 +76,12 @@ h1{font-size:90px}
 .conta h2{font-size:84px}
 .total b{font-size:100px}
 .lotes b{font-size:30px}
+.mais h2{font-size:62px;margin-top:12px}
+.frentes{grid-template-columns:1fr 1fr;gap:14px 22px;margin-top:20px}
+.frente{flex-direction:row;break-inside:avoid}
+.frente img{flex:0 0 143px;width:143px;height:215px;aspect-ratio:auto}
+.frente div{padding:16px 20px}
+.frente h3{font-size:28px}
 .fecho{height:928px;break-after:auto}
 .fecho h2{font-size:150px}
 .fecho p{font-size:20px}
@@ -92,7 +99,7 @@ ENDERECO = "https://espartabranding.github.io/crm-esparta-sempretech/ofertas/"
 WHATSAPP = "557130349662"
 TELEFONE = "(71) 3034-9662"
 CONSULTA = "06/10/2026"
-DESCONTO = 15  # por cento, sobre a soma dos itens a preço de site, em todas as propostas
+DESCONTO = 30  # por cento, sobre a soma dos itens a preço de site, em todas as propostas
 GALERIA = 4  # fotos do produto principal
 DESTAQUES = 3  # itens que ganham painel inteiro; os demais vão para a grade
 
@@ -456,6 +463,21 @@ h1 em{font-style:normal;color:var(--azul)}
 .extra b{display:block;font:400 28px/1 var(--cartaz);text-transform:uppercase;letter-spacing:.012em;margin-top:10px}
 .extra p{font-size:14px;color:#D5DBEA;margin-top:6px;line-height:1.45}
 
+/* Outras ofertas da SempreTech, sem preço */
+.mais{padding:clamp(56px,9vw,110px) 0;background:var(--branco)}
+.mais h2{font-size:clamp(40px,10.5vw,84px);margin-top:18px}
+.mais h2 em{font-style:normal;color:var(--azul)}
+.mais .texto{max-width:54ch}
+.frentes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:30px}
+.frente{display:flex;flex-direction:column;height:100%;background:#fff;border:1px solid var(--linha);border-radius:18px;overflow:hidden;text-decoration:none;transition:border-color .25s,transform .25s}
+.frente:hover{border-color:var(--azul);transform:translateY(-3px)}
+.frente img{width:100%;aspect-ratio:2/3;object-fit:cover;object-position:top}
+.frente div{display:flex;flex-direction:column;flex:1;padding:14px 14px 16px}
+.frente small{font:600 10.5px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--azul)}
+.frente h3{font:400 clamp(20px,5.2vw,28px)/1.04 var(--cartaz);text-transform:uppercase;letter-spacing:.012em;margin-top:8px}
+.frente p{font-size:13.5px;color:var(--tinta-2);margin-top:8px;line-height:1.45}
+.frente span{margin-top:auto;padding-top:14px;font:600 11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase}
+
 .fecho{position:relative;text-align:center;padding:clamp(72px,12vw,150px) 0;background:linear-gradient(180deg,#fff,var(--fundo))}
 .fecho h2{font-size:clamp(60px,17vw,168px)}
 .fecho h2 em{font-style:normal;color:var(--azul)}
@@ -486,6 +508,7 @@ footer{padding:22px 0 12px;font-size:12.5px;color:var(--tinta-2);border-top:1px 
 }
 @media (min-width:700px){
   .itens{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .frentes{grid-template-columns:repeat(3,minmax(0,1fr))}
   .ganhos{grid-template-columns:repeat(4,1fr)}
   .ganhos li,.ganhos li:nth-child(even){padding:16px 14px 16px 34px;border-right:1px solid var(--linha)}
   .ganhos li:last-child{border-right:0}
@@ -512,6 +535,10 @@ footer{padding:22px 0 12px;font-size:12.5px;color:var(--tinta-2);border-top:1px 
   .dedo{display:none}
   .conta .faixa{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
   .itens{grid-template-columns:repeat(var(--colunas,3),minmax(0,1fr))}
+  .frentes{grid-template-columns:1fr 1fr;gap:18px 22px}
+  .frente{flex-direction:row}
+  .frente img{flex:0 0 170px;width:170px;height:255px;aspect-ratio:auto}
+  .frente div{padding:18px 22px}
 }
 @media (max-width:350px){
   .nota-t.n3,.nota-t.n4{display:none}
@@ -528,11 +555,47 @@ footer{padding:22px 0 12px;font-size:12.5px;color:var(--tinta-2);border-top:1px 
   .painel h2{clip-path:none!important}
   body{padding-bottom:0}
   .barra,.dedo{display:none}
-  .painel,.item,.galeria li,.lista li{break-inside:avoid}
+  .painel,.item,.galeria li,.lista li,.frente{break-inside:avoid}
 }
 """
 
 ICONE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2Zm0 1.800a8.200 8.200 0 0 1 7 12.500 8.200 8.200 0 0 1-11 2.900l-.400-.200-2.900.800.800-2.800-.300-.500A8.200 8.200 0 0 1 12 3.800Zm-3.300 4c-.200 0-.500 0-.700.300-.300.300-1 1-1 2.300s1 2.700 1.200 2.900c.100.200 2 3.200 5 4.300 2.400.900 2.900.700 3.400.700.500-.100 1.700-.700 1.900-1.300.200-.700.200-1.200.200-1.300-.100-.200-.300-.200-.600-.400l-1.900-.900c-.300-.100-.500-.200-.700.100l-.900 1.100c-.200.200-.300.200-.600.100-.300-.200-1.200-.500-2.300-1.400-.800-.800-1.400-1.700-1.600-2-.200-.300 0-.400.100-.600l.400-.500.300-.500c.100-.200 0-.400 0-.500l-.900-2c-.200-.500-.400-.500-.600-.500h-.600Z"/></svg>'
+
+
+@cache
+def _folhetos() -> tuple:
+    """Ofertas que a SempreTech divulga em folheto (catalogo.json), cada uma com o folheto reduzido e embutido."""
+    itens = json.loads((RAIZ / "catalogo.json").read_text(encoding="utf-8")).get("outras_ofertas", {}).get("itens", [])
+    saida = []
+    for item in itens:
+        arquivo = FOTOS / f"folheto-{item['id']}.webp"
+        if not arquivo.exists():
+            from PIL import Image
+
+            imagem = Image.open(SAIDA / "folhetos" / f"{item['id']}.jpg")
+            imagem.thumbnail((380, 570))
+            imagem.save(arquivo, "WEBP", quality=72)
+        saida.append((item, "data:image/webp;base64," + base64.b64encode(arquivo.read_bytes()).decode()))
+    return tuple(saida)
+
+
+def outras(empresa: str) -> str:
+    """As demais ofertas da SempreTech, sem preço: entram depois do resumo, em todas as propostas."""
+    if not _folhetos():
+        return ""
+
+    def cartao(item: dict, imagem: str) -> str:
+        mensagem = f"Olá. Gostaria de um orçamento de {item['pedido']} para {empresa}."
+        return f"""<li><a class="frente" href="{esc(f'https://wa.me/{WHATSAPP}?text={quote(mensagem)}')}" target="_blank" rel="noopener">
+    <img src="{imagem}" alt="Folheto: {esc(item['nome'])}" loading="lazy">
+    <div><small>{esc(item['tipo'])}</small><h3>{esc(item['nome'])}</h3><p>{esc(item['resumo'])}</p><span>Pedir orçamento →</span></div></a></li>"""
+
+    return f"""<section class="mais"><div class="faixa">
+  <p class="rotulo rola">Outras frentes</p>
+  <h2 class="cartaz rola">Também na <em>SempreTech</em></h2>
+  <p class="texto rola">Soluções que a SempreTech também fornece. O orçamento de cada uma é feito sob consulta.</p>
+  <ul class="frentes rola">{''.join(cartao(item, imagem) for item, imagem in _folhetos())}</ul>
+</div></section>"""
 
 
 def _titulo(texto: str) -> str:
@@ -643,6 +706,7 @@ def pagina(conta: dict, combos: dict) -> str:
     {f'<div class="extra rola"><img src="{extra["linhas"][0]["fotos"][0]}" alt="" loading="lazy"><div><p class="rotulo">Complemento sugerido</p><b>{esc(extra["nome"])}</b><p>{esc(extra["chamada"])} {reais(extra["total"])} por {extra["unidade"]}, com {DESCONTO}% de desconto.</p></div></div>' if extra else ''}
   </div>
 </div></section>
+{outras(empresa)}
 </main>
 
 <section class="fecho"><div class="faixa">

@@ -29,10 +29,11 @@ As ofertas das contas novas são os combos C1 a C7 (Estação Criativa, Laborat�
 - **Etapas:** "Abordar por WhatsApp" passou a "Abordar por canais de apoio". Nas tarefas, o prazo vencido aparece como "A fazer", sem o termo "Atrasada".
 - **Visual:** fonte Montserrat em pesos leves, logotipo da SempreTech em branco na barra lateral e os blocos "Painel" e "Leads" em molduras separadas, com faixa azul de título.
 - **Propostas visuais:** `ofertas.py` gera a página de oferta das contas estudadas e das que estão na etapa de apresentar a proposta personalizada (47 em 07/10), em `docs/ofertas/`, com um índice e a mensagem pronta de cada conta. Sem JavaScript, com as fotos embutidas. Para gerar de novo: `uv run python ofertas.py`.
-- **PDF de cada proposta:** `uv run python ofertas.py --pdf` gera em `docs/ofertas/pdf/` os PDFs que faltam (caderno de 7 páginas em A4 deitado; usa o Chrome ou o Edge instalado). `--pdf-refazer` gera todos de novo.
+- **PDF de cada proposta:** `uv run python ofertas.py --pdf` gera em `docs/ofertas/pdf/` os PDFs que faltam (caderno de 8 páginas em A4 deitado; usa o Chrome ou o Edge instalado). `--pdf-refazer` gera todos de novo.
 - **Na ficha do lead:** os botões "Visualizar proposta" e "Baixar proposta para envio" (PDF ou HTML) aparecem em todas as abas, e a aba "Proposta visual" mostra a página. As contas da primeira rodada usam o combo Escritório em Dia.
 - O kanban tem uma só etapa de proposta, "Apresentar a proposta personalizada"; o registro antigo "enviar" cai nela.
-- **Desconto:** desde 07/10 todas as propostas saem com 15% de desconto sobre a soma dos itens a preço de site (constante `DESCONTO` em `ofertas.py`). O preço de cada item continua sendo o do site; o desconto aparece na capa, no resumo e nos lotes.
+- **Desconto:** desde 08/10 todas as propostas saem com 30% de desconto (eram 15% em 07/10) sobre a soma dos itens a preço de site (constante `DESCONTO` em `ofertas.py`). O preço de cada item continua sendo o do site; o desconto aparece na capa, no resumo e nos lotes.
+- **Outras ofertas (08/10):** os seis folhetos enviados pela SempreTech em 07/10 (energia solar, aluguel de máquinas gamers, aluguel de máquinas home, Kit PDV, bobinas térmicas 80 x 40 e fardamentos) entram ao fim de cada proposta, na seção "Também na SempreTech", e na tela "Soluções e catálogo" do painel do SDR. Não têm preço, então ficam fora do desconto e saem como orçamento sob consulta. O cadastro está em `outras_ofertas`, no `catalogo.json`, e os folhetos em `docs/ofertas/folhetos/`.
 - O botão das ofertas leva ao WhatsApp do site da SempreTech, (71) 3034-9662; os preços são os de varejo do site em 06/10.
 - O CRM com banco e login está em outro projeto, `../SempreTech_CRM`, com a mesma carteira carregada.
 
@@ -72,8 +73,8 @@ Encerrada: Salvador Armazéns Gerais (sem interesse).
 
 - Enviar os três e-mails e as três mensagens de WhatsApp já redigidos (OCC, Santacruz, Tidelli; Total Atacado, Projet, Escola Rembrandt).
 - Importar no Callix as contas novas, a começar pelas 15 da semana 1. As 13 contas antigas voltaram ao painel em 07/10 e seguem na campanha.
-- As 7 contas da esteira 2 têm proposta pronta para baixar no painel (HTML e PDF), no combo Escritório em Dia com 15% de desconto. O combo foi escolhido pela entrada "computador e nobreak" do estudo de cada conta; confirmar se alguma pediu outra coisa por telefone.
-- Confirmar com a SempreTech a validade e as condições do desconto de 15% (prazo, quantidade mínima, forma de pagamento); a proposta não traz nenhuma.
+- As 7 contas da esteira 2 têm proposta pronta para baixar no painel (HTML e PDF), no combo Escritório em Dia com 30% de desconto. O combo foi escolhido pela entrada "computador e nobreak" do estudo de cada conta; confirmar se alguma pediu outra coisa por telefone.
+- Confirmar com a SempreTech a validade e as condições do desconto de 30% (prazo, quantidade mínima, forma de pagamento); a proposta não traz nenhuma.
 - Definir o tratamento das 18 revendas: tabela própria, outra oferta ou saída da campanha.
 - O disco C: da máquina tem cerca de 4,5 GB livres; a geração dos PDFs chegou a enchê-lo em 07/10.
 - Confirmar com a SempreTech os itens da lista "A confirmar" do playbook, a começar pelo posicionamento "especialistas em logística e performance em informática" e pelos produtos fora do site.

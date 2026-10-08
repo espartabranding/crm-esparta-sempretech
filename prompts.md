@@ -21,6 +21,7 @@ Só pode oferecer o que está neste catálogo (preços do site em 05/10/2026):
 - Headset: Intelbras CHS 40 RJ9 revisado R$ 59,90, CHS 40 USB R$ 347,96, Logitech H111 R$ 130,96
 - Teclado a partir de R$ 29,85, mouse a partir de R$ 14,85, kit sem fio Logitech MK270 R$ 259,90
 - Assistência técnica própria: limpeza, diagnóstico e teste de peças, diagnóstico em até 3 dias úteis
+- Sem preço informado, com orçamento sob consulta (folhetos de 07/10/2026): energia solar, aluguel de máquinas gamers, aluguel de máquinas home, Kit PDV com leitor e impressora térmica, bobinas térmicas 80 x 40 e fardamentos
 Não prometa notebook, impressora, smartphone, roteador, webcam, kit de CFTV com gravador, prazo de entrega, desconto ou condição para empresa: nada disso está confirmado. Se fizer sentido para a conta, vire pergunta ("vocês também compram...?").
 
 Conta: {empresa}, {segmento}, {cidade}. O que se sabe: {sinal, porte, site}.

@@ -253,6 +253,8 @@ td.num,th.num{text-align:right; font-family:var(--mono); font-size:13.5px}
 td small{display:block; color:var(--tinta-2); font-size:13px}
 .catitem{display:flex; justify-content:space-between; gap:14px; padding:7px 0; border-top:1px solid var(--linha); font-size:14px}
 .catitem b{font:400 13px var(--mono); white-space:nowrap}
+.folheto{display:grid; grid-template-columns:110px 1fr; gap:18px; align-items:start}
+.folheto img{width:110px; border-radius:8px; border:1px solid var(--linha); display:block}
 section{margin-bottom:38px}
 
 .menu{display:none}
@@ -500,6 +502,8 @@ function catalogo(){
     <p class="meta">Fonte: ${link(K.fonte,"site da SempreTech")}, consultado em ${new Date(K.consultado_em+"T12:00").toLocaleDateString("pt-BR")}. Preços de varejo.</p></div></div>
   <section><h2>Soluções</h2><p class="sub">O que a equipe apresenta ao cliente. Cada solução é montada com itens do catálogo, e o valor de referência é a soma deles no site.</p>
     <div class="grade">${Object.values(P.solucoes).map(o=>`<div class="folha"><h2>${esc(o.nome)}</h2><p style="margin:6px 0 12px">${esc(o.resolve)}</p><div class="chips">${o.composicao.map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div><p class="preco" style="margin-top:12px">${esc(o.referencia)}</p></div>`).join("")}</div></section>
+  ${K.outras_ofertas?`<section><h2>Outras ofertas da SempreTech</h2><p class="sub">${esc(K.outras_ofertas.origem)} Elas aparecem ao fim de cada proposta, na seção "Também na SempreTech".</p>
+    <div class="grade larga">${K.outras_ofertas.itens.map(o=>`<div class="folha folheto"><a href="${OFERTAS}folhetos/${esc(o.id)}.jpg" target="_blank" rel="noopener" title="Abrir o folheto"><img src="${OFERTAS}folhetos/${esc(o.id)}.jpg" alt="Folheto: ${esc(o.nome)}" loading="lazy"></a><div><div class="olho">${esc(o.tipo)}</div><h2>${esc(o.nome)}</h2><p style="margin:6px 0 12px">${esc(o.resumo)}</p><div class="chips">${o.pontos.map(x=>`<span class="chip">${esc(x)}</span>`).join("")}</div><p class="preco" style="margin-top:12px">Sem preço informado; orçamento sob consulta</p></div></div>`).join("")}</div></section>`:""}
   <section><h2>Itens do catálogo</h2><p class="sub">${esc(K.servicos)} ${esc(K.pagamento)}</p>
     <div class="grade">${K.familias.map(f=>`<div class="folha"><h2>${esc(f.nome)}</h2><p class="obs" style="margin-bottom:12px">${esc(f.resumo)}</p>${f.itens.map(i=>`<div class="catitem"><span>${esc(i.nome)}</span><b>${esc(i.preco)}</b></div>`).join("")}</div>`).join("")}</div></section>
   <section><h2>Produtos sugeridos no plano de contas</h2><p class="sub">O plano de contas sugeria estes produtos. A coluna "No site" mostra se a SempreTech tem cada um.</p>
@@ -886,7 +890,7 @@ function acoesProposta(c){
   const nome = "Proposta SempreTech - "+c.empresa.replace(/[\/:*?"<>|]/g," ").trim();
   return `<div class="acoes"><a class="bt" href="${OFERTAS+esc(p.arquivo)}" target="_blank" rel="noopener">Visualizar proposta</a>
     <details><summary class="bt pri">Baixar proposta para envio</summary><div>
-      <a href="${OFERTAS+esc(p.pdf)}" download="${esc(nome)}.pdf">PDF<small>Caderno de 7 páginas, para anexar</small></a>
+      <a href="${OFERTAS+esc(p.pdf)}" download="${esc(nome)}.pdf">PDF<small>Caderno de 8 páginas, para anexar</small></a>
       <a href="${OFERTAS+esc(p.arquivo)}" download="${esc(nome)}.html">HTML<small>Página que se ajusta ao celular</small></a></div></details></div>`;
 }
 
