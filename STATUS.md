@@ -65,7 +65,8 @@ Revendas têm proposta própria da SempreTech. Desde 14/10 as 25 contas de "Téc
 - As 19 contas da lista "Dia 15/10" estão também nas listas por oferta: desativar a "Dia 15/10" antes de ativar as novas.
 - Em 16/10 às 15h a C1 foi ativada e a "Piloto 26 contas" foi desativada; a "Dia 15/10" já estava inativa. A C1 é a única lista ativa da campanha, que segue pausada, em modo Power, com o grupo de agentes "David Buena". Os retornos da Piloto ficam fora do discador enquanto ela estiver inativa.
 - Às 15h10 de 16/10 a campanha SempreTech passou a "Em andamento", com só o grupo de agentes "Jennifer" (David Buena saiu) e 106 contatos da C1. Modo Power, de segunda a sexta, das 9h às 18h.
-- A campanha #12 foi renomeada para "SempreTech - Estação Criativa" (descrição: "Oferta C1 Estação Criativa - projetos e criativos (Salvador/BA)"). Padrão daqui em diante: uma campanha por oferta, "SempreTech - <oferta>". Cada dia sobe a lista do dia seguinte, a partir de `fila_clientes_finais.csv`, com cabeçalhos iguais aos nomes dos campos do formulário.
+- A campanha #12 foi renomeada para "SempreTech - Estação Criativa" (descrição: "Oferta C1 Estação Criativa - projetos e criativos (Salvador/BA)"). Padrão daqui em diante: uma campanha por oferta, "SempreTech - <oferta>".
+- Às 15h40 de 16/10, depois de 51 ligações (5,9% de atendimento) e 10 contatos esgotados em meia hora: tentativas por telefone de 5 para 3, agressividade de 3 para 5, e espera antes de religar de 2 horas (não atendeu e caixa postal) e 30 minutos (ocupado). Cada dia sobe a lista do dia seguinte, a partir de `fila_clientes_finais.csv`, com cabeçalhos iguais aos nomes dos campos do formulário.
 
 ## Esteira 2: proposta objetiva
 
