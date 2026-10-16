@@ -47,6 +47,26 @@ As ofertas das contas novas são os combos C1 a C7 (Estação Criativa, Laborat�
 
 Em 07/10 foram marcadas como revenda 18 das 25 contas de "Técnicos e assistências" (campo `revenda` em `contas.json`): as que o Google Maps classifica também como loja (de informática, de acessórios, de celulares, de computadores usados) ou fornecedor de peças. É indício público, não confirmação por telefone. As 7 sem categoria de loja ficaram como assistência: Graftecno, Tecno Digital, Merontechx, Inforteck, Gigatech, Central Informática e ESA Tech.
 
+Em 14/10 o site de cada uma dessas 7 foi consultado: Tecno Digital (loja on-line de acessórios) e Merontechx ("Loja Monte Seu PC") vendem equipamento e passaram a revenda, somando 20. Inforteck e Gigatech só anunciam serviço. Central Informática (site fora do ar), Graftecno e ESA Tech (sem site) seguem sem verificação: perguntar na ligação se vendem equipamento.
+
+Revendas têm proposta própria da SempreTech. Desde 14/10 as 25 contas de "Técnicos e assistências" (20 revendas e 5 a confirmar) saem da fila de clientes finais e vão para `fila_revendas.csv`; nenhuma conta de outro segmento tem sinal de revenda. A fila de clientes finais (`fila_clientes_finais.csv`) tem 295 contas, 292 com telefone discável, agendadas de 15/10 a 26/10.
+
+## Callix (14/10/2026)
+
+- O formulário "Padrão Esparta" ganhou quatro campos opcionais: Data de contato (Data), Horário de contato (Horário), Telefone 2 e Telefone 3. O formulário é compartilhado por todas as campanhas.
+- Importada na campanha SempreTech a lista "SempreTech - Dia 15/10 - gerada 2026-10-14 14h30": 19 contas novas de 15/10 (14h às 17h), 19 de 19 aceitas. Os 21 retornos não foram reimportados: já estão na lista "Piloto" de 05/10.
+- A lista foi importada **inativa** e sem embaralhar: ativar na manhã de 15/10.
+
+## Listas por oferta (16/10/2026)
+
+- Desde 16/10 as contas em primeira abordagem saem em uma lista por oferta, cada uma com o seu playbook em Word (`playbook/Playbook-sempretech-<oferta>_2026-10-16_14h39.docx`): a SDR ativa uma lista e usa só aquele roteiro.
+- Arquivos em `callix/Callix-sempretech-<oferta>_2026-10-16_14h39.csv`: C1 Estação Criativa (110), C2 Laboratório Pronto (56), C3 Posição de Atendimento (14), C4 Caixa Pronto (66), C6 Escritório em Dia (25). Retornos ficam na lista "Piloto"; revendas e os três 0800 ficam fora.
+- Importada em 16/10 às 14h44 a lista "SempreTech - C1 Estação Criativa - gerada 2026-10-16 14h39": 106 de 110 aceitas e 4 retiradas pelo filtro de baixa probabilidade (telefones com ligação recente). Inativa e sem embaralhar.
+- As 19 contas da lista "Dia 15/10" estão também nas listas por oferta: desativar a "Dia 15/10" antes de ativar as novas.
+- Em 16/10 às 15h a C1 foi ativada e a "Piloto 26 contas" foi desativada; a "Dia 15/10" já estava inativa. A C1 é a única lista ativa da campanha, que segue pausada, em modo Power, com o grupo de agentes "David Buena". Os retornos da Piloto ficam fora do discador enquanto ela estiver inativa.
+- Às 15h10 de 16/10 a campanha SempreTech passou a "Em andamento", com só o grupo de agentes "Jennifer" (David Buena saiu) e 106 contatos da C1. Modo Power, de segunda a sexta, das 9h às 18h.
+- A campanha #12 foi renomeada para "SempreTech - Estação Criativa" (descrição: "Oferta C1 Estação Criativa - projetos e criativos (Salvador/BA)"). Padrão daqui em diante: uma campanha por oferta, "SempreTech - <oferta>". Cada dia sobe a lista do dia seguinte, a partir de `fila_clientes_finais.csv`, com cabeçalhos iguais aos nomes dos campos do formulário.
+
 ## Esteira 2: proposta objetiva
 
 | Conta | Contato | Próximo passo |

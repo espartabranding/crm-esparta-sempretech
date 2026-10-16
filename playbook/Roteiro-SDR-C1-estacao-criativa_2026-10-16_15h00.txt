@@ -1,0 +1,98 @@
+SEMPRETECH · ESTAÇÃO CRIATIVA · ROTEIRO DA SDR
+Lista no Callix: "SempreTech - C1 Estação Criativa"
+Meta de cada ligação: chegar a quem decide e sair com o número de estações e os programas que a equipe usa, para enviar a proposta hoje.
+
+==================================================
+1. RECEPÇÃO
+==================================================
+"Bom dia. Aqui é [seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta de estações de trabalho para a equipe de projetos. Com quem trato da compra de computadores da empresa?"
+
+Sair com: nome de quem decide (sócio, proprietário ou coordenador), contato direto e melhor horário.
+Não apresentar a oferta à recepção.
+
+==================================================
+2. ABERTURA COM QUEM DECIDE
+==================================================
+"[Nome], bom dia. Aqui é [seu nome], da SempreTech, distribuidora de informática de Salvador. Tenho uma proposta objetiva para a equipe de projetos da empresa. Apresento em um minuto e você avalia se vale avançar."
+
+==================================================
+3. PROBLEMA
+==================================================
+"Programas de projeto, render e edição exigem mais da máquina a cada versão, e a estação que atendia bem há três anos passa a travar no meio do trabalho. A SempreTech propõe a Estação Criativa: computador i7 com placa de vídeo dedicada, monitor de 22 polegadas e nobreak, com montagem e assistência técnica próprias em Salvador. Como as estações da equipe estão respondendo hoje aos arquivos mais pesados?"
+
+==================================================
+4. PERGUNTAS (UMA POR VEZ)
+==================================================
+- Quantas pessoas trabalham hoje em projeto, edição ou arte, e em que tipo de máquina?
+- Em quais programas ou arquivos as máquinas ficam mais lentas?
+- Quando uma estação para, como a empresa resolve e em quanto tempo?
+- Há contratação ou troca de equipamento prevista para os próximos meses?
+
+==================================================
+5. OFERTA (LIGAR AO QUE O CLIENTE DISSE)
+==================================================
+"Cada profissional recebe a estação completa: i7 com 16 GB de memória, SSD e placa de vídeo dedicada, monitor de 22 polegadas com ajuste de altura e nobreak. O arquivo pesado abre, e uma queda de energia não derruba o trabalho em andamento."
+
+Valor, se perguntarem: R$ 4.947 por estação na proposta, com 30% de desconto sobre o preço de site de R$ 7.068.
+Não dar desconto extra por telefone.
+
+==================================================
+6. PEDIDO
+==================================================
+"Proponho o seguinte: com o número de estações e os programas utilizados, envio ainda hoje a proposta com a configuração e o valor por estação. Qual o melhor e-mail para o envio?"
+
+==================================================
+7. PLANO B
+==================================================
+"Entendido. Para quando está prevista a próxima troca ou contratação? Retorno duas semanas antes, com a proposta preparada. Qual o melhor contato direto para falar com você?"
+
+==================================================
+OBJEÇÕES
+==================================================
+"Trabalhamos com notebook."
+-> "O notebook atende bem a mobilidade. Para render e arquivos pesados, a empresa mantém alguma estação fixa? É nesse posto que a proposta se aplica."
+
+"Essa configuração não atende o programa."
+-> "Qual é o programa e a configuração recomendada pelo fabricante? Com essa especificação, envio a proposta na mesma base."
+
+"Já temos fornecedor."
+-> "A proposta não é de substituição. Na próxima compra, envio uma segunda proposta para comparação. Quando costuma ser?"
+
+"Manda por e-mail."
+-> "Envio, sim. Para a proposta ser específica: quantas estações e quais programas?" Combinar o retorno com dia e hora.
+
+"Agora não estamos comprando."
+-> "A proposta não exige compra imediata. Quando costuma ser a próxima troca ou contratação?"
+
+"Não tenho tempo agora."
+-> "Compreendo. Qual o melhor horário para retornar amanhã, pela manhã ou após o almoço?"
+
+"Está caro."
+-> "Qual é a referência de comparação? Com a configuração da outra proposta, preparo a nossa na mesma base."
+
+"Como conseguiu meu número?"
+-> "É o telefone comercial divulgado pela empresa. Se preferir não receber ligações, retiro o número agora."
+
+==================================================
+CAIXA POSTAL
+==================================================
+"Bom dia, [Nome]. Aqui é [seu nome], da SempreTech. Tenho uma proposta para as estações de trabalho da equipe de projetos. Retorno amanhã pela manhã."
+
+==================================================
+REGRAS
+==================================================
+- Uma pergunta por vez.
+- Se pedirem outro produto, anotar e dizer que vai confirmar, sem prometer.
+- Depois de um "não" claro, agradecer, tabular e encerrar.
+
+==================================================
+REGISTRAR E TABULAR
+==================================================
+Registrar: com quem falou, o problema nas palavras do cliente, número de estações, programas, prazo, objeção e próximo passo com data.
+
+Tabulações mais usadas:
+- Pediu proposta
+- Recepção passou informação
+- Retornar em data combinada
+- Sem interesse
+- Não atendeu
