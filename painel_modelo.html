@@ -559,7 +559,7 @@ function analise(c){
   const a = c.analise;
   const bi = "";
   if (!a) return `<div class="grade"><div class="folha"><h3>Análise da empresa</h3><p class="vazio">A pesquisa desta empresa ainda não foi feita. Abaixo, o que já constava no plano de contas.</p>
-    <p style="margin-top:12px">${c.perfil.map(esc).join(" ")}</p><p class="obs" style="margin-top:8px">${esc(c.sinal)}</p></div>${bi}</div>`;
+    <p style="margin-top:12px">${c.perfil.map(esc).join(" ")}</p><p class="obs" style="margin-top:8px">${esc(c.sinal)}</p>${c.porte&&c.porte!=="a confirmar"?`<p class="obs" style="margin-top:8px"><b>Porte:</b> ${esc(c.porte)}</p>`:""}</div>${bi}</div>`;
   const ct = a.contato_publico || {};
   const contatos = [ct.telefone&&esc(ct.telefone),ct.email&&`<span class="mono">${esc(ct.email)}</span>`, ct.site&&link(ct.site,dominio(ct.site)), ct.linkedin&&link(ct.linkedin,"LinkedIn")].filter(Boolean);
   return `<div class="duas">

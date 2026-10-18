@@ -42,8 +42,13 @@ def transcrever_arquivo(modelo, arquivo: Path, vocabulario: str | None) -> list[
         # Descarta texto "inventado" em trechos longos de silêncio ou ruído.
         hallucination_silence_threshold=2.0,
     )
+    # Em chamada curta ou muda o modelo às vezes "ouve" a própria lista de termos.
+    termos = {t.strip(" ,.–-").lower() for t in (vocabulario or "").replace(",", " ").split()}
     palavras, confianca = [], {}
     for seg in segmentos:
+        ditas = [w.word.strip(" ,.–-").lower() for w in seg.words or []]
+        if len(ditas) >= 4 and all(p in termos for p in ditas if p):
+            continue
         for w in seg.words or []:
             palavras.append((w.start, w.end, w.word))
             confianca[w.start, w.end] = w.probability
