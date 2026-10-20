@@ -107,6 +107,15 @@ A C1 foi montada sem corte por porte: as 110 contas estavam com "porte a confirm
 - O crédito do Apify do ciclo de 16/10 a 15/11 acabou (US$ 9,72 de 10).
 - As 97 "a verificar" ficaram sem dado porque a cota de buscas na web acabou no meio da verificação; dá para refazer depois.
 
+## Ligações da Estação Criativa de 15 a 20/10 (sincronizadas em 20/10/2026)
+
+- Resumo da campanha de 06 a 20/10: 330 contatos únicos, 549 tentativas, 46 atendidas (8,4%), 31 completadas, 5 CPC e nenhuma reunião. Qualificações: Chamada Caiu 17, Caixa postal 7, Retornar Contato 4, Engano 1, Sem Interesse 1.
+- Até 15h30 de 20/10 foram 39 chamadas completadas, todas sincronizadas. As transcrições ficam fora do git (`data/` e `gravacoes/`).
+- Áudio: em várias ligações o cliente disse que não estava ouvindo, e muitas "Chamada Caiu" terminam em "Alô? Alô?". Conferir fone e microfone da SDR e o relatório Qualidade de áudio do Callix.
+- Religar em 21/10, com a oferta da SempreTech: as 32 empresas que atenderam de 16 a 20/10. Compilado com o tipo de interesse de cada uma em `playbook/Compilado-religar-Estacao-Criativa_2026-10-20_17h33.md` e lista pronta para importar em `callix/Callix-sempretech-estacao-criativa-religar_2026-10-20_17h33.csv` (21/10, das 9h às 14h10, LIP primeiro, no celular da Maria Nina). Tipos de interesse: 1 decisor identificado, 4 responsável ausente, 20 caíram antes da apresentação, 6 caixa postal, 2 telefone a conferir (Oeste, que tem número do contador, e Daniel Arruda, fora da lista) e 1 sem interesse (Monte Moryah, encerrada). Tudo registrado em `tentativas.json` com prazo 21/10: as 32 da lista na etapa "Retorno combinado", Daniel Arruda em "Localizar o responsável" e Monte Moryah em "Encerradas".
+- As versões publicadas (`docs/`) não levam o texto das conversas a partir de 17/10 (`PUBLICADAS_ATE` em `painel.py`); essas transcrições ficam só no painel local (`data/painel.html`).
+- CRM organizado em 20/10: as 317 contas das seis listas ativas da Estação Criativa, que tinham subido direto para o Callix, entraram no `contas.json` (ids `e1` a `e317`, onda "Listas de 18/10, sem estudo individual"), com cidade, telefone, site, porte e fontes da revisão de porte. `contas_das_listas.py` refaz a inclusão quando entrar uma lista nova; conta que já está no plano ganha só um apelido com o nome usado no Callix. O painel também passa a casar a ligação pelo telefone quando o Callix corta o nome. Resultado: 638 contas, 384 abordadas, 44 com conversa e nenhuma ligação avulsa.
+
 ## Esteira 2: proposta objetiva
 
 | Conta | Contato | Próximo passo |

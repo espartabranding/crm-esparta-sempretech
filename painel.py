@@ -34,10 +34,18 @@ def _conta_da_chamada(contas: list[dict], attrs: dict, contato: dict) -> dict | 
     textos = [attrs.get("contact_label"), *contato.values()]
     candidatos = {f" {_normalizar(t)} " for t in textos if isinstance(t, str)}
     # Nomes mais longos primeiro, para um nome curto não capturar a conta errada.
-    for conta in sorted(contas, key=lambda c: -len(c["empresa"])):
-        nome = f" {_normalizar(conta['empresa'])} "
+    # Apelidos: nome com que a conta foi importada numa lista do Callix, quando difere do plano.
+    nomes = [(n, conta) for conta in contas for n in [conta["empresa"], *conta.get("apelidos", [])]]
+    for empresa, conta in sorted(nomes, key=lambda x: -len(x[0])):
+        nome = f" {_normalizar(empresa)} "
         if any(nome in c for c in candidatos):
             return conta
+    # Sem nome que case (o Callix corta nomes longos), vale o telefone discado.
+    discado = re.sub(r"\D", "", attrs.get("destination_phone") or "")[-8:]
+    if len(discado) == 8:
+        for conta in contas:
+            if re.sub(r"\D", "", conta.get("telefone") or "")[-8:] == discado:
+                return conta
     return None
 
 
@@ -201,6 +209,25 @@ def _para_cliente(dados: dict) -> dict:
     return {**dados, "modo": "cliente", "playbook": enxuto, "catalogo": {}, "contas": contas}
 
 
+# Transcrições já publicadas até aqui continuam no ar; as posteriores ficam só no painel local.
+PUBLICADAS_ATE = "2026-10-17"
+
+
+def _sem_transcricoes(dados: dict) -> dict:
+    """Versões publicadas: cada ligação nova fica com resultado e nota, sem o texto da conversa.
+
+    A transcrição tem fala de terceiros e fica só no painel local (data/painel.html).
+    """
+    def limpar(chamadas: list[dict]) -> list[dict]:
+        return [
+            ch if (ch["inicio"] or "") < PUBLICADAS_ATE else {**ch, "conversa": None, "resumo": None}
+            for ch in chamadas
+        ]
+
+    contas = [{**c, "chamadas": limpar(c["chamadas"])} for c in dados["contas"]]
+    return {**dados, "contas": contas, "avulsas": limpar(dados["avulsas"])}
+
+
 def gerar(db_arquivo: Path, saida: Path) -> None:
     plano = json.loads((RAIZ / "contas.json").read_text(encoding="utf-8"))
     catalogo = json.loads((RAIZ / "catalogo.json").read_text(encoding="utf-8"))
@@ -217,12 +244,13 @@ def gerar(db_arquivo: Path, saida: Path) -> None:
     # Cópia completa em docs/, que é a pasta servida pelo GitHub Pages. Pede aos buscadores que não a indexem.
     if saida.parent == DADOS:
         (RAIZ / "docs").mkdir(exist_ok=True)
+        publicado = _sem_transcricoes(completo)
         (RAIZ / "docs" / "index.html").write_text(
-            pagina.replace("<head>", '<head><meta name="robots" content="noindex, nofollow">', 1),
+            pagina_de(publicado).replace("<head>", '<head><meta name="robots" content="noindex, nofollow">', 1),
             encoding="utf-8",
         )
         # Relatório do cliente, em docs/cliente/ e ao lado do painel local.
-        cliente = pagina_de(_para_cliente(completo))
+        cliente = pagina_de(_para_cliente(publicado))
         saida.with_name("relatorio_cliente.html").write_text(cliente, encoding="utf-8")
         (RAIZ / "docs" / "cliente").mkdir(exist_ok=True)
         (RAIZ / "docs" / "cliente" / "index.html").write_text(

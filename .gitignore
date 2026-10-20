@@ -12,3 +12,4 @@ wheels/
 # Segredos e dados sincronizados (gravações e dados pessoais dos leads)
 .env
 data/
+gravacoes/

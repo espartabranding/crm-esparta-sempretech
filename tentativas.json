@@ -174,5 +174,309 @@
     "nota": "Não atende. Nova tentativa em outro horário.",
     "etapa": "tentar",
     "conversou": false
+  },
+  {
+    "conta": "e191",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Decisor identificado",
+    "nota": "A recepção (Mônica) indicou Maria Nina como responsável, com fixo e celular. Ligar direto para ela e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": true,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e30",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Responsável ausente",
+    "nota": "Atendeu Maria; a equipe comercial estava externa. Pedir quem decide a compra de computadores e o melhor horário.",
+    "etapa": "retornar",
+    "conversou": true,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e46",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Responsável ausente",
+    "nota": "Atendeu Liz, da recepção; o responsável não estava. Pedir quem decide a compra de computadores e o melhor horário.",
+    "etapa": "retornar",
+    "conversou": true,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e4",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Responsável ausente",
+    "nota": "Atendeu Vinícius, que indicou o setor de Atendimento (Roberta). Pedir quem cuida da compra de equipamentos.",
+    "etapa": "retornar",
+    "conversou": true,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e52",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Responsável ausente · interesse baixo",
+    "nota": "Atendeu Eliana, da recepção, que adiantou pouco interesse; o responsável não estava. Uma nova tentativa com o responsável.",
+    "etapa": "retornar",
+    "conversou": true,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e11",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "A recepção atendeu e a ligação caiu na confirmação da empresa. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e223",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu e pediu um minuto; a ligação terminou antes da apresentação (no Callix ficou como Engano). Religar.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e277",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Telefone a conferir",
+    "nota": "O número discado, (71) 3351-1798, é do escritório de contabilidade. Ligar no (71) 3451-0414.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "m94",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e60",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e174",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e218",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e259",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e281",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e192",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e246",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e6",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e14",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e28",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e66",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e53",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e155",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "m11",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "m37",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "m29",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e83",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caiu antes da apresentação",
+    "nota": "Atendeu, mas a ligação caiu antes da apresentação da oferta. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e51",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caixa postal",
+    "nota": "Caiu na caixa postal. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e31",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caixa postal",
+    "nota": "Caiu na caixa postal. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e76",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caixa postal",
+    "nota": "Caiu na caixa postal. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e97",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caixa postal",
+    "nota": "Caiu na caixa postal. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e204",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caixa postal",
+    "nota": "Caiu na caixa postal. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e168",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Caixa postal",
+    "nota": "Caiu na caixa postal. Religar e apresentar a Estação Criativa.",
+    "etapa": "retornar",
+    "conversou": false,
+    "prazo": "2026-10-21"
+  },
+  {
+    "conta": "e262",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Telefone a conferir",
+    "nota": "Atendeu outra empresa (TR Assessoria). Procurar o telefone certo antes de ligar.",
+    "etapa": "tentar",
+    "conversou": false
+  },
+  {
+    "conta": "n27",
+    "quando": "2026-10-20T20:33:00+00:00",
+    "qualificacao": "Sem interesse",
+    "nota": "Alberto, que decide, disse que é microempresa e compra computador no varejo (Dell). Fora do perfil.",
+    "etapa": "encerrada",
+    "conversou": true
   }
 ]
